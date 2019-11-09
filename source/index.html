@@ -7,77 +7,63 @@
   <body class="page">
 
     <header class="header">
-      <div class="header__main-navigation">
-        <nav class="main-navigation drop-down">
-          <div class="main-navigation__logo">
-            <a class="logo">
+      <nav class="main-navigation header__main-navigation">
+        <a class="logo main-navigation__logo">
+          <img class="logo__image" src="logo" alt="Логотип сервиса Погнали">
+        </a>
+        <div class="drop-down main-navigation__drop-down">
+          <button class="drop-down__open-control" type="button">
+            <span class="visually-hidden">Открыть навигационное меню</span>
+          </button>
+          <div class="drop-down__container">
+            <a class="logo drop-down__logo">
               <img class="logo__image" src="logo" alt="Логотип сервиса Погнали">
             </a>
-          </div>
-          <div class="main-navigation__control">
-            <button class="drop-down__open-control" type="button">
-              <span class="visually-hidden">Открыть навигационное меню</span>
+            <button class="drop-down__close-control" type="button">
+              <span class="visually-hidden">Закрыть навигационное меню</span>
             </button>
-          </div>
-          <div class="drop-down__container">
-            <div class="main-navigation__header">
-              <div class="main-navigation__logo">
-                <a class="logo">
-                  <img class="logo__image" src="logo" alt="Логотип сервиса Погнали">
-                </a>
-              </div>
-              <div class="main-navigation__control">
-                <button class="drop-down__close-control" type="button">
-                  <span class="visually-hidden">Закрыть навигационное меню</span>
-                </button>
-              </div>
-            </div>
-            <div class="main-navigation__site-navigation">
-              <ul class="site-navigation">
-                <li class="site-navigation__item">
-                  <a class="site-navigation__link" href="">О сервисе</a>
-                </li>
-                <li class="site-navigation__item">
-                  <a class="site-navigation__link" href="">Направления</a>
-                </li>
-                <li class="site-navigation__item">
-                  <a class="site-navigation__link" href="">Попутчики</a>
-                </li>
-              </ul>
-            </div>
-            <div class="main-navigation__button">
-              <a class="button" href="">Авторизация</a>
-            </div>
-            <address class="main-navigation__contacts">
-              <ul class="main-navigation__contacts-list">
-                <li class="main-navigation__contacts-item">
+            <ul class="drop-down__site-navigation">
+              <li class="drop-down__site-navigation-item">
+                <a class="link" href="">О сервисе</a>
+              </li>
+              <li class="drop-down__site-navigation-item">
+                <a class="link" href="">Направления</a>
+              </li>
+              <li class="drop-down__site-navigation-item">
+                <a class="link" href="">Попутчики</a>
+              </li>
+            </ul>
+            <a class="button drop-down__button" href="">Авторизация</a>
+            <address class="drop-down__contacts">
+              <ul class="link-list">
+                <li class="link-list__item">
                   <a class="round-button contact-link" href="tel:88005558628">
                     <span class="round-button__icon"></span>
                     <span class="round-button__text">8 800 555-86-28</span>
                   </a>
                 </li>
-                <li class="main-navigation__contacts-item">
+                <li class="link-list__item">
                   <a class="round-button contact-link" href="mailto:mail@htmlacademy.ru">
                     <span class="round-button__icon"></span>
                     <span class="round-button__text">mail@htmlacademy.ru</span>
                   </a>
                 </li>
               </ul>
-              <div class="main-navigation__socials">
-                <ul class="socials">
-                  <li class="socials__item">
+              <div class="drop-down__socials">
+                <ul class="link-list">
+                  <li class="link-list__item">
                     <a class="round-button social-link" href="">
                       <span class="round-button__icon"></span>
                       <span class="visually-hidden">Facebook</span>
                     </a>
                   </li>
-                  <li class="socials__item">
+                  <li class="link-list__item">
                     <a class="round-button social-link" href="">
                       <span class="round-button__icon"></span>
                       <span class="visually-hidden">Вконтакте</span>
                     </a>
                   </li>
-                  <li class="socials__item">
+                  <li class="link-list__item">
                     <a class="round-button social-link" href="">
                       <span class="round-button__icon"></span>
                       <span class="visually-hidden">Instagram</span>
@@ -87,28 +73,58 @@
               </div>
             </address>
           </div>
-        </nav>
-      </div>
+        </div>
+      </nav>
       <b class="header__title">
         В путешествие с крутыми попутчиками!
       </b>
-      <ul class="header__additional-navigation">
-        <li class="header__additional-navigation-item">
-          <a class="round-button contact-link" href="tel:88005558628">
-            <span class="round-button__icon"></span>
-            <span class="round-button__text">8 800 555-86-28</span>
-          </a>
-        </li>
-        <li class="header__additional-navigation-item">
-          <a class="round-button contact-link" href="mailto:mail@htmlacademy.ru">
-            <span class="round-button__icon"></span>
-            <span class="round-button__text">mail@htmlacademy.ru</span>
-          </a>
-        </li>
-        <li class="header__additional-navigation-item">
-          <a class="button" href="">Авторизация</a>
-        </li>
-      </ul>
+      <div class="header__additional-navigation">
+        <ul class="link-list">
+          <li class="link-list__item">
+            <a class="round-button contact-link" href="tel:88005558628">
+              <span class="round-button__icon"></span>
+              <span class="round-button__text">8 800 555-86-28</span>
+            </a>
+          </li>
+          <li class="link-list__item">
+            <a class="round-button contact-link" href="mailto:mail@htmlacademy.ru">
+              <span class="round-button__icon"></span>
+              <span class="round-button__text">mail@htmlacademy.ru</span>
+            </a>
+          </li>
+          <li class="link-list__item">
+            <a class="button" href="">Авторизация</a>
+          </li>
+        </ul>
+      </div>
+      <blockquote class="header__review">
+        <p class="header__review-text">
+          «Лучшее приложение, что я видел в жизни!»
+        </p>
+        <cite class="header__review-author">
+          Мурат Эльтазинглавный редактор газеты «гаджетлайф»
+        </cite>
+      </blockquote>
+      <div class="header__algorithm">
+        <ol class="algorithm">
+          <li class="algorithm__item">
+            <p class="algorithm__action-description">Выберите направление</p>
+            <span class="algorithm__action-number">1</span>
+          </li>
+          <li class="algorithm__item">
+            <p class="algorithm__action-description">Изучите идеи путешественников</p>
+            <span class="algorithm__action-number">2</span>
+          </li>
+          <li class="algorithm__item">
+            <p class="algorithm__action-description">Находите тех, кто похож на вас</p>
+            <span class="algorithm__action-number">3</span>
+          </li>
+          <li class="algorithm__item">
+            <p class="algorithm__action-description">Путешествуйте вместе!</p>
+            <span class="algorithm__action-number">4</span>
+          </li>
+        </ol>
+      </div>
     </header>
 
   </body>
