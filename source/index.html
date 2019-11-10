@@ -34,9 +34,9 @@
                   <a class="drop-down__site-navigation-link" href="">Попутчики</a>
                 </li>
               </ul>
-              <a class="button drop-down__button" href="">Авторизация</a>
-              <address class="drop-down__contacts">
-                <ul class="drop-down__contact-list">
+              <a class="button drop-down__authorization-link" href="">Авторизация</a>
+              <address class="drop-down__contact-info">
+                <ul class="drop-down__contacts">
                   <li class="drop-down__contact-item">
                     <a class="link contact-link" href="tel:88005558628">
                       <span class="link__icon"></span>
@@ -74,7 +74,7 @@
             </div>
           </div>
         </nav>
-        <b class="header__title">
+        <b class="header__slogan">
           В путешествие с крутыми попутчиками!
         </b>
         <ul class="header__additional-navigation">
@@ -162,6 +162,9 @@
           <ul class="direction-section__country-list">
             <li class="direction-section__country-item">
               <article class="country-card">
+                <div class="country-card__photo-container">
+                  <img src="country" alt="Песочный пляж, голубая чистая вода и скалы, покрытые растениями">
+                </div>
                 <div class="country-card__container">
                   <h3 class="country-card__country-name">Тайланд</h3>
                   <div class="flag country-card__flag">
@@ -169,16 +172,16 @@
                   </div>
                   <p class="country-card__text">Джунгли зовут!</p>
                   <p class="country-card__traveler-counter">
-                    18321 <span class="visually-hidden">человек</span>
+                    18321 <span class="visually-hidden">человек хотят посетить эту страну</span>
                   </p>
-                </div>
-                <div class="country-card__photo-container">
-                  <img src="country" alt="Песочный пляж, голубая чистая вода и скалы, покрытые растениями">
                 </div>
               </article>
             </li>
             <li class="direction-section__country-item">
               <article class="country-card">
+                <div class="country-card__photo-container">
+                  <img src="country" alt="Бежевое здание и аллея">
+                </div>
                 <div class="country-card__container">
                   <h3 class="country-card__country-name">Франция</h3>
                   <div class="flag country-card__flag">
@@ -186,16 +189,16 @@
                   </div>
                   <p class="country-card__text">Трэ бьен, манифик!</p>
                   <p class="country-card__traveler-counter">
-                    12518 <span class="visually-hidden">человек</span>
+                    12518 <span class="visually-hidden">человек хотят посетить эту страну</span>
                   </p>
-                </div>
-                <div class="country-card__photo-container">
-                  <img src="country" alt="Бежевое здание и аллея">
                 </div>
               </article>
             </li>
             <li class="direction-section__country-item">
               <article class="country-card">
+                <div class="country-card__photo-container">
+                  <img src="country" alt="Исторические здания, река, мост и экскурсионный корабль">
+                </div>
                 <div class="country-card__container">
                   <h3 class="country-card__country-name">Чехия</h3>
                   <div class="flag country-card__flag">
@@ -203,11 +206,8 @@
                   </div>
                   <p class="country-card__text">Закоулки старой Европы</p>
                   <p class="country-card__traveler-counter">
-                    5326 <span class="visually-hidden">человек</span>
+                    5326 <span class="visually-hidden">человек хотят посетить эту страну</span>
                   </p>
-                </div>
-                <div class="country-card__photo-container">
-                  <img src="country" alt="Исторические здания, река, мост и экскурсионный корабль">
                 </div>
               </article>
             </li>
@@ -229,183 +229,209 @@
           <ul class="companion-section__companion-list">
             <li class="companion-section__companion-item">
               <article class="companion-preview-card">
-                <h3 class="companion-preview-card__companion-name">Таня Фирсова</h3>
                 <div class="companion-preview-card__photo-container">
                   <img src="companion"
                        alt="Девушка в разноцветном купальнике плавает в чистой светло-голубой воде"
                        width="270"
                        height="270">
                 </div>
-                <div class="level-progress companion-preview-card__companion-level">
-                  <span class="level-progress__number">99</span> level
+                <div class="companion-preview-card__container">
+                  <h3 class="companion-preview-card__companion-name">Таня Фирсова</h3>
+                  <div class="level-progress companion-preview-card__companion-level">
+                    <span class="level-progress__number">99</span> level
+                  </div>
+                  <ul class="companion-preview-card__flag-list" aria-label="Пользователь хочет посетить эти страны">
+                    <li class="companion-preview-card__flag-item">
+                      <div class="tooltip">
+                        <div class="flag tooltip__control" tabindex="0">
+                          <img src="flag" alt="Флаг Шри-Ланки">
+                        </div>
+                        <div class="tooltip__container" aria-hidden="true">Шри-Ланка</div>
+                      </div>
+                    </li>
+                    <li class="companion-preview-card__flag-item">
+                      <div class="tooltip">
+                        <div class="flag tooltip__control" tabindex="0">
+                          <img src="flag" alt="Флаг Тайланда">
+                        </div>
+                        <div class="tooltip__container" aria-hidden="true">Тайланд</div>
+                      </div>
+                    </li>
+                    <li class="companion-preview-card__flag-item">
+                      <div class="tooltip">
+                        <div class="flag tooltip__control" tabindex="0">
+                          <img src="flag" alt="Флаг Сейшельский островов">
+                        </div>
+                        <div class="tooltip__container" aria-hidden="true">Сейшельские острова</div>
+                      </div>
+                    </li>
+                  </ul>
+                  <ul class="companion-preview-card__hashtag-list">
+                    <li class="companion-preview-card__hashtag-item">
+                      <a class="hashtag" href="">
+                        <span aria-label="hashtag">#</span>ЗОЖ
+                      </a>
+                    </li>
+                    <li class="companion-preview-card__hashtag-item">
+                      <a class="hashtag" href="">
+                        <span aria-label="hashtag">#</span>ПП
+                      </a>
+                    </li>
+                    <li class="companion-preview-card__hashtag-item">
+                      <a class="hashtag" href="">
+                        <span aria-label="hashtag">#</span>Фитнес
+                      </a>
+                    </li>
+                    <li class="companion-preview-card__hashtag-item">
+                      <a class="hashtag" href="">
+                        <span aria-label="hashtag">#</span>пляж
+                      </a>
+                    </li>
+                    <li class="companion-preview-card__hashtag-item">
+                      <a class="hashtag" href="">
+                        <span aria-label="hashtag">#</span>авокадо
+                      </a>
+                    </li>
+                    <li class="companion-preview-card__hashtag-item">
+                      <a class="hashtag" href="">
+                        <span aria-label="hashtag">#</span>смузи
+                      </a>
+                    </li>
+                  </ul>
+                  <ul class="companion-preview-card__transport-list">
+                    <li class="companion-preview-card__transport-item">
+                      <div class="tooltip">
+                        <span class="transport-status transport-status_active tooltip__control" tabindex="0">
+                          <span class="visually-hidden">Этот пользователь путешествует на авиатранспорте</span>
+                        </span>
+                        <div class="tooltip__container" aria-hidden="true">Авиаперелёт</div>
+                      </div>
+                    </li>
+                    <li class="companion-preview-card__transport-item">
+                      <div class="tooltip">
+                        <span class="transport-status tooltip__control" tabindex="0">
+                          <span class="visually-hidden">Этот пользователь не путешествует на автотранспорте</span>
+                        </span>
+                        <div class="tooltip__container" aria-hidden="true">Автотранспорт</div>
+                      </div>
+                    </li>
+                    <li class="companion-preview-card__transport-item">
+                      <div class="tooltip">
+                        <span class="transport-status tooltip__control" tabindex="0">
+                          <span class="visually-hidden">Этот пользователь не путешествует на велосипеде</span>
+                        </span>
+                        <div class="tooltip__container" aria-hidden="true">Велосипед</div>
+                      </div>
+                    </li>
+                    <li class="companion-preview-card__transport-item">
+                      <div class="tooltip">
+                        <span class="transport-status tooltip__control" tabindex="0">
+                          <span class="visually-hidden">Этот пользователь не путешествует пешком</span>
+                        </span>
+                        <div class="tooltip__container" aria-hidden="true">Пешком</div>
+                      </div>
+                    </li>
+                  </ul>
                 </div>
-                <ul class="companion-preview-card__flag-list" aria-label="Пользователь хочет посетить эти страны">
-                  <li class="companion-preview-card__flag-item">
-                    <div class="tooltip">
-                      <div class="flag tooltip__control" tabindex="0">
-                        <img src="flag" alt="Флаг Шри-Ланки">
-                      </div>
-                      <div class="tooltip__container" aria-hidden="true">Шри-Ланка</div>
-                    </div>
-                  </li>
-                  <li class="companion-preview-card__flag-item">
-                    <div class="tooltip">
-                      <div class="flag tooltip__control" tabindex="0">
-                        <img src="flag" alt="Флаг Тайланда">
-                      </div>
-                      <div class="tooltip__container" aria-hidden="true">Тайланд</div>
-                    </div>
-                  </li>
-                  <li class="companion-preview-card__flag-item">
-                    <div class="tooltip">
-                      <div class="flag tooltip__control" tabindex="0">
-                        <img src="flag" alt="Флаг Сейшельский островов">
-                      </div>
-                      <div class="tooltip__container" aria-hidden="true">Сейшельские острова</div>
-                    </div>
-                  </li>
-                </ul>
-                <ul class="companion-preview-card__hashtag-list">
-                  <li class="companion-preview-card__hashtag-item">
-                    <a class="hashtag" href="">#ЗОЖ</a>
-                  </li>
-                  <li class="companion-preview-card__hashtag-item">
-                    <a class="hashtag" href="">#ПП</a>
-                  </li>
-                  <li class="companion-preview-card__hashtag-item">
-                    <a class="hashtag" href="">#Фитнес</a>
-                  </li>
-                  <li class="companion-preview-card__hashtag-item">
-                    <a class="hashtag" href="">#пляж</a>
-                  </li>
-                  <li class="companion-preview-card__hashtag-item">
-                    <a class="hashtag" href="">#авокадо</a>
-                  </li>
-                  <li class="companion-preview-card__hashtag-item">
-                    <a class="hashtag" href="">#смузи</a>
-                  </li>
-                </ul>
-                <ul class="companion-preview-card__transport-list">
-                  <li class="companion-preview-card__transport-item">
-                    <div class="tooltip">
-                      <span class="transport-status transport-status_active tooltip__control" tabindex="0">
-                        <span class="visually-hidden">Этот пользователь путешествует на авиатранспорте</span>
-                      </span>
-                      <div class="tooltip__container" aria-hidden="true">Авиаперелёт</div>
-                    </div>
-                  </li>
-                  <li class="companion-preview-card__transport-item">
-                    <div class="tooltip">
-                      <span class="transport-status tooltip__control" tabindex="0">
-                        <span class="visually-hidden">Этот пользователь не путешествует на автотранспорте</span>
-                      </span>
-                      <div class="tooltip__container" aria-hidden="true">Автотранспорт</div>
-                    </div>
-                  </li>
-                  <li class="companion-preview-card__transport-item">
-                    <div class="tooltip">
-                      <span class="transport-status tooltip__control" tabindex="0">
-                        <span class="visually-hidden">Этот пользователь не путешествует на велосипеде</span>
-                      </span>
-                      <div class="tooltip__container" aria-hidden="true">Велосипед</div>
-                    </div>
-                  </li>
-                  <li class="companion-preview-card__transport-item">
-                    <div class="tooltip">
-                      <span class="transport-status tooltip__control" tabindex="0">
-                        <span class="visually-hidden">Этот пользователь не путешествует пешком</span>
-                      </span>
-                      <div class="tooltip__container" aria-hidden="true">Пешком</div>
-                    </div>
-                  </li>
-                </ul>
               </article>
             </li>
             <li class="companion-section__companion-item">
               <article class="companion-preview-card">
-                <h3 class="companion-preview-card__companion-name">Петя Демин</h3>
                 <div class="companion-preview-card__photo-container">
                   <img src="companion"
                        alt="Мужчина с рыжей бородой в темных очках, чёрных шапке и кофте стоит зимой в лесу"
                        width="270"
                        height="270">
                 </div>
-                <div class="level-progress companion-preview-card__companion-level">
-                  <span class="level-progress__number">80</span> level
+                <div class="companion-preview-card__container">
+                  <h3 class="companion-preview-card__companion-name">Петя Демин</h3>
+                  <div class="level-progress companion-preview-card__companion-level">
+                    <span class="level-progress__number">80</span> level
+                  </div>
+                  <ul class="companion-preview-card__flag-list" aria-label="Пользователь хочет посетить эти страны">
+                    <li class="companion-preview-card__flag-item">
+                      <div class="tooltip">
+                        <div class="flag tooltip__control" tabindex="0">
+                          <img src="flag" alt="Флаг Бельгии">
+                        </div>
+                        <div class="tooltip__container" aria-hidden="true">Бельгия</div>
+                      </div>
+                    </li>
+                    <li class="companion-preview-card__flag-item">
+                      <div class="tooltip">
+                        <div class="flag tooltip__control" tabindex="0">
+                          <img src="flag" alt="Флаг Чехии">
+                        </div>
+                        <div class="tooltip__container" aria-hidden="true">Чехия</div>
+                      </div>
+                    </li>
+                  </ul>
+                  <ul class="companion-preview-card__hashtag-list">
+                    <li class="companion-preview-card__hashtag-item">
+                      <a class="hashtag" href="">
+                        <span aria-label="hashtag">#</span>бургер
+                      </a>
+                    </li>
+                    <li class="companion-preview-card__hashtag-item">
+                      <a class="hashtag" href="">
+                        <span aria-label="hashtag">#</span>бар
+                      </a>
+                    </li>
+                    <li class="companion-preview-card__hashtag-item">
+                      <a class="hashtag" href="">
+                        <span aria-label="hashtag">#</span>футбол
+                      </a>
+                    </li>
+                    <li class="companion-preview-card__hashtag-item">
+                      <a class="hashtag" href="">
+                        <span aria-label="hashtag">#</span>концерт
+                      </a>
+                    </li>
+                    <li class="companion-preview-card__hashtag-item">
+                      <a class="hashtag" href="">
+                        <span aria-label="hashtag">#</span>крафт
+                      </a>
+                    </li>
+                  </ul>
+                  <ul class="companion-preview-card__transport-list">
+                    <li class="companion-preview-card__transport-item">
+                      <div class="tooltip">
+                        <span class="transport-status transport-status_active tooltip__control" tabindex="0">
+                          <span class="visually-hidden">Этот пользователь путешествует на авиатранспорте</span>
+                        </span>
+                        <div class="tooltip__container" aria-hidden="true">Авиаперелёт</div>
+                      </div>
+                    </li>
+                    <li class="companion-preview-card__transport-item">
+                      <div class="tooltip">
+                        <span class="transport-status transport-status_active tooltip__control" tabindex="0">
+                          <span class="visually-hidden">Этот пользователь путешествует на автотранспорте</span>
+                        </span>
+                        <div class="tooltip__container" aria-hidden="true">Автотранспорт</div>
+                      </div>
+                    </li>
+                    <li class="companion-preview-card__transport-item">
+                      <div class="tooltip">
+                        <span class="transport-status tooltip__control" tabindex="0">
+                          <span class="visually-hidden">Этот пользователь не путешествует на велосипеде</span>
+                        </span>
+                        <div class="tooltip__container" aria-hidden="true">Велосипед</div>
+                      </div>
+                    </li>
+                    <li class="companion-preview-card__transport-item">
+                      <div class="tooltip">
+                        <span class="transport-status transport-status_active tooltip__control" tabindex="0">
+                          <span class="visually-hidden">Этот пользователь путешествует пешком</span>
+                        </span>
+                        <div class="tooltip__container" aria-hidden="true">Пешком</div>
+                      </div>
+                    </li>
+                  </ul>
                 </div>
-                <ul class="companion-preview-card__flag-list" aria-label="Пользователь хочет посетить эти страны">
-                  <li class="companion-preview-card__flag-item">
-                    <div class="tooltip">
-                      <div class="flag tooltip__control" tabindex="0">
-                        <img src="flag" alt="Флаг Бельгии">
-                      </div>
-                      <div class="tooltip__container" aria-hidden="true">Бельгия</div>
-                    </div>
-                  </li>
-                  <li class="companion-preview-card__flag-item">
-                    <div class="tooltip">
-                      <div class="flag tooltip__control" tabindex="0">
-                        <img src="flag" alt="Флаг Чехии">
-                      </div>
-                      <div class="tooltip__container" aria-hidden="true">Чехия</div>
-                    </div>
-                  </li>
-                </ul>
-                <ul class="companion-preview-card__hashtag-list">
-                  <li class="companion-preview-card__hashtag-item">
-                    <a class="hashtag" href="">#бургер</a>
-                  </li>
-                  <li class="companion-preview-card__hashtag-item">
-                    <a class="hashtag" href="">#бар</a>
-                  </li>
-                  <li class="companion-preview-card__hashtag-item">
-                    <a class="hashtag" href="">#футбол</a>
-                  </li>
-                  <li class="companion-preview-card__hashtag-item">
-                    <a class="hashtag" href="">#концерт</a>
-                  </li>
-                  <li class="companion-preview-card__hashtag-item">
-                    <a class="hashtag" href="">#крафт</a>
-                  </li>
-                </ul>
-                <ul class="companion-preview-card__transport-list">
-                  <li class="companion-preview-card__transport-item">
-                    <div class="tooltip">
-                      <span class="transport-status transport-status_active tooltip__control" tabindex="0">
-                        <span class="visually-hidden">Этот пользователь путешествует на авиатранспорте</span>
-                      </span>
-                      <div class="tooltip__container" aria-hidden="true">Авиаперелёт</div>
-                    </div>
-                  </li>
-                  <li class="companion-preview-card__transport-item">
-                    <div class="tooltip">
-                      <span class="transport-status transport-status_active tooltip__control" tabindex="0">
-                        <span class="visually-hidden">Этот пользователь путешествует на автотранспорте</span>
-                      </span>
-                      <div class="tooltip__container" aria-hidden="true">Автотранспорт</div>
-                    </div>
-                  </li>
-                  <li class="companion-preview-card__transport-item">
-                    <div class="tooltip">
-                      <span class="transport-status tooltip__control" tabindex="0">
-                        <span class="visually-hidden">Этот пользователь не путешествует на велосипеде</span>
-                      </span>
-                      <div class="tooltip__container" aria-hidden="true">Велосипед</div>
-                    </div>
-                  </li>
-                  <li class="companion-preview-card__transport-item">
-                    <div class="tooltip">
-                      <span class="transport-status transport-status_active tooltip__control" tabindex="0">
-                        <span class="visually-hidden">Этот пользователь путешествует пешком</span>
-                      </span>
-                      <div class="tooltip__container" aria-hidden="true">Пешком</div>
-                    </div>
-                  </li>
-                </ul>
               </article>
             </li>
           </ul>
-          <a class="button button_big" href="">Показать всех</a>
+          <a class="button button_big" href="catalog.html">Показать всех</a>
         </div>
       </section>
 
@@ -444,29 +470,31 @@
     </main>
 
     <footer class="footer">
-      <a class="logo footer__logo" href="">
-        <img src="logo" alt="Логотип сервиса Погнали?">
+      <a class="logo footer__logo">
+        <img src="logo" alt="Логотип сервиса Погнали">
       </a>
-      <ul class="footer__socials">
-        <li class="footer__social-item">
-          <a class="link social-link" href="">
-            <span class="link__icon"></span>
-            <span class="visually-hidden">Facebook</span>
-          </a>
-        </li>
-        <li class="footer__social-item">
-          <a class="link social-link" href="">
-            <span class="link__icon"></span>
-            <span class="visually-hidden">Вконтакте</span>
-          </a>
-        </li>
-        <li class="footer__social-item">
-          <a class="link social-link" href="">
-            <span class="link__icon"></span>
-            <span class="visually-hidden">Instagram</span>
-          </a>
-        </li>
-      </ul>
+      <address class="footer__contact-info">
+        <ul class="footer__socials">
+          <li class="footer__social-item">
+            <a class="link social-link" href="">
+              <span class="link__icon"></span>
+              <span class="visually-hidden">Facebook</span>
+            </a>
+          </li>
+          <li class="footer__social-item">
+            <a class="link social-link" href="">
+              <span class="link__icon"></span>
+              <span class="visually-hidden">Вконтакте</span>
+            </a>
+          </li>
+          <li class="footer__social-item">
+            <a class="link social-link" href="">
+              <span class="link__icon"></span>
+              <span class="visually-hidden">Instagram</span>
+            </a>
+          </li>
+        </ul>
+      </address>
       <p class="footer__developer-contacts">
         Разработано
         <a class="developer-logo footer__developer-logo" href="https://htmlacademy.ru/intensive/adaptive">
