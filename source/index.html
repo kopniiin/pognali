@@ -159,7 +159,7 @@
             Люди сами пишут о странах, куда хотели бы отправиться
             и чем можно там заняться.
           </p>
-          <ul class="direction-section__country-list">
+          <ul class="direction-section__countries">
             <li class="direction-section__country-item">
               <article class="country-card">
                 <div class="country-card__photo-container">
@@ -168,7 +168,9 @@
                 <div class="country-card__container">
                   <h3 class="country-card__country-name">Тайланд</h3>
                   <div class="flag country-card__flag">
-                    <img src="flag" alt="Флаг Тайланда">
+                    <div class="flag__image-container">
+                      <img src="flag" alt="Флаг Тайланда">
+                    </div>
                   </div>
                   <p class="country-card__text">Джунгли зовут!</p>
                   <p class="country-card__traveler-counter">
@@ -185,7 +187,9 @@
                 <div class="country-card__container">
                   <h3 class="country-card__country-name">Франция</h3>
                   <div class="flag country-card__flag">
-                    <img src="flag" alt="Флаг Франции">
+                    <div class="flag__image-container">
+                      <img src="flag" alt="Флаг Франции">
+                    </div>
                   </div>
                   <p class="country-card__text">Трэ бьен, манифик!</p>
                   <p class="country-card__traveler-counter">
@@ -202,7 +206,9 @@
                 <div class="country-card__container">
                   <h3 class="country-card__country-name">Чехия</h3>
                   <div class="flag country-card__flag">
-                    <img src="flag" alt="Флаг Чехии">
+                    <div class="flag__image-container">
+                      <img src="flag" alt="Флаг Чехии">
+                    </div>
                   </div>
                   <p class="country-card__text">Закоулки старой Европы</p>
                   <p class="country-card__traveler-counter">
@@ -231,42 +237,46 @@
               <article class="companion-preview-card">
                 <div class="companion-preview-card__photo-container">
                   <img src="companion"
-                       alt="Девушка в разноцветном купальнике плавает в чистой светло-голубой воде"
-                       width="270"
-                       height="270">
+                       alt="Девушка в разноцветном купальнике плавает в чистой светло-голубой воде">
                 </div>
                 <div class="companion-preview-card__container">
                   <h3 class="companion-preview-card__companion-name">Таня Фирсова</h3>
                   <div class="level-progress companion-preview-card__companion-level">
                     <span class="level-progress__number">99</span> level
                   </div>
-                  <ul class="companion-preview-card__flag-list" aria-label="Пользователь хочет посетить эти страны">
-                    <li class="companion-preview-card__flag-item">
+                  <ul class="companion-preview-card__countries" aria-label="Пользователь хочет посетить эти страны">
+                    <li class="companion-preview-card__country-item">
                       <div class="tooltip">
                         <div class="flag tooltip__control" tabindex="0">
-                          <img src="flag" alt="Флаг Шри-Ланки">
+                          <div class="flag__image-container">
+                            <img src="flag" alt="Флаг Шри-Ланки">
+                          </div>
                         </div>
                         <div class="tooltip__container" aria-hidden="true">Шри-Ланка</div>
                       </div>
                     </li>
-                    <li class="companion-preview-card__flag-item">
+                    <li class="companion-preview-card__country-item">
                       <div class="tooltip">
                         <div class="flag tooltip__control" tabindex="0">
-                          <img src="flag" alt="Флаг Тайланда">
+                          <div class="flag__image-container">
+                            <img src="flag" alt="Флаг Тайланда">
+                          </div>
                         </div>
                         <div class="tooltip__container" aria-hidden="true">Тайланд</div>
                       </div>
                     </li>
-                    <li class="companion-preview-card__flag-item">
+                    <li class="companion-preview-card__country-item">
                       <div class="tooltip">
                         <div class="flag tooltip__control" tabindex="0">
-                          <img src="flag" alt="Флаг Сейшельский островов">
+                          <div class="flag__image-container">
+                            <img src="flag" alt="Флаг Сейшельский островов">
+                          </div>
                         </div>
                         <div class="tooltip__container" aria-hidden="true">Сейшельские острова</div>
                       </div>
                     </li>
                   </ul>
-                  <ul class="companion-preview-card__hashtag-list">
+                  <ul class="companion-preview-card__hashtags">
                     <li class="companion-preview-card__hashtag-item">
                       <a class="hashtag" href="">
                         <span aria-label="hashtag">#</span>ЗОЖ
@@ -339,34 +349,36 @@
               <article class="companion-preview-card">
                 <div class="companion-preview-card__photo-container">
                   <img src="companion"
-                       alt="Мужчина с рыжей бородой в темных очках, чёрных шапке и кофте стоит зимой в лесу"
-                       width="270"
-                       height="270">
+                       alt="Мужчина с рыжей бородой в темных очках, чёрных шапке и кофте стоит зимой в лесу">
                 </div>
                 <div class="companion-preview-card__container">
                   <h3 class="companion-preview-card__companion-name">Петя Демин</h3>
                   <div class="level-progress companion-preview-card__companion-level">
                     <span class="level-progress__number">80</span> level
                   </div>
-                  <ul class="companion-preview-card__flag-list" aria-label="Пользователь хочет посетить эти страны">
-                    <li class="companion-preview-card__flag-item">
+                  <ul class="companion-preview-card__countries" aria-label="Пользователь хочет посетить эти страны">
+                    <li class="companion-preview-card__country-item">
                       <div class="tooltip">
                         <div class="flag tooltip__control" tabindex="0">
-                          <img src="flag" alt="Флаг Бельгии">
+                          <div class="flag__image-container">
+                            <img src="flag" alt="Флаг Бельгии">
+                          </div>
                         </div>
                         <div class="tooltip__container" aria-hidden="true">Бельгия</div>
                       </div>
                     </li>
-                    <li class="companion-preview-card__flag-item">
+                    <li class="companion-preview-card__country-item">
                       <div class="tooltip">
                         <div class="flag tooltip__control" tabindex="0">
-                          <img src="flag" alt="Флаг Чехии">
+                          <div class="flag__image-container">
+                            <img src="flag" alt="Флаг Чехии">
+                          </div>
                         </div>
                         <div class="tooltip__container" aria-hidden="true">Чехия</div>
                       </div>
                     </li>
                   </ul>
-                  <ul class="companion-preview-card__hashtag-list">
+                  <ul class="companion-preview-card__hashtags">
                     <li class="companion-preview-card__hashtag-item">
                       <a class="hashtag" href="">
                         <span aria-label="hashtag">#</span>бургер
