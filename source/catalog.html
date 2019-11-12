@@ -6,534 +6,550 @@
   </head>
   <body>
 
-  <header class="header">
-    <nav class="main-navigation">
+    <header class="header">
+      <nav class="main-navigation">
+        <a class="logo" href="index.html">
+          <img src="logo" alt="Логотип сервиса Погнали">
+        </a>
+        <button class="burger-button" type="button">
+          <span class="burger-button__text burger-button__text_visually-hidden">Навигационное меню</span>
+        </button>
+        <ul class="main-navigation__site-navigation">
+          <li class="main-navigation__site-navigation-item">
+            <a class="main-navigation__site-navigation-link" href="">О сервисе</a>
+          </li>
+          <li class="main-navigation__site-navigation-item">
+            <a class="main-navigation__site-navigation-link" href="">Направления</a>
+          </li>
+          <li class="main-navigation__site-navigation-item">
+            <a class="main-navigation__site-navigation-link" href="">Попутчики</a>
+          </li>
+        </ul>
+        <a class="button" href="">Авторизация</a>
+        <address class="main-navigation__contact-info">
+          <ul class="main-navigation__contacts">
+            <li class="main-navigation__contact-item">
+              <a href="tel:88005558628">8 800 555-86-28</a>
+            </li>
+            <li class="main-navigation__contact-item">
+              <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+            </li>
+          </ul>
+          <ul class="main-navigation__socials">
+            <li class="main-navigation__social-item">
+              <a href="">Facebook</a>
+            </li>
+            <li class="main-navigation__social-item">
+              <a href="">Вконтакте</a>
+            </li>
+            <li class="main-navigation__social-item">
+              <a href="">Instagram</a>
+            </li>
+          </ul>
+        </address>
+      </nav>
+      <h1 class="header__title">Попутчики</h1>
+    </header>
+
+    <main class="catalog">
+
+      <section class="catalog__companions">
+        <h2>Список попутчиков</h2>
+        <ul class="catalog__companion-list">
+          <li class="catalog__companion-item">
+            <article class="companion-card">
+              <div class="companion-card__image-container">
+                <img src="companion" alt="Девушка в разноцветном купальнике плавает в чистой светло-голубой воде">
+              </div>
+              <h3 class="companion-card__name">Таня Фирсова</h3>
+              <div class="like">
+                <button class="like__button" type="button">
+                  <span class="like__text like__text_visually-hidden">Поставить лайк</span>
+                </button>
+                <span class="like__counter">
+                  1,5 <span aria-label="миллиона">М</span> <span class="like__text like__text_visually-hidden">лайков</span>
+                </span>
+              </div>
+              <ul class="companion-card__hashtags">
+                <li class="companion-card__hashtag-item">
+                  <a class="hashtag" href="">
+                    <span aria-label="hashtag">#</span>ЗОЖ
+                  </a>
+                </li>
+                <li class="companion-card__hashtag-item">
+                  <a class="hashtag" href="">
+                    <span aria-label="hashtag">#</span>ПП
+                  </a>
+                </li>
+                <li class="companion-card__hashtag-item">
+                  <a class="hashtag" href="">
+                    <span aria-label="hashtag">#</span>Фитнес
+                  </a>
+                </li>
+                <li class="companion-card__hashtag-item">
+                  <a class="hashtag" href="">
+                    <span aria-label="hashtag">#</span>пляж
+                  </a>
+                </li>
+                <li class="companion-card__hashtag-item">
+                  <a class="hashtag" href="">
+                    <span aria-label="hashtag">#</span>авокадо
+                  </a>
+                </li>
+                <li class="companion-card__hashtag-item">
+                  <a class="hashtag" href="">
+                    <span aria-label="hashtag">#</span>смузи
+                  </a>
+                </li>
+              </ul>
+              <p class="companion-card__section-title">хочет посетить:</p>
+              <ul class="companion-card__flags">
+                <li class="companion-card__flag-item">
+                  <div class="flag">
+                    <div class="flag__image-container">
+                      <img src="flag" alt="Флаг Шри-Ланки">
+                    </div>
+                    <span class="flag__name">Шри-Ланка</span>
+                  </div>
+                </li>
+                <li class="companion-card__flag-item">
+                  <div class="flag">
+                    <div class="flag__image-container">
+                      <img src="flag" alt="Флаг Тайланда">
+                    </div>
+                    <span class="flag__name">Тайланд</span>
+                  </div>
+                </li>
+                <li class="companion-card__flag-item">
+                  <div class="flag">
+                    <div class="flag__image-container">
+                      <img src="flag" alt="Флаг Сейшелов">
+                    </div>
+                    <span class="flag__name">Сейшелы</span>
+                  </div>
+                </li>
+              </ul>
+              <p class="companion-card__section-title">транспорт:</p>
+              <ul class="companion-card__transports">
+                <li class="companion-card__transport-item">
+                  <div class="tooltip">
+                    <span class="transport transport_active" tabindex="0">
+                      <span class="transport__text transport__text_visually-hidden">
+                        Этот пользователь путешествует на авиатранспорте
+                      </span>
+                    </span>
+                    <div class="tooltip__container" aria-hidden="true">Авиаперелёт</div>
+                  </div>
+                </li>
+                <li class="companion-card__transport-item">
+                  <div class="tooltip">
+                    <span class="transport" tabindex="0">
+                      <span class="transport__text transport__text_visually-hidden">
+                        Этот пользователь не путешествует на автотранспорте
+                      </span>
+                    </span>
+                    <div class="tooltip__container" aria-hidden="true">Автотранспорт</div>
+                  </div>
+                </li>
+                <li class="companion-card__transport-item">
+                  <div class="tooltip">
+                    <span class="transport" tabindex="0">
+                      <span class="transport__text transport__text_visually-hidden">
+                        Этот пользователь не путешествует на велосипеде
+                      </span>
+                    </span>
+                    <div class="tooltip__container" aria-hidden="true">Велосипед</div>
+                  </div>
+                </li>
+                <li class="companion-card__transport-item">
+                  <div class="tooltip">
+                    <span class="transport" tabindex="0">
+                      <span class="transport__text transport__text_visually-hidden">
+                        Этот пользователь не путешествует пешком
+                      </span>
+                    </span>
+                    <div class="tooltip__container" aria-hidden="true">Пешком</div>
+                  </div>
+                </li>
+              </ul>
+              <p class="companion-card__section-title">левел:</p>
+              <div class="level companion-card__companion-level">
+                <span class="level__number">99</span>
+              </div>
+              <a class="button" href="">Позвать!</a>
+            </article>
+          </li>
+          <li class="catalog__companion-item">
+            <article class="companion-card">
+              <div class="companion-card__image-container">
+                <img src="companion" alt="Мужчина с рыжей бородой в темных очках, чёрных шапке и кофте стоит зимой в лесу">
+              </div>
+              <h3 class="companion-card__name">Петя Демин</h3>
+              <div class="like">
+                <button class="like__button" type="button">
+                  <span class="like__text like__text_visually-hidden">Поставить лайк</span>
+                </button>
+                <span class="like__counter">
+                  150 <span class="like__text like__text_visually-hidden">лайков</span>
+                </span>
+              </div>
+              <ul class="companion-card__hashtags">
+                <li class="companion-card__hashtag-item">
+                  <a class="hashtag" href="">
+                    <span aria-label="hashtag">#</span>бургер
+                  </a>
+                </li>
+                <li class="companion-card__hashtag-item">
+                  <a class="hashtag" href="">
+                    <span aria-label="hashtag">#</span>бар
+                  </a>
+                </li>
+                <li class="companion-card__hashtag-item">
+                  <a class="hashtag" href="">
+                    <span aria-label="hashtag">#</span>футбол
+                  </a>
+                </li>
+                <li class="companion-card__hashtag-item">
+                  <a class="hashtag" href="">
+                    <span aria-label="hashtag">#</span>концерт
+                  </a>
+                </li>
+                <li class="companion-card__hashtag-item">
+                  <a class="hashtag" href="">
+                    <span aria-label="hashtag">#</span>крафт
+                  </a>
+                </li>
+              </ul>
+              <p class="companion-card__section-title">хочет посетить:</p>
+              <ul class="companion-card__flags">
+                <li class="companion-card__flag-item">
+                  <div class="flag">
+                    <div class="flag__image-container">
+                      <img src="flag" alt="Флаг Бельгии">
+                    </div>
+                    <span class="flag__name">Бельгия</span>
+                  </div>
+                </li>
+                <li class="companion-card__flag-item">
+                  <div class="flag">
+                    <div class="flag__image-container">
+                      <img src="flag" alt="Флаг Чехии">
+                    </div>
+                    <span class="flag__name">Чехия</span>
+                  </div>
+                </li>
+              </ul>
+              <p class="companion-card__section-title">транспорт:</p>
+              <ul class="companion-card__transports">
+                <li class="companion-card__transport-item">
+                  <div class="tooltip">
+                    <span class="transport transport_active" tabindex="0">
+                      <span class="transport__text transport__text_visually-hidden">
+                        Этот пользователь путешествует на авиатранспорте
+                      </span>
+                    </span>
+                    <div class="tooltip__container" aria-hidden="true">Авиаперелёт</div>
+                  </div>
+                </li>
+                <li class="companion-card__transport-item">
+                  <div class="tooltip">
+                    <span class="transport transport_active" tabindex="0">
+                      <span class="transport__text transport__text_visually-hidden">
+                        Этот пользователь путешествует на автотранспорте
+                      </span>
+                    </span>
+                    <div class="tooltip__container" aria-hidden="true">Автотранспорт</div>
+                  </div>
+                </li>
+                <li class="companion-card__transport-item">
+                  <div class="tooltip">
+                    <span class="transport" tabindex="0">
+                      <span class="transport__text transport__text_visually-hidden">
+                        Этот пользователь не путешествует на велосипеде
+                      </span>
+                    </span>
+                    <div class="tooltip__container" aria-hidden="true">Велосипед</div>
+                  </div>
+                </li>
+                <li class="companion-card__transport-item">
+                  <div class="tooltip">
+                    <span class="transport transport_active" tabindex="0">
+                      <span class="transport__text transport__text_visually-hidden">
+                        Этот пользователь путешествует пешком
+                      </span>
+                    </span>
+                    <div class="tooltip__container" aria-hidden="true">Пешком</div>
+                  </div>
+                </li>
+              </ul>
+              <p class="companion-card__section-title">левел:</p>
+              <div class="level">
+                <span class="level__number">80</span>
+              </div>
+              <a class="button" href="">Позвать!</a>
+            </article>
+          </li>
+          <li class="catalog__companion-item">
+            <article class="companion-card">
+              <div class="companion-card__image-container">
+                <img src="companion" alt="Парень в уличной одежде и татуировками сидит на крыше чёрной машины">
+              </div>
+              <h3 class="companion-card__name">Марк Смолов</h3>
+              <div class="like">
+                <button class="like__button" type="button">
+                  <span class="like__text like__text_visually-hidden">Поставить лайк</span>
+                </button>
+                <span class="like__counter">
+                  1700 <span class="like__text like__text_visually-hidden">лайков</span>
+                </span>
+              </div>
+              <ul class="companion-card__hashtags">
+                <li class="companion-card__hashtag-item">
+                  <a class="hashtag" href="">
+                    <span aria-label="hashtag">#</span>рэп
+                  </a>
+                </li>
+                <li class="companion-card__hashtag-item">
+                  <a class="hashtag" href="">
+                    <span aria-label="hashtag">#</span>тату
+                  </a>
+                </li>
+                <li class="companion-card__hashtag-item">
+                  <a class="hashtag" href="">
+                    <span aria-label="hashtag">#</span>хайпбист
+                  </a>
+                </li>
+                <li class="companion-card__hashtag-item">
+                  <a class="hashtag" href="">
+                    <span aria-label="hashtag">#</span>кроссовки
+                  </a>
+                </li>
+                <li class="companion-card__hashtag-item">
+                  <a class="hashtag" href="">
+                    <span aria-label="hashtag">#</span>суприм
+                  </a>
+                </li>
+              </ul>
+              <p class="companion-card__section-title">хочет посетить:</p>
+              <ul class="companion-card__flags">
+                <li class="companion-card__flag-item">
+                  <div class="flag">
+                    <div class="flag__image-container">
+                      <img src="flag" alt="Флаг США">
+                    </div>
+                    <span class="flag__name">США</span>
+                  </div>
+                </li>
+                <li class="companion-card__flag-item">
+                  <div class="flag">
+                    <div class="flag__image-container">
+                      <img src="flag" alt="Флаг Австралии">
+                    </div>
+                    <span class="flag__name">Австралия</span>
+                  </div>
+                </li>
+                <li class="companion-card__flag-item">
+                  <div class="flag">
+                    <div class="flag__image-container">
+                      <img src="flag" alt="Флаг Доминиканы">
+                    </div>
+                    <span class="flag__name">Доминикана</span>
+                  </div>
+                </li>
+              </ul>
+              <p class="companion-card__section-title">транспорт:</p>
+              <ul class="companion-card__transports">
+                <li class="companion-card__transport-item">
+                  <div class="tooltip">
+                    <span class="transport transport_active" tabindex="0">
+                      <span class="transport__text transport__text_visually-hidden">
+                        Этот пользователь путешествует на авиатранспорте
+                      </span>
+                    </span>
+                    <div class="tooltip__container" aria-hidden="true">Авиаперелёт</div>
+                  </div>
+                </li>
+                <li class="companion-card__transport-item">
+                  <div class="tooltip">
+                    <span class="transport" tabindex="0">
+                      <span class="transport__text transport__text_visually-hidden">
+                        Этот пользователь не путешествует на автотранспорте
+                      </span>
+                    </span>
+                    <div class="tooltip__container" aria-hidden="true">Автотранспорт</div>
+                  </div>
+                </li>
+                <li class="companion-card__transport-item">
+                  <div class="tooltip">
+                    <span class="transport transport_active" tabindex="0">
+                      <span class="transport__text transport__text_visually-hidden">
+                        Этот пользователь путешествует на велосипеде
+                      </span>
+                    </span>
+                    <div class="tooltip__container" aria-hidden="true">Велосипед</div>
+                  </div>
+                </li>
+                <li class="companion-card__transport-item">
+                  <div class="tooltip">
+                    <span class="transport" tabindex="0">
+                      <span class="transport__text transport__text_visually-hidden">
+                        Этот пользователь не путешествует пешком
+                      </span>
+                    </span>
+                    <div class="tooltip__container" aria-hidden="true">Пешком</div>
+                  </div>
+                </li>
+              </ul>
+              <p class="companion-card__section-title">левел:</p>
+              <div class="level">
+                <span class="level__number">25</span>
+              </div>
+              <a class="button" href="">Позвать!</a>
+            </article>
+          </li>
+          <li class="catalog__companion-item">
+            <article class="companion-card">
+              <div class="companion-card__image-container">
+                <img src="companion" alt="Девушка в деловом синем костюме">
+              </div>
+              <h3 class="companion-card__name">Лариса Роговая</h3>
+              <div class="like">
+                <button class="like__button" type="button">
+                  <span class="like__text like__text_visually-hidden">Поставить лайк</span>
+                </button>
+                <span class="like__counter">
+                  23 <span class="like__text like__text_visually-hidden">лайка</span>
+                </span>
+              </div>
+              <ul class="companion-card__hashtags">
+                <li class="companion-card__hashtag-item">
+                  <a class="hashtag" href="">
+                    <span aria-label="hashtag">#</span>образование
+                  </a>
+                </li>
+                <li class="companion-card__hashtag-item">
+                  <a class="hashtag" href="">
+                    <span aria-label="hashtag">#</span>карьера
+                  </a>
+                </li>
+                <li class="companion-card__hashtag-item">
+                  <a class="hashtag" href="">
+                    <span aria-label="hashtag">#</span>учеба
+                  </a>
+                </li>
+                <li class="companion-card__hashtag-item">
+                  <a class="hashtag" href="">
+                    <span aria-label="hashtag">#</span>линкедин
+                  </a>
+                </li>
+              </ul>
+              <p class="companion-card__section-title">хочет посетить:</p>
+              <ul class="companion-card__flags">
+                <li class="companion-card__flag-item">
+                  <div class="flag">
+                    <div class="flag__image-container">
+                      <img src="flag" alt="Флаг Великобритании">
+                    </div>
+                    <span class="flag__name">Великобритания</span>
+                  </div>
+                </li>
+                <li class="companion-card__flag-item">
+                  <div class="flag">
+                    <div class="flag__image-container">
+                      <img src="flag" alt="Флаг Германии">
+                    </div>
+                    <span class="flag__name">Германия</span>
+                  </div>
+                </li>
+              </ul>
+              <p class="companion-card__section-title">транспорт:</p>
+              <ul class="companion-card__transports">
+                <li class="companion-card__transport-item">
+                  <div class="tooltip">
+                    <span class="transport transport_active" tabindex="0">
+                      <span class="transport__text transport__text_visually-hidden">
+                        Этот пользователь путешествует на авиатранспорте
+                      </span>
+                    </span>
+                    <div class="tooltip__container" aria-hidden="true">Авиаперелёт</div>
+                  </div>
+                </li>
+                <li class="companion-card__transport-item">
+                  <div class="tooltip">
+                    <span class="transport transport_active" tabindex="0">
+                      <span class="transport__text transport__text_visually-hidden">
+                        Этот пользователь путешествует на автотранспорте
+                      </span>
+                    </span>
+                    <div class="tooltip__container" aria-hidden="true">Автотранспорт</div>
+                  </div>
+                </li>
+                <li class="companion-card__transport-item">
+                  <div class="tooltip">
+                    <span class="transport" tabindex="0">
+                      <span class="transport__text transport__text_visually-hidden">
+                        Этот пользователь не путешествует на велосипеде
+                      </span>
+                    </span>
+                    <div class="tooltip__container" aria-hidden="true">Велосипед</div>
+                  </div>
+                </li>
+                <li class="companion-card__transport-item">
+                  <div class="tooltip">
+                    <span class="transport" tabindex="0">
+                      <span class="transport__text transport__text_visually-hidden">
+                        Этот пользователь не путешествует пешком
+                      </span>
+                    </span>
+                    <div class="tooltip__container" aria-hidden="true">Пешком</div>
+                  </div>
+                </li>
+              </ul>
+              <p class="companion-card__section-title">левел:</p>
+              <div class="level companion-card__companion-level">
+                <span class="level__number">50</span>
+              </div>
+              <a class="button" href="">Позвать!</a>
+            </article>
+          </li>
+        </ul>
+        <a href="">Показать еще</a>
+        <div class="pagination">
+          <a class="pagination__control" href="">
+            <span class="pagination__text pagination__text_visually-hidden">Предыдущая страница каталога</span>
+          </a>
+          <a class="pagination__control" href="">
+            <span class="pagination__text pagination__text_visually-hidden">Следующая страница каталога</span>
+          </a>
+        </div>
+      </section>
+
+    </main>
+
+    <footer class="footer">
       <a class="logo" href="index.html">
         <img src="logo" alt="Логотип сервиса Погнали">
       </a>
-      <button class="burger-button" type="button">
-        <span class="burger-button__text burger-button__text_visually-hidden">Навигационное меню</span>
-      </button>
-      <ul class="main-navigation__site-navigation">
-        <li class="main-navigation__site-navigation-item">
-          <a class="main-navigation__site-navigation-link" href="">О сервисе</a>
-        </li>
-        <li class="main-navigation__site-navigation-item">
-          <a class="main-navigation__site-navigation-link" href="">Направления</a>
-        </li>
-        <li class="main-navigation__site-navigation-item">
-          <a class="main-navigation__site-navigation-link" href="">Попутчики</a>
-        </li>
-      </ul>
-      <a class="button" href="">Авторизация</a>
-      <address class="main-navigation__contact-info">
-        <ul class="main-navigation__contacts">
-          <li class="main-navigation__contact-item">
-            <a href="tel:88005558628">8 800 555-86-28</a>
-          </li>
-          <li class="main-navigation__contact-item">
-            <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
-          </li>
-        </ul>
-        <ul class="main-navigation__socials">
-          <li class="main-navigation__social-item">
+      <address class="footer__contact-info">
+        <ul class="footer__socials">
+          <li class="footer__social-item">
             <a href="">Facebook</a>
           </li>
-          <li class="main-navigation__social-item">
+          <li class="footer__social-item">
             <a href="">Вконтакте</a>
           </li>
-          <li class="main-navigation__social-item">
+          <li class="footer__social-item">
             <a href="">Instagram</a>
           </li>
         </ul>
       </address>
-    </nav>
-    <h1 class="header__title">Попутчики</h1>
-  </header>
-
-  <main class="catalog">
-
-    <section class="catalog__companions">
-      <h2 class="visually-hidden">Список попутчиков</h2>
-      <ul class="catalog__companion-list">
-        <li class="catalog__companion-item">
-          <article class="companion-card">
-            <h3 class="companion-card__companion-name">Таня Фирсова</h3>
-            <div class="companion-card__photo-container">
-              <img src="companion" alt="Девушка в разноцветном купальнике плавает в чистой светло-голубой воде">
-            </div>
-            <div class="like like_liked companion-card__like">
-              <button class="like__button" type="button">
-                <span class="visually-hidden">Поставить лайк</span>
-              </button>
-              <span class="like__counter">
-                1,5 <span aria-label="миллиона">М</span> <span class="visually-hidden">лайков</span>
-              </span>
-            </div>
-            <ul class="companion-card__hashtags">
-              <li class="companion-card__hashtag-item">
-                <a class="hashtag" href="">
-                  <span aria-label="hashtag">#</span>ЗОЖ
-                </a>
-              </li>
-              <li class="companion-card__hashtag-item">
-                <a class="hashtag" href="">
-                  <span aria-label="hashtag">#</span>ПП
-                </a>
-              </li>
-              <li class="companion-card__hashtag-item">
-                <a class="hashtag" href="">
-                  <span aria-label="hashtag">#</span>Фитнес
-                </a>
-              </li>
-              <li class="companion-card__hashtag-item">
-                <a class="hashtag" href="">
-                  <span aria-label="hashtag">#</span>пляж
-                </a>
-              </li>
-              <li class="companion-card__hashtag-item">
-                <a class="hashtag" href="">
-                  <span aria-label="hashtag">#</span>авокадо
-                </a>
-              </li>
-              <li class="companion-card__hashtag-item">
-                <a class="hashtag" href="">
-                  <span aria-label="hashtag">#</span>смузи
-                </a>
-              </li>
-            </ul>
-            <p class="companion-card__section-title">хочет посетить:</p>
-            <ul class="companion-card__countries">
-              <li class="companion-card__country-item">
-                <div class="flag">
-                  <div class="flag__image-container">
-                    <img src="flag" alt="Флаг Шри-Ланки">
-                  </div>
-                  <span class="flag__country-name">Шри-Ланка</span>
-                </div>
-              </li>
-              <li class="companion-card__country-item">
-                <div class="flag">
-                  <div class="flag__image-container">
-                    <img src="flag" alt="Флаг Тайланда">
-                  </div>
-                  <span class="flag__country-name">Тайланд</span>
-                </div>
-              </li>
-              <li class="companion-card__country-item">
-                <div class="flag">
-                  <div class="flag__image-container">
-                    <img src="flag" alt="Флаг Сейшелов">
-                  </div>
-                  <span class="flag__country-name">Сейшелы</span>
-                </div>
-              </li>
-            </ul>
-            <p class="companion-card__section-title">транспорт:</p>
-            <ul class="companion-card__transport-list">
-              <li class="companion-card__transport-item">
-                <div class="tooltip">
-                  <span class="transport-status transport-status_active tooltip__control" tabindex="0">
-                    <span class="visually-hidden">Этот пользователь путешествует на авиатранспорте</span>
-                  </span>
-                  <div class="tooltip__container" aria-hidden="true">Авиаперелёт</div>
-                </div>
-              </li>
-              <li class="companion-card__transport-item">
-                <div class="tooltip">
-                  <span class="transport-status tooltip__control" tabindex="0">
-                    <span class="visually-hidden">Этот пользователь не путешествует на автотранспорте</span>
-                  </span>
-                  <div class="tooltip__container" aria-hidden="true">Автотранспорт</div>
-                </div>
-              </li>
-              <li class="companion-card__transport-item">
-                <div class="tooltip">
-                  <span class="transport-status tooltip__control" tabindex="0">
-                    <span class="visually-hidden">Этот пользователь не путешествует на велосипеде</span>
-                  </span>
-                  <div class="tooltip__container" aria-hidden="true">Велосипед</div>
-                </div>
-              </li>
-              <li class="companion-card__transport-item">
-                <div class="tooltip">
-                  <span class="transport-status tooltip__control" tabindex="0">
-                    <span class="visually-hidden">Этот пользователь не путешествует пешком</span>
-                  </span>
-                  <div class="tooltip__container" aria-hidden="true">Пешком</div>
-                </div>
-              </li>
-            </ul>
-            <p class="companion-card__section-title">левел:</p>
-            <div class="level-progress companion-card__companion-level">
-              <span class="level-progress__number">99</span>
-              <span class="visually-hidden">уровень</span>
-            </div>
-            <a class="button" href="">Позвать!</a>
-          </article>
-        </li>
-        <li class="catalog__companion-item">
-          <article class="companion-card">
-            <h3 class="companion-card__companion-name">Петя Демин</h3>
-            <div class="companion-card__photo-container">
-              <img src="companion" alt="Мужчина с рыжей бородой в темных очках, чёрных шапке и кофте стоит зимой в лесу">
-            </div>
-            <div class="like companion-card__like">
-              <button class="like__button" type="button">
-                <span class="visually-hidden">Поставить лайк</span>
-              </button>
-              <span class="like__counter">
-                150 <span class="visually-hidden">лайков</span>
-              </span>
-            </div>
-            <ul class="companion-card__hashtags">
-              <li class="companion-card__hashtag-item">
-                <a class="hashtag" href="">
-                  <span aria-label="hashtag">#</span>бургер
-                </a>
-              </li>
-              <li class="companion-card__hashtag-item">
-                <a class="hashtag" href="">
-                  <span aria-label="hashtag">#</span>бар
-                </a>
-              </li>
-              <li class="companion-card__hashtag-item">
-                <a class="hashtag" href="">
-                  <span aria-label="hashtag">#</span>футбол
-                </a>
-              </li>
-              <li class="companion-card__hashtag-item">
-                <a class="hashtag" href="">
-                  <span aria-label="hashtag">#</span>концерт
-                </a>
-              </li>
-              <li class="companion-card__hashtag-item">
-                <a class="hashtag" href="">
-                  <span aria-label="hashtag">#</span>крафт
-                </a>
-              </li>
-            </ul>
-            <p class="companion-card__section-title">хочет посетить:</p>
-            <ul class="companion-card__countries">
-              <li class="companion-card__country-item">
-                <div class="flag">
-                  <div class="flag__image-container">
-                    <img src="flag" alt="Флаг Бельгии">
-                  </div>
-                  <span class="flag__country-name">Бельгия</span>
-                </div>
-              </li>
-              <li class="companion-card__country-item">
-                <div class="flag">
-                  <div class="flag__image-container">
-                    <img src="flag" alt="Флаг Чехии">
-                  </div>
-                  <span class="flag__country-name">Чехия</span>
-                </div>
-              </li>
-            </ul>
-            <p class="companion-card__section-title">транспорт:</p>
-            <ul class="companion-card__transport-list">
-              <li class="companion-card__transport-item">
-                <div class="tooltip">
-                  <span class="transport-status transport-status_active tooltip__control" tabindex="0">
-                    <span class="visually-hidden">Этот пользователь путешествует на авиатранспорте</span>
-                  </span>
-                  <div class="tooltip__container" aria-hidden="true">Авиаперелёт</div>
-                </div>
-              </li>
-              <li class="companion-card__transport-item">
-                <div class="tooltip">
-                  <span class="transport-status transport-status_active tooltip__control" tabindex="0">
-                    <span class="visually-hidden">Этот пользователь путешествует на автотранспорте</span>
-                  </span>
-                  <div class="tooltip__container" aria-hidden="true">Автотранспорт</div>
-                </div>
-              </li>
-              <li class="companion-card__transport-item">
-                <div class="tooltip">
-                  <span class="transport-status tooltip__control" tabindex="0">
-                    <span class="visually-hidden">Этот пользователь не путешествует на велосипеде</span>
-                  </span>
-                  <div class="tooltip__container" aria-hidden="true">Велосипед</div>
-                </div>
-              </li>
-              <li class="companion-card__transport-item">
-                <div class="tooltip">
-                  <span class="transport-status transport-status_active tooltip__control" tabindex="0">
-                    <span class="visually-hidden">Этот пользователь путешествует пешком</span>
-                  </span>
-                  <div class="tooltip__container" aria-hidden="true">Пешком</div>
-                </div>
-              </li>
-            </ul>
-            <p class="companion-card__section-title">левел:</p>
-            <div class="level-progress companion-card__companion-level">
-              <span class="level-progress__number">80</span>
-              <span class="visually-hidden">уровень</span>
-            </div>
-            <a class="button" href="">Позвать!</a>
-          </article>
-        </li>
-        <li class="catalog__companion-item">
-          <article class="companion-card">
-            <h3 class="companion-card__companion-name">Марк Смолов</h3>
-            <div class="companion-card__photo-container">
-              <img src="companion" alt="Парень в уличной одежде и татуировками сидит на крыше чёрной машины">
-            </div>
-            <div class="like companion-card__like">
-              <button class="like__button" type="button">
-                <span class="visually-hidden">Поставить лайк</span>
-              </button>
-              <span class="like__counter">
-                1700 <span class="visually-hidden">лайков</span>
-              </span>
-            </div>
-            <ul class="companion-card__hashtags">
-              <li class="companion-card__hashtag-item">
-                <a class="hashtag" href="">
-                  <span aria-label="hashtag">#</span>рэп
-                </a>
-              </li>
-              <li class="companion-card__hashtag-item">
-                <a class="hashtag" href="">
-                  <span aria-label="hashtag">#</span>тату
-                </a>
-              </li>
-              <li class="companion-card__hashtag-item">
-                <a class="hashtag" href="">
-                  <span aria-label="hashtag">#</span>хайпбист
-                </a>
-              </li>
-              <li class="companion-card__hashtag-item">
-                <a class="hashtag" href="">
-                  <span aria-label="hashtag">#</span>кроссовки
-                </a>
-              </li>
-              <li class="companion-card__hashtag-item">
-                <a class="hashtag" href="">
-                  <span aria-label="hashtag">#</span>суприм
-                </a>
-              </li>
-            </ul>
-            <p class="companion-card__section-title">хочет посетить:</p>
-            <ul class="companion-card__countries">
-              <li class="companion-card__country-item">
-                <div class="flag">
-                  <div class="flag__image-container">
-                    <img src="flag" alt="Флаг США">
-                  </div>
-                  <span class="flag__country-name">США</span>
-                </div>
-              </li>
-              <li class="companion-card__country-item">
-                <div class="flag">
-                  <div class="flag__image-container">
-                    <img src="flag" alt="Флаг Австралии">
-                  </div>
-                  <span class="flag__country-name">Австралия</span>
-                </div>
-              </li>
-              <li class="companion-card__country-item">
-                <div class="flag">
-                  <div class="flag__image-container">
-                    <img src="flag" alt="Флаг Доминиканы">
-                  </div>
-                  <span class="flag__country-name">Доминикана</span>
-                </div>
-              </li>
-            </ul>
-            <p class="companion-card__section-title">транспорт:</p>
-            <ul class="companion-card__transport-list">
-              <li class="companion-card__transport-item">
-                <div class="tooltip">
-                  <span class="transport-status transport-status_active tooltip__control" tabindex="0">
-                    <span class="visually-hidden">Этот пользователь путешествует на авиатранспорте</span>
-                  </span>
-                  <div class="tooltip__container" aria-hidden="true">Авиаперелёт</div>
-                </div>
-              </li>
-              <li class="companion-card__transport-item">
-                <div class="tooltip">
-                  <span class="transport-status tooltip__control" tabindex="0">
-                    <span class="visually-hidden">Этот пользователь не путешествует на автотранспорте</span>
-                  </span>
-                  <div class="tooltip__container" aria-hidden="true">Автотранспорт</div>
-                </div>
-              </li>
-              <li class="companion-card__transport-item">
-                <div class="tooltip">
-                  <span class="transport-status transport-status_active tooltip__control" tabindex="0">
-                    <span class="visually-hidden">Этот пользователь путешествует на велосипеде</span>
-                  </span>
-                  <div class="tooltip__container" aria-hidden="true">Велосипед</div>
-                </div>
-              </li>
-              <li class="companion-card__transport-item">
-                <div class="tooltip">
-                  <span class="transport-status tooltip__control" tabindex="0">
-                    <span class="visually-hidden">Этот пользователь не путешествует пешком</span>
-                  </span>
-                  <div class="tooltip__container" aria-hidden="true">Пешком</div>
-                </div>
-              </li>
-            </ul>
-            <p class="companion-card__section-title">левел:</p>
-            <div class="level-progress companion-card__companion-level">
-              <span class="level-progress__number">25</span>
-              <span class="visually-hidden">уровень</span>
-            </div>
-            <a class="button" href="">Позвать!</a>
-          </article>
-        </li>
-        <li class="catalog__companion-item">
-          <article class="companion-card">
-            <h3 class="companion-card__companion-name">Лариса Роговая</h3>
-            <div class="companion-card__photo-container">
-              <img src="companion" alt="Девушка в деловом синем костюме">
-            </div>
-            <div class="like companion-card__like">
-              <button class="like__button" type="button">
-                <span class="visually-hidden">Поставить лайк</span>
-              </button>
-              <span class="like__counter">
-                23 <span class="visually-hidden">лайка</span>
-              </span>
-            </div>
-            <ul class="companion-card__hashtags">
-              <li class="companion-card__hashtag-item">
-                <a class="hashtag" href="">
-                  <span aria-label="hashtag">#</span>образование
-                </a>
-              </li>
-              <li class="companion-card__hashtag-item">
-                <a class="hashtag" href="">
-                  <span aria-label="hashtag">#</span>карьера
-                </a>
-              </li>
-              <li class="companion-card__hashtag-item">
-                <a class="hashtag" href="">
-                  <span aria-label="hashtag">#</span>учеба
-                </a>
-              </li>
-              <li class="companion-card__hashtag-item">
-                <a class="hashtag" href="">
-                  <span aria-label="hashtag">#</span>линкедин
-                </a>
-              </li>
-            </ul>
-            <p class="companion-card__section-title">хочет посетить:</p>
-            <ul class="companion-card__countries">
-              <li class="companion-card__country-item">
-                <div class="flag">
-                  <div class="flag__image-container">
-                    <img src="flag" alt="Флаг Великобритании">
-                  </div>
-                  <span class="flag__country-name">Великобритания</span>
-                </div>
-              </li>
-              <li class="companion-card__country-item">
-                <div class="flag">
-                  <div class="flag__image-container">
-                    <img src="flag" alt="Флаг Германии">
-                  </div>
-                  <span class="flag__country-name">Германия</span>
-                </div>
-              </li>
-            </ul>
-            <p class="companion-card__section-title">транспорт:</p>
-            <ul class="companion-card__transport-list">
-              <li class="companion-card__transport-item">
-                <div class="tooltip">
-                  <span class="transport-status transport-status_active tooltip__control" tabindex="0">
-                    <span class="visually-hidden">Этот пользователь путешествует на авиатранспорте</span>
-                  </span>
-                  <div class="tooltip__container" aria-hidden="true">Авиаперелёт</div>
-                </div>
-              </li>
-              <li class="companion-card__transport-item">
-                <div class="tooltip">
-                  <span class="transport-status transport-status_active tooltip__control" tabindex="0">
-                    <span class="visually-hidden">Этот пользователь путешествует на автотранспорте</span>
-                  </span>
-                  <div class="tooltip__container" aria-hidden="true">Автотранспорт</div>
-                </div>
-              </li>
-              <li class="companion-card__transport-item">
-                <div class="tooltip">
-                  <span class="transport-status tooltip__control" tabindex="0">
-                    <span class="visually-hidden">Этот пользователь не путешествует на велосипеде</span>
-                  </span>
-                  <div class="tooltip__container" aria-hidden="true">Велосипед</div>
-                </div>
-              </li>
-              <li class="companion-card__transport-item">
-                <div class="tooltip">
-                  <span class="transport-status tooltip__control" tabindex="0">
-                    <span class="visually-hidden">Этот пользователь не путешествует пешком</span>
-                  </span>
-                  <div class="tooltip__container" aria-hidden="true">Пешком</div>
-                </div>
-              </li>
-            </ul>
-            <p class="companion-card__section-title">левел:</p>
-            <div class="level-progress companion-card__companion-level">
-              <span class="level-progress__number">50</span>
-              <span class="visually-hidden">уровень</span>
-            </div>
-            <a class="button" href="">Позвать!</a>
-          </article>
-        </li>
-      </ul>
-      <a class="link" href="">
-        <span class="link__icon"></span>
-        <span class="link__text">Показать еще</span>
-      </a>
-      <div class="pagination">
-        <a class="pagination__control" href="">
-          <span class="visually-hidden">Предыдущая страница каталога</span>
+      <p class="footer__developer-info">
+        Разработано
+        <a class="developer-logo" href="https://htmlacademy.ru/intensive/adaptive">
+          <img src="academy" alt="Логотип онлайн-школы по разработке интерфейсов HTML Academy">
         </a>
-        <a class="pagination__control" href="">
-          <span class="visually-hidden">Следующая страница каталога</span>
-        </a>
-      </div>
-    </section>
-
-  </main>
-
-  <footer class="footer">
-    <a class="logo footer__logo" href="index.html">
-      <img src="logo" alt="Логотип сервиса Погнали">
-    </a>
-    <address class="footer__contact-info">
-      <ul class="footer__socials">
-        <li class="footer__social-item">
-          <a class="link social-link" href="">
-            <span class="link__icon"></span>
-            <span class="visually-hidden">Facebook</span>
-          </a>
-        </li>
-        <li class="footer__social-item">
-          <a class="link social-link" href="">
-            <span class="link__icon"></span>
-            <span class="visually-hidden">Вконтакте</span>
-          </a>
-        </li>
-        <li class="footer__social-item">
-          <a class="link social-link" href="">
-            <span class="link__icon"></span>
-            <span class="visually-hidden">Instagram</span>
-          </a>
-        </li>
-      </ul>
-    </address>
-    <p class="footer__developer-contacts">
-      Разработано
-      <a class="developer-logo footer__developer-logo" href="https://htmlacademy.ru/intensive/adaptive">
-        <img src="academy" alt="Логотип онлайн-школы по разработке интерфейсов HTML Academy">
-      </a>
-    </p>
-  </footer>
+      </p>
+    </footer>
 
   </body>
 </html>
