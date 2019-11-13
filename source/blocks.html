@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>блоки</title>
+  </head>
+  <body>
+
+<!--блок аватарки-->
+
+  <div class="avatar">
+    <img src="avatar" alt="Пользователь">
+  </div>
+
+<!--блок лайка-->
+
+  <div class="like">
+    <button class="like__button" type="button">
+      <span class="like__text like__text_visually-hidden">Лайк</span>
+    </button>
+    <span class="like__counter">
+      10 <span class="like__text like__text_visually-hidden">лайков</span>
+    </span>
+  </div>
+
+<!--блок тэга-->
+
+  <a class="tag" href="">
+    <span aria-label="тэг">#</span>интерфейс
+  </a>
+
+<!--блок списка тегов-->
+
+  <section class="tags">
+    <h4 class="tags__title">теги:</h4>
+    <ul class="tags__tag-list">
+      <li class="tags__tag-item">
+        <a class="tag" href="">
+          <span aria-label="тэг">#</span>наставник
+        </a>
+      </li>
+      <li class="tags__tag-item">
+        <a class="tag" href="">
+          <span aria-label="тэг">#</span>академия
+        </a>
+      </li>
+    </ul>
+  </section>
+
+<!--блок флага-->
+
+  <div class="flag">
+    <div class="flag__image-container">
+      <img src="flag" alt="Флаг России">
+    </div>
+    <span class="flag__name">Россия</span>
+  </div>
+
+<!--блок списка флагов-->
+
+  <section class="flags">
+    <h4 class="flags__title">хочет посетить:</h4>
+    <ul class="flags__flag-list">
+      <li class="flags__flag-item">
+        <div class="flag">
+          <div class="flag__image-container">
+            <img src="flag" alt="Флаг России">
+          </div>
+          <span class="flag__name">Россия</span>
+        </div>
+      </li>
+      <li class="flags__flag-item">
+        <div class="flag">
+          <div class="flag__image-container">
+            <img src="flag" alt="Флаг Норвегии">
+          </div>
+          <span class="flag__name">Норвегия</span>
+        </div>
+      </li>
+    </ul>
+  </section>
+
+<!--блок транспорта-->
+
+  <div class="transport">
+    <span class="transport__text transport__text_visually-hidden">
+      Этот пользователь не путешествует пешком
+    </span>
+  </div>
+
+<!--блок списка транспорта-->
+
+  <section class="transports">
+    <h4 class="transports__title">транспорт:</h4>
+    <ul class="transports__transport-list">
+      <li class="transport-item">
+        <div class="transport">
+          <span class="transport__text transport__text_visually-hidden">
+            Этот пользователь не путешествует пешком
+          </span>
+        </div>
+      </li>
+      <li class="transport-item">
+        <div class="transport transport_active">
+          <span class="transport__text transport__text_visually-hidden">
+            Этот пользователь путешествует на велосипеде
+          </span>
+        </div>
+      </li>
+    </ul>
+  </section>
+
+<!--блок кнопки-->
+
+  <a class="button" href="">Позвать!</a>
+
+  </body>
+</html>
