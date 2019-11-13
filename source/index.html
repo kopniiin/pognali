@@ -4,9 +4,472 @@
     <meta charset="utf-8">
     <title>HTML Academy: Погнали</title>
   </head>
-  <body>
+  <body class="page">
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS, уровень 2</a>».</p>
+    <header class="header">
+      <nav class="main-navigation">
+        <a class="logo">
+          <img src="logo" alt="Логотип сервиса Погнали">
+        </a>
+        <button class="burger-button" type="button">
+          <span class="burger-button__text burger-button__text_visually-hidden">Навигационное меню</span>
+        </button>
+        <ul class="main-navigation__site-navigation">
+          <li class="main-navigation__site-navigation-item">
+            <a class="main-navigation__site-navigation-link" href="">О сервисе</a>
+          </li>
+          <li class="main-navigation__site-navigation-item">
+            <a class="main-navigation__site-navigation-link" href="">Направления</a>
+          </li>
+          <li class="main-navigation__site-navigation-item">
+            <a class="main-navigation__site-navigation-link" href="">Попутчики</a>
+          </li>
+        </ul>
+        <a class="button" href="">Авторизация</a>
+        <address class="main-navigation__contact-info">
+          <ul class="main-navigation__contacts">
+            <li class="main-navigation__contact-item">
+              <a href="tel:88005558628">8 800 555-86-28</a>
+            </li>
+            <li class="main-navigation__contact-item">
+              <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+            </li>
+          </ul>
+          <ul class="main-navigation__socials">
+            <li class="main-navigation__social-item">
+              <a href="">Facebook</a>
+            </li>
+            <li class="main-navigation__social-item">
+              <a href="">Вконтакте</a>
+            </li>
+            <li class="main-navigation__social-item">
+              <a href="">Instagram</a>
+            </li>
+          </ul>
+        </address>
+      </nav>
+      <b class="header__slogan">
+        В путешествие с крутыми попутчиками!
+      </b>
+      <ul class="header__additional-navigation">
+        <li class="header__additional-navigation-item">
+          <a href="tel:88005558628">8 800 555-86-28</a>
+        </li>
+        <li class="header__additional-navigation-item">
+          <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+        </li>
+        <li class="header__additional-navigation-item">
+          <a class="button" href="">Авторизация</a>
+        </li>
+      </ul>
+      <blockquote class="header__review">
+        <p>«Лучшее приложение, что я видел в жизни!»</p>
+        <cite>Мурат Эльтазинглавный редактор газеты «гаджетлайф»</cite>
+      </blockquote>
+      <div class="algorithm">
+        <ol class="algorithm__list">
+          <li class="algorithm__action">
+            <span class="algorithm__action-number">
+              <span class="algorithm__text algorithm__text_visually-hidden">Шаг №</span> 1
+            </span>
+            <p class="algorithm__action-description">Выберите направление</p>
+          </li>
+          <li class="algorithm__action">
+            <span class="algorithm__action-number">
+              <span class="algorithm__text algorithm__text_visually-hidden">Шаг №</span> 2
+            </span>
+            <p class="algorithm__action-description">Изучите идеи путешественников</p>
+          </li>
+          <li class="algorithm__action">
+            <span class="algorithm__action-number">
+              <span class="algorithm__text algorithm__text_visually-hidden">Шаг №</span> 3
+            </span>
+            <p class="algorithm__action-description">Находите тех, кто похож на вас</p>
+          </li>
+          <li class="algorithm__action">
+            <span class="algorithm__action-number">
+              <span class="algorithm__text algorithm__text_visually-hidden">Шаг №</span> 4
+            </span>
+            <p class="algorithm__action-description">Путешествуйте вместе!</p>
+          </li>
+        </ol>
+      </div>
+    </header>
+
+    <main>
+      <h1 class="page__title page__title_visually-hidden">Сервис поиска попутчиков Погнали</h1>
+
+      <section class="service-info">
+        <h2>О сервисе</h2>
+        <p>
+          Любое путешествие веселее с попутчиками,
+          которые на одной волне с тобой!
+          Делитесь своими идеями путешествий и черпайте вдохновение в чужих.
+        </p>
+        <p>
+          А если найдете кого-то близкого по духу —
+          скорее зовите в совместный трип!
+        </p>
+      </section>
+
+      <section class="directions-info">
+        <h2>Направления</h2>
+        <p>
+          Мы не продаем туры и ничего не рекламируем.
+          Люди сами пишут о странах, куда хотели бы отправиться
+          и чем можно там заняться.
+        </p>
+        <ul class="directions-info__countries">
+          <li class="directions-info__country-item">
+            <article class="country-card">
+              <div class="country-card__image-container">
+                <img src="country" alt="Песочный пляж, голубая чистая вода и скалы, покрытые растениями">
+              </div>
+              <h3 class="country-card__name">Тайланд</h3>
+              <div class="flag">
+                <div class="flag__image-container">
+                  <img src="flag" alt="Флаг Тайланда">
+                </div>
+              </div>
+              <p class="country-card__text">Джунгли зовут!</p>
+              <p class="country-card__traveler-counter">
+                18321 <span class="country-card__text country-card__text_visually-hidden">человек хотят посетить эту страну</span>
+              </p>
+            </article>
+          </li>
+          <li class="directions-info__country-item">
+            <article class="country-card">
+              <div class="country-card__image-container">
+                <img src="country" alt="Бежевое здание и аллея">
+              </div>
+              <h3 class="country-card__name">Франция</h3>
+              <div class="flag">
+                <div class="flag__image-container">
+                  <img src="flag" alt="Флаг Франции">
+                </div>
+              </div>
+              <p class="country-card__text">Трэ бьен, манифик!</p>
+              <p class="country-card__traveler-counter">
+                12518 <span class="country-card__text country-card__text_visually-hidden">человек хотят посетить эту страну</span>
+              </p>
+            </article>
+          </li>
+          <li class="directions-info__country-item">
+            <article class="country-card">
+              <div class="country-card__image-container">
+                <img src="country" alt="Исторические здания, река, мост и экскурсионный корабль">
+              </div>
+              <h3 class="country-card__name">Чехия</h3>
+              <div class="flag">
+                <div class="flag__image-container">
+                  <img src="flag" alt="Флаг Чехии">
+                </div>
+              </div>
+              <p class="country-card__text">Закоулки старой Европы</p>
+              <p class="country-card__traveler-counter">
+                5326 <span class="country-card__text country-card__text_visually-hidden">человек хотят посетить эту страну</span>
+              </p>
+            </article>
+          </li>
+        </ul>
+        <a class="button button_big" href="form.html">Показать все</a>
+      </section>
+
+      <section class="companions-info">
+        <h2>Попутчики</h2>
+        <p>
+          Все мы индивидуальны и у каждого свой взгляд на идеальный отдых.
+          Одному нужен пляж и коктейль, а другому маршрут для хайкинга.
+        </p>
+        <p>
+          Теперь можно легко найти единомышленников!
+        </p>
+        <ul class="companions-info__companions">
+          <li class="companions-info__companion-item">
+            <article class="companion-preview">
+              <div class="companion-preview__image-container">
+                <img src="companion" alt="Девушка в разноцветном купальнике плавает в чистой светло-голубой воде">
+              </div>
+              <h3 class="companion-preview__name">Таня Фирсова</h3>
+              <div class="level">
+                <span class="level__number">99</span> level
+              </div>
+              <ul class="companion-preview__flags" aria-label="Пользователь хочет посетить эти страны">
+                <li class="companion-preview__flag-item">
+                  <div class="tooltip">
+                    <div class="flag" tabindex="0">
+                      <div class="flag__image-container">
+                        <img src="flag" alt="Флаг Шри-Ланки">
+                      </div>
+                    </div>
+                    <div class="tooltip__container" aria-hidden="true">Шри-Ланка</div>
+                  </div>
+                </li>
+                <li class="companion-preview__flag-item">
+                  <div class="tooltip">
+                    <div class="flag" tabindex="0">
+                      <div class="flag__image-container">
+                        <img src="flag" alt="Флаг Тайланда">
+                      </div>
+                    </div>
+                    <div class="tooltip__container" aria-hidden="true">Тайланд</div>
+                  </div>
+                </li>
+                <li class="companion-preview__flag-item">
+                  <div class="tooltip">
+                    <div class="flag" tabindex="0">
+                      <div class="flag__image-container">
+                        <img src="flag" alt="Флаг Сейшелов">
+                      </div>
+                    </div>
+                    <div class="tooltip__container" aria-hidden="true">Сейшелы</div>
+                  </div>
+                </li>
+              </ul>
+              <ul class="companion-preview__hashtags">
+                <li class="companion-preview__hashtag-item">
+                  <a class="hashtag" href="">
+                    <span aria-label="hashtag">#</span>ЗОЖ
+                  </a>
+                </li>
+                <li class="companion-preview__hashtag-item">
+                  <a class="hashtag" href="">
+                    <span aria-label="hashtag">#</span>ПП
+                  </a>
+                </li>
+                <li class="companion-preview__hashtag-item">
+                  <a class="hashtag" href="">
+                    <span aria-label="hashtag">#</span>Фитнес
+                  </a>
+                </li>
+                <li class="companion-preview__hashtag-item">
+                  <a class="hashtag" href="">
+                    <span aria-label="hashtag">#</span>пляж
+                  </a>
+                </li>
+                <li class="companion-preview__hashtag-item">
+                  <a class="hashtag" href="">
+                    <span aria-label="hashtag">#</span>авокадо
+                  </a>
+                </li>
+                <li class="companion-preview__hashtag-item">
+                  <a class="hashtag" href="">
+                    <span aria-label="hashtag">#</span>смузи
+                  </a>
+                </li>
+              </ul>
+              <ul class="companion-preview__transports">
+                <li class="companion-preview__transport-item">
+                  <div class="tooltip">
+                    <span class="transport transport_active" tabindex="0">
+                      <span class="transport__text transport__text_visually-hidden">
+                        Этот пользователь путешествует на авиатранспорте
+                      </span>
+                    </span>
+                    <div class="tooltip__container" aria-hidden="true">Авиаперелёт</div>
+                  </div>
+                </li>
+                <li class="companion-preview__transport-item">
+                  <div class="tooltip">
+                    <span class="transport" tabindex="0">
+                      <span class="transport__text transport__text_visually-hidden">
+                        Этот пользователь не путешествует на автотранспорте
+                      </span>
+                    </span>
+                    <div class="tooltip__container" aria-hidden="true">Автотранспорт</div>
+                  </div>
+                </li>
+                <li class="companion-preview__transport-item">
+                  <div class="tooltip">
+                    <span class="transport" tabindex="0">
+                      <span class="transport__text transport__text_visually-hidden">
+                        Этот пользователь не путешествует на велосипеде
+                      </span>
+                    </span>
+                    <div class="tooltip__container" aria-hidden="true">Велосипед</div>
+                  </div>
+                </li>
+                <li class="companion-preview__transport-item">
+                  <div class="tooltip">
+                    <span class="transport" tabindex="0">
+                      <span class="transport__text transport__text_visually-hidden">
+                        Этот пользователь не путешествует пешком
+                      </span>
+                    </span>
+                    <div class="tooltip__container" aria-hidden="true">Пешком</div>
+                  </div>
+                </li>
+              </ul>
+            </article>
+          </li>
+          <li class="companions-info__companion-item">
+            <article class="companion-preview">
+              <div class="companion-preview__image-container">
+                <img src="companion" alt="Мужчина с рыжей бородой в темных очках, чёрных шапке и кофте стоит зимой в лесу">
+              </div>
+              <h3 class="companion-preview__name">Петя Демин</h3>
+              <div class="level">
+                <span class="level__number">80</span> level
+              </div>
+              <ul class="companion-preview__flags" aria-label="Пользователь хочет посетить эти страны">
+                <li class="companion-preview__flag-item">
+                  <div class="tooltip">
+                    <div class="flag" tabindex="0">
+                      <div class="flag__image-container">
+                        <img src="flag" alt="Флаг Бельгии">
+                      </div>
+                    </div>
+                    <div class="tooltip__container" aria-hidden="true">Бельгия</div>
+                  </div>
+                </li>
+                <li class="companion-preview__flag-item">
+                  <div class="tooltip">
+                    <div class="flag" tabindex="0">
+                      <div class="flag__image-container">
+                        <img src="flag" alt="Флаг Чехии">
+                      </div>
+                    </div>
+                    <div class="tooltip__container" aria-hidden="true">Чехия</div>
+                  </div>
+                </li>
+              </ul>
+              <ul class="companion-preview__hashtags">
+                <li class="companion-preview__hashtag-item">
+                  <a class="hashtag" href="">
+                    <span aria-label="hashtag">#</span>бургер
+                  </a>
+                </li>
+                <li class="companion-preview__hashtag-item">
+                  <a class="hashtag" href="">
+                    <span aria-label="hashtag">#</span>бар
+                  </a>
+                </li>
+                <li class="companion-preview__hashtag-item">
+                  <a class="hashtag" href="">
+                    <span aria-label="hashtag">#</span>футбол
+                  </a>
+                </li>
+                <li class="companion-preview__hashtag-item">
+                  <a class="hashtag" href="">
+                    <span aria-label="hashtag">#</span>концерт
+                  </a>
+                </li>
+                <li class="companion-preview__hashtag-item">
+                  <a class="hashtag" href="">
+                    <span aria-label="hashtag">#</span>крафт
+                  </a>
+                </li>
+              </ul>
+              <ul class="companion-preview__transports">
+                <li class="companion-preview__transport-item">
+                  <div class="tooltip">
+                    <span class="transport transport_active" tabindex="0">
+                      <span class="transport__text transport__text_visually-hidden">
+                        Этот пользователь путешествует на авиатранспорте
+                      </span>
+                    </span>
+                    <div class="tooltip__container" aria-hidden="true">Авиаперелёт</div>
+                  </div>
+                </li>
+                <li class="companion-preview__transport-item">
+                  <div class="tooltip">
+                    <span class="transport transport_active" tabindex="0">
+                      <span class="transport__text transport__text_visually-hidden">
+                        Этот пользователь путешествует на автотранспорте
+                      </span>
+                    </span>
+                    <div class="tooltip__container" aria-hidden="true">Автотранспорт</div>
+                  </div>
+                </li>
+                <li class="companion-preview__transport-item">
+                  <div class="tooltip">
+                    <span class="transport" tabindex="0">
+                      <span class="transport__text transport__text_visually-hidden">
+                        Этот пользователь не путешествует на велосипеде
+                      </span>
+                    </span>
+                    <div class="tooltip__container" aria-hidden="true">Велосипед</div>
+                  </div>
+                </li>
+                <li class="companion-preview__transport-item">
+                  <div class="tooltip">
+                    <span class="transport transport_active" tabindex="0">
+                      <span class="transport__text transport__text_visually-hidden">
+                        Этот пользователь путешествует пешком
+                      </span>
+                    </span>
+                    <div class="tooltip__container" aria-hidden="true">Пешком</div>
+                  </div>
+                </li>
+              </ul>
+            </article>
+          </li>
+        </ul>
+        <a class="button button_big" href="catalog.html">Показать всех</a>
+      </section>
+
+      <section class="profile-info">
+        <h2>Добавьте свой профиль</h2>
+        <div class="services">
+          <ol class="services__list">
+            <li class="services__item">
+              <span class="services__service-number">
+                <span class="services__text services__text_visually-hidden">Услуга №</span> 1
+              </span>
+              <dl class="services__service">
+                <dt class="services__service-name">Базовое размещение</dt>
+                <dd class="services__service-price">Бесплатно</dd>
+              </dl>
+            </li>
+            <li class="services__item">
+              <span class="services__service-number">
+                <span class="services__text services__text_visually-hidden">Услуга №</span> 2
+              </span>
+              <dl class="services__service">
+                <dt class="services__service-name">Вывод на первых позициях</dt>
+                <dd class="services__service-price">99 руб./мес</dd>
+              </dl>
+            </li>
+            <li class="services__item">
+              <span class="services__service-number">
+                <span class="services__text services__text_visually-hidden">Услуга №</span> 3
+              </span>
+              <dl class="services__service">
+                <dt class="services__service-name">Кастомный цвет карточки</dt>
+                <dd class="services__service-price">59 руб./мес</dd>
+              </dl>
+            </li>
+          </ol>
+        </div>
+        <a href="">Показать тарифы для бизнеса</a>
+      </section>
+
+    </main>
+
+    <footer class="footer">
+      <a class="logo">
+        <img src="logo" alt="Логотип сервиса Погнали">
+      </a>
+      <address class="footer__contact-info">
+        <ul class="footer__socials">
+          <li class="footer__social-item">
+            <a href="">Facebook</a>
+          </li>
+          <li class="footer__social-item">
+            <a href="">Вконтакте</a>
+          </li>
+          <li class="footer__social-item">
+            <a href="">Instagram</a>
+          </li>
+        </ul>
+      </address>
+      <p class="footer__developer-info">
+        Разработано
+        <a class="developer-logo" href="https://htmlacademy.ru/intensive/adaptive">
+          <img src="academy" alt="Логотип онлайн-школы по разработке интерфейсов HTML Academy">
+        </a>
+      </p>
+    </footer>
 
   </body>
 </html>
