@@ -13,3 +13,13 @@
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
+@mixin right-triangle($width, $height, $color) {
+  display: block;
+  width: 0;
+  height: 0;
+  border-top: ($height / 2) solid transparent;
+  border-right: none;
+  border-bottom: ($height / 2) solid transparent;
+  border-left: $width solid $color;
+}
