@@ -9,19 +9,20 @@
 <!--блок аватарки-->
 
   <div class="avatar">
-    <img src="avatar" alt="Пользователь">
+    <img src="avatar" alt="Изображение профиля">
   </div>
 
-<!--блок лайка-->
+<!--блок кнопки лайка-->
 
-  <div class="like">
-    <button class="like__button" type="button">
-      <span class="like__text like__text_visually-hidden">Лайк</span>
-    </button>
-    <span class="like__counter">
-      10 <span class="like__text like__text_visually-hidden">лайков</span>
-    </span>
-  </div>
+  <button class="like-button" type="button">
+    <span class="like-button__text">Лайк</span>
+  </button>
+
+<!--блок счетчика лайков-->
+
+  <span class="like-counter">
+    10 <span class="like-counter__text">лайков</span>
+  </span>
 
 <!--блок тэга-->
 
@@ -83,7 +84,7 @@
 <!--блок транспорта-->
 
   <div class="transport">
-    <span class="transport__text transport__text_visually-hidden">
+    <span class="transport__text">
       Этот пользователь не путешествует пешком
     </span>
   </div>
@@ -95,14 +96,14 @@
     <ul class="transports__transport-list">
       <li class="transport-item">
         <div class="transport">
-          <span class="transport__text transport__text_visually-hidden">
+          <span class="transport__text">
             Этот пользователь не путешествует пешком
           </span>
         </div>
       </li>
       <li class="transport-item">
         <div class="transport transport_active">
-          <span class="transport__text transport__text_visually-hidden">
+          <span class="transport__text">
             Этот пользователь путешествует на велосипеде
           </span>
         </div>
