@@ -1,0 +1,69 @@
+@import "variables";
+@import "mixins";
+
+.transport {
+  @include circle(32px);
+
+  position: relative;
+
+  &::before {
+    content: "";
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    width: 24px;
+    height: 20px;
+
+    background-repeat: no-repeat;
+    background-position: center center;
+    transform: translate(-50%, -50%);
+    opacity: 0.15;
+  }
+
+  &_active {
+    &::before {
+      opacity: 1;
+    }
+  }
+
+  &_icon {
+    &_bus {
+      &::before {
+        background-image: url("../img/bus.svg");
+      }
+    }
+
+    &_plane {
+      &::before {
+        background-image: url("../img/plane.svg");
+      }
+    }
+
+    &_bike {
+      &::before {
+        background-image: url("../img/bike.svg");
+      }
+    }
+
+    &_run {
+      &::before {
+        background-image: url("../img/run.svg");
+      }
+    }
+  }
+
+  &_gray {
+    background-color: $gray-color;
+
+    &::before {
+      width: 20px;
+      height: 16px;
+    }
+  }
+}
+
+.transport__text {
+  @include visually-hidden();
+}

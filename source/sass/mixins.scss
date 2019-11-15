@@ -23,3 +23,9 @@
   border-bottom: ($height / 2) solid transparent;
   border-left: $width solid $color;
 }
+
+@mixin circle($diameter) {
+  width: $diameter;
+  height: $diameter;
+  border-radius: 50%;
+}

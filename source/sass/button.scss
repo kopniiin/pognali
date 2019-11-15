@@ -32,30 +32,32 @@
   }
 
   &_big {
+    position: relative;
+
     border-radius: 20px;
     padding-top: 24px;
-    padding-right: 30px;
+    padding-right: 70px;
     padding-bottom: 21px;
     padding-left: 30px;
 
     font-size: 24px;
     text-transform: none;
 
-    .button__text {
-      position: relative;
+    &::before {
+      @include right-triangle(10px, 14px, $dark-blue-color);
 
-      padding-right: 40px;
+      content: "";
 
+      position: absolute;
+      top: 50%;
+      right: 33px;
+
+      transform: translateY(-50%);
+    }
+
+    &:active {
       &::before {
-        @include right-triangle(10px, 14px, $dark-blue-color);
-
-        content: "";
-
-        position: absolute;
-        top: 50%;
-        right: 0;
-
-        transform: translateY(-60%);
+        opacity: 0.3;
       }
     }
   }
@@ -73,10 +75,8 @@
 
       background-color: $dark-blue-color;
 
-      .button__text {
-        &::before {
-          border-left-color: $white-color;
-        }
+      &::before {
+        border-left-color: $white-color;
       }
     }
   }
