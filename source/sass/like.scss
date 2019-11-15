@@ -1,0 +1,73 @@
+@import "variables";
+@import "mixins";
+
+.like {
+  @include circle(50px);
+
+  position: relative;
+
+  display: block;
+  border: none;
+  padding: 0;
+
+  background-color: $light-gray-color;
+  outline: none;
+
+  &::before {
+    content: "";
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    width: 20px;
+    height: 17px;
+
+    background-image: url("../img/heart.svg");
+    transform: translate(-50%, -50%);
+    opacity: 0.3;
+  }
+
+  &:hover,
+  &:focus {
+    background-color: $gray-color;
+
+    &::before {
+      opacity: 0.5;
+    }
+  }
+
+  &:active {
+    &::before {
+      opacity: 0.1;
+    }
+  }
+}
+
+.like_active {
+  background-color: $light-pink-color;
+
+  &::before {
+    background-image: url("../img/heart-active.svg");
+    opacity: 1;
+  }
+
+  &:hover,
+  &:focus {
+    background-color: $pink-color;
+
+    &::before {
+      opacity: 1;
+    }
+  }
+
+  &:active {
+    &::before {
+      opacity: 0.3;
+    }
+  }
+}
+
+.like__text {
+  @include visually-hidden();
+}
