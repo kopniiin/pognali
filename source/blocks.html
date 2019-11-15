@@ -4,187 +4,172 @@
     <meta charset="utf-8">
     <title>блоки</title>
     <link rel="stylesheet" href="css/style.css">
+    <style>
+      .container {
+        margin-right: auto;
+        margin-left: auto;
+        width: 500px;
+      }
+    </style>
   </head>
   <body class="page page_light">
 
-<!--блок аватарки-->
+  <div class="container">
 
-  <div class="avatar">
-    <img src="avatar" alt="Изображение профиля">
-  </div>
+    <!--блок аватарки-->
 
-<!--блок кнопки лайка-->
-
-  <button class="like-button" type="button">
-    <span class="like-button__text">Лайк</span>
-  </button>
-
-<!--блок счетчика лайков-->
-
-  <span class="like-counter">
-    10 <span class="like-counter__text">лайков</span>
-  </span>
-
-<!--блок тэга-->
-
-  <a class="tag" href="">
-    <span aria-label="тэг">#</span>интерфейс
-  </a>
-
-<!--блок списка тегов-->
-
-  <section class="tags">
-    <h4 class="tags__title">теги:</h4>
-    <ul class="tags__tag-list">
-      <li class="tags__tag-item">
-        <a class="tag" href="">
-          <span aria-label="тэг">#</span>наставник
-        </a>
-      </li>
-      <li class="tags__tag-item">
-        <a class="tag" href="">
-          <span aria-label="тэг">#</span>академия
-        </a>
-      </li>
-    </ul>
-  </section>
-
-<!--блок флага-->
-
-  <div class="flag">
-    <div class="flag__image-container">
-      <img src="flag" alt="Флаг России">
+    <div class="avatar">
+      <img src="avatar" alt="Изображение профиля">
     </div>
-    <span class="flag__name">Россия</span>
-  </div>
 
-<!--блок списка флагов-->
+    <!--блок кнопки лайка-->
 
-  <section class="flags">
-    <h4 class="flags__title">хочет посетить:</h4>
-    <ul class="flags__flag-list">
-      <li class="flags__flag-item">
-        <div class="flag">
-          <div class="flag__image-container">
-            <img src="flag" alt="Флаг России">
+    <button class="like-button" type="button">
+      <span class="like-button__text">Лайк</span>
+    </button>
+
+    <button class="like-button like-button_active" type="button">
+      <span class="like-button__text">Лайк</span>
+    </button>
+
+    <!--блок счетчика лайков-->
+
+    <span class="like-counter">
+      10 <span class="like-counter__text">лайков</span>
+    </span>
+
+    <!--блок тэга-->
+
+    <a class="tag" href="">
+      <span aria-label="тэг">#</span>интерфейс
+    </a>
+
+    <!--блок списка тегов-->
+
+    <section class="tags">
+      <h4 class="tags__title">теги:</h4>
+      <ul class="tags__tag-list">
+        <li class="tags__tag-item">
+          <a class="tag" href="">
+            <span aria-label="тэг">#</span>наставник
+          </a>
+        </li>
+        <li class="tags__tag-item">
+          <a class="tag" href="">
+            <span aria-label="тэг">#</span>академия
+          </a>
+        </li>
+      </ul>
+    </section>
+
+    <!--блок флага-->
+
+    <div class="flag">
+      <div class="flag__image-container">
+        <img src="flag" alt="Флаг России">
+      </div>
+      <span class="flag__name">Россия</span>
+    </div>
+
+    <!--блок списка флагов-->
+
+    <section class="flags">
+      <h4 class="flags__title">хочет посетить:</h4>
+      <ul class="flags__flag-list">
+        <li class="flags__flag-item">
+          <div class="flag">
+            <div class="flag__image-container">
+              <img src="flag" alt="Флаг России">
+            </div>
+            <span class="flag__name">Россия</span>
           </div>
-          <span class="flag__name">Россия</span>
-        </div>
-      </li>
-      <li class="flags__flag-item">
-        <div class="flag">
-          <div class="flag__image-container">
-            <img src="flag" alt="Флаг Норвегии">
+        </li>
+        <li class="flags__flag-item">
+          <div class="flag">
+            <div class="flag__image-container">
+              <img src="flag" alt="Флаг Норвегии">
+            </div>
+            <span class="flag__name">Норвегия</span>
           </div>
-          <span class="flag__name">Норвегия</span>
-        </div>
-      </li>
-    </ul>
-  </section>
-<!--блок транспорта-->
+        </li>
+      </ul>
+    </section>
+    <!--блок транспорта-->
 
-  <div class="transport transport_icon_bus transport_active">
-    <span class="transport__text">
-      Этот пользователь путешествует на автотраспорте
-    </span>
+    <div class="transport transport_icon_bus transport_active">
+      <span class="transport__status">
+        Пользователь путешествует на автотраспорте
+      </span>
+      <span class="transport__name" aria-hidden="true">Автотранспорт</span>
+    </div>
+
+    <div class="transport transport_icon_plane">
+      <span class="transport__status">
+        Пользователь не путешествует на авиатранспорте
+      </span>
+      <span class="transport__name" aria-hidden="true">Авиатранспорт</span>
+    </div>
+
+    <div class="transport transport_gray transport_icon_bike">
+      <span class="transport__status">
+        Этот пользователь не путешествует на велосипеде
+      </span>
+      <span class="transport__name" aria-hidden="true">Велосипед</span>
+    </div>
+
+    <div class="transport transport_gray transport_icon_run transport_active">
+      <span class="transport__status">
+        Этот пользователь путешествует пешком
+      </span>
+      <span class="transport__name" aria-hidden="true">Пешком</span>
+    </div>
+
+    <!--блок списка транспорта-->
+
+    <section class="transports">
+      <h4 class="transports__title">транспорт:</h4>
+      <ul class="transports__transport-list">
+        <li class="transport-item">
+          <div class="transport">
+            <span class="transport__text">
+              Этот пользователь не путешествует пешком
+            </span>
+          </div>
+        </li>
+        <li class="transport-item">
+          <div class="transport transport_active">
+            <span class="transport__text">
+              Этот пользователь путешествует на велосипеде
+            </span>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <!--блок кнопки-->
+
+    <a class="button" href="">
+      <span class="button__text">Позвать!</span>
+    </a>
+
+    <a class="button button_stroke" href="">
+      <span class="button__text">Позвать!</span>
+    </a>
+
+    <a class="button button_big" href="">
+      <span class="button__text">Позвать!</span>
+    </a>
+
+    <a class="button button_big button_stroke" href="">
+      <span class="button__text">Позвать!</span>
+    </a>
+
+    <!--блок тултипа-->
+
+    <div class="tooltip">
+      <!--в этом месте должен находиться любой блок с tabindex=0, который будет активировать тултип-->
+      <div class="tooltip-container" aria-hidden="true">Подсказка</div>
+    </div>
   </div>
-
-  <div class="transport transport_icon_plane">
-    <span class="transport__text">
-      Этот пользователь не путешествует на авиатранспорте
-    </span>
-  </div>
-
-  <div class="transport transport_icon_bike transport_active">
-    <span class="transport__text">
-      Этот пользователь путешествует на велосипеде
-    </span>
-  </div>
-
-  <div class="transport transport_icon_run">
-    <span class="transport__text">
-      Этот пользователь не путешествует пешком
-    </span>
-  </div>
-
-  <div class="transport transport_gray transport_icon_bus">
-    <span class="transport__text">
-      Этот пользователь не путешествует на автотраспорте
-    </span>
-  </div>
-
-  <div class="transport transport_gray transport_icon_plane transport_active">
-    <span class="transport__text">
-      Этот пользователь путешествует на авиатранспорте
-    </span>
-  </div>
-
-  <div class="transport transport_gray transport_icon_bike">
-    <span class="transport__text">
-      Этот пользователь не путешествует на велосипеде
-    </span>
-  </div>
-
-  <div class="transport transport_gray transport_icon_run transport_active">
-    <span class="transport__text">
-      Этот пользователь путешествует пешком
-    </span>
-  </div>
-
-<!--блок списка транспорта-->
-
-  <section class="transports">
-    <h4 class="transports__title">транспорт:</h4>
-    <ul class="transports__transport-list">
-      <li class="transport-item">
-        <div class="transport">
-          <span class="transport__text">
-            Этот пользователь не путешествует пешком
-          </span>
-        </div>
-      </li>
-      <li class="transport-item">
-        <div class="transport transport_active">
-          <span class="transport__text">
-            Этот пользователь путешествует на велосипеде
-          </span>
-        </div>
-      </li>
-    </ul>
-  </section>
-
-<!--блок кнопки-->
-
-  <a class="button" href="">
-    <span class="button__text">Позвать!</span>
-  </a>
-
-  <br>
-
-  <a class="button button_stroke" href="">
-    <span class="button__text">Позвать!</span>
-  </a>
-
-  <br>
-
-  <a class="button button_big" href="">
-    <span class="button__text">Позвать!</span>
-  </a>
-
-  <br>
-
-  <a class="button button_big button_stroke" href="">
-    <span class="button__text">Позвать!</span>
-  </a>
-
-  <br>
-
-<!--блок тултипа-->
-
-  <div class="tooltip">
-    <!--в этом месте должен находиться любой блок с tabindex=0, который будет активировать тултип-->
-    <div class="tooltip-container" aria-hidden="true">Подсказка</div>
-  </div>
-
   </body>
 </html>

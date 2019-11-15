@@ -21,49 +21,65 @@
     transform: translate(-50%, -50%);
     opacity: 0.15;
   }
+}
 
-  &_active {
+.transport_active {
+  &::before {
+    opacity: 1;
+  }
+}
+
+.transport_icon {
+  &_bus {
     &::before {
-      opacity: 1;
+      background-image: url("../img/bus.svg");
     }
   }
 
-  &_icon {
-    &_bus {
-      &::before {
-        background-image: url("../img/bus.svg");
-      }
-    }
-
-    &_plane {
-      &::before {
-        background-image: url("../img/plane.svg");
-      }
-    }
-
-    &_bike {
-      &::before {
-        background-image: url("../img/bike.svg");
-      }
-    }
-
-    &_run {
-      &::before {
-        background-image: url("../img/run.svg");
-      }
+  &_plane {
+    &::before {
+      background-image: url("../img/plane.svg");
     }
   }
 
-  &_gray {
-    background-color: $gray-color;
-
+  &_bike {
     &::before {
-      width: 20px;
-      height: 16px;
+      background-image: url("../img/bike.svg");
+    }
+  }
+
+  &_run {
+    &::before {
+      background-image: url("../img/run.svg");
     }
   }
 }
 
-.transport__text {
+.transport_gray {
+  background-color: $gray-color;
+
+  &::before {
+    width: 20px;
+    height: 16px;
+  }
+}
+
+.transport__status {
   @include visually-hidden();
+}
+
+.transport__name {
+  @include tooltip();
+
+  top: 41px;
+  left: 50%;
+
+  display: none;
+
+  transform: translateX(-50%);
+}
+
+.transport:hover .transport__name,
+.transport:focus .transport__name {
+  display: block;
 }

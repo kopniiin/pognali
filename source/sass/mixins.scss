@@ -1,3 +1,5 @@
+@import "variables";
+
 @mixin visually-hidden {
   position: absolute;
 
@@ -14,8 +16,16 @@
   overflow: hidden;
 }
 
-@mixin right-triangle($width, $height, $color) {
-  display: block;
+@mixin triangle-top($width, $height, $color) {
+  width: 0;
+  height: 0;
+  border-top: none;
+  border-right: ($width / 2) solid transparent;
+  border-bottom: $height solid $color;
+  border-left: ($width / 2) solid transparent;
+}
+
+@mixin triangle-right($width, $height, $color) {
   width: 0;
   height: 0;
   border-top: ($height / 2) solid transparent;
@@ -28,4 +38,35 @@
   width: $diameter;
   height: $diameter;
   border-radius: 50%;
+}
+
+@mixin tooltip() {
+  position: absolute;
+
+  max-width: 200px;
+  border-radius: 4px;
+  padding-top: 17px;
+  padding-right: 27px;
+  padding-bottom: 16px;
+  padding-left: 24px;
+
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+  color: $white-color;
+
+  background-color: #101d41;
+  z-index: 1;
+
+  &::before {
+    @include triangle-top(16px, 8px, #101d41);
+
+    content: "";
+
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+
+    transform: translateX(-50%);
+  }
 }
