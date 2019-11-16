@@ -1,0 +1,21 @@
+@import "variables";
+@import "mixins";
+
+.transports__title {
+  @include title-with-lines();
+
+  margin-bottom: 14px;
+}
+
+.transports__title_visually-hidden {
+  @include visually-hidden();
+}
+
+.transports__transport-list {
+  @include list-reset();
+
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: 26px;
+  margin-left: 26px;
+}

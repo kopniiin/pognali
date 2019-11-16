@@ -70,3 +70,42 @@
     transform: translateX(-50%);
   }
 }
+
+@mixin title-with-lines() {
+  display: flex;
+  align-items: center;
+  margin: 0;
+
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 18px;
+  color: $dark-gray-color;
+
+  &::before,
+  &::after {
+    content: "";
+
+    height: 1px;
+
+    background-color: $gray-color;
+  }
+
+  &::before {
+    margin-right: 12px;
+
+    width: 16px;
+  }
+
+  &::after {
+    margin-left: 12px;
+
+    flex-grow: 1;
+  }
+}
+
+@mixin list-reset() {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}

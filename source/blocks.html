@@ -5,7 +5,7 @@
     <title>блоки</title>
     <link rel="stylesheet" href="css/style.css">
     <style>
-      .container {
+      .block-container {
         margin-right: auto;
         margin-left: auto;
         width: 500px;
@@ -14,19 +14,24 @@
   </head>
   <body class="page page_light">
 
-  <div class="container">
+  <div class="block-container">
+    <h1>Блоки</h1>
 
-    <!--блок аватарки-->
+    <h2>Аватарка</h2>
 
     <div class="avatar">
       <img src="avatar" alt="Изображение профиля">
     </div>
 
-    <!--блок кнопки лайка-->
+    <h2>Лайк</h2>
+
+    <h3>Неактивный лайк</h3>
 
     <button class="like" type="button">
       <span class="like__text">Лайк</span>
     </button>
+
+    <h3>Активный лайк</h3>
 
     <button class="like like_active" type="button">
       <span class="like__text">Лайк</span>
@@ -94,7 +99,10 @@
         </li>
       </ul>
     </section>
-    <!--блок транспорта-->
+
+    <h2>Транспорт</h2>
+
+    <h3>Активный транспорт</h3>
 
     <div class="transport transport_icon_bus transport_active">
       <span class="transport__status">
@@ -103,6 +111,8 @@
       <span class="transport__name" aria-hidden="true">Автотранспорт</span>
     </div>
 
+    <h3>Неактивный транспорт</h3>
+
     <div class="transport transport_icon_plane">
       <span class="transport__status">
         Пользователь не путешествует на авиатранспорте
@@ -110,12 +120,16 @@
       <span class="transport__name" aria-hidden="true">Авиатранспорт</span>
     </div>
 
+    <h3>Неактивный транспорт с серым фоном</h3>
+
     <div class="transport transport_gray transport_icon_bike">
       <span class="transport__status">
         Этот пользователь не путешествует на велосипеде
       </span>
       <span class="transport__name" aria-hidden="true">Велосипед</span>
     </div>
+
+    <h3>Активный транспорт с серым фоном</h3>
 
     <div class="transport transport_gray transport_icon_run transport_active">
       <span class="transport__status">
@@ -126,21 +140,123 @@
 
     <!--блок списка транспорта-->
 
+    <h2>Список транспорта</h2>
+
+    <h3>Обычный список транспорта</h3>
+
     <section class="transports">
       <h4 class="transports__title">транспорт:</h4>
       <ul class="transports__transport-list">
         <li class="transport-item">
-          <div class="transport">
-            <span class="transport__text">
-              Этот пользователь не путешествует пешком
+          <div class="transport transport_icon_bus">
+            <span class="transport__status">
+              Пользователь не путешествует на автотранспорте
             </span>
+            <span class="transport__name" aria-hidden="true">Автотранспорт</span>
           </div>
         </li>
         <li class="transport-item">
-          <div class="transport transport_active">
-            <span class="transport__text">
-              Этот пользователь путешествует на велосипеде
+          <div class="transport transport_icon_plane transport_active">
+            <span class="transport__status">
+              Этот пользователь путешествует на авиатранспорте
             </span>
+            <span class="transport__name" aria-hidden="true">Авиаперелет</span>
+          </div>
+        </li>
+        <li class="transport-item">
+          <div class="transport transport_icon_bike">
+            <span class="transport__status">
+              Этот пользователь не путешествует на велосипеде
+            </span>
+            <span class="transport__name" aria-hidden="true">Велосипед</span>
+          </div>
+        </li>
+        <li class="transport-item">
+          <div class="transport transport_icon_run transport_active">
+            <span class="transport__status">
+              Этот пользователь путешествует пешком
+            </span>
+            <span class="transport__name" aria-hidden="true">Пешком</span>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <h3>Список транспорта с серым фоном</h3>
+
+    <section class="transports">
+      <h4 class="transports__title">транспорт:</h4>
+      <ul class="transports__transport-list">
+        <li class="transport-item">
+          <div class="transport transport_gray transport_icon_bus">
+            <span class="transport__status">
+              Пользователь не путешествует на автотранспорте
+            </span>
+            <span class="transport__name" aria-hidden="true">Автотранспорт</span>
+          </div>
+        </li>
+        <li class="transport-item">
+          <div class="transport transport_gray transport_icon_plane transport_active">
+            <span class="transport__status">
+              Этот пользователь путешествует на авиатранспорте
+            </span>
+            <span class="transport__name" aria-hidden="true">Авиаперелет</span>
+          </div>
+        </li>
+        <li class="transport-item">
+          <div class="transport transport_gray transport_icon_bike">
+            <span class="transport__status">
+              Этот пользователь не путешествует на велосипеде
+            </span>
+            <span class="transport__name" aria-hidden="true">Велосипед</span>
+          </div>
+        </li>
+        <li class="transport-item">
+          <div class="transport transport_gray transport_icon_run transport_active">
+            <span class="transport__status">
+              Этот пользователь путешествует пешком
+            </span>
+            <span class="transport__name" aria-hidden="true">Пешком</span>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <h3>Список транспорта со скрытым заголовком</h3>
+
+    <section class="transports">
+      <h4 class="transports__title transports__title_visually-hidden">транспорт:</h4>
+      <ul class="transports__transport-list">
+        <li class="transport-item">
+          <div class="transport transport_icon_bus">
+            <span class="transport__status">
+              Пользователь не путешествует на автотранспорте
+            </span>
+            <span class="transport__name" aria-hidden="true">Автотранспорт</span>
+          </div>
+        </li>
+        <li class="transport-item">
+          <div class="transport transport_icon_plane transport_active">
+            <span class="transport__status">
+              Этот пользователь путешествует на авиатранспорте
+            </span>
+            <span class="transport__name" aria-hidden="true">Авиаперелет</span>
+          </div>
+        </li>
+        <li class="transport-item">
+          <div class="transport transport_icon_bike">
+            <span class="transport__status">
+              Этот пользователь не путешествует на велосипеде
+            </span>
+            <span class="transport__name" aria-hidden="true">Велосипед</span>
+          </div>
+        </li>
+        <li class="transport-item">
+          <div class="transport transport_icon_run transport_active">
+            <span class="transport__status">
+              Этот пользователь путешествует пешком
+            </span>
+            <span class="transport__name" aria-hidden="true">Пешком</span>
           </div>
         </li>
       </ul>
