@@ -14,278 +14,288 @@
   </head>
   <body class="page page_light">
 
-  <div class="block-container">
-    <h1>Блоки</h1>
+    <div class="block-container">
+      <h1>Блоки</h1>
 
-    <h2>Аватарка</h2>
+      <h2>Аватарка</h2>
 
-    <div class="avatar">
-      <img src="avatar" alt="Изображение профиля">
-    </div>
-
-    <h2>Лайк</h2>
-
-    <h3>Неактивный лайк</h3>
-
-    <button class="like" type="button">
-      <span class="like__text">Лайк</span>
-    </button>
-
-    <h3>Активный лайк</h3>
-
-    <button class="like like_active" type="button">
-      <span class="like__text">Лайк</span>
-    </button>
-
-    <!--блок счетчика лайков-->
-
-    <span class="like-counter">
-      10 <span class="like-counter__text">лайков</span>
-    </span>
-
-    <h2>Тэг</h2>
-
-    <a class="tag" href="">
-      <span aria-label="тэг">#</span>интерфейс
-    </a>
-
-    <!--блок списка тегов-->
-
-    <section class="tags">
-      <h4 class="tags__title">теги:</h4>
-      <ul class="tags__tag-list">
-        <li class="tags__tag-item">
-          <a class="tag" href="">
-            <span aria-label="тэг">#</span>наставник
-          </a>
-        </li>
-        <li class="tags__tag-item">
-          <a class="tag" href="">
-            <span aria-label="тэг">#</span>академия
-          </a>
-        </li>
-      </ul>
-    </section>
-
-    <!--блок флага-->
-
-    <div class="flag">
-      <div class="flag__image-container">
-        <img src="flag" alt="Флаг России">
+      <div class="avatar">
+        <img src="avatar" alt="Изображение профиля">
       </div>
-      <span class="flag__name">Россия</span>
-    </div>
 
-    <!--блок списка флагов-->
+      <h2>Лайк</h2>
 
-    <section class="flags">
-      <h4 class="flags__title">хочет посетить:</h4>
-      <ul class="flags__flag-list">
-        <li class="flags__flag-item">
-          <div class="flag">
-            <div class="flag__image-container">
-              <img src="flag" alt="Флаг России">
+      <h3>Неактивный лайк</h3>
+
+      <button class="like" type="button">
+        <span class="like__text">Лайк</span>
+      </button>
+
+      <h3>Активный лайк</h3>
+
+      <button class="like like_active" type="button">
+        <span class="like__text">Лайк</span>
+      </button>
+
+      <!--блок счетчика лайков-->
+
+      <span class="like-counter">
+        10 <span class="like-counter__text">лайков</span>
+      </span>
+
+      <h2>Тэг</h2>
+
+      <a class="tag" href="">
+        <span aria-label="тэг">#</span>интерфейс
+      </a>
+
+      <h2>Список тегов</h2>
+
+      <h3>Стандартный список тегов</h3>
+
+      <section class="tags">
+        <h4 class="tags__title">теги:</h4>
+        <ul class="tags__tag-list">
+          <li class="tags__tag-item">
+            <a class="tag" href="">
+              <span aria-label="тэг">#</span>наставник
+            </a>
+          </li>
+          <li class="tags__tag-item">
+            <a class="tag" href="">
+              <span aria-label="тэг">#</span>академия
+            </a>
+          </li>
+        </ul>
+      </section>
+
+      <h3>Список тегов с центрированием</h3>
+
+      <section class="tags">
+        <h4 class="tags__title">теги:</h4>
+        <ul class="tags__tag-list tags__tag-list_center">
+          <li class="tags__tag-item">
+            <a class="tag" href="">
+              <span aria-label="тэг">#</span>наставник
+            </a>
+          </li>
+          <li class="tags__tag-item">
+            <a class="tag" href="">
+              <span aria-label="тэг">#</span>академия
+            </a>
+          </li>
+        </ul>
+      </section>
+
+      <h2>Флаг</h2>
+
+      <div class="flag">
+        <div class="flag__image-container">
+          <img src="flag" alt="Флаг России">
+        </div>
+        <span class="flag__name">Россия</span>
+      </div>
+
+      <section class="flags">
+        <h4 class="flags__title">хочет посетить:</h4>
+        <ul class="flags__flag-list">
+          <li class="flags__flag-item">
+            <div class="flag">
+              <div class="flag__image-container">
+                <img src="flag" alt="Флаг России">
+              </div>
+              <span class="flag__name">Россия</span>
             </div>
-            <span class="flag__name">Россия</span>
-          </div>
-        </li>
-        <li class="flags__flag-item">
-          <div class="flag">
-            <div class="flag__image-container">
-              <img src="flag" alt="Флаг Норвегии">
+          </li>
+          <li class="flags__flag-item">
+            <div class="flag">
+              <div class="flag__image-container">
+                <img src="flag" alt="Флаг Норвегии">
+              </div>
+              <span class="flag__name">Норвегия</span>
             </div>
-            <span class="flag__name">Норвегия</span>
-          </div>
-        </li>
-      </ul>
-    </section>
+          </li>
+        </ul>
+      </section>
 
-    <h2>Транспорт</h2>
+      <h2>Транспорт</h2>
 
-    <h3>Активный транспорт</h3>
+      <h3>Активный транспорт</h3>
 
-    <div class="transport transport_icon_bus transport_active">
-      <span class="transport__status">
-        Пользователь путешествует на автотраспорте
-      </span>
-      <span class="transport__name" aria-hidden="true">Автотранспорт</span>
+      <div class="transport transport_icon_bus transport_active">
+        <span class="transport__status">
+          Пользователь путешествует на автотраспорте
+        </span>
+        <span class="transport__name" aria-hidden="true">Автотранспорт</span>
+      </div>
+
+      <h3>Неактивный транспорт</h3>
+
+      <div class="transport transport_icon_plane">
+        <span class="transport__status">
+          Пользователь не путешествует на авиатранспорте
+        </span>
+        <span class="transport__name" aria-hidden="true">Авиатранспорт</span>
+      </div>
+
+      <h3>Неактивный транспорт с серым фоном</h3>
+
+      <div class="transport transport_gray transport_icon_bike">
+        <span class="transport__status">
+          Этот пользователь не путешествует на велосипеде
+        </span>
+        <span class="transport__name" aria-hidden="true">Велосипед</span>
+      </div>
+
+      <h3>Активный транспорт с серым фоном</h3>
+
+      <div class="transport transport_gray transport_icon_run transport_active">
+        <span class="transport__status">
+          Этот пользователь путешествует пешком
+        </span>
+        <span class="transport__name" aria-hidden="true">Пешком</span>
+      </div>
+
+      <h2>Список транспорта</h2>
+
+      <h3>Стандартный список транспорта</h3>
+
+      <section class="transports">
+        <h4 class="transports__title">транспорт:</h4>
+        <ul class="transports__transport-list">
+          <li class="transport-item">
+            <div class="transport transport_icon_bus">
+              <span class="transport__status">
+                Пользователь не путешествует на автотранспорте
+              </span>
+              <span class="transport__name" aria-hidden="true">Автотранспорт</span>
+            </div>
+          </li>
+          <li class="transport-item">
+            <div class="transport transport_icon_plane transport_active">
+              <span class="transport__status">
+                Этот пользователь путешествует на авиатранспорте
+              </span>
+              <span class="transport__name" aria-hidden="true">Авиаперелет</span>
+            </div>
+          </li>
+          <li class="transport-item">
+            <div class="transport transport_icon_bike">
+              <span class="transport__status">
+                Этот пользователь не путешествует на велосипеде
+              </span>
+              <span class="transport__name" aria-hidden="true">Велосипед</span>
+            </div>
+          </li>
+          <li class="transport-item">
+            <div class="transport transport_icon_run transport_active">
+              <span class="transport__status">
+                Этот пользователь путешествует пешком
+              </span>
+              <span class="transport__name" aria-hidden="true">Пешком</span>
+            </div>
+          </li>
+        </ul>
+      </section>
+
+      <h3>Список транспорта с серым фоном</h3>
+
+      <section class="transports">
+        <h4 class="transports__title">транспорт:</h4>
+        <ul class="transports__transport-list">
+          <li class="transport-item">
+            <div class="transport transport_gray transport_icon_bus">
+              <span class="transport__status">
+                Пользователь не путешествует на автотранспорте
+              </span>
+              <span class="transport__name" aria-hidden="true">Автотранспорт</span>
+            </div>
+          </li>
+          <li class="transport-item">
+            <div class="transport transport_gray transport_icon_plane transport_active">
+              <span class="transport__status">
+                Этот пользователь путешествует на авиатранспорте
+              </span>
+              <span class="transport__name" aria-hidden="true">Авиаперелет</span>
+            </div>
+          </li>
+          <li class="transport-item">
+            <div class="transport transport_gray transport_icon_bike">
+              <span class="transport__status">
+                Этот пользователь не путешествует на велосипеде
+              </span>
+              <span class="transport__name" aria-hidden="true">Велосипед</span>
+            </div>
+          </li>
+          <li class="transport-item">
+            <div class="transport transport_gray transport_icon_run transport_active">
+              <span class="transport__status">
+                Этот пользователь путешествует пешком
+              </span>
+              <span class="transport__name" aria-hidden="true">Пешком</span>
+            </div>
+          </li>
+        </ul>
+      </section>
+
+      <h3>Список транспорта со скрытым заголовком</h3>
+
+      <section class="transports">
+        <h4 class="transports__title transports__title_visually-hidden">транспорт:</h4>
+        <ul class="transports__transport-list">
+          <li class="transport-item">
+            <div class="transport transport_icon_bus">
+              <span class="transport__status">
+                Пользователь не путешествует на автотранспорте
+              </span>
+              <span class="transport__name" aria-hidden="true">Автотранспорт</span>
+            </div>
+          </li>
+          <li class="transport-item">
+            <div class="transport transport_icon_plane transport_active">
+              <span class="transport__status">
+                Этот пользователь путешествует на авиатранспорте
+              </span>
+              <span class="transport__name" aria-hidden="true">Авиаперелет</span>
+            </div>
+          </li>
+          <li class="transport-item">
+            <div class="transport transport_icon_bike">
+              <span class="transport__status">
+                Этот пользователь не путешествует на велосипеде
+              </span>
+              <span class="transport__name" aria-hidden="true">Велосипед</span>
+            </div>
+          </li>
+          <li class="transport-item">
+            <div class="transport transport_icon_run transport_active">
+              <span class="transport__status">
+                Этот пользователь путешествует пешком
+              </span>
+              <span class="transport__name" aria-hidden="true">Пешком</span>
+            </div>
+          </li>
+        </ul>
+      </section>
+
+      <!--блок кнопки-->
+
+      <a class="button" href="">
+        <span class="button__text">Позвать!</span>
+      </a>
+
+      <a class="button button_stroke" href="">
+        <span class="button__text">Позвать!</span>
+      </a>
+
+      <a class="button button_big" href="">
+        <span class="button__text">Позвать!</span>
+      </a>
+
+      <a class="button button_big button_stroke" href="">
+        <span class="button__text">Позвать!</span>
+      </a>
+
     </div>
-
-    <h3>Неактивный транспорт</h3>
-
-    <div class="transport transport_icon_plane">
-      <span class="transport__status">
-        Пользователь не путешествует на авиатранспорте
-      </span>
-      <span class="transport__name" aria-hidden="true">Авиатранспорт</span>
-    </div>
-
-    <h3>Неактивный транспорт с серым фоном</h3>
-
-    <div class="transport transport_gray transport_icon_bike">
-      <span class="transport__status">
-        Этот пользователь не путешествует на велосипеде
-      </span>
-      <span class="transport__name" aria-hidden="true">Велосипед</span>
-    </div>
-
-    <h3>Активный транспорт с серым фоном</h3>
-
-    <div class="transport transport_gray transport_icon_run transport_active">
-      <span class="transport__status">
-        Этот пользователь путешествует пешком
-      </span>
-      <span class="transport__name" aria-hidden="true">Пешком</span>
-    </div>
-
-    <!--блок списка транспорта-->
-
-    <h2>Список транспорта</h2>
-
-    <h3>Стандартный список транспорта</h3>
-
-    <section class="transports">
-      <h4 class="transports__title">транспорт:</h4>
-      <ul class="transports__transport-list">
-        <li class="transport-item">
-          <div class="transport transport_icon_bus">
-            <span class="transport__status">
-              Пользователь не путешествует на автотранспорте
-            </span>
-            <span class="transport__name" aria-hidden="true">Автотранспорт</span>
-          </div>
-        </li>
-        <li class="transport-item">
-          <div class="transport transport_icon_plane transport_active">
-            <span class="transport__status">
-              Этот пользователь путешествует на авиатранспорте
-            </span>
-            <span class="transport__name" aria-hidden="true">Авиаперелет</span>
-          </div>
-        </li>
-        <li class="transport-item">
-          <div class="transport transport_icon_bike">
-            <span class="transport__status">
-              Этот пользователь не путешествует на велосипеде
-            </span>
-            <span class="transport__name" aria-hidden="true">Велосипед</span>
-          </div>
-        </li>
-        <li class="transport-item">
-          <div class="transport transport_icon_run transport_active">
-            <span class="transport__status">
-              Этот пользователь путешествует пешком
-            </span>
-            <span class="transport__name" aria-hidden="true">Пешком</span>
-          </div>
-        </li>
-      </ul>
-    </section>
-
-    <h3>Список транспорта с серым фоном</h3>
-
-    <section class="transports">
-      <h4 class="transports__title">транспорт:</h4>
-      <ul class="transports__transport-list">
-        <li class="transport-item">
-          <div class="transport transport_gray transport_icon_bus">
-            <span class="transport__status">
-              Пользователь не путешествует на автотранспорте
-            </span>
-            <span class="transport__name" aria-hidden="true">Автотранспорт</span>
-          </div>
-        </li>
-        <li class="transport-item">
-          <div class="transport transport_gray transport_icon_plane transport_active">
-            <span class="transport__status">
-              Этот пользователь путешествует на авиатранспорте
-            </span>
-            <span class="transport__name" aria-hidden="true">Авиаперелет</span>
-          </div>
-        </li>
-        <li class="transport-item">
-          <div class="transport transport_gray transport_icon_bike">
-            <span class="transport__status">
-              Этот пользователь не путешествует на велосипеде
-            </span>
-            <span class="transport__name" aria-hidden="true">Велосипед</span>
-          </div>
-        </li>
-        <li class="transport-item">
-          <div class="transport transport_gray transport_icon_run transport_active">
-            <span class="transport__status">
-              Этот пользователь путешествует пешком
-            </span>
-            <span class="transport__name" aria-hidden="true">Пешком</span>
-          </div>
-        </li>
-      </ul>
-    </section>
-
-    <h3>Список транспорта со скрытым заголовком</h3>
-
-    <section class="transports">
-      <h4 class="transports__title transports__title_visually-hidden">транспорт:</h4>
-      <ul class="transports__transport-list">
-        <li class="transport-item">
-          <div class="transport transport_icon_bus">
-            <span class="transport__status">
-              Пользователь не путешествует на автотранспорте
-            </span>
-            <span class="transport__name" aria-hidden="true">Автотранспорт</span>
-          </div>
-        </li>
-        <li class="transport-item">
-          <div class="transport transport_icon_plane transport_active">
-            <span class="transport__status">
-              Этот пользователь путешествует на авиатранспорте
-            </span>
-            <span class="transport__name" aria-hidden="true">Авиаперелет</span>
-          </div>
-        </li>
-        <li class="transport-item">
-          <div class="transport transport_icon_bike">
-            <span class="transport__status">
-              Этот пользователь не путешествует на велосипеде
-            </span>
-            <span class="transport__name" aria-hidden="true">Велосипед</span>
-          </div>
-        </li>
-        <li class="transport-item">
-          <div class="transport transport_icon_run transport_active">
-            <span class="transport__status">
-              Этот пользователь путешествует пешком
-            </span>
-            <span class="transport__name" aria-hidden="true">Пешком</span>
-          </div>
-        </li>
-      </ul>
-    </section>
-
-    <!--блок кнопки-->
-
-    <a class="button" href="">
-      <span class="button__text">Позвать!</span>
-    </a>
-
-    <a class="button button_stroke" href="">
-      <span class="button__text">Позвать!</span>
-    </a>
-
-    <a class="button button_big" href="">
-      <span class="button__text">Позвать!</span>
-    </a>
-
-    <a class="button button_big button_stroke" href="">
-      <span class="button__text">Позвать!</span>
-    </a>
-
-    <!--блок тултипа-->
-
-    <div class="tooltip">
-      <!--в этом месте должен находиться любой блок с tabindex=0, который будет активировать тултип-->
-      <div class="tooltip-container" aria-hidden="true">Подсказка</div>
-    </div>
-  </div>
   </body>
 </html>
