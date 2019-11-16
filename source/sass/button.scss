@@ -10,15 +10,17 @@
   padding-bottom: 5px;
   padding-left: 25px;
 
-  color: $dark-blue-color;
   font-size: 20px;
   font-weight: 700;
   line-height: 30px;
   text-align: center;
   text-transform: uppercase;
   text-decoration: none;
+  color: $dark-blue-color;
 
   background-color: $yellow-color;
+  outline: none;
+  cursor: pointer;
 
   &:hover,
   &:focus {
@@ -44,7 +46,7 @@
     text-transform: none;
 
     &::before {
-      @include right-triangle(10px, 14px, $dark-blue-color);
+      @include triangle-right(10px, 14px, $dark-blue-color);
 
       content: "";
 

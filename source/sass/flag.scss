@@ -1,0 +1,57 @@
+@import "variables";
+@import "mixins";
+
+.flag {
+  position: relative;
+
+  display: flex;
+  align-items: center;
+}
+
+.flag__image-container {
+  width: 35px;
+  height: 24px;
+  border: 1px solid black;
+  border-radius: 2px;
+}
+
+.flag__image-container_small {
+  width: 26px;
+  height: 18px;
+}
+
+.flag__image {
+  @include image-size();
+}
+
+.flag__name {
+  margin-top: 6px;
+  margin-left: 14px;
+
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: $blue-color;
+}
+
+.flag__name_tooltip {
+  @include tooltip();
+
+  top: 146%;
+  left: 17.5px;
+
+  display: none;
+  margin: 0;
+
+  transform: translateX(-50%);
+}
+
+.flag__image-container_small + .flag__name_tooltip {
+  left: 13px;
+}
+
+.flag:hover .flag__name_tooltip,
+.flag:focus .flag__name_tooltip {
+  display: block;
+}
