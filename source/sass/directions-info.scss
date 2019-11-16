@@ -1,0 +1,6 @@
+@import "variables";
+@import "mixins";
+
+.directions-info__title {
+  @include section-title();
+}
