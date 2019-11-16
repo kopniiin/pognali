@@ -1,0 +1,37 @@
+@import "variables";
+@import "mixins";
+
+.flags__title {
+  @include title-with-lines();
+
+  margin-bottom: 14px;
+}
+
+.flags__title_visually-hidden {
+  @include visually-hidden();
+}
+
+.flags__flag-list {
+  @include list-reset();
+
+  margin-right: 26px;
+  margin-left: 26px;
+}
+
+.flags__flag-list_horizontal {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.flags__flag-item {
+  margin-bottom: 4px;
+}
+
+.flags__flag-item:last-child {
+  margin-bottom: 0;
+}
+
+.flags__flag-list_horizontal .flags__flag-item {
+  margin-bottom: 0;
+}
