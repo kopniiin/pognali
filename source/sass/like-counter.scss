@@ -1,0 +1,13 @@
+@import "variables";
+@import "mixins";
+
+.like-counter {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 21px;
+  color: $dark-blue-color;
+}
+
+.like-counter__text {
+  @include visually-hidden();
+}

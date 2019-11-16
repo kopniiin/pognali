@@ -20,7 +20,7 @@
       <h2>Аватарка</h2>
 
       <div class="avatar">
-        <img src="avatar" alt="Изображение профиля">
+        <img class="avatar__image" src="avatar" alt="">
       </div>
 
       <h2>Лайк</h2>
@@ -37,7 +37,7 @@
         <span class="like__text">Лайк</span>
       </button>
 
-      <!--блок счетчика лайков-->
+      <h2>Счетчик лайков</h2>
 
       <span class="like-counter">
         10 <span class="like-counter__text">лайков</span>
@@ -141,23 +141,56 @@
         </div>
       </div>
 
+      <h2>Список флагов</h2>
+
+      <h3>Вертикальный список флагов</h3>
+
       <section class="flags">
         <h4 class="flags__title">хочет посетить:</h4>
         <ul class="flags__flag-list">
           <li class="flags__flag-item">
             <div class="flag">
-              <div class="flag__image-container">
-                <img src="flag" alt="Флаг России">
+              <div class="flag__image-container flag__image-container_small">
+                <img src="flag" alt="">
               </div>
               <span class="flag__name">Россия</span>
             </div>
           </li>
           <li class="flags__flag-item">
             <div class="flag">
-              <div class="flag__image-container">
-                <img src="flag" alt="Флаг Норвегии">
+              <div class="flag__image-container flag__image-container_small">
+                <img src="flag" alt="">
               </div>
               <span class="flag__name">Норвегия</span>
+            </div>
+          </li>
+        </ul>
+      </section>
+
+      <h3>Горизонтальный список флагов</h3>
+
+      <section class="flags">
+        <h4 class="flags__title flags__title_visually-hidden">хочет посетить:</h4>
+        <ul class="flags__flag-list flags__flag-list_horizontal">
+          <li class="flags__flag-item">
+            <div class="flag">
+              <div class="flag__image-container flag__image-container_small">
+                <img src="flag" alt="">
+              </div>
+            </div>
+          </li>
+          <li class="flags__flag-item">
+            <div class="flag">
+              <div class="flag__image-container flag__image-container_small">
+                <img src="flag" alt="">
+              </div>
+            </div>
+          </li>
+          <li class="flags__flag-item">
+            <div class="flag">
+              <div class="flag__image-container flag__image-container_small">
+                <img src="flag" alt="">
+              </div>
             </div>
           </li>
         </ul>
@@ -323,19 +356,27 @@
         </ul>
       </section>
 
-      <!--блок кнопки-->
+      <h2>Кнопка</h2>
+
+      <h3>Стандартная кнопка</h3>
 
       <a class="button" href="">
         <span class="button__text">Позвать!</span>
       </a>
 
+      <h3>Прозрачная кнопка</h3>
+
       <a class="button button_stroke" href="">
         <span class="button__text">Позвать!</span>
       </a>
 
+      <h3>Большая кнопка</h3>
+
       <a class="button button_big" href="">
         <span class="button__text">Позвать!</span>
       </a>
+
+      <h3>Большая и прозрачная кнопка</h3>
 
       <a class="button button_big button_stroke" href="">
         <span class="button__text">Позвать!</span>

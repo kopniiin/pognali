@@ -12,10 +12,10 @@
   color: $white-color;
 
   background-color: $dark-blue-color;
+}
 
-  &_light {
-    color: $dark-blue-color;
+.page_light {
+  color: $dark-blue-color;
 
-    background-color: $light-gray-color;
-  }
+  background-color: $light-gray-color;
 }

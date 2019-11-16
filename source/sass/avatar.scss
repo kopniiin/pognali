@@ -1,0 +1,14 @@
+@import "variables";
+@import "mixins";
+
+.avatar {
+  @include circle(70px);
+
+  border: 1px solid black;
+
+  overflow: hidden;
+}
+
+.avatar__image {
+  @include image-size();
+}
