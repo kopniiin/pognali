@@ -1,0 +1,37 @@
+@import "../variables";
+@import "../mixins";
+
+.algorithm {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 18px;
+  color: $dark-blue-color;
+}
+
+.algorithm__list {
+  @include list-reset();
+}
+
+.algorithm__action {
+  background-color: $yellow-color;
+
+  &:first-child {
+    background-color: $orange-color;
+  }
+
+  &:nth-child(2) {
+    background-color: #ffa530;
+  }
+
+  &:nth-child(3) {
+    background-color: $light-orange-color;
+  }
+}
+
+.algorithm__number {
+  color: $white-color;
+}
+
+.algorithm__number-text {
+  @include visually-hidden();
+}
