@@ -18,3 +18,7 @@
 .users-info__slogan {
   font-weight: 700;
 }
+
+.users-info__users {
+  @include list-reset();
+}
