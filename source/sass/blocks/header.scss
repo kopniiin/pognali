@@ -7,6 +7,10 @@
   background-color: $dark-blue-color;
 }
 
+.header__container {
+  @include container();
+}
+
 .header__title {
   font-size: 36px;
   font-weight: 700;

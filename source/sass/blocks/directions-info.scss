@@ -8,6 +8,10 @@
   background-color: $light-gray-color;
 }
 
+.directions-info__container {
+  @include container();
+}
+
 .directions-info__title {
   @include section-title();
 }

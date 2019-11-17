@@ -1,10 +1,20 @@
 @import "../variables";
 @import "../mixins";
 
+.service-info {
+  color: $white-color;
+
+  background-color: $dark-blue-color;
+}
+
+.service-info__container {
+  @include container();
+}
+
 .service-info__title {
   @include section-title();
 }
 
-.service-info__bold {
+.service-info__slogan {
   font-weight: 700;
 }
