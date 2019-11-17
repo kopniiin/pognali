@@ -1,6 +1,13 @@
 @import "../variables";
 @import "../mixins";
 
+
+.directions-info {
+  color: $dark-gray-color;
+
+  background-color: $light-gray-color;
+}
+
 .directions-info__title {
   @include section-title();
 }
