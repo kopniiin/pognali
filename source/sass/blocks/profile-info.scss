@@ -1,16 +1,16 @@
 @import "../variables";
 @import "../mixins";
 
-.directions-info {
+.profile-info {
   color: $dark-gray-color;
 
   background-color: $light-gray-color;
 }
 
-.directions-info__container {
+.profile-info__container {
   @include container();
 }
 
-.directions-info__title {
+.profile-info__title {
   @include section-title();
 }
