@@ -1,5 +1,5 @@
-@import "variables";
-@import "mixins";
+@import "../variables";
+@import "../mixins";
 
 .transport {
   @include circle(32px);
@@ -32,25 +32,25 @@
 .transport_icon {
   &_bus {
     &::before {
-      background-image: url("../img/bus.svg");
+      background-image: url("../../img/bus.svg");
     }
   }
 
   &_plane {
     &::before {
-      background-image: url("../img/plane.svg");
+      background-image: url("../../img/plane.svg");
     }
   }
 
   &_bike {
     &::before {
-      background-image: url("../img/bike.svg");
+      background-image: url("../../img/bike.svg");
     }
   }
 
   &_run {
     &::before {
-      background-image: url("../img/run.svg");
+      background-image: url("../../img/run.svg");
     }
   }
 }

@@ -1,5 +1,5 @@
-@import "variables";
-@import "mixins";
+@import "../variables";
+@import "../mixins";
 
 .like {
   @include circle(50px);
@@ -23,7 +23,7 @@
     width: 20px;
     height: 17px;
 
-    background-image: url("../img/heart.svg");
+    background-image: url("../../img/heart.svg");
     transform: translate(-50%, -50%);
     opacity: 0.3;
   }
@@ -48,7 +48,7 @@
   background-color: $light-pink-color;
 
   &::before {
-    background-image: url("../img/heart-active.svg");
+    background-image: url("../../img/heart-active.svg");
     opacity: 1;
   }
 
