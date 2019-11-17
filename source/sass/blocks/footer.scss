@@ -6,3 +6,7 @@
 
   background-color: $white-color;
 }
+
+.footer__container {
+  @include container();
+}
