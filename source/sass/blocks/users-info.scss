@@ -1,0 +1,20 @@
+@import "../variables";
+@import "../mixins";
+
+.users-info {
+  color: $white-color;
+
+  background-color: $dark-blue-color;
+}
+
+.users-info__container {
+  @include container();
+}
+
+.users-info__title {
+  @include section-title();
+}
+
+.users-info__slogan {
+  font-weight: 700;
+}
