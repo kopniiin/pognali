@@ -1,0 +1,9 @@
+.avatar {
+  @include circle(70px);
+
+  overflow: hidden;
+}
+
+.avatar__image {
+  @include image-size();
+}

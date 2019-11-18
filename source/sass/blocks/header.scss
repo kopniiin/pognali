@@ -1,0 +1,20 @@
+.header {
+  color: #ffffff;
+
+  background-color: #161c36;
+}
+
+.header__container {
+  @include container();
+}
+
+.header__title {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 40px;
+}
+
+.header__review-author {
+  font-weight: 700;
+  font-style: normal;
+}

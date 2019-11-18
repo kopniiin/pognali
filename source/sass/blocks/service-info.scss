@@ -1,0 +1,17 @@
+.service-info {
+  color: #ffffff;
+
+  background-color: #192144;
+}
+
+.service-info__container {
+  @include container();
+}
+
+.service-info__title {
+  @include section-title();
+}
+
+.service-info__slogan {
+  font-weight: 700;
+}

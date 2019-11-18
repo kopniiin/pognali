@@ -1,0 +1,21 @@
+.users-info {
+  color: #ffffff;
+
+  background-color: #192144;
+}
+
+.users-info__container {
+  @include container();
+}
+
+.users-info__title {
+  @include section-title();
+}
+
+.users-info__slogan {
+  font-weight: 700;
+}
+
+.users-info__users {
+  @include list-reset();
+}

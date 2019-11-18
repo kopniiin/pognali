@@ -1,0 +1,7 @@
+.profile-info__container {
+  @include container();
+}
+
+.profile-info__title {
+  @include section-title();
+}

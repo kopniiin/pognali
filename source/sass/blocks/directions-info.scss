@@ -1,0 +1,11 @@
+.directions-info__container {
+  @include container();
+}
+
+.directions-info__title {
+  @include section-title();
+}
+
+.directions-info__directions {
+  @include list-reset();
+}

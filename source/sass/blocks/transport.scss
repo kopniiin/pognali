@@ -1,0 +1,82 @@
+.transport {
+  @include circle(32px);
+
+  position: relative;
+
+  &::before {
+    content: "";
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    width: 24px;
+    height: 20px;
+
+    background-repeat: no-repeat;
+    background-position: center center;
+    transform: translate(-50%, -50%);
+    opacity: 0.15;
+  }
+
+  &:hover,
+  &:focus {
+    .transport__name {
+      display: block;
+    }
+  }
+
+  &_active {
+    &::before {
+      opacity: 1;
+    }
+  }
+
+  &_bus {
+    &::before {
+      background-image: url("../../img/bus.svg");
+    }
+  }
+
+  &_plane {
+    &::before {
+      background-image: url("../../img/plane.svg");
+    }
+  }
+
+  &_bike {
+    &::before {
+      background-image: url("../../img/bike.svg");
+    }
+  }
+
+  &_run {
+    &::before {
+      background-image: url("../../img/run.svg");
+    }
+  }
+
+  &_gray {
+    background-color: #edeff6;
+
+    &::before {
+      width: 20px;
+      height: 16px;
+    }
+  }
+}
+
+.transport__status {
+  @include visually-hidden();
+}
+
+.transport__name {
+  @include tooltip();
+
+  top: 42px;
+  left: 50%;
+
+  display: none;
+
+  transform: translateX(-50%);
+}

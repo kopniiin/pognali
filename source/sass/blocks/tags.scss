@@ -1,0 +1,18 @@
+.tags__title {
+  @include visually-hidden();
+}
+
+.tags__tag-list {
+  @include list-reset();
+
+  display: flex;
+  flex-wrap: wrap;
+
+  &_center {
+    justify-content: center;
+  }
+}
+
+.tags__tag-item {
+  margin-right: 6px;
+}

@@ -1,0 +1,35 @@
+.flags__title {
+  @include title-with-lines();
+
+  margin-bottom: 14px;
+
+  &_visually-hidden {
+    @include visually-hidden();
+  }
+}
+
+.flags__flag-list {
+  @include list-reset();
+
+  margin-right: 26px;
+  margin-left: 26px;
+
+  &_horizontal {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    .flags__flag-item {
+      margin-bottom: 0;
+    }
+  }
+}
+
+
+.flags__flag-item {
+  margin-bottom: 4px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}

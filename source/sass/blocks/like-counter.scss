@@ -1,0 +1,10 @@
+.like-counter {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 21px;
+  color: #161c35;
+}
+
+.like-counter__text {
+  @include visually-hidden();
+}

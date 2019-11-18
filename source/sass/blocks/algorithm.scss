@@ -1,0 +1,34 @@
+.algorithm {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 18px;
+  color: #161c35;
+}
+
+.algorithm__list {
+  @include list-reset();
+}
+
+.algorithm__action {
+  background-color: #ffd74b;
+
+  &:first-child {
+    background-color: #ff8d30;
+  }
+
+  &:nth-child(2) {
+    background-color: #ffa530;
+  }
+
+  &:nth-child(3) {
+    background-color: #ffbd30;
+  }
+}
+
+.algorithm__number {
+  color: #ffffff;
+}
+
+.algorithm__number-text {
+  @include visually-hidden();
+}
