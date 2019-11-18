@@ -1,6 +1,3 @@
-@import "../variables";
-@import "../mixins";
-
 .transport {
   @include circle(32px);
 
@@ -21,15 +18,20 @@
     transform: translate(-50%, -50%);
     opacity: 0.15;
   }
-}
 
-.transport_active {
-  &::before {
-    opacity: 1;
+  &:hover,
+  &:focus {
+    .transport__name {
+      display: block;
+    }
   }
-}
 
-.transport_icon {
+  &_active {
+    &::before {
+      opacity: 1;
+    }
+  }
+
   &_bus {
     &::before {
       background-image: url("../../img/bus.svg");
@@ -53,14 +55,14 @@
       background-image: url("../../img/run.svg");
     }
   }
-}
 
-.transport_gray {
-  background-color: $gray-color;
+  &_gray {
+    background-color: #edeff6;
 
-  &::before {
-    width: 20px;
-    height: 16px;
+    &::before {
+      width: 20px;
+      height: 16px;
+    }
   }
 }
 
@@ -77,9 +79,4 @@
   display: none;
 
   transform: translateX(-50%);
-}
-
-.transport:hover .transport__name,
-.transport:focus .transport__name {
-  display: block;
 }

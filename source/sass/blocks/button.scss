@@ -1,6 +1,3 @@
-@import "../variables";
-@import "../mixins";
-
 .button {
   display: block;
   border: 3px solid transparent;
@@ -16,15 +13,15 @@
   text-align: center;
   text-transform: uppercase;
   text-decoration: none;
-  color: $dark-blue-color;
+  color: #161c35;
 
-  background-color: $yellow-color;
+  background-color: #ffd74b;
   outline: none;
   cursor: pointer;
 
   &:hover,
   &:focus {
-    background-color: $light-orange-color;
+    background-color: #ffbd30;
   }
 
   &:active {
@@ -46,7 +43,7 @@
     text-transform: none;
 
     &::before {
-      @include triangle-right(10px, 14px, $dark-blue-color);
+      @include triangle-right(10px, 14px, #1d2e5b);
 
       content: "";
 
@@ -65,20 +62,20 @@
   }
 
   &_stroke {
-    border-color: $dark-blue-color;
+    border-color: #192144;
 
-    color: $dark-blue-color;
+    color: #192144;
 
     background-color: transparent;
 
     &:hover,
     &:focus {
-      color: $white-color;
+      color: #ffffff;
 
-      background-color: $dark-blue-color;
+      background-color: #192144;
 
       &::before {
-        border-left-color: $white-color;
+        border-left-color: #ffffff;
       }
     }
   }

@@ -1,25 +1,36 @@
-@import "../variables";
-@import "../mixins";
-
 .flag {
   position: relative;
 
   display: flex;
   align-items: center;
+
+  &:hover,
+  &:focus {
+    .flag__name {
+      &_tooltip {
+        display: block;
+      }
+    }
+  }
 }
 
 .flag__image-container {
   width: 35px;
   height: 24px;
-  border: 1px solid black;
   border-radius: 2px;
 
   overflow: hidden;
-}
 
-.flag__image-container_small {
-  width: 26px;
-  height: 18px;
+  &_small {
+    width: 26px;
+    height: 18px;
+
+    + .flag__name {
+      &_tooltip {
+        left: 13px;
+      }
+    }
+  }
 }
 
 .flag__image {
@@ -34,26 +45,18 @@
   font-weight: 500;
   line-height: 18px;
   text-transform: uppercase;
-  color: $blue-color;
+  color: #1d2e5b;
+
+  &_tooltip {
+    @include tooltip();
+
+    top: 146%;
+    left: 18px;
+
+    display: none;
+    margin: 0;
+
+    transform: translateX(-50%);
+  }
 }
 
-.flag__name_tooltip {
-  @include tooltip();
-
-  top: 146%;
-  left: 17.5px;
-
-  display: none;
-  margin: 0;
-
-  transform: translateX(-50%);
-}
-
-.flag__image-container_small + .flag__name_tooltip {
-  left: 13px;
-}
-
-.flag:hover .flag__name_tooltip,
-.flag:focus .flag__name_tooltip {
-  display: block;
-}

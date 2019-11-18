@@ -1,12 +1,3 @@
-@import "../variables";
-@import "../mixins";
-
-.profile-info {
-  color: $dark-gray-color;
-
-  background-color: $light-gray-color;
-}
-
 .profile-info__container {
   @include container();
 }

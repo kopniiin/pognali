@@ -1,14 +1,11 @@
-@import "../variables";
-@import "../mixins";
-
 .transports__title {
   @include title-with-lines();
 
   margin-bottom: 14px;
-}
 
-.transports__title_visually-hidden {
-  @include visually-hidden();
+  &_visually-hidden {
+    @include visually-hidden();
+  }
 }
 
 .transports__transport-list {

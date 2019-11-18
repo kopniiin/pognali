@@ -1,11 +1,8 @@
-@import "../variables";
-@import "../mixins";
-
 .algorithm {
   font-size: 18px;
   font-weight: 700;
   line-height: 18px;
-  color: $dark-blue-color;
+  color: #161c35;
 }
 
 .algorithm__list {
@@ -13,10 +10,10 @@
 }
 
 .algorithm__action {
-  background-color: $yellow-color;
+  background-color: #ffd74b;
 
   &:first-child {
-    background-color: $orange-color;
+    background-color: #ff8d30;
   }
 
   &:nth-child(2) {
@@ -24,12 +21,12 @@
   }
 
   &:nth-child(3) {
-    background-color: $light-orange-color;
+    background-color: #ffbd30;
   }
 }
 
 .algorithm__number {
-  color: $white-color;
+  color: #ffffff;
 }
 
 .algorithm__number-text {

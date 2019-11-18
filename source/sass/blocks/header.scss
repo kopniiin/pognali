@@ -1,10 +1,7 @@
-@import "../variables";
-@import "../mixins";
-
 .header {
-  color: $white-color;
+  color: #ffffff;
 
-  background-color: $dark-blue-color;
+  background-color: #161c36;
 }
 
 .header__container {

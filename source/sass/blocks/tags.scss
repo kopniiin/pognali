@@ -1,5 +1,3 @@
-@import "../mixins";
-
 .tags__title {
   @include visually-hidden();
 }
@@ -9,10 +7,10 @@
 
   display: flex;
   flex-wrap: wrap;
-}
 
-.tags__tag-list_center {
-  justify-content: center;
+  &_center {
+    justify-content: center;
+  }
 }
 
 .tags__tag-item {

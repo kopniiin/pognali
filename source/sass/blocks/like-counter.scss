@@ -1,11 +1,8 @@
-@import "../variables";
-@import "../mixins";
-
 .like-counter {
   font-size: 14px;
   font-weight: 700;
   line-height: 21px;
-  color: $dark-blue-color;
+  color: #161c35;
 }
 
 .like-counter__text {
