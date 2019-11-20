@@ -71,13 +71,9 @@
 }
 
 .header__review-author {
-  font-weight: 700;
-  font-style: normal;
+  @include section-slogan();
 
-  @media (min-width: $tablet-width) {
-    font-size: 21px;
-    line-height: 25px;
-  }
+  font-style: normal;
 }
 
 .header__algorithm {
