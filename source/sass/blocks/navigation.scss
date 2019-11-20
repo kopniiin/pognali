@@ -1,0 +1,16 @@
+.navigation {
+  height: 73px;
+
+  //временные стили для упрощения построения сетки
+  * {
+    display: none;
+  }
+
+  @media (min-width: $tablet-width) {
+    height: 132px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-height: 90px;
+  }
+}

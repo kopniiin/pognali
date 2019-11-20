@@ -7,10 +7,23 @@
 
 .algorithm__list {
   @include list-reset();
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
 .algorithm__action {
   background-color: #ffd74b;
+
+  @media (min-width: $tablet-width) {
+    width: 50%;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 25%;
+  }
 
   &:first-child {
     background-color: #ff8d30;

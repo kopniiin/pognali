@@ -1,5 +1,3 @@
-@import "variables";
-
 @mixin visually-hidden {
   position: absolute;
 
@@ -17,27 +15,27 @@
 }
 
 @mixin triangle-top($width, $height, $color) {
-  width: 0;
-  height: 0;
   border-top: none;
   border-right: ($width / 2) solid transparent;
   border-bottom: $height solid $color;
   border-left: ($width / 2) solid transparent;
+  width: 0;
+  height: 0;
 }
 
 @mixin triangle-right($width, $height, $color) {
-  width: 0;
-  height: 0;
   border-top: ($height / 2) solid transparent;
   border-right: none;
   border-bottom: ($height / 2) solid transparent;
   border-left: $width solid $color;
+  width: 0;
+  height: 0;
 }
 
 @mixin circle($diameter) {
+  border-radius: 50%;
   width: $diameter;
   height: $diameter;
-  border-radius: 50%;
 }
 
 @mixin tooltip() {
@@ -91,14 +89,12 @@
 
   &::before {
     margin-right: 12px;
-
     width: 16px;
   }
 
   &::after {
-    margin-left: 12px;
-
     flex-grow: 1;
+    margin-left: 12px;
   }
 }
 
@@ -124,9 +120,19 @@
 }
 
 @mixin container() {
-  margin-right: auto;
-  margin-left: auto;
-  width: 320px;
   padding-right: 25px;
   padding-left: 25px;
+
+  @media (min-width: $tablet-width) {
+    padding-right: 40px;
+    padding-left: 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 60px;
+    padding-left: 60px;
+    width: 1200px;
+  }
 }
