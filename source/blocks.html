@@ -5,11 +5,60 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>блоки</title>
     <link rel="stylesheet" href="css/style.css">
+    <style>
+      .block-container {
+        padding-right: 25px;
+        padding-left: 25px;
+      }
+
+      @media (min-width: 768px) {
+        .block-container {
+          padding-right: 40px;
+          padding-left: 40px;
+        }
+      }
+
+      @media (min-width: 1440px) {
+        .block-container {
+          margin-right: auto;
+          margin-left: auto;
+          padding-right: 60px;
+          padding-left: 60px;
+          width: 1200px;
+        }
+      }
+    </style>
   </head>
   <body class="page">
 
     <div class="block-container">
       <h1>Блоки</h1>
+
+      <h2>Контактная ссылка</h2>
+
+      <h3>Обычная контактная ссылка c телефоном</h3>
+
+      <a class="contact-link contact-link_mail" href="">
+        <span class="contact-link__text">8 800 555-86-28</span>
+      </a>
+
+      <h3>Обычная контактная ссылка c почтой</h3>
+
+      <a class="contact-link contact-link_phone" href="">
+        <span class="contact-link__text">mail@htmlacademy.ru</span>
+      </a>
+
+      <h3>Обычная контактная ссылка c локацией</h3>
+
+      <a class="contact-link contact-link_location" href="">
+        <span class="contact-link__text">ул. Большая Конюшенная, 19/8</span>
+      </a>
+
+      <h3>Контактная ссылка c желтым текстом</h3>
+
+      <a class="contact-link contact-link_phone contact-link_light" href="">
+        <span class="contact-link__text">8 800 555-86-28</span>
+      </a>
 
       <h2>Аватарка</h2>
 
