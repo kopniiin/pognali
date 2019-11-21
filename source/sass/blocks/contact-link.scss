@@ -112,7 +112,7 @@
     &:hover,
     &:focus {
       &::after {
-        background-image: url("../../img/contacts-mail-orange.svg");
+        background-image: url("../../img/contacts-mail-active.svg");
       }
     }
   }
@@ -125,7 +125,7 @@
     &:hover,
     &:focus {
       &::after {
-        background-image: url("../../img/contacts-phone-orange.svg");
+        background-image: url("../../img/contacts-phone-active.svg");
       }
     }
   }
@@ -138,7 +138,7 @@
     &:hover,
     &:focus {
       &::after {
-        background-image: url("../../img/contacts-location-orange.svg");
+        background-image: url("../../img/contacts-location-active.svg");
       }
     }
   }
