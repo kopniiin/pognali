@@ -3,6 +3,8 @@
 
   position: relative;
 
+  box-sizing: border-box;
+
   &::before {
     content: "";
 
@@ -59,9 +61,18 @@
   &_gray {
     background-color: #edeff6;
 
+    @media (min-width: $tablet-width) {
+      background-color: transparent;
+    }
+
     &::before {
       width: 20px;
       height: 16px;
+
+      @media (min-width: $tablet-width) {
+        width: 24px;
+        height: 20px;
+      }
     }
   }
 }
