@@ -14,6 +14,18 @@
   overflow: hidden;
 }
 
+@mixin list-reset() {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+@mixin image-size() {
+  max-width: 100%;
+  height: 0;
+}
+
 @mixin triangle-top($width, $height, $color) {
   border-top: none;
   border-right: ($width / 2) solid transparent;
@@ -96,18 +108,6 @@
     flex-grow: 1;
     margin-left: 12px;
   }
-}
-
-@mixin list-reset() {
-  margin: 0;
-  padding: 0;
-
-  list-style: none;
-}
-
-@mixin image-size() {
-  max-width: 100%;
-  height: 0;
 }
 
 @mixin section-title() {
