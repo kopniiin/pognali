@@ -2,6 +2,19 @@
   color: #ffffff;
 
   background-color: #161c36;
+
+  &_inner {
+    .header__container {
+      padding-bottom: 20px;
+
+      @media (min-width: $tablet-width) {
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        padding-bottom: 75px;
+      }
+    }
+  }
 }
 
 .header__container {
@@ -84,4 +97,12 @@
   font-size: 36px;
   font-weight: 700;
   line-height: 40px;
+}
+
+.header__index-link {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
 }
