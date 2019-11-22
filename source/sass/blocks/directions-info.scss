@@ -19,26 +19,20 @@
 }
 
 .directions-info__text-container {
-  @media (min-width: $desktop-width) {
-    display: flex;
-    flex-direction: column;
-    order: 2;
-    width: 36%;
-  }
-}
-
-.directions-info__title {
-  @include section-title();
-}
-
-.directions-info__text {
   @media (min-width: $tablet-width) {
     width: 46%;
   }
 
   @media (min-width: $desktop-width) {
-    width: 66%;
+    display: flex;
+    flex-direction: column;
+    order: 2;
+    width: 24%;
   }
+}
+
+.directions-info__title {
+  @include section-title();
 }
 
 .directions-info__button {
@@ -48,9 +42,9 @@
   left: 25px;
 
   @media (min-width: $tablet-width) {
-    right: 40px;
+    right: 75px;
     bottom: 80px;
-    left: 40px;
+    left: 75px;
   }
 
   @media (min-width: $desktop-width) {
