@@ -1,4 +1,6 @@
 .transports {
+  box-sizing: border-box;
+
   &_fixed {
     .transports__title {
       @include visually-hidden();

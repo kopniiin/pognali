@@ -1,4 +1,6 @@
 .flags {
+  box-sizing: border-box;
+
   &_fixed {
     .flags__title {
       @include visually-hidden();
