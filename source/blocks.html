@@ -205,14 +205,14 @@
 
       <h2>Список флагов</h2>
 
-      <h3>Вертикальный список флагов</h3>
+      <h3>Обычный список флагов</h3>
 
       <section class="flags">
         <h4 class="flags__title">хочет посетить:</h4>
         <ul class="flags__flag-list">
           <li class="flags__flag-item">
             <div class="flag">
-              <div class="flag__image-container flag__image-container_small">
+              <div class="flag__image-container">
                 <img src="flag" alt="">
               </div>
               <span class="flag__name">Россия</span>
@@ -220,39 +220,50 @@
           </li>
           <li class="flags__flag-item">
             <div class="flag">
+              <div class="flag__image-container">
+                <img src="flag" alt="">
+              </div>
+              <span class="flag__name">Норвегия</span>
+            </div>
+          </li>
+          <li class="flags__flag-item">
+            <div class="flag">
+              <div class="flag__image-container">
+                <img src="flag" alt="">
+              </div>
+              <span class="flag__name">Германия</span>
+            </div>
+          </li>
+        </ul>
+      </section>
+
+      <h3>Список флагов с тултипами</h3>
+
+      <section class="flags flags_tooltips">
+        <h4 class="flags__title flags__title_visually-hidden">хочет посетить:</h4>
+        <ul class="flags__flag-list flags__flag-list_horizontal">
+          <li class="flags__flag-item">
+            <div class="flag flag_tooltip">
+              <div class="flag__image-container flag__image-container_small">
+                <img src="flag" alt="">
+              </div>
+              <span class="flag__name">Россия</span>
+            </div>
+          </li>
+          <li class="flags__flag-item">
+            <div class="flag flag_tooltip">
               <div class="flag__image-container flag__image-container_small">
                 <img src="flag" alt="">
               </div>
               <span class="flag__name">Норвегия</span>
             </div>
           </li>
-        </ul>
-      </section>
-
-      <h3>Горизонтальный список флагов</h3>
-
-      <section class="flags">
-        <h4 class="flags__title flags__title_visually-hidden">хочет посетить:</h4>
-        <ul class="flags__flag-list flags__flag-list_horizontal">
           <li class="flags__flag-item">
-            <div class="flag">
+            <div class="flag flag_tooltip">
               <div class="flag__image-container flag__image-container_small">
                 <img src="flag" alt="">
               </div>
-            </div>
-          </li>
-          <li class="flags__flag-item">
-            <div class="flag">
-              <div class="flag__image-container flag__image-container_small">
-                <img src="flag" alt="">
-              </div>
-            </div>
-          </li>
-          <li class="flags__flag-item">
-            <div class="flag">
-              <div class="flag__image-container flag__image-container_small">
-                <img src="flag" alt="">
-              </div>
+              <span class="flag__name">Германия</span>
             </div>
           </li>
         </ul>

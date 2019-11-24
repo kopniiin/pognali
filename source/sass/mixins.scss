@@ -94,6 +94,7 @@
   &::after {
     content: "";
 
+    flex-shrink: 0;
     height: 1px;
 
     background-color: #edeff6;
@@ -101,12 +102,21 @@
 
   &::before {
     margin-right: 12px;
-    width: 16px;
+    width: 14px;
+
+    @media (min-width: $tablet-width) {
+      width: 70px;
+    }
   }
 
   &::after {
     flex-grow: 1;
     margin-left: 12px;
+    min-width: 14px;
+
+    @media (min-width: $tablet-width) {
+      min-width: 70px;
+    }
   }
 }
 
