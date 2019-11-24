@@ -1,5 +1,5 @@
 .flags {
-  &_tooltips {
+  &_fixed {
     .flags__title {
       @include visually-hidden();
     }

@@ -84,7 +84,7 @@
 .transport__name {
   @include tooltip();
 
-  top: 42px;
+  top: calc(100% + 8px);
   left: 50%;
 
   display: none;

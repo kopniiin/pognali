@@ -1,9 +1,25 @@
+.transports {
+  &_fixed {
+    .transports__title {
+      @include visually-hidden();
+    }
+
+    .transports__transport-list {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      padding-right: 10px;
+      padding-left: 10px;
+    }
+  }
+}
+
 .transports__title {
   @include title-with-lines();
 
   margin-bottom: 14px;
 
-  &_visually-hidden {
+  @media (min-width: $tablet-width) {
     @include visually-hidden();
   }
 }
@@ -13,6 +29,16 @@
 
   display: flex;
   flex-wrap: wrap;
-  margin-right: 26px;
-  margin-left: 26px;
+  padding-right: 25px;
+  padding-left: 25px;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+  }
 }
