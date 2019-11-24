@@ -1,35 +1,73 @@
 .flag {
-  position: relative;
-
+  box-sizing: border-box;
   display: flex;
   align-items: center;
 
-  &:hover,
-  &:focus {
-    .flag__name {
-      &_tooltip {
+  &_tooltip {
+    position: relative;
+
+    width: 35px;
+    height: 24px;
+
+    &:hover,
+    &:focus {
+      .flag__name {
         display: block;
       }
+    }
+
+    .flag__image-container {
+      width: 100%;
+      height: 100%;
+    }
+
+    .flag__name {
+      @include tooltip();
+
+      top: calc(100% + 8px);
+      left: 50%;
+
+      display: none;
+      margin: 0;
+
+      text-transform: none;
+
+      transform: translateX(-50%);
+    }
+  }
+
+  &_big {
+    width: 35px;
+    height: 24px;
+
+    @media (min-width: $tablet-width) {
+      width: 70px;
+      height: 47px;
+    }
+
+    .flag__image-container {
+      width: 100%;
+      height: 100%;
+    }
+
+    .flag__name {
+      @include visually-hidden();
     }
   }
 }
 
 .flag__image-container {
-  width: 35px;
-  height: 24px;
+  box-sizing: border-box;
+  border: 1px solid #000000;
   border-radius: 2px;
+  width: 26px;
+  height: 18px;
 
   overflow: hidden;
 
-  &_small {
-    width: 26px;
-    height: 18px;
-
-    + .flag__name {
-      &_tooltip {
-        left: 13px;
-      }
-    }
+  @media (min-width: $tablet-width) {
+    width: 35px;
+    height: 24px;
   }
 }
 
@@ -47,15 +85,14 @@
   text-transform: uppercase;
   color: #1d2e5b;
 
-  &_tooltip {
-    @include tooltip();
+  @media (min-width: $tablet-width) {
+    margin-left: 10px;
 
-    top: 146%;
-    left: 18px;
+    font-size: 20px;
+    line-height: 26px;
+  }
 
-    display: none;
-    margin: 0;
-
-    transform: translateX(-50%);
+  @media (min-width: $desktop-width) {
+    margin-left: 20px;
   }
 }
