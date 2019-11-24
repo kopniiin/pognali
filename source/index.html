@@ -2,6 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>HTML Academy: Погнали</title>
     <link rel="stylesheet" href="css/style.css">
   </head>
@@ -9,7 +10,7 @@
 
     <header class="header">
       <div class="header__container">
-        <nav class="navigation">
+        <nav class="navigation header__navigation">
           <a class="logo">
             <img src="logo" alt="Логотип сервиса Погнали">
           </a>
@@ -50,7 +51,7 @@
             </ul>
           </address>
         </nav>
-        <b class="header__title">
+        <b class="header__slogan">
           В путешествие с крутыми попутчиками!
         </b>
         <ul class="header__additional-navigation">
@@ -68,7 +69,7 @@
           <p>«Лучшее приложение, что я видел в жизни!»</p>
           <cite class="header__review-author">Мурат Эльтазинглавный редактор газеты «гаджетлайф»</cite>
         </blockquote>
-        <div class="algorithm">
+        <div class="algorithm header__algorithm">
           <ol class="algorithm__list">
             <li class="algorithm__action">
               <span class="algorithm__number">
@@ -100,12 +101,12 @@
     </header>
 
     <main>
-      <h1 class="page__title page__title_visually-hidden">Сервис поиска попутчиков Погнали</h1>
+      <h1 class="page__title">Сервис поиска попутчиков Погнали</h1>
 
       <section class="service-info">
         <div class="service-info__container">
           <h2 class="service-info__title">О сервисе</h2>
-          <p>
+          <p class="service-info__text">
             Любое путешествие веселее с попутчиками,
             которые на одной волне с тобой!
             Делитесь своими идеями путешествий и черпайте вдохновение в чужих.
@@ -114,84 +115,92 @@
             А если найдете кого-то близкого по духу —
             скорее зовите в совместный трип!
           </p>
+          <a class="button button_big service-info__button" href="">Подробнее</a>
         </div>
       </section>
 
       <section class="directions-info">
         <div class="directions-info__container">
-          <h2 class="directions-info__title">Направления</h2>
-          <p>
-            Мы не продаем туры и ничего не рекламируем.
-            Люди сами пишут о странах, куда хотели бы отправиться
-            и чем можно там заняться.
-          </p>
-          <ul class="directions-info__directions">
-            <li class="directions-info__direction-item">
-              <article class="direction-card">
-                <div class="direction-card__image-container">
-                  <img src="direction" alt="Песочный пляж, голубая чистая вода и скалы, покрытые растениями">
-                </div>
-                <h3 class="direction-card__name">Тайланд</h3>
-                <div class="flag">
-                  <div class="flag__image-container">
-                    <img class="flag__image" src="flag" alt="Флаг Тайланда">
+          <div class="directions-info__text-container">
+            <h2 class="directions-info__title">Направления</h2>
+            <p class="directions-info__text">
+              Мы не продаем туры и ничего не рекламируем.
+              Люди сами пишут о странах, куда хотели бы отправиться
+              и чем можно там заняться.
+            </p>
+            <a class="button button_big directions-info__button" href="form.html">Показать все</a>
+          </div>
+          <div class="directions directions-info__directions">
+            <ul class="directions__direction-list">
+              <li class="directions__direction-item">
+                <article class="direction-card">
+                  <div class="direction-card__image-container">
+                    <img src="direction" alt="Песочный пляж, голубая чистая вода и скалы, покрытые растениями">
                   </div>
-                </div>
-                <p class="direction-card__text">Джунгли зовут!</p>
-                <p class="direction-card__traveler-counter">
-                  18321 <span class="direction-card__text direction-card__text_visually-hidden">человек хотят посетить эту страну</span>
-                </p>
-              </article>
-            </li>
-            <li class="directions-info__direction-item">
-              <article class="direction-card">
-                <div class="direction-card__image-container">
-                  <img src="direction" alt="Бежевое здание и аллея">
-                </div>
-                <h3 class="direction-card__name">Франция</h3>
-                <div class="flag">
-                  <div class="flag__image-container">
-                    <img class="flag__image" src="flag" alt="Флаг Франции">
+                  <h3 class="direction-card__name">Тайланд</h3>
+                  <div class="flag">
+                    <div class="flag__image-container">
+                      <img class="flag__image" src="flag" alt="Флаг Тайланда">
+                    </div>
                   </div>
-                </div>
-                <p class="direction-card__text">Трэ бьен, манифик!</p>
-                <p class="direction-card__traveler-counter">
-                  12518 <span class="direction-card__text direction-card__text_visually-hidden">человек хотят посетить эту страну</span>
-                </p>
-              </article>
-            </li>
-            <li class="directions-info__direction-item">
-              <article class="direction-card">
-                <div class="direction-card__image-container">
-                  <img class="flag__image" src="direction" alt="Исторические здания, река, мост и экскурсионный корабль">
-                </div>
-                <h3 class="direction-card__name">Чехия</h3>
-                <div class="flag">
-                  <div class="flag__image-container">
-                    <img src="flag" alt="Флаг Чехии">
+                  <p class="direction-card__text">Джунгли зовут!</p>
+                  <p class="direction-card__traveler-counter">
+                    18321 <span class="direction-card__text direction-card__text_visually-hidden">человек хотят посетить эту страну</span>
+                  </p>
+                </article>
+              </li>
+              <li class="directions__direction-item">
+                <article class="direction-card">
+                  <div class="direction-card__image-container">
+                    <img src="direction" alt="Бежевое здание и аллея">
                   </div>
-                </div>
-                <p class="direction-card__text">Закоулки старой Европы</p>
-                <p class="direction-card__traveler-counter">
-                  5326 <span class="direction-card__text direction-card__text_visually-hidden">человек хотят посетить эту страну</span>
-                </p>
-              </article>
-            </li>
-          </ul>
-          <a class="button button_big" href="form.html">Показать все</a>
+                  <h3 class="direction-card__name">Франция</h3>
+                  <div class="flag">
+                    <div class="flag__image-container">
+                      <img class="flag__image" src="flag" alt="Флаг Франции">
+                    </div>
+                  </div>
+                  <p class="direction-card__text">Трэ бьен, манифик!</p>
+                  <p class="direction-card__traveler-counter">
+                    12518 <span class="direction-card__text direction-card__text_visually-hidden">человек хотят посетить эту страну</span>
+                  </p>
+                </article>
+              </li>
+              <li class="directions__direction-item">
+                <article class="direction-card">
+                  <div class="direction-card__image-container">
+                    <img class="flag__image" src="direction" alt="Исторические здания, река, мост и экскурсионный корабль">
+                  </div>
+                  <h3 class="direction-card__name">Чехия</h3>
+                  <div class="flag">
+                    <div class="flag__image-container">
+                      <img src="flag" alt="Флаг Чехии">
+                    </div>
+                  </div>
+                  <p class="direction-card__text">Закоулки старой Европы</p>
+                  <p class="direction-card__traveler-counter">
+                    5326 <span class="direction-card__text direction-card__text_visually-hidden">человек хотят посетить эту страну</span>
+                  </p>
+                </article>
+              </li>
+            </ul>
+          </div>
         </div>
       </section>
 
       <section class="users-info">
         <div class="users-info__container">
-          <h2 class="users-info__title">Попутчики</h2>
-          <p>
-            Все мы индивидуальны и у каждого свой взгляд на идеальный отдых.
-            Одному нужен пляж и коктейль, а другому маршрут для хайкинга.
-          </p>
-          <p class="users-info__slogan">
-            Теперь можно легко найти единомышленников!
-          </p>
+          <div class="users-info__text-container">
+            <h2 class="users-info__title">Попутчики</h2>
+            <p class="users-info__text">
+              Все мы индивидуальны и у каждого свой взгляд на идеальный отдых.
+              Одному нужен пляж и коктейль, а другому маршрут для хайкинга.
+            </p>
+            <p class="users-info__slogan">
+              Теперь можно легко найти единомышленников!
+            </p>
+            <a class="button button_big users-info__button" href="catalog.html">Показать всех</a>
+          </div>
           <ul class="users-info__users">
             <li class="users-info__user-item">
               <article class="user-preview">
@@ -405,13 +414,12 @@
               </article>
             </li>
           </ul>
-          <a class="button button_big" href="catalog.html">Показать всех</a>
         </div>
       </section>
 
       <section class="profile-info">
         <div class="profile-info__container">
-          <h2 class="service-info__title">Добавьте свой профиль</h2>
+          <h2 class="profile-info__title">Добавьте свой профиль</h2>
           <div class="services">
             <ol class="services__list">
               <li class="services__item">

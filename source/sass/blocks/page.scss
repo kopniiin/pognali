@@ -1,13 +1,22 @@
 .page {
   margin: 0;
   padding: 0;
+  min-width: 320px;
 
   font-family: "Blogger Sans", "Arial", sans-serif;
   font-size: 16px;
   font-weight: 300;
   line-height: 22px;
-
   color: #444444;
 
   background-color: #edeff6;
+
+  @media (min-width: $tablet-width) {
+    font-size: 28px;
+    line-height: 33px;
+  }
+}
+
+.page__title {
+  @include visually-hidden();
 }

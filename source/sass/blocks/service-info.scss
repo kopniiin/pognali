@@ -6,12 +6,55 @@
 
 .service-info__container {
   @include container();
+
+  padding-top: 20px;
+  padding-bottom: 80px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 100px;
+    padding-bottom: 160px;
+  }
 }
 
 .service-info__title {
   @include section-title();
 }
 
+.service-info__text {
+  @media (min-width: $tablet-width) {
+    width: 50%;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 43%;
+  }
+}
+
 .service-info__slogan {
-  font-weight: 700;
+  @include section-slogan();
+
+  @media (min-width: $tablet-width) {
+    width: 40%;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 32%;
+  }
+}
+
+.service-info__button {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    width: 35%;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 18%;
+  }
 }

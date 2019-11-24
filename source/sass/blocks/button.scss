@@ -1,15 +1,16 @@
 .button {
+  box-sizing: border-box;
   display: block;
   border: 3px solid transparent;
   border-radius: 26px;
-  padding-top: 9px;
-  padding-right: 25px;
-  padding-bottom: 5px;
-  padding-left: 25px;
+  padding-top: 10px;
+  padding-right: 16px;
+  padding-bottom: 7px;
+  padding-left: 16px;
 
-  font-size: 20px;
+  font-size: 17px;
   font-weight: 700;
-  line-height: 30px;
+  line-height: 20px;
   text-align: center;
   text-transform: uppercase;
   text-decoration: none;
@@ -18,6 +19,14 @@
   background-color: #ffd74b;
   outline: none;
   cursor: pointer;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 12px;
+    padding-bottom: 8px;
+
+    font-size: 20px;
+    line-height: 24px;
+  }
 
   &:hover,
   &:focus {
@@ -33,14 +42,23 @@
   &_big {
     position: relative;
 
-    border-radius: 20px;
-    padding-top: 24px;
-    padding-right: 70px;
-    padding-bottom: 21px;
-    padding-left: 30px;
+    border-radius: 10px;
+    padding-top: 20px;
+    padding-right: 56px;
+    padding-bottom: 18px;
+    padding-left: 16px;
 
-    font-size: 24px;
+    font-size: 18px;
     text-transform: none;
+
+    @media (min-width: $tablet-width) {
+      border-radius: 20px;
+      padding-top: 26px;
+      padding-bottom: 23px;
+
+      font-size: 24px;
+      line-height: 26px;
+    }
 
     &::before {
       @include triangle-right(10px, 14px, #1d2e5b);
@@ -49,9 +67,13 @@
 
       position: absolute;
       top: 50%;
-      right: 33px;
+      right: 20px;
 
       transform: translateY(-50%);
+
+      @media (min-width: $tablet-width) {
+        right: 33px;
+      }
     }
 
     &:active {

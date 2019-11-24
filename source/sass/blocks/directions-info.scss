@@ -1,11 +1,65 @@
 .directions-info__container {
   @include container();
+
+  position: relative;
+
+  padding-top: 60px;
+  padding-bottom: 120px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 200px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 140px;
+    padding-bottom: 140px;
+  }
+}
+
+.directions-info__text-container {
+  @media (min-width: $tablet-width) {
+    width: 46%;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-direction: column;
+    order: 2;
+    width: 24%;
+  }
 }
 
 .directions-info__title {
   @include section-title();
 }
 
+.directions-info__button {
+  position: absolute;
+  right: 25px;
+  bottom: 30px;
+  left: 25px;
+
+  @media (min-width: $tablet-width) {
+    right: 75px;
+    bottom: 80px;
+    left: 75px;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: relative;
+    right: auto;
+    bottom: auto;
+    left: auto;
+
+    margin-top: auto;
+  }
+}
+
 .directions-info__directions {
-  @include list-reset();
+  @media (min-width: $desktop-width) {
+    order: 1;
+    width: 40%;
+  }
 }

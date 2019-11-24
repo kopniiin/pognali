@@ -1,5 +1,3 @@
-@import "variables";
-
 @mixin visually-hidden {
   position: absolute;
 
@@ -16,28 +14,40 @@
   overflow: hidden;
 }
 
-@mixin triangle-top($width, $height, $color) {
-  width: 0;
+@mixin list-reset() {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+@mixin image-size() {
+  max-width: 100%;
   height: 0;
+}
+
+@mixin triangle-top($width, $height, $color) {
   border-top: none;
   border-right: ($width / 2) solid transparent;
   border-bottom: $height solid $color;
   border-left: ($width / 2) solid transparent;
+  width: 0;
+  height: 0;
 }
 
 @mixin triangle-right($width, $height, $color) {
-  width: 0;
-  height: 0;
   border-top: ($height / 2) solid transparent;
   border-right: none;
   border-bottom: ($height / 2) solid transparent;
   border-left: $width solid $color;
+  width: 0;
+  height: 0;
 }
 
 @mixin circle($diameter) {
+  border-radius: 50%;
   width: $diameter;
   height: $diameter;
-  border-radius: 50%;
 }
 
 @mixin tooltip() {
@@ -63,7 +73,7 @@
     content: "";
 
     position: absolute;
-    bottom: 100%;
+    top: -7px;
     left: 50%;
 
     transform: translateX(-50%);
@@ -84,6 +94,7 @@
   &::after {
     content: "";
 
+    flex-shrink: 0;
     height: 1px;
 
     background-color: #edeff6;
@@ -91,27 +102,22 @@
 
   &::before {
     margin-right: 12px;
+    width: 14px;
 
-    width: 16px;
+    @media (min-width: $tablet-width) {
+      width: 70px;
+    }
   }
 
   &::after {
-    margin-left: 12px;
-
     flex-grow: 1;
+    margin-left: 12px;
+    min-width: 14px;
+
+    @media (min-width: $tablet-width) {
+      min-width: 70px;
+    }
   }
-}
-
-@mixin list-reset() {
-  margin: 0;
-  padding: 0;
-
-  list-style: none;
-}
-
-@mixin image-size() {
-  max-width: 100%;
-  height: 0;
 }
 
 @mixin section-title() {
@@ -121,12 +127,38 @@
   font-weight: 700;
   line-height: 24px;
   color: #ff8d30;
+
+  @media (min-width: $tablet-width) {
+    font-size: 45px;
+    line-height: 45px;
+  }
+}
+
+@mixin section-slogan() {
+  margin: 0;
+
+  font-weight: 700;
+
+  @media (min-width: $tablet-width) {
+    font-size: 21px;
+    line-height: 25px;
+  }
 }
 
 @mixin container() {
-  margin-right: auto;
-  margin-left: auto;
-  width: 320px;
   padding-right: 25px;
   padding-left: 25px;
+
+  @media (min-width: $tablet-width) {
+    padding-right: 40px;
+    padding-left: 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 60px;
+    padding-left: 60px;
+    width: 1200px;
+  }
 }

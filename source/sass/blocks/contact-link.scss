@@ -1,0 +1,150 @@
+.contact-link {
+  position: relative;
+
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 22px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #192144;
+
+  outline: none;
+
+  @media (min-width: $tablet-width) {
+    font-size: 28px;
+    line-height: 28px;
+  }
+
+  &::before {
+    @include circle(45px);
+
+    content: "";
+
+    flex-shrink: 0;
+
+    background-color: #121936;
+
+    @media (min-width: $tablet-width) {
+      width: 68px;
+      height: 68px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 90px;
+      height: 90px;
+    }
+  }
+
+  &::after {
+    content: "";
+
+    position: absolute;
+    top: 50%;
+    left: 14px;
+
+    width: 18px;
+    height: 20px;
+
+    background-repeat: no-repeat;
+    background-position: center center;
+    transform: translateY(-50%);
+
+    @media (min-width: $tablet-width) {
+      left: 21px;
+
+      width: 27px;
+      height: 32px;
+    }
+
+    @media (min-width: $desktop-width) {
+      left: 27px;
+
+      width: 36px;
+      height: 43px;
+    }
+  }
+
+  &:hover,
+  &:focus {
+    .contact-link__text {
+      opacity: 0.7;
+    }
+  }
+
+  &:active {
+    &::after {
+      opacity: 0.3;
+    }
+
+    .contact-link__text {
+      opacity: 0.3;
+    }
+  }
+
+  &_light {
+    color: #ffd74b;
+
+    &:hover,
+    &:focus {
+      color: #ffbd30;
+
+      .contact-link__text {
+        opacity: 1;
+      }
+    }
+
+    &:active {
+      .contact-link__text {
+        opacity: 0.3;
+      }
+    }
+  }
+
+  &_mail {
+    &::after {
+      background-image: url("../../img/contacts-mail.svg");
+    }
+
+    &:hover,
+    &:focus {
+      &::after {
+        background-image: url("../../img/contacts-mail-active.svg");
+      }
+    }
+  }
+
+  &_phone {
+    &::after {
+      background-image: url("../../img/contacts-phone.svg");
+    }
+
+    &:hover,
+    &:focus {
+      &::after {
+        background-image: url("../../img/contacts-phone-active.svg");
+      }
+    }
+  }
+
+  &_location {
+    &::after {
+      background-image: url("../../img/contacts-location.svg");
+    }
+
+    &:hover,
+    &:focus {
+      &::after {
+        background-image: url("../../img/contacts-location-active.svg");
+      }
+    }
+  }
+}
+
+.contact-link__text {
+  margin-top: 1px;
+  margin-left: 16px;
+}

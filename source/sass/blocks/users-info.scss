@@ -6,6 +6,34 @@
 
 .users-info__container {
   @include container();
+
+  position: relative;
+
+  padding-top: 60px;
+  padding-bottom: 110px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 250px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 130px;
+    padding-bottom: 130px;
+  }
+}
+
+.users-info__text-container {
+  @media (min-width: $tablet-width) {
+    width: 57%;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+  }
 }
 
 .users-info__title {
@@ -13,9 +41,36 @@
 }
 
 .users-info__slogan {
-  font-weight: 700;
+  @include section-slogan();
+}
+
+.users-info__button {
+  position: absolute;
+
+  right: 25px;
+  bottom: 30px;
+  left: 25px;
+
+  @media (min-width: $tablet-width) {
+    right: 75px;
+    bottom: 80px;
+    left: 75px;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: relative;
+    right: auto;
+    bottom: auto;
+    left: auto;
+
+    margin-top: auto;
+  }
 }
 
 .users-info__users {
   @include list-reset();
+
+  @media (min-width: $desktop-width) {
+    width: 44%;
+  }
 }

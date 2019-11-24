@@ -1,14 +1,20 @@
 .like {
-  @include circle(50px);
+  @include circle(30px);
 
   position: relative;
 
+  box-sizing: border-box;
   display: block;
   border: none;
   padding: 0;
 
   background-color: #edeff6;
   outline: none;
+
+  @media (min-width: $tablet-width) {
+    width: 50px;
+    height: 50px;
+  }
 
   &::before {
     content: "";
@@ -17,13 +23,18 @@
     top: 50%;
     left: 50%;
 
-    width: 20px;
-    height: 18px;
+    width: 13px;
+    height: 11px;
 
     background-image: url("../../img/heart.svg");
     background-repeat: no-repeat;
     transform: translate(-50%, -50%);
     opacity: 0.3;
+
+    @media (min-width: $tablet-width) {
+      width: 20px;
+      height: 17px;
+    }
   }
 
   &:hover,

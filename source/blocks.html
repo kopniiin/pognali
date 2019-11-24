@@ -2,13 +2,34 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>блоки</title>
     <link rel="stylesheet" href="css/style.css">
     <style>
+      .page {
+        background-color: #ffffff;
+      }
+
       .block-container {
-        margin-right: auto;
-        margin-left: auto;
-        width: 500px;
+        padding-right: 25px;
+        padding-left: 25px;
+      }
+
+      @media (min-width: 768px) {
+        .block-container {
+          padding-right: 40px;
+          padding-left: 40px;
+        }
+      }
+
+      @media (min-width: 1440px) {
+        .block-container {
+          margin-right: auto;
+          margin-left: auto;
+          padding-right: 60px;
+          padding-left: 60px;
+          width: 1200px;
+        }
       }
     </style>
   </head>
@@ -16,6 +37,72 @@
 
     <div class="block-container">
       <h1>Блоки</h1>
+
+      <h2>Контактная ссылка</h2>
+
+      <h3>Обычная контактная ссылка c телефоном</h3>
+
+      <a class="contact-link contact-link_mail" href="tel:88005558628">
+        <span class="contact-link__text">8 800 555-86-28</span>
+      </a>
+
+      <h3>Обычная контактная ссылка c почтой</h3>
+
+      <a class="contact-link contact-link_phone" href="mailto:mail@htmlacademy.ru">
+        <span class="contact-link__text">mail@htmlacademy.ru</span>
+      </a>
+
+      <h3>Обычная контактная ссылка c локацией</h3>
+
+      <a class="contact-link contact-link_location" href="">
+        <span class="contact-link__text">ул. Большая Конюшенная, 19/8</span>
+      </a>
+
+      <h3>Контактная ссылка c желтым текстом</h3>
+
+      <a class="contact-link contact-link_phone contact-link_light" href="tel:88005558628">
+        <span class="contact-link__text">8 800 555-86-28</span>
+      </a>
+
+      <h2>Контактная кнопка</h2>
+
+      <h3>Контактная кнопка c почтой</h3>
+
+      <a class="contact-button contact-button_mail" href="mailto:mail@htmlacademy.ru">
+        <span class="contact-button__text">mail@htmlacademy.ru</span>
+      </a>
+
+      <h3>Контактная кнопка c телефоном</h3>
+
+      <a class="contact-button contact-button_phone" href="tel:88005558628">
+        <span class="contact-button__text">8 800 555-86-28</span>
+      </a>
+
+      <h3>Контактная кнопка c темным фоном</h3>
+
+      <a class="contact-button contact-button_phone contact-button_dark" href="tel:88005558628">
+        <span class="contact-button__text">8 800 555-86-28</span>
+      </a>
+
+      <h2>Социальная ссылка</h2>
+
+      <h3>Социальная ссылка Вконтакте</h3>
+
+      <a class="social-link social-link_vk" href="">
+        <span class="social-link__text">Вконтакте</span>
+      </a>
+
+      <h3>Социальная ссылка Инстаграм</h3>
+
+      <a class="social-link social-link_instagram" href="">
+        <span class="social-link__text">Инстаграм</span>
+      </a>
+
+      <h3>Социальная ссылка Фейсбук</h3>
+
+      <a class="social-link social-link_facebook" href="">
+        <span class="social-link__text">Фейсбук</span>
+      </a>
 
       <h2>Аватарка</h2>
 
@@ -98,59 +185,34 @@
         <span class="flag__name">Россия</span>
       </div>
 
-      <h3>Маленький флаг</h3>
+      <h3>Флаг с тултипом</h3>
 
-      <div class="flag">
-        <div class="flag__image-container flag__image-container_small">
+      <div class="flag flag_tooltip">
+        <div class="flag__image-container">
           <img class="flag__image" src="img/" alt="">
         </div>
         <span class="flag__name">Россия</span>
       </div>
 
-      <h3>Стандартный флаг с тултипом</h3>
+      <h3>Большой флаг</h3>
 
-      <div class="flag">
+      <div class="flag flag_big">
         <div class="flag__image-container">
           <img class="flag__image" src="img/" alt="">
         </div>
-        <span class="flag__name flag__name_tooltip" aria-hidden="true">Россия</span>
-      </div>
-
-      <h3>Маленький флаг с тултипом</h3>
-
-      <div class="flag">
-        <div class="flag__image-container flag__image-container_small">
-          <img class="flag__image" src="img/" alt="">
-        </div>
-        <span class="flag__name flag__name_tooltip" aria-hidden="true">Россия</span>
-      </div>
-
-      <h3>Стандартный флаг без текста</h3>
-
-      <div class="flag">
-        <div class="flag__image-container">
-          <img class="flag__image" src="img/" alt="">
-        </div>
-      </div>
-
-      <h3>Маленький флаг без текста</h3>
-
-      <div class="flag">
-        <div class="flag__image-container flag__image-container_small">
-          <img class="flag__image" src="img/" alt="">
-        </div>
+        <span class="flag__name">Россия</span>
       </div>
 
       <h2>Список флагов</h2>
 
-      <h3>Вертикальный список флагов</h3>
+      <h3>Обычный список флагов</h3>
 
       <section class="flags">
         <h4 class="flags__title">хочет посетить:</h4>
         <ul class="flags__flag-list">
           <li class="flags__flag-item">
             <div class="flag">
-              <div class="flag__image-container flag__image-container_small">
+              <div class="flag__image-container">
                 <img src="flag" alt="">
               </div>
               <span class="flag__name">Россия</span>
@@ -158,39 +220,50 @@
           </li>
           <li class="flags__flag-item">
             <div class="flag">
+              <div class="flag__image-container">
+                <img src="flag" alt="">
+              </div>
+              <span class="flag__name">Норвегия</span>
+            </div>
+          </li>
+          <li class="flags__flag-item">
+            <div class="flag">
+              <div class="flag__image-container">
+                <img src="flag" alt="">
+              </div>
+              <span class="flag__name">Германия</span>
+            </div>
+          </li>
+        </ul>
+      </section>
+
+      <h3>Список флагов с тултипами</h3>
+
+      <section class="flags flags_tooltips">
+        <h4 class="flags__title flags__title_visually-hidden">хочет посетить:</h4>
+        <ul class="flags__flag-list flags__flag-list_horizontal">
+          <li class="flags__flag-item">
+            <div class="flag flag_tooltip">
+              <div class="flag__image-container flag__image-container_small">
+                <img src="flag" alt="">
+              </div>
+              <span class="flag__name">Россия</span>
+            </div>
+          </li>
+          <li class="flags__flag-item">
+            <div class="flag flag_tooltip">
               <div class="flag__image-container flag__image-container_small">
                 <img src="flag" alt="">
               </div>
               <span class="flag__name">Норвегия</span>
             </div>
           </li>
-        </ul>
-      </section>
-
-      <h3>Горизонтальный список флагов</h3>
-
-      <section class="flags">
-        <h4 class="flags__title flags__title_visually-hidden">хочет посетить:</h4>
-        <ul class="flags__flag-list flags__flag-list_horizontal">
           <li class="flags__flag-item">
-            <div class="flag">
+            <div class="flag flag_tooltip">
               <div class="flag__image-container flag__image-container_small">
                 <img src="flag" alt="">
               </div>
-            </div>
-          </li>
-          <li class="flags__flag-item">
-            <div class="flag">
-              <div class="flag__image-container flag__image-container_small">
-                <img src="flag" alt="">
-              </div>
-            </div>
-          </li>
-          <li class="flags__flag-item">
-            <div class="flag">
-              <div class="flag__image-container flag__image-container_small">
-                <img src="flag" alt="">
-              </div>
+              <span class="flag__name">Германия</span>
             </div>
           </li>
         </ul>

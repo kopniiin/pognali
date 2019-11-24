@@ -1,7 +1,27 @@
 .profile-info__container {
   @include container();
+
+  padding-top: 40px;
+  padding-bottom: 30px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 70px;
+    padding-bottom: 65px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 75px;
+  }
 }
 
 .profile-info__title {
   @include section-title();
+
+  width: 37%;
+
+  @media (min-width: $tablet-width) {
+    width: 100%;
+
+    text-align: center;
+  }
 }
