@@ -58,6 +58,7 @@
 
 .flag__image-container {
   box-sizing: border-box;
+  flex-shrink: 0;
   border: 1px solid #000000;
   border-radius: 2px;
   width: 26px;

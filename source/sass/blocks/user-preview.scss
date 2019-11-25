@@ -1,3 +1,46 @@
 .user-preview {
+  position: relative;
+
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 8px;
+  padding-bottom: 16px;
+  width: 270px;
+
   background-color: #ffffff;
+}
+
+.user-preview__name {
+  margin-right: 10px;
+  margin-bottom: 16px;
+  margin-left: 10px;
+}
+
+.user-preview__avatar {
+  order: -1;
+}
+
+.user-preview__level {
+  position: absolute;
+  top: 15px;
+  left: 18px;
+}
+
+.user-preview__flags {
+  order: -1;
+  margin-top: -12px;
+  margin-bottom: 11px;
+}
+
+.user-preview__tags {
+  margin-right: 10px;
+  margin-bottom: 10px;
+  margin-left: 10px;
+}
+
+.user-preview__transports {
+  margin-right: 10px;
+  margin-left: 10px;
 }
