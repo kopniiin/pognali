@@ -1,13 +1,18 @@
 .services {
   box-sizing: border-box;
-  width: 1063px;
 
   @media (min-width: $tablet-width) {
     position: relative;
 
     padding-right: 34px;
+  }
 
-    &::before {
+  @media (min-width: $desktop-width) {
+    padding-right: 159px;
+  }
+
+  &::before {
+    @media (min-width: $tablet-width) {
       content: "";
 
       position: absolute;
@@ -21,12 +26,8 @@
       background-color: #e2e5f2;
       transform: translateY(-50%);
     }
-  }
 
-  @media (min-width: $desktop-width) {
-    padding-right: 159px;
-
-    &::before {
+    @media (min-width: $desktop-width) {
       width: 41.8%;
       height: calc(100% + 100px);
     }

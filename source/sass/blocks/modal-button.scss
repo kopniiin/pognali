@@ -1,0 +1,76 @@
+.modal-button {
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 16px;
+  text-decoration: none;
+  color: #192144;
+
+  @media (min-width: $tablet-width) {
+    position: relative;
+
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  &::before {
+    @media (min-width: $tablet-width) {
+      @include circle(66px);
+
+      content: "";
+
+      flex-shrink: 0;
+      margin-right: 23px;
+      box-sizing: border-box;
+      border: 1px solid black;
+
+      background-color: #e2e5f2;
+    }
+  }
+
+  &::after {
+    @media (min-width: $tablet-width) {
+      content: "";
+
+      position: absolute;
+      top: 50%;
+      left: 24px;
+
+      width: 17px;
+      height: 21px;
+
+      background-image: url("../../img/business.svg");
+      background-repeat: no-repeat;
+      background-position: center center;
+      transform: translateY(-50%);
+    }
+  }
+
+  &:hover,
+  &:focus {
+    &::after {
+      opacity: 0.7;
+    }
+
+    .modal-button__text {
+      opacity: 0.7;
+    }
+  }
+
+  &:active {
+    &::after {
+      opacity: 0.3;
+    }
+
+    .modal-button__text {
+      opacity: 0.3;
+    }
+  }
+}
+
+.modal-button__text {
+  margin-top: 4px;
+}
