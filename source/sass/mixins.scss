@@ -162,3 +162,13 @@
     width: 1320px;
   }
 }
+
+@mixin rounded-section() {
+  border-bottom-right-radius: 30px;
+  border-bottom-left-radius: 30px;
+
+  @media (min-width: $tablet-width) {
+    border-bottom-right-radius: 60px;
+    border-bottom-left-radius: 60px;
+  }
+}
