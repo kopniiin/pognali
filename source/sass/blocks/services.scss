@@ -1,0 +1,129 @@
+.services {
+  box-sizing: border-box;
+  width: 1063px;
+
+  @media (min-width: $tablet-width) {
+    position: relative;
+
+    padding-right: 34px;
+
+    &::before {
+      content: "";
+
+      position: absolute;
+      top: 50%;
+      right: 0;
+
+      border-radius: 20px;
+      height: calc(100% + 88px);
+      width: 28.6%;
+
+      background-color: #e2e5f2;
+      transform: translateY(-50%);
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-right: 159px;
+
+    &::before {
+      width: 41.8%;
+      height: calc(100% + 100px);
+    }
+  }
+}
+
+.services__list {
+  @include list-reset();
+
+  @media (min-width: $tablet-width) {
+    position: relative;
+    z-index: 1;
+  }
+}
+
+.services__service {
+  display: flex;
+  justify-content: space-between;
+
+  &:first-child {
+    .services__number {
+      background-color: #ffa530;
+    }
+  }
+
+  &:nth-child(2) {
+    .services__number {
+      background-color: #ffbd30;
+    }
+  }
+
+  &:last-child {
+    .services__description {
+      border-bottom: 1px solid rgba(#000000, 0.05);
+    }
+  }
+}
+
+.services__number {
+  @include circle(34px);
+
+  box-sizing: border-box;
+  order: 1;
+  margin-top: 4px;
+  padding-top: 8px;
+
+  text-align: center;
+  color: #ffffff;
+
+  background-color: #ffd74b;
+
+  @media (min-width: $tablet-width) {
+    order: 0;
+    margin-top: 0;
+    width: 66px;
+    height: 66px;
+    padding-top: 20px;
+  }
+}
+
+.services__number-text {
+  @include visually-hidden();
+}
+
+.services__description {
+  @include list-reset();
+
+  width: 83%;
+  border-top: 1px solid rgba(#000000, 0.05);
+  padding-top: 11px;
+  padding-bottom: 10px;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    width: 86.2%;
+    padding-top: 17px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 90%;
+  }
+}
+
+.services__price {
+  margin-left: 0;
+  padding-left: 0;
+
+  @media (min-width: $tablet-width) {
+    flex-shrink: 0;
+    width: 28%;
+
+    text-align: right;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 32%;
+  }
+}
+
