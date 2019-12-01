@@ -22,10 +22,13 @@
 
   @media (min-width: $tablet-width) {
     display: flex;
-    margin-bottom: 0;
   }
 
   &:last-child {
     margin-bottom: 0;
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 10px;
+    }
   }
 }
