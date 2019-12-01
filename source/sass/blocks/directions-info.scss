@@ -1,5 +1,8 @@
 .directions-info {
   @include rounded-section();
+  @include section-tail(#edeff6);
+
+  position: relative;
 
   box-sizing: border-box;
 

@@ -1,4 +1,11 @@
 .users-info {
+  @include rounded-section();
+  @include section-tail(#192144);
+
+  position: relative;
+
+  box-sizing: border-box;
+
   color: #ffffff;
 
   background-color: #192144;
@@ -9,10 +16,11 @@
 
   position: relative;
 
-  padding-top: 60px;
-  padding-bottom: 110px;
+  padding-top: 72px;
+  padding-bottom: 111px;
 
   @media (min-width: $tablet-width) {
+    padding-top: 140px;
     padding-bottom: 250px;
   }
 
@@ -20,40 +28,78 @@
     display: flex;
     justify-content: space-between;
     padding-top: 130px;
-    padding-bottom: 130px;
+    padding-bottom: 134px;
   }
 }
 
 .users-info__text-container {
+  margin-right: 24px;
+  margin-bottom: 55px;
+  margin-left: 24px;
+
   @media (min-width: $tablet-width) {
-    width: 57%;
+    margin-right: 35px;
+    margin-bottom: 58px;
+    margin-left: 35px;
   }
 
   @media (min-width: $desktop-width) {
     display: flex;
     flex-direction: column;
-    width: 30%;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-left: 70px;
+    width: 35%;
   }
 }
 
 .users-info__title {
   @include section-title();
+
+  margin-bottom: 19px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 56px;
+  }
+}
+
+.users-info__text {
+  margin-top: 0;
+  margin-bottom: 21px;
+  width: 98%;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 39px;
+    width: 72%;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 100%
+  }
 }
 
 .users-info__slogan {
   @include section-slogan();
+
+  @media (min-width: $tablet-width) {
+    width: 44%;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 58%;
+  }
 }
 
 .users-info__button {
   position: absolute;
 
   right: 25px;
-  bottom: 30px;
+  bottom: 29px;
   left: 25px;
 
   @media (min-width: $tablet-width) {
     right: 75px;
-    bottom: 80px;
+    bottom: 89px;
     left: 75px;
   }
 
@@ -64,13 +110,20 @@
     left: auto;
 
     margin-top: auto;
+    width: 60.8%;
   }
 }
 
-.users-info__users {
-  @include list-reset();
+.users-info__previews {
+  @media (min-width: $tablet-width) {
+    margin-right: 35px;
+    margin-left: 35px;
+  }
 
   @media (min-width: $desktop-width) {
-    width: 44%;
+    margin-top: 2px;
+    margin-right: 0;
+    margin-left: 0;
+    width: 47.7%;
   }
 }

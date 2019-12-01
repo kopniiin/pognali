@@ -214,257 +214,281 @@
             </p>
             <a class="button button_big users-info__button" href="catalog.html">Показать всех</a>
           </div>
-          <ul class="users-info__users">
-            <li class="users-info__user-item">
-              <article class="user-preview">
-                <div class="avatar">
-                  <img class="avatar__image" src="avatar" alt="Изображение профиля - девушка в разноцветном купальнике плавает в чистой светло-голубой воде">
-                </div>
-                <h3 class="user-preview__name">Таня Фирсова</h3>
-                <div class="level">
-                  <span class="level__number">99</span> level
-                </div>
-                <section class="flags">
-                  <h4 class="flags__title flags__title_visually-hidden">хочет посетить</h4>
-                  <ul class="flags__flag-list flags__flag-list_horizontal">
-                    <li class="flags__flag-item">
-                      <div class="flag">
-                        <div class="flag__image-container">
-                          <img class="flag__image" src="flag" alt="Флаг Шри-Ланки">
+          <div class="previews users-info__previews">
+            <ul class="previews__list">
+              <li class="previews__item">
+                <article class="user-preview">
+                  <a class="user-name user-name_offline user-name_small user-preview__name" href="">
+                    <h3 class="user-name__text">Таня Фирсова</h3>
+                    <span class="user-name__status">Оффлайн</span>
+                  </a>
+                  <div class="avatar avatar_big user-preview__avatar">
+                    <img class="avatar__image" src="avatar" alt="">
+                  </div>
+                  <section class="level level_fixed user-preview__level">
+                    <h4 class="level__title">левел:</h4>
+                    <div class="level__container">
+                      <div class="level__progress level__progress_99"></div>
+                      <div class="level__text-container">
+                        <span class="level__number">99</span>
+                        <span class="level__text" aria-hidden="true">level</span>
+                      </div>
+                    </div>
+                  </section>
+                  <section class="flags flags_fixed user-preview__flags">
+                    <h4 class="flags__title">хочет посетить:</h4>
+                    <ul class="flags__flag-list">
+                      <li class="flags__flag-item">
+                        <div class="flag flag_tooltip">
+                          <div class="flag__image-container">
+                            <img class="flag__image" src="flag" alt="">
+                          </div>
+                          <span class="flag__name" aria-hidden="true">Шри-Ланка</span>
                         </div>
-                        <span class="flag__name flag__name_tooltip">Шри-Ланка</span>
-                      </div>
-                    </li>
-                    <li class="flags__flag-item">
-                      <div class="flag">
-                        <div class="flag__image-container">
-                          <img class="flag__image" src="flag" alt="Флаг Тайланда">
+                      </li>
+                      <li class="flags__flag-item">
+                        <div class="flag flag_tooltip">
+                          <div class="flag__image-container">
+                            <img class="flag__image" src="flag" alt="">
+                          </div>
+                          <span class="flag__name" aria-hidden="true">Тайланд</span>
                         </div>
-                        <span class="flag__name flag__name_tooltip">Тайланд</span>
-                      </div>
-                    </li>
-                    <li class="flags__flag-item">
-                      <div class="flag">
-                        <div class="flag__image-container">
-                          <img class="flag__image" src="flag" alt="Флаг Сейшелов">
+                      </li>
+                      <li class="flags__flag-item">
+                        <div class="flag flag_tooltip">
+                          <div class="flag__image-container">
+                            <img class="flag__image" src="flag" alt="">
+                          </div>
+                          <span class="flag__name" aria-hidden="true">Сейшелы</span>
                         </div>
-                        <span class="flag__name flag__name_tooltip">Сейшелы</span>
-                      </div>
-                    </li>
-                  </ul>
-                </section>
-                <section class="tags">
-                  <h4 class="tags__title">теги</h4>
-                  <ul class="tags__tag-list tags__tag-list_center">
-                    <li class="tags__tag-item">
-                      <a class="tag" href="">
-                        <span aria-label="тэг">#</span>ЗОЖ
-                      </a>
-                    </li>
-                    <li class="tags__tag-item">
-                      <a class="tag" href="">
-                        <span aria-label="тэг">#</span>ПП
-                      </a>
-                    </li>
-                    <li class="tags__tag-item">
-                      <a class="tag" href="">
-                        <span aria-label="тэг">#</span>Фитнес
-                      </a>
-                    </li>
-                    <li class="tags__tag-item">
-                      <a class="tag" href="">
-                        <span aria-label="тэг">#</span>пляж
-                      </a>
-                    </li>
-                    <li class="tags__tag-item">
-                      <a class="tag" href="">
-                        <span aria-label="тэг">#</span>авокадо
-                      </a>
-                    </li>
-                    <li class="tags__tag-item">
-                      <a class="tag" href="">
-                        <span aria-label="тэг">#</span>смузи
-                      </a>
-                    </li>
-                  </ul>
-                </section>
-                <section class="transports">
-                  <h4 class="transports__title transports__title_visually-hidden">транспорт:</h4>
-                  <ul class="transports__transport-list">
-                    <li class="transport-item">
-                      <div class="transport transport_plane transport_active">
-                        <span class="transport__status">
-                          Пользователь путешествует на авиатранспорте
-                        </span>
-                        <span class="transport__name" aria-hidden="true">Авиаперелет</span>
-                      </div>
-                    </li>
-                    <li class="transport-item">
-                      <div class="transport transport_bus">
+                      </li>
+                    </ul>
+                  </section>
+                  <section class="tags tags_center user-preview__tags">
+                    <h4 class="tags__title">теги:</h4>
+                    <ul class="tags__tag-list">
+                      <li class="tags__tag-item">
+                        <a class="tag" href="">
+                          <span aria-label="тэг">#</span>ЗОЖ
+                        </a>
+                      </li>
+                      <li class="tags__tag-item">
+                        <a class="tag" href="">
+                          <span aria-label="тэг">#</span>ПП
+                        </a>
+                      </li>
+                      <li class="tags__tag-item">
+                        <a class="tag" href="">
+                          <span aria-label="тэг">#</span>Фитнес
+                        </a>
+                      </li>
+                      <li class="tags__tag-item">
+                        <a class="tag" href="">
+                          <span aria-label="тэг">#</span>пляж
+                        </a>
+                      </li>
+                      <li class="tags__tag-item">
+                        <a class="tag" href="">
+                          <span aria-label="тэг">#</span>авокадо
+                        </a>
+                      </li>
+                      <li class="tags__tag-item">
+                        <a class="tag" href="">
+                          <span aria-label="тэг">#</span>смузи
+                        </a>
+                      </li>
+                    </ul>
+                  </section>
+                  <section class="transports transports_fixed user-preview__transports">
+                    <h4 class="transports__title">транспорт:</h4>
+                    <ul class="transports__transport-list">
+                      <li class="transport-item">
+                        <div class="transport transport_plane transport_active">
+                          <span class="transport__status">
+                            Этот пользователь путешествует на авиатранспорте
+                          </span>
+                          <span class="transport__name" aria-hidden="true">Авиаперелет</span>
+                        </div>
+                      </li>
+                      <li class="transport-item">
+                        <div class="transport transport_bus">
                         <span class="transport__status">
                           Пользователь не путешествует на автотранспорте
                         </span>
-                        <span class="transport__name" aria-hidden="true">Автотранспорт</span>
-                      </div>
-                    </li>
-                    <li class="transport-item">
-                      <div class="transport transport_bike">
-                        <span class="transport__status">
-                          Пользователь не путешествует на велосипеде
-                        </span>
-                        <span class="transport__name" aria-hidden="true">Велосипед</span>
-                      </div>
-                    </li>
-                    <li class="transport-item">
-                      <div class="transport transport_run">
-                        <span class="transport__status">
-                          Пользователь не путешествует пешком
-                        </span>
-                        <span class="transport__name" aria-hidden="true">Пешком</span>
-                      </div>
-                    </li>
-                  </ul>
-                </section>
-              </article>
-            </li>
-            <li class="users-info__user-item">
-              <article class="user-preview">
-                <div class="avatar">
-                  <img class="avatar__image" src="avatar" alt="Изображение профиля - мужчина с рыжей бородой в темных очках, чёрных шапке и кофте стоит зимой в лесу">
-                </div>
-                <h3 class="user-preview__name">Петя Демин</h3>
-                <div class="level">
-                  <span class="level__number">80</span> level
-                </div>
-                <section class="flags">
-                  <h4 class="flags__title flags__title_visually-hidden">хочет посетить</h4>
-                  <ul class="flags__flag-list flags__flag-list_horizontal">
-                    <li class="flags__flag-item">
-                      <div class="flag">
-                        <div class="flag__image-container">
-                          <img class="flag__image" src="flag" alt="Флаг Бельгии">
+                          <span class="transport__name" aria-hidden="true">Автотранспорт</span>
                         </div>
-                        <span class="flag__name flag__name_tooltip">Бельгия</span>
-                      </div>
-                    </li>
-                    <li class="flags__flag-item">
-                      <div class="flag">
-                        <div class="flag__image-container">
-                          <img class="flag__image" src="flag" alt="Флаг Чехии">
+                      </li>
+                      <li class="transport-item">
+                        <div class="transport transport_bike">
+                          <span class="transport__status">
+                            Этот пользователь не путешествует на велосипеде
+                          </span>
+                          <span class="transport__name" aria-hidden="true">Велосипед</span>
                         </div>
-                        <span class="flag__name flag__name_tooltip">Чехия</span>
+                      </li>
+                      <li class="transport-item">
+                        <div class="transport transport_run">
+                          <span class="transport__status">
+                            Этот пользователь не путешествует пешком
+                          </span>
+                          <span class="transport__name" aria-hidden="true">Пешком</span>
+                        </div>
+                      </li>
+                    </ul>
+                  </section>
+                </article>
+              </li>
+              <li class="previews__item">
+                <article class="user-preview">
+                  <a class="user-name user-name_online user-name_small user-preview__name" href="">
+                    <h3 class="user-name__text">Петя Демин</h3>
+                    <span class="user-name__status">Онлайн</span>
+                  </a>
+                  <div class="avatar avatar_big user-preview__avatar">
+                    <img class="avatar__image" src="avatar" alt="">
+                  </div>
+                  <section class="level level_fixed user-preview__level">
+                    <h4 class="level__title">левел:</h4>
+                    <div class="level__container">
+                      <div class="level__progress level__progress_80"></div>
+                      <div class="level__text-container">
+                        <span class="level__number">80</span>
+                        <span class="level__text" aria-hidden="true">level</span>
                       </div>
-                    </li>
-                  </ul>
-                </section>
-                <section class="tags">
-                  <h4 class="tags__title">теги</h4>
-                  <ul class="tags__tag-list tags__tag-list_center">
-                    <li class="tags__tag-item">
-                      <a class="tag" href="">
-                        <span aria-label="тэг">#</span>бургер
-                      </a>
-                    </li>
-                    <li class="tags__tag-item">
-                      <a class="tag" href="">
-                        <span aria-label="тэг">#</span>бар
-                      </a>
-                    </li>
-                    <li class="tags__tag-item">
-                      <a class="tag" href="">
-                        <span aria-label="тэг">#</span>футбол
-                      </a>
-                    </li>
-                    <li class="tags__tag-item">
-                      <a class="tag" href="">
-                        <span aria-label="тэг">#</span>концерт
-                      </a>
-                    </li>
-                    <li class="tags__tag-item">
-                      <a class="tag" href="">
-                        <span aria-label="тэг">#</span>крафт
-                      </a>
-                    </li>
-                  </ul>
-                </section>
-                <section class="transports">
-                  <h4 class="transports__title transports__title_visually-hidden">транспорт:</h4>
-                  <ul class="transports__transport-list">
-                    <li class="transport-item">
-                      <div class="transport transport_plane transport_active">
-                        <span class="transport__status">
-                          Пользователь путешествует на авиатранспорте
-                        </span>
-                        <span class="transport__name" aria-hidden="true">Авиаперелет</span>
-                      </div>
-                    </li>
-                    <li class="transport-item">
-                      <div class="transport transport_bus transport_active">
-                        <span class="transport__status">
-                          Пользователь путешествует на автотранспорте
-                        </span>
-                        <span class="transport__name" aria-hidden="true">Автотранспорт</span>
-                      </div>
-                    </li>
-                    <li class="transport-item">
-                      <div class="transport transport_bike">
-                        <span class="transport__status">
-                          Пользователь не путешествует на велосипеде
-                        </span>
-                        <span class="transport__name" aria-hidden="true">Велосипед</span>
-                      </div>
-                    </li>
-                    <li class="transport-item">
-                      <div class="transport transport_run transport_active">
-                        <span class="transport__status">
-                          Пользователь путешествует пешком
-                        </span>
-                        <span class="transport__name" aria-hidden="true">Пешком</span>
-                      </div>
-                    </li>
-                  </ul>
-                </section>
-              </article>
-            </li>
-          </ul>
+                    </div>
+                  </section>
+                  <section class="flags flags_fixed user-preview__flags">
+                    <h4 class="flags__title">хочет посетить:</h4>
+                    <ul class="flags__flag-list">
+                      <li class="flags__flag-item">
+                        <div class="flag flag_tooltip">
+                          <div class="flag__image-container">
+                            <img class="flag__image" src="flag" alt="">
+                          </div>
+                          <span class="flag__name" aria-hidden="true">Бельгия</span>
+                        </div>
+                      </li>
+                      <li class="flags__flag-item">
+                        <div class="flag flag_tooltip">
+                          <div class="flag__image-container">
+                            <img class="flag__image" src="flag" alt="">
+                          </div>
+                          <span class="flag__name" aria-hidden="true">Чехия</span>
+                        </div>
+                      </li>
+                    </ul>
+                  </section>
+                  <section class="tags tags_center user-preview__tags">
+                    <h4 class="tags__title">теги:</h4>
+                    <ul class="tags__tag-list">
+                      <li class="tags__tag-item">
+                        <a class="tag" href="">
+                          <span aria-label="тэг">#</span>бургер
+                        </a>
+                      </li>
+                      <li class="tags__tag-item">
+                        <a class="tag" href="">
+                          <span aria-label="тэг">#</span>бар
+                        </a>
+                      </li>
+                      <li class="tags__tag-item">
+                        <a class="tag" href="">
+                          <span aria-label="тэг">#</span>футбол
+                        </a>
+                      </li>
+                      <li class="tags__tag-item">
+                        <a class="tag" href="">
+                          <span aria-label="тэг">#</span>концерт
+                        </a>
+                      </li>
+                      <li class="tags__tag-item">
+                        <a class="tag" href="">
+                          <span aria-label="тэг">#</span>крафт
+                        </a>
+                      </li>
+                    </ul>
+                  </section>
+                  <section class="transports transports_fixed user-preview__transports">
+                    <h4 class="transports__title">транспорт:</h4>
+                    <ul class="transports__transport-list">
+                      <li class="transport-item">
+                        <div class="transport transport_plane transport_active">
+                          <span class="transport__status">
+                            Этот пользователь путешествует на авиатранспорте
+                          </span>
+                          <span class="transport__name" aria-hidden="true">Авиаперелет</span>
+                        </div>
+                      </li>
+                      <li class="transport-item">
+                        <div class="transport transport_bus transport_active">
+                          <span class="transport__status">
+                            Пользователь путешествует на автотранспорте
+                          </span>
+                          <span class="transport__name" aria-hidden="true">Автотранспорт</span>
+                        </div>
+                      </li>
+                      <li class="transport-item">
+                        <div class="transport transport_bike">
+                          <span class="transport__status">
+                            Этот пользователь не путешествует на велосипеде
+                          </span>
+                          <span class="transport__name" aria-hidden="true">Велосипед</span>
+                        </div>
+                      </li>
+                      <li class="transport-item">
+                        <div class="transport transport_run transport_active">
+                          <span class="transport__status">
+                            Этот пользователь путешествует пешком
+                          </span>
+                          <span class="transport__name" aria-hidden="true">Пешком</span>
+                        </div>
+                      </li>
+                    </ul>
+                  </section>
+                </article>
+              </li>
+            </ul>
+          </div>
         </div>
       </section>
 
       <section class="profile-info">
         <div class="profile-info__container">
           <h2 class="profile-info__title">Добавьте свой профиль</h2>
-          <div class="services">
+          <div class="services profile-info__services">
             <ol class="services__list">
-              <li class="services__item">
-                <span class="services__number">
-                  <span class="services__number-text">Услуга №</span> 1
-                </span>
-                <dl class="services__service">
+              <li class="services__service">
+            <span class="services__number">
+              <span class="services__number-text">Услуга №</span> 1
+            </span>
+                <dl class="services__description">
                   <dt class="services__name">Базовое размещение</dt>
                   <dd class="services__price">Бесплатно</dd>
                 </dl>
               </li>
-              <li class="services__item">
-                <span class="services__number">
-                  <span class="services__number-text">Услуга №</span> 2
-                </span>
-                <dl class="services__service">
+              <li class="services__service">
+            <span class="services__number">
+              <span class="services__number-text">Услуга №</span> 2
+            </span>
+                <dl class="services__description">
                   <dt class="services__name">Вывод на первых позициях</dt>
                   <dd class="services__price">99 руб./мес</dd>
                 </dl>
               </li>
-              <li class="services__item">
-                <span class="services__number">
-                  <span class="services__number-text">Услуга №</span> 3
-                </span>
-                <dl class="services__service">
+              <li class="services__service">
+            <span class="services__number">
+              <span class="services__number-text">Услуга №</span> 3
+            </span>
+                <dl class="services__description">
                   <dt class="services__name">Кастомный цвет карточки</dt>
                   <dd class="services__price">59 руб./мес</dd>
                 </dl>
               </li>
             </ol>
           </div>
-          <a href="">Показать тарифы для бизнеса</a>
+          <a class="modal-button" href="">
+            <span class="modal-button__text">Показать тарифы для бизнеса</span>
+          </a>
         </div>
       </section>
 
