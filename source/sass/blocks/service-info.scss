@@ -1,4 +1,11 @@
 .service-info {
+  @include rounded-section();
+  @include section-tail(#192144);
+
+  position: relative;
+
+  box-sizing: border-box;
+
   color: #ffffff;
 
   background-color: #192144;
@@ -7,42 +14,66 @@
 .service-info__container {
   @include container();
 
-  padding-top: 20px;
-  padding-bottom: 80px;
+  padding-top: 33px;
+  padding-bottom: 81px;
+  padding-left: 50px;
 
   @media (min-width: $tablet-width) {
-    padding-top: 20px;
+    padding-top: 42px;
+    padding-bottom: 88px;
+    padding-left: 74px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 100px;
-    padding-bottom: 160px;
+    padding-top: 132px;
+    padding-bottom: 163px;
+    padding-left: 131px;
   }
 }
 
 .service-info__title {
   @include section-title();
-}
 
-.service-info__text {
+  margin-bottom: 19px;
+
   @media (min-width: $tablet-width) {
-    width: 50%;
+    margin-bottom: 40px;
   }
 
   @media (min-width: $desktop-width) {
-    width: 43%;
+    margin-bottom: 58px;
+  }
+}
+
+.service-info__text {
+  margin-top: 0;
+  margin-bottom: 19px;
+  width: 86%;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 31px;
+    width: 46%;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 38px;
+    width: 52%;
   }
 }
 
 .service-info__slogan {
   @include section-slogan();
 
+  width: 90%;
+
   @media (min-width: $tablet-width) {
-    width: 40%;
+    margin-bottom: 51px;
+    width: 42%;
   }
 
   @media (min-width: $desktop-width) {
-    width: 32%;
+    margin-bottom: 84px;
+    width: 34%;
   }
 }
 
@@ -51,10 +82,10 @@
 
   @media (min-width: $tablet-width) {
     display: block;
-    width: 35%;
+    width: 42%;
   }
 
   @media (min-width: $desktop-width) {
-    width: 18%;
+    width: 22%;
   }
 }
