@@ -1,0 +1,17 @@
+.logo {
+  box-sizing: border-box;
+  display: block;
+  width: 96px;
+  height: 15px;
+  border: 1px solid #000000;
+
+  @media (min-width: $tablet-width) {
+    width: 164px;
+    height: 42px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 198px;
+    height: 52px;
+  }
+}
