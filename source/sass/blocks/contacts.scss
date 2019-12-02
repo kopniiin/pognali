@@ -1,0 +1,18 @@
+.contacts {
+  box-sizing: border-box;
+
+  &_buttons {
+    .contacts__list {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .contacts__item {
+      flex-shrink: 0;
+    }
+  }
+}
+
+.contacts__list {
+  @include list-reset();
+}
