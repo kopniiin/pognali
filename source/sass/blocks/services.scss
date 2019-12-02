@@ -70,6 +70,7 @@
   @include circle(34px);
 
   box-sizing: border-box;
+  flex-shrink: 0;
   order: 1;
   margin-top: 4px;
   padding-top: 8px;

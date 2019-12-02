@@ -1,5 +1,15 @@
 .footer {
+  box-sizing: border-box;
+
+  border-top-right-radius: 30px;
+  border-top-left-radius: 30px;
+
   background-color: #ffffff;
+
+  @media (min-width: $tablet-width) {
+    border-top-right-radius: 60px;
+    border-top-left-radius: 60px;
+  }
 }
 
 .footer__container {
@@ -8,17 +18,58 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 40px;
+  padding-top: 38px;
+  padding-bottom: 14px;
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
     justify-content: space-between;
-    padding-top: 40px;
+    padding-top: 46px;
     padding-bottom: 40px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 50px;
+    padding-top: 44px;
     padding-bottom: 50px;
+  }
+}
+
+.footer__logo {
+  margin-bottom: 41px;
+
+  @media (min-width: $tablet-width) {
+    flex-shrink: 0;
+    margin-bottom: 0;
+    margin-right: 10px;
+  }
+}
+
+.footer__socials {
+  margin-bottom: 37px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 2px;
+    margin-right: 20px;
+    margin-bottom: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 4px;
+    margin-right: 54px;
+  }
+}
+
+.footer__developer-info {
+  align-self: stretch;
+  border-top: 1px solid rgba(0, 0, 0, 0.05);
+  padding-top: 14px;
+
+  font-style: normal;
+
+  @media (min-width: $tablet-width) {
+    flex-shrink: 0;
+    align-self: center;
+    border-top: none;
+    padding-top: 0;
   }
 }
