@@ -125,6 +125,30 @@
       display: block;
     }
   }
+
+  &_inner {
+    min-height: 64px;
+
+    .navigation__container {
+      padding-top: 18px;
+
+      @media (min-width: $tablet-width) {
+        padding-top: 44px;
+      }
+
+      @media (min-width: $desktop-width) {
+        padding-top: 15px;
+      }
+    }
+
+    .navigation__control {
+      top: 4px;
+
+      @media (min-width: $tablet-width) {
+        top: 40px;
+      }
+    }
+  }
 }
 
 .navigation__container {
