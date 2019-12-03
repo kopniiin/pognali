@@ -146,6 +146,7 @@
 }
 
 @mixin container() {
+  box-sizing: border-box;
   padding-right: 25px;
   padding-left: 25px;
 
@@ -155,7 +156,6 @@
   }
 
   @media (min-width: $desktop-width) {
-    box-sizing: border-box;
     margin-right: auto;
     margin-left: auto;
     padding-right: 60px;

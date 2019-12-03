@@ -10,62 +10,111 @@
   <body class="page">
 
     <header class="header">
-      <div class="header__container">
-        <nav class="navigation header__navigation">
-          <a class="logo">
-            <img src="logo" alt="Логотип сервиса Погнали">
+      <nav class="navigation navigation_no-js">
+        <div class="navigation__container">
+          <a class="logo navigation__logo">
+            <img class="logo__img" src="" alt="">
           </a>
-          <button class="burger-button" type="button">
-            <span class="burger-button__text burger-button__text_visually-hidden">Навигационное меню</span>
+          <button class="navigation__control" type="button">
+            <span class="navigation__control-text">Навигационное меню</span>
           </button>
-          <ul class="navigation__site-navigation">
-            <li class="navigation__site-navigation-item">
-              <a class="navigation__site-navigation-link" href="">О сервисе</a>
-            </li>
-            <li class="navigation__site-navigation-item">
-              <a class="navigation__site-navigation-link" href="">Направления</a>
-            </li>
-            <li class="navigation__site-navigation-item">
-              <a class="navigation__site-navigation-link" href="">Попутчики</a>
-            </li>
-          </ul>
-          <a class="button" href="">Авторизация</a>
-          <address class="navigation__contact-info">
-            <ul class="navigation__contacts">
-              <li class="navigation__contact-item">
-                <a href="tel:88005558628">8 800 555-86-28</a>
+          <div class="site-navigation navigation__site-navigation">
+            <ul class="site-navigation__list">
+              <li class="site-navigation__item">
+                <a class="navigation-link" href="">
+                  <span class="navigation-link__text">О сервисе</span>
+                  <span class="navigation-link__text" aria-hidden="true">О сервисе</span>
+                </a>
               </li>
-              <li class="navigation__contact-item">
-                <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+              <li class="site-navigation__item">
+                <a class="navigation-link" href="form.html">
+                  <span class="navigation-link__text">Направления</span>
+                  <span class="navigation-link__text" aria-hidden="true">Направления</span>
+                </a>
               </li>
-            </ul>
-            <ul class="navigation__socials">
-              <li class="navigation__social-item">
-                <a href="">Facebook</a>
-              </li>
-              <li class="navigation__social-item">
-                <a href="">Вконтакте</a>
-              </li>
-              <li class="navigation__social-item">
-                <a href="">Instagram</a>
+              <li class="site-navigation__item">
+                <a class="navigation-link" href="catalog.html">
+                  <span class="navigation-link__text">Попутчики</span>
+                  <span class="navigation-link__text" aria-hidden="true">Попутчики</span>
+                </a>
               </li>
             </ul>
+          </div>
+          <a class="button navigation__button" href="">Авторизация</a>
+          <address class="navigation__contacts-info">
+            <div class="contacts navigation__contacts">
+              <ul class="contacts__list">
+                <li class="contacts__item">
+                  <a class="contact-link contact-link_phone" href="tel:88005558628">
+                    <span class="contact-link__text">8 800 555-86-28</span>
+                  </a>
+                </li>
+                <li class="contacts__item">
+                  <a class="contact-link contact-link_mail" href="mailto:mail@htmlacademy.ru">
+                    <span class="contact-link__text">mail@htmlacademy.ru</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="socials navigation__socials">
+                <ul class="socials__list">
+                  <li class="socials__item">
+                    <a class="social-link social-link_facebook" href="">
+                      <span class="social-link__text">Фейсбук</span>
+                    </a>
+                  </li>
+                  <li class="socials__item">
+                    <a class="social-link social-link_vk" href="">
+                      <span class="social-link__text">Вконтакте</span>
+                    </a>
+                  </li>
+                  <li class="socials__item">
+                    <a class="social-link social-link_instagram" href="">
+                      <span class="social-link__text">Инстаграм</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
           </address>
-        </nav>
+          <address class="navigation__additional-contacts">
+            <div class="contacts contacts_buttons">
+              <ul class="contacts__list">
+                <li class="contacts__item">
+                  <a class="contact-button contact-button_phone contact-button_dark" href="tel:88005558628">
+                    <span class="contact-button__text">8 800 555-86-28</span>
+                  </a>
+                </li>
+                <li class="contacts__item">
+                  <a class="contact-button contact-button_mail" href="mailto:mail@htmlacademy.ru">
+                    <span class="contact-button__text">mail@htmlacademy.ru</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </address>
+        </div>
+      </nav>
+      <div class="header__container">
         <b class="header__slogan">
           В путешествие с крутыми попутчиками!
         </b>
-        <ul class="header__additional-navigation">
-          <li class="header__additional-navigation-item">
-            <a href="tel:88005558628">8 800 555-86-28</a>
-          </li>
-          <li class="header__additional-navigation-item">
-            <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
-          </li>
-          <li class="header__additional-navigation-item">
-            <a class="button" href="">Авторизация</a>
-          </li>
-        </ul>
+        <div class="header__buttons">
+          <div class="contacts contacts_buttons header__contacts">
+            <ul class="contacts__list">
+              <li class="contacts__item">
+                <a class="contact-button contact-button_phone contact-button_dark" href="tel:88005558628">
+                  <span class="contact-button__text">8 800 555-86-28</span>
+                </a>
+              </li>
+              <li class="contacts__item">
+                <a class="contact-button contact-button_mail" href="mailto:mail@htmlacademy.ru">
+                  <span class="contact-button__text">mail@htmlacademy.ru</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <a class="button" href="">Авторизация</a>
+        </div>
         <blockquote class="header__review">
           <p>«Лучшее приложение, что я видел в жизни!»</p>
           <cite class="header__review-author">Мурат Эльтазинглавный редактор газеты «гаджетлайф»</cite>
@@ -531,5 +580,7 @@
       </div>
     </footer>
 
+    <script src="js/script.js"></script>
   </body>
 </html>
+
