@@ -14,17 +14,23 @@
 
   @media (min-width: $desktop-width) {
     border-radius: 0;
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
     width: 285px;
     min-height: 285px;
   }
 
   &_big {
     border-radius: 0;
+    border-top-right-radius: 12px;
+    border-top-left-radius: 12px;
     width: 270px;
     height: 270px;
 
     @media (min-width: $tablet-width) {
       border-radius: 0;
+      border-top-right-radius: 20px;
+      border-top-left-radius: 20px;
       width: 285px;
       height: 285px;
     }
@@ -47,6 +53,7 @@
     }
 
     @media (min-width: $desktop-width) {
+      border-radius: 0;
       border-top-right-radius: 10px;
       border-top-left-radius: 10px;
       width: 190px;

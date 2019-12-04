@@ -7,6 +7,7 @@
   padding-bottom: 76px;
 
   background-color: #ffffff;
+  transition: transform 0.2s, box-shadow 0.2s;
 
   @media (min-width: $tablet-width) {
     display: flex;
@@ -22,6 +23,11 @@
     padding-left: 285px;
     width: 950px;
     min-height: 285px;
+  }
+
+  &:hover {
+    box-shadow: 0 6px 21px rgba(0, 0, 0, 0.08);
+    transform: scale(1.01);
   }
 }
 
