@@ -27,21 +27,30 @@
 }
 
 @mixin triangle-top($width, $height, $color) {
+  width: 0;
+  height: 0;
   border-top: none;
   border-right: ($width / 2) solid transparent;
   border-bottom: $height solid $color;
   border-left: ($width / 2) solid transparent;
-  width: 0;
-  height: 0;
 }
 
 @mixin triangle-right($width, $height, $color) {
+  width: 0;
+  height: 0;
   border-top: ($height / 2) solid transparent;
   border-right: none;
   border-bottom: ($height / 2) solid transparent;
   border-left: $width solid $color;
+}
+
+@mixin triangle-left($width, $height, $color) {
   width: 0;
   height: 0;
+  border-top: ($height / 2) solid transparent;
+  border-right: $width solid $color;
+  border-bottom: ($height / 2) solid transparent;
+  border-left: none;
 }
 
 @mixin circle($diameter) {

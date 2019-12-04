@@ -1,0 +1,163 @@
+.pagination {
+  position: relative;
+
+  box-sizing: border-box;
+  width: 270px;
+  height: 50px;
+  border-radius: 20px;
+
+  background-color: #ffffff;
+  overflow: hidden;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+
+    width: auto;
+    height: auto;
+    padding-left: 28px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-right: 10px;
+  }
+
+  &::before {
+    content: "";
+
+    position: absolute;
+    top: 0;
+    left: 50%;
+
+    width: 1px;
+    height: 100%;
+
+    background-color: #edeff6;
+    transform: translateX(-50%);
+
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
+  }
+}
+
+.pagination__controls {
+  @include list-reset();
+
+  display: flex;
+  width: 100%;
+  height: 100%;
+
+  @media (min-width: $tablet-width) {
+    width: 124px;
+    height: auto;
+  }
+}
+
+.pagination__control-item {
+  width: 50%;
+}
+
+.pagination__control {
+  position: relative;
+
+  display: block;
+  width: 100%;
+  height: 100%;
+
+  &::before {
+    content: "";
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+  }
+
+  &:hover[href],
+  &:focus[href] {
+    &::before {
+      opacity: 0.6;
+    }
+  }
+
+  &:active[href] {
+    &::before {
+      opacity: 0.3;
+    }
+  }
+
+  &_previous {
+    &::before {
+      @include triangle-left(10px, 20px, #192144);
+
+      @media (min-width: $tablet-width) {
+        left: 66%;
+      }
+    }
+  }
+
+  &_next {
+    &::before {
+      @include triangle-right(10px, 20px, #192144);
+
+      @media (min-width: $tablet-width) {
+        left: 36%;
+      }
+    }
+  }
+}
+
+.pagination__control-text {
+  @include visually-hidden();
+}
+
+.pagination__pages {
+  @include list-reset();
+
+  display: none;
+  max-width: 70%;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    margin-top: 25px;
+    margin-bottom: 25px;
+
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 30px;
+    color: #161c35;
+  }
+}
+
+.pagination__page {
+  @include circle(50px);
+
+  box-sizing: border-box;
+  display: block;
+  padding-top: 12px;
+
+  text-align: center;
+  text-decoration: none;
+  color: inherit;
+
+  &:hover[href],
+  &:focus[href] {
+    opacity: 0.6;
+  }
+
+  &:active[href] {
+    background-color: #ffd74b;
+
+    opacity: 1;
+  }
+
+  &_active {
+    background-color: #ffd74b;
+  }
+}
+
+.pagination__page-text {
+  @include visually-hidden();
+}
