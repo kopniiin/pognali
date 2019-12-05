@@ -1,0 +1,19 @@
+.directions {
+  box-sizing: border-box;
+}
+
+.directions__list {
+  @include list-reset();
+}
+
+.directions__item {
+  margin-bottom: 11px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 10px;
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}

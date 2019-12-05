@@ -1,3 +1,76 @@
 .user-preview {
+  position: relative;
+
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 12px;
+  padding-bottom: 16px;
+  width: 270px;
+
   background-color: #ffffff;
+  transition: transform 0.2s, box-shadow 0.2s;
+
+  @media (min-width: $tablet-width) {
+    width: 285px;
+    border-radius: 20px;
+    padding-bottom: 24px;
+  }
+
+  &:hover {
+    box-shadow: 0 6px 21px rgba(0, 0, 0, 0.08);
+    transform: scale(1.01);
+  }
+}
+
+.user-preview__name {
+  margin-right: 10px;
+  margin-bottom: 16px;
+  margin-left: 10px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 21px;
+  }
+}
+
+.user-preview__avatar {
+  order: -1;
+}
+
+.user-preview__level {
+  position: absolute;
+  top: 15px;
+  left: 18px;
+
+  @media (min-width: $tablet-width) {
+    top: 20px;
+    left: 20px;
+  }
+}
+
+.user-preview__flags {
+  order: -1;
+  margin-top: -12px;
+  margin-bottom: 11px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 15px;
+  }
+}
+
+.user-preview__tags {
+  margin-right: 10px;
+  margin-bottom: 10px;
+  margin-left: 10px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 18px;
+  }
+}
+
+.user-preview__transports {
+  margin-top: auto;
+  margin-right: 10px;
+  margin-left: 10px;
 }

@@ -1,3 +1,22 @@
+.tags {
+  box-sizing: border-box;
+
+  &_center {
+    .tags__tag-list {
+      justify-content: center;
+    }
+
+    .tags__tag-item {
+      margin-right: 3px;
+      margin-left: 3px;
+
+      &:last-child {
+        margin-right: 3px;
+      }
+    }
+  }
+}
+
 .tags__title {
   @include visually-hidden();
 }
@@ -7,12 +26,12 @@
 
   display: flex;
   flex-wrap: wrap;
-
-  &_center {
-    justify-content: center;
-  }
 }
 
 .tags__tag-item {
   margin-right: 6px;
+
+  &:last-child {
+    margin-right: 0;
+  }
 }

@@ -1,8 +1,16 @@
 .like-counter {
+  box-sizing: border-box;
+  display: block;
+
   font-size: 14px;
   font-weight: 700;
   line-height: 21px;
   color: #161c35;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 24px;
+  }
 }
 
 .like-counter__text {

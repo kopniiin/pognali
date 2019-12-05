@@ -20,3 +20,12 @@
 .page__title {
   @include visually-hidden();
 }
+
+.page__blocks {
+  @include container();
+
+  padding-top: 20px;
+  padding-bottom: 60px;
+
+  background-color: #dfe3f0;
+}

@@ -1,0 +1,7 @@
+.catalog {
+  box-sizing: border-box;
+}
+
+.catalog__container {
+  @include container();
+}

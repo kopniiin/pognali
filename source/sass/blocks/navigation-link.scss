@@ -1,0 +1,67 @@
+.navigation-link {
+  box-sizing: border-box;
+  display: block;
+
+  font-size: 30px;
+  font-weight: 500;
+  line-height: 36px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #192144;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 70px;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: relative;
+
+    font-size: 20px;
+    line-height: 30px;
+
+    color: #ffffff;
+
+    overflow: hidden;
+  }
+
+  &:hover,
+  &:focus {
+    opacity: 0.7;
+
+    @media (min-width: $desktop-width) {
+      opacity: 1;
+
+      .navigation-link__text {
+        transform: translateY(-40px);
+      }
+    }
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.navigation-link__text {
+  @media (min-width: $desktop-width) {
+    display: block;
+
+    transition: transform 0.24s;
+  }
+
+  &:last-child {
+    display: none;
+
+    @media (min-width: $desktop-width) {
+      position: absolute;
+      left: 0;
+      top: 40px;
+
+      display: block;
+      width: 100%;
+
+      color: #ffd74b;
+    }
+  }
+}

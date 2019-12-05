@@ -23,25 +23,34 @@
 
 @mixin image-size() {
   max-width: 100%;
-  height: 0;
+  height: auto;
 }
 
 @mixin triangle-top($width, $height, $color) {
+  width: 0;
+  height: 0;
   border-top: none;
   border-right: ($width / 2) solid transparent;
   border-bottom: $height solid $color;
   border-left: ($width / 2) solid transparent;
-  width: 0;
-  height: 0;
 }
 
 @mixin triangle-right($width, $height, $color) {
+  width: 0;
+  height: 0;
   border-top: ($height / 2) solid transparent;
   border-right: none;
   border-bottom: ($height / 2) solid transparent;
   border-left: $width solid $color;
+}
+
+@mixin triangle-left($width, $height, $color) {
   width: 0;
   height: 0;
+  border-top: ($height / 2) solid transparent;
+  border-right: $width solid $color;
+  border-bottom: ($height / 2) solid transparent;
+  border-left: none;
 }
 
 @mixin circle($diameter) {
@@ -112,7 +121,7 @@
   &::after {
     flex-grow: 1;
     margin-left: 12px;
-    min-width: 14px;
+    min-width: 11px;
 
     @media (min-width: $tablet-width) {
       min-width: 70px;
@@ -146,6 +155,7 @@
 }
 
 @mixin container() {
+  box-sizing: border-box;
   padding-right: 25px;
   padding-left: 25px;
 
@@ -159,6 +169,32 @@
     margin-left: auto;
     padding-right: 60px;
     padding-left: 60px;
-    width: 1200px;
+    width: 1440px;
+  }
+}
+
+@mixin rounded-section() {
+  border-bottom-right-radius: 30px;
+  border-bottom-left-radius: 30px;
+
+  @media (min-width: $tablet-width) {
+    border-bottom-right-radius: 60px;
+    border-bottom-left-radius: 60px;
+  }
+}
+
+@mixin section-tail($color) {
+  &::before {
+    content: "";
+
+    position: absolute;
+    bottom: calc(100% - 1px);
+    left: 0;
+    z-index: -1;
+
+    width: 100%;
+    height: 80px;
+
+    background-color: $color;
   }
 }

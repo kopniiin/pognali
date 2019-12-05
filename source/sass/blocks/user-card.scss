@@ -1,0 +1,200 @@
+.user-card {
+  position: relative;
+
+  box-sizing: border-box;
+  border-radius: 20px;
+  padding-top: 15px;
+  padding-bottom: 76px;
+
+  background-color: #ffffff;
+  transition: transform 0.2s, box-shadow 0.2s;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 34px;
+    padding-bottom: 22px;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-wrap: nowrap;
+    padding-top: 45px;
+    padding-bottom: 46px;
+    padding-left: 285px;
+    width: 950px;
+    min-height: 285px;
+  }
+
+  &:hover {
+    box-shadow: 0 6px 21px rgba(0, 0, 0, 0.08);
+    transform: scale(1.01);
+  }
+}
+
+.user-card__top {
+  margin-bottom: 14px;
+  padding-right: 22px;
+  padding-left: 25px;
+
+  @media (min-width: $tablet-width) {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+    margin-bottom: 0;
+    margin-left: 225px;
+    padding-left: 30px;
+    width: calc(100% - 310px);
+    min-height: 190px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 0;
+    padding-top: 2px;
+    padding-left: 56px;
+    width: 52.2%;
+    min-height: 194px;
+  }
+}
+
+.user-card__name {
+  margin-left: 80px;
+  min-height: 40px;
+
+  @media (min-width: $tablet-width) {
+    align-self: flex-start;
+    margin-bottom: 17px;
+    margin-left: 3px;
+    min-height: auto;
+  }
+}
+
+.user-card__avatar {
+  position: absolute;
+  top: 15px;
+  left: 18px;
+
+  @media (min-width: $tablet-width) {
+    top: 35px;
+    left: 35px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 0;
+    left: 0;
+
+    height: 100%;
+  }
+}
+
+.user-card__buttons {
+  margin-bottom: 15px;
+  margin-left: 42px;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    order: 1;
+    margin-top: auto;
+    margin-bottom: 0;
+    margin-left: 0;
+  }
+}
+
+.user-card__like-container {
+  display: flex;
+  align-items: center;
+}
+
+.user-card__button {
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+  left: 20px;
+
+  @media (min-width: $tablet-width) {
+    position: static;
+
+    min-width: 148px;
+  }
+}
+
+.user-card__like {
+  flex-shrink: 0;
+  margin-right: 6px;
+}
+
+.user-card__tags {
+  width: 70%;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 45px;
+    margin-left: 3px;
+    width: 58%;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 47px;
+    width: 88%;
+  }
+}
+
+.user-card__middle {
+  margin-bottom: 17px;
+
+  @media (min-width: $tablet-width) {
+    flex-grow: 1;
+    order: 1;
+    margin-top: 19px;
+    margin-bottom: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 0;
+    margin-bottom: 60px;
+    padding-right: 20px;
+    padding-left: 42px;
+  }
+}
+
+.user-card__bottom {
+  display: flex;
+  justify-content: space-between;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    right: 44px;
+    bottom: 42px;
+
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 25%;
+  }
+}
+
+.user-card__transports {
+  flex-grow: 1;
+
+  @media (min-width: $tablet-width) {
+    flex-grow: 0;
+    margin-bottom: 6px;
+    margin-left: 12px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
+    margin-left: 0;
+  }
+}
+
+.user-card__level {
+  flex-shrink: 0;
+}
