@@ -17,6 +17,10 @@
   }
 }
 
+.page__header {
+  z-index: 2;
+}
+
 .page__title {
   @include visually-hidden();
 }
