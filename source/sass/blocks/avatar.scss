@@ -2,7 +2,6 @@
   @include circle(70px);
 
   box-sizing: border-box;
-  border: 1px solid #000000;
 
   overflow: hidden;
 
@@ -13,6 +12,8 @@
   }
 
   @media (min-width: $desktop-width) {
+    position: relative;
+
     border-radius: 0;
     border-bottom-left-radius: 20px;
     border-top-left-radius: 20px;
@@ -36,9 +37,20 @@
     }
 
     @media (min-width: $desktop-width) {
+      position: static;
+
       width: 285px;
       height: 285px;
       min-height: auto;
+
+      .avatar__image {
+        position: static;
+
+        width: 100%;
+        height: auto;
+
+        transform: none;
+      }
     }
   }
 
@@ -53,16 +65,39 @@
     }
 
     @media (min-width: $desktop-width) {
+      position: static;
+
       border-radius: 0;
       border-top-right-radius: 10px;
       border-top-left-radius: 10px;
       width: 190px;
       height: 190px;
       min-height: auto;
+
+      .avatar__image {
+        position: static;
+
+        width: 100%;
+        height: auto;
+
+        transform: none;
+      }
     }
   }
 }
 
 .avatar__image {
-  @include image-size();
+  width: 100%;
+  height: auto;
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    top: 0;
+    left: 50%;
+
+    width: auto;
+    height: 100%;
+
+    transform: translateX(-50%);
+  }
 }
