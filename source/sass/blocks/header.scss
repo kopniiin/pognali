@@ -108,6 +108,10 @@
   }
 }
 
+.header__navigation {
+  z-index: 1;
+}
+
 .header__container {
   @include container();
 
