@@ -14,9 +14,13 @@
 .service-info__container {
   @include container();
 
+  position: relative;
+
   padding-top: 33px;
   padding-bottom: 81px;
   padding-left: 50px;
+
+  overflow: hidden;
 
   @media (min-width: $tablet-width) {
     padding-top: 42px;
@@ -29,10 +33,100 @@
     padding-bottom: 163px;
     padding-left: 131px;
   }
+
+  &::before {
+    content: "";
+
+    position: absolute;
+    top: 0;
+    left: -26px;
+
+    width: 132px;
+    height: 132px;
+    border-radius: 8px;
+
+    background-color: #141b3b;
+
+    @media (min-width: $tablet-width) {
+      left: 50%;
+
+      width: calc(100% - 80px);
+      height: 214px;
+      border-radius: 20px;
+
+      transform: translateX(-50%);
+    }
+
+    @media (min-width: $desktop-width) {
+      top: 70px;
+      left: 60px;
+
+      width: 214px;
+
+      transform: none;
+    }
+  }
+
+  &::after {
+    content: "";
+
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+
+    width: 292px;
+    height: 352px;
+    max-height: 100%;
+
+    background-image: url("../../img/about-mobile@1x.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: auto 100%;
+    transform: translateX(-48.5%);
+
+    @media (min-resolution: $retina-dppx) {
+      background-image: url("../../img/about-mobile@2x.png");
+    }
+
+    @media (min-width: $tablet-width) {
+      top: 48px;
+      right: 8px;
+      bottom: auto;
+      left: auto;
+
+      width: 376px;
+      height: 548px;
+
+      background-image: url("../../img/about-tablet@1x.png");
+      transform: none;
+
+      @media (min-resolution: $retina-dppx) {
+        background-image: url("../../img/about-tablet@2x.png");
+      }
+    }
+
+    @media (min-width: $desktop-width) {
+      top: auto;
+      right: 60px;
+      bottom: -1px;
+
+      width: 630px;
+      height: 665px;
+
+      background-image: url("../../img/about-desktop@1x.png");
+
+      @media (min-resolution: $retina-dppx) {
+        background-image: url("../../img/about-desktop@2x.png");
+      }
+    }
+  }
 }
 
 .service-info__title {
   @include section-title();
+
+  position: relative;
+  z-index: 1;
 
   margin-bottom: 19px;
 
@@ -46,6 +140,9 @@
 }
 
 .service-info__text {
+  position: relative;
+  z-index: 1;
+
   margin-top: 0;
   margin-bottom: 19px;
   width: 86%;
@@ -64,6 +161,9 @@
 .service-info__slogan {
   @include section-slogan();
 
+  position: relative;
+  z-index: 1;
+
   width: 90%;
 
   @media (min-width: $tablet-width) {
@@ -78,6 +178,9 @@
 }
 
 .service-info__button {
+  position: relative;
+  z-index: 1;
+
   display: none;
 
   @media (min-width: $tablet-width) {

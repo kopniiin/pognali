@@ -19,6 +19,15 @@
 
   @media (min-width: $tablet-width) {
     padding-bottom: 209px;
+
+    background-image: url("../../img/flags-back@1x.png");
+    background-repeat: no-repeat;
+    background-size: 289px 575px;
+    background-position: top 80px right 40px;
+
+    @media (min-resolution: $retina-dppx) {
+      background-image: url("../../img/flags-back@2x.png");
+    }
   }
 
   @media (min-width: $desktop-width) {
@@ -26,6 +35,12 @@
     justify-content: space-between;
     padding-top: 162px;
     padding-bottom: 140px;
+
+    background-position: top 88px right 60px;
+
+    @media (min-resolution: $retina-dppx) {
+      background-image: url("../../img/flags-back@2x.png");
+    }
   }
 }
 
@@ -100,6 +115,9 @@
 
 .directions-info__directions {
   @media (min-width: $tablet-width) {
+    position: relative;
+    z-index: 1;
+
     margin-right: 35px;
     margin-left: 35px;
   }
@@ -108,5 +126,27 @@
     margin-right: 0;
     margin-left: 71px;
     width: 42.3%;
+  }
+
+  &::before {
+    @media (min-width: $tablet-width) {
+      content: "";
+
+      position: absolute;
+      top: -40px;
+      left: -35px;
+      z-index: -1;
+
+      width: 140px;
+      height: 140px;
+      border-radius: 20px;
+
+      background-color: #e2e5f2;
+    }
+
+    @media (min-width: $desktop-width) {
+      top: -74px;
+      left: -70px;
+    }
   }
 }
