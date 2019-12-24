@@ -244,10 +244,6 @@
   }
 }
 
-.navigation__control-text {
-  @include visually-hidden();
-}
-
 .navigation__site-navigation {
   display: none;
   margin-bottom: 53px;

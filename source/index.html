@@ -19,27 +19,25 @@
               <img class="logo__img" src="img/logo-mobile-white@1x.png" srcset="img/logo-mobile-white@2x.png 2x" alt="Логотип сервиса Погнали" width="100" height="19">
             </picture>
           </a>
-          <button class="navigation__control" type="button">
-            <span class="navigation__control-text">Навигационное меню</span>
-          </button>
+          <button class="navigation__control" type="button" aria-label="Навигационное меню"></button>
           <div class="site-navigation navigation__site-navigation">
             <ul class="site-navigation__list">
               <li class="site-navigation__item">
-                <a class="navigation-link" href="">
+                <a class="navigation-link" href="" aria-label="О сервисе">
                   <span class="navigation-link__text">О сервисе</span>
-                  <span class="navigation-link__text" aria-hidden="true">О сервисе</span>
+                  <span class="navigation-link__text">О сервисе</span>
                 </a>
               </li>
               <li class="site-navigation__item">
-                <a class="navigation-link" href="form.html">
+                <a class="navigation-link" href="form.html" aria-label="Направления">
                   <span class="navigation-link__text">Направления</span>
-                  <span class="navigation-link__text" aria-hidden="true">Направления</span>
+                  <span class="navigation-link__text">Направления</span>
                 </a>
               </li>
               <li class="site-navigation__item">
-                <a class="navigation-link" href="catalog.html">
+                <a class="navigation-link" href="catalog.html" aria-label="Попутчики">
                   <span class="navigation-link__text">Попутчики</span>
-                  <span class="navigation-link__text" aria-hidden="true">Попутчики</span>
+                  <span class="navigation-link__text">Попутчики</span>
                 </a>
               </li>
             </ul>
@@ -96,7 +94,7 @@
             <div class="contacts contacts_buttons">
               <ul class="contacts__list">
                 <li class="contacts__item">
-                  <a class="contact-button contact-button_dark" href="tel:88005558628" aria-label="Позвонить по номеру 88005558628">
+                  <a class="contact-button contact-button_dark" href="tel:88005558628" aria-label="Позвонить по номеру 8 800 555-86-28">
                     <svg class="contact-button__icon" aria-hidden="true" focusable="false" width="18" height="18">
                       <use xlink:href="img/sprite.svg#topmenu-phone"></use>
                     </svg>
@@ -122,7 +120,7 @@
           <div class="contacts contacts_buttons header__contacts">
             <ul class="contacts__list">
               <li class="contacts__item">
-                <a class="contact-button contact-button_dark" href="tel:88005558628" aria-label="Позвонить по номеру 88005558628">
+                <a class="contact-button contact-button_dark" href="tel:88005558628" aria-label="Позвонить по номеру 8 800 555-86-28">
                   <svg class="contact-button__icon" aria-hidden="true" focusable="false" width="18" height="18">
                     <use xlink:href="img/sprite.svg#topmenu-phone"></use>
                   </svg>
@@ -194,7 +192,9 @@
               Люди сами пишут о странах, куда хотели бы отправиться
               и чем можно там заняться.
             </p>
-            <a class="button button_big directions-info__button" href="form.html">Показать все</a>
+            <a class="button button_big directions-info__button" href="form.html" aria-label="Показать все направления">
+              Показать все
+            </a>
           </div>
           <div class="directions directions-info__directions">
             <ul class="directions__list">
@@ -216,9 +216,7 @@
                       </div>
                     </div>
                     <p class="direction-card__slogan">Джунгли зовут!</p>
-                    <p class="direction-card__user-counter">
-                      18321 <span class="direction-card__counter-text">пользователь хочет посетить эту страну</span>
-                    </p>
+                    <p class="direction-card__user-counter" aria-label="18321 пользователь хочет посетить эту страну">18321</p>
                   </div>
                 </article>
               </li>
@@ -240,9 +238,7 @@
                       </div>
                     </div>
                     <p class="direction-card__slogan">Трэ бьен, манифик!</p>
-                    <p class="direction-card__user-counter">
-                      12518 <span class="direction-card__counter-text">пользователей хотят посетить эту страну</span>
-                    </p>
+                    <p class="direction-card__user-counter" aria-label="12518 пользователей хотят посетить эту страну">12518</p>
                   </div>
                 </article>
               </li>
@@ -264,9 +260,7 @@
                       </div>
                     </div>
                     <p class="direction-card__slogan">Закоулки старой Европы</p>
-                    <p class="direction-card__user-counter">
-                      5326 <span class="direction-card__counter-text">пользователей хотят посетить эту страну</span>
-                    </p>
+                    <p class="direction-card__user-counter" aria-label="5326 пользователей хотят посетить эту страну">5326</p>
                   </div>
                 </article>
               </li>
@@ -286,7 +280,9 @@
             <p class="users-info__slogan">
               Теперь можно легко найти единомышленников!
             </p>
-            <a class="button button_big users-info__button" href="catalog.html">Показать всех</a>
+            <a class="button button_big users-info__button" href="catalog.html" aria-label="Показать всех попутчиков">
+              Показать всех
+            </a>
           </div>
           <div class="previews users-info__previews">
             <ul class="previews__list">
@@ -300,7 +296,7 @@
                     <img class="avatar__image" src="img/firsova-desktop@1x.jpg" srcset="img/firsova-destop@2x.jpg 2x" alt="" width="285" height="285">
                   </div>
                   <section class="level level_fixed user-preview__level">
-                    <h4 class="level__title">левел:</h4>
+                    <h4 class="level__title" aria-label="Уровень пользователя">левел:</h4>
                     <div class="level__container">
                       <div class="level__progress level__progress_99"></div>
                       <div class="level__text-container">
@@ -373,39 +369,39 @@
                       </li>
                     </ul>
                   </section>
-                  <section class="transports transports_fixed user-preview__transports">
+                  <section class="transports transports_fixed user-card__transports">
                     <h4 class="transports__title">транспорт:</h4>
                     <ul class="transports__transport-list">
                       <li class="transport-item">
-                        <div class="transport transport_plane transport_active">
-                          <span class="transport__status">
-                            Этот пользователь путешествует на авиатранспорте
-                          </span>
-                          <span class="transport__name" aria-hidden="true">Авиаперелет</span>
+                        <div class="transport transport_active" aria-label="Пользователь путешествует на авиатранспорте">
+                          <span class="transport__name" aria-hidden="true">Авиатранспорт</span>
+                          <svg class="transport__icon" aria-hidden="true" focusable="false" width="24" height="20">
+                            <use xlink:href="img/sprite.svg#plane"></use>
+                          </svg>
                         </div>
                       </li>
                       <li class="transport-item">
-                        <div class="transport transport_bus">
-                        <span class="transport__status">
-                          Пользователь не путешествует на автотранспорте
-                        </span>
+                        <div class="transport" aria-label="Пользователь не путешествует на автотраспорте">
                           <span class="transport__name" aria-hidden="true">Автотранспорт</span>
+                          <svg class="transport__icon" aria-hidden="true" focusable="false" width="24" height="20">
+                            <use xlink:href="img/sprite.svg#bus"></use>
+                          </svg>
                         </div>
                       </li>
                       <li class="transport-item">
-                        <div class="transport transport_bike">
-                          <span class="transport__status">
-                            Этот пользователь не путешествует на велосипеде
-                          </span>
+                        <div class="transport" aria-label="Пользователь не путешествует на велосипеде">
                           <span class="transport__name" aria-hidden="true">Велосипед</span>
+                          <svg class="transport__icon" aria-hidden="true" focusable="false" width="24" height="20">
+                            <use xlink:href="img/sprite.svg#bike"></use>
+                          </svg>
                         </div>
                       </li>
                       <li class="transport-item">
-                        <div class="transport transport_run">
-                          <span class="transport__status">
-                            Этот пользователь не путешествует пешком
-                          </span>
+                        <div class="transport" aria-label="Пользователь не путешествует пешком">
                           <span class="transport__name" aria-hidden="true">Пешком</span>
+                          <svg class="transport__icon" aria-hidden="true" focusable="false" width="24" height="20">
+                            <use xlink:href="img/sprite.svg#run"></use>
+                          </svg>
                         </div>
                       </li>
                     </ul>
@@ -422,7 +418,7 @@
                     <img class="avatar__image" src="img/demin-desktop@1x.jpg" srcset="img/demin-desktop@2x.jpg 2x" alt="" width="285" height="285">
                   </div>
                   <section class="level level_fixed user-preview__level">
-                    <h4 class="level__title">левел:</h4>
+                    <h4 class="level__title" aria-label="Уровень пользователя">левел:</h4>
                     <div class="level__container">
                       <div class="level__progress level__progress_80"></div>
                       <div class="level__text-container">
@@ -482,39 +478,39 @@
                       </li>
                     </ul>
                   </section>
-                  <section class="transports transports_fixed user-preview__transports">
+                  <section class="transports transports_fixed user-card__transports">
                     <h4 class="transports__title">транспорт:</h4>
                     <ul class="transports__transport-list">
                       <li class="transport-item">
-                        <div class="transport transport_plane transport_active">
-                          <span class="transport__status">
-                            Этот пользователь путешествует на авиатранспорте
-                          </span>
-                          <span class="transport__name" aria-hidden="true">Авиаперелет</span>
+                        <div class="transport transport_active" aria-label="Пользователь путешествует на авиатранспорте">
+                          <span class="transport__name" aria-hidden="true">Авиатранспорт</span>
+                          <svg class="transport__icon" aria-hidden="true" focusable="false" width="24" height="20">
+                            <use xlink:href="img/sprite.svg#plane"></use>
+                          </svg>
                         </div>
                       </li>
                       <li class="transport-item">
-                        <div class="transport transport_bus transport_active">
-                          <span class="transport__status">
-                            Пользователь путешествует на автотранспорте
-                          </span>
+                        <div class="transport transport_active" aria-label="Пользователь путешествует на автотраспорте">
                           <span class="transport__name" aria-hidden="true">Автотранспорт</span>
+                          <svg class="transport__icon" aria-hidden="true" focusable="false" width="24" height="20">
+                            <use xlink:href="img/sprite.svg#bus"></use>
+                          </svg>
                         </div>
                       </li>
                       <li class="transport-item">
-                        <div class="transport transport_bike">
-                          <span class="transport__status">
-                            Этот пользователь не путешествует на велосипеде
-                          </span>
+                        <div class="transport" aria-label="Пользователь не путешествует на велосипеде">
                           <span class="transport__name" aria-hidden="true">Велосипед</span>
+                          <svg class="transport__icon" aria-hidden="true" focusable="false" width="24" height="20">
+                            <use xlink:href="img/sprite.svg#bike"></use>
+                          </svg>
                         </div>
                       </li>
                       <li class="transport-item">
-                        <div class="transport transport_run transport_active">
-                          <span class="transport__status">
-                            Этот пользователь путешествует пешком
-                          </span>
+                        <div class="transport transport_active" aria-label="Пользователь путешествует пешком">
                           <span class="transport__name" aria-hidden="true">Пешком</span>
+                          <svg class="transport__icon" aria-hidden="true" focusable="false" width="24" height="20">
+                            <use xlink:href="img/sprite.svg#run"></use>
+                          </svg>
                         </div>
                       </li>
                     </ul>

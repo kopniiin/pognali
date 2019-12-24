@@ -19,27 +19,25 @@
               <img class="logo__img" src="img/logo-mobile-white@1x.png" srcset="img/logo-mobile-white@2x.png 2x" alt="Логотип сервиса Погнали" width="100" height="19">
             </picture>
           </a>
-          <button class="navigation__control" type="button">
-            <span class="navigation__control-text">Навигационное меню</span>
-          </button>
+          <button class="navigation__control" type="button" aria-label="Навигационное меню"></button>
           <div class="site-navigation navigation__site-navigation">
             <ul class="site-navigation__list">
               <li class="site-navigation__item">
-                <a class="navigation-link" href="">
+                <a class="navigation-link" href="" aria-label="О сервисе">
                   <span class="navigation-link__text">О сервисе</span>
-                  <span class="navigation-link__text" aria-hidden="true">О сервисе</span>
+                  <span class="navigation-link__text">О сервисе</span>
                 </a>
               </li>
               <li class="site-navigation__item">
-                <a class="navigation-link" href="form.html">
+                <a class="navigation-link" href="form.html" aria-label="Направления">
                   <span class="navigation-link__text">Направления</span>
-                  <span class="navigation-link__text" aria-hidden="true">Направления</span>
+                  <span class="navigation-link__text">Направления</span>
                 </a>
               </li>
               <li class="site-navigation__item">
-                <a class="navigation-link" href="catalog.html">
+                <a class="navigation-link" href="catalog.html" aria-label="Попутчики">
                   <span class="navigation-link__text">Попутчики</span>
-                  <span class="navigation-link__text" aria-hidden="true">Попутчики</span>
+                  <span class="navigation-link__text">Попутчики</span>
                 </a>
               </li>
             </ul>
@@ -96,7 +94,7 @@
             <div class="contacts contacts_buttons">
               <ul class="contacts__list">
                 <li class="contacts__item">
-                  <a class="contact-button contact-button_dark" href="tel:88005558628" aria-label="Позвонить по номеру 88005558628">
+                  <a class="contact-button contact-button_dark" href="tel:88005558628" aria-label="Позвонить по номеру 8 800 555-86-28">
                     <svg class="contact-button__icon" aria-hidden="true" focusable="false" width="18" height="18">
                       <use xlink:href="img/sprite.svg#topmenu-phone"></use>
                     </svg>
@@ -222,41 +220,41 @@
                     <h4 class="transports__title">транспорт:</h4>
                     <ul class="transports__transport-list">
                       <li class="transport-item">
-                        <div class="transport transport_plane transport_active transport_gray">
-                          <span class="transport__status">
-                            Пользователь путешествует на авиатранспорте
-                          </span>
-                          <span class="transport__name" aria-hidden="true">Авиаперелет</span>
+                        <div class="transport transport_active transport_gray" aria-label="Пользователь путешествует на авиатранспорте">
+                          <span class="transport__name" aria-hidden="true">Авиатранспорт</span>
+                          <svg class="transport__icon" aria-hidden="true" focusable="false" width="24" height="20">
+                            <use xlink:href="img/sprite.svg#plane"></use>
+                          </svg>
                         </div>
                       </li>
                       <li class="transport-item">
-                        <div class="transport transport_bus transport_gray">
-                          <span class="transport__status">
-                            Пользователь не путешествует на автотранспорте
-                          </span>
+                        <div class="transport transport_gray" aria-label="Пользователь не путешествует на автотраспорте">
                           <span class="transport__name" aria-hidden="true">Автотранспорт</span>
+                          <svg class="transport__icon" aria-hidden="true" focusable="false" width="24" height="20">
+                            <use xlink:href="img/sprite.svg#bus"></use>
+                          </svg>
                         </div>
                       </li>
                       <li class="transport-item">
-                        <div class="transport transport_bike transport_gray">
-                          <span class="transport__status">
-                            Пользователь не путешествует на велосипеде
-                          </span>
+                        <div class="transport transport_gray" aria-label="Пользователь не путешествует на велосипеде">
                           <span class="transport__name" aria-hidden="true">Велосипед</span>
+                          <svg class="transport__icon" aria-hidden="true" focusable="false" width="24" height="20">
+                            <use xlink:href="img/sprite.svg#bike"></use>
+                          </svg>
                         </div>
                       </li>
                       <li class="transport-item">
-                        <div class="transport transport_run transport_gray">
-                          <span class="transport__status">
-                            Пользователь не путешествует пешком
-                          </span>
+                        <div class="transport transport_gray" aria-label="Пользователь не путешествует пешком">
                           <span class="transport__name" aria-hidden="true">Пешком</span>
+                          <svg class="transport__icon" aria-hidden="true" focusable="false" width="24" height="20">
+                            <use xlink:href="img/sprite.svg#run"></use>
+                          </svg>
                         </div>
                       </li>
                     </ul>
                   </section>
                   <section class="level user-card__level">
-                    <h4 class="level__title">левел:</h4>
+                    <h4 class="level__title" aria-label="Уровень пользователя">левел:</h4>
                     <div class="level__container">
                       <div class="level__progress level__progress_99"></div>
                       <div class="level__text-container">
@@ -352,41 +350,41 @@
                     <h4 class="transports__title">транспорт:</h4>
                     <ul class="transports__transport-list">
                       <li class="transport-item">
-                        <div class="transport transport_plane transport_active transport_gray">
-                          <span class="transport__status">
-                            Пользователь путешествует на авиатранспорте
-                          </span>
-                          <span class="transport__name" aria-hidden="true">Авиаперелет</span>
+                        <div class="transport transport_active transport_gray" aria-label="Пользователь путешествует на авиатранспорте">
+                          <span class="transport__name" aria-hidden="true">Авиатранспорт</span>
+                          <svg class="transport__icon" aria-hidden="true" focusable="false" width="24" height="20">
+                            <use xlink:href="img/sprite.svg#plane"></use>
+                          </svg>
                         </div>
                       </li>
                       <li class="transport-item">
-                        <div class="transport transport_bus transport_active transport_gray">
-                          <span class="transport__status">
-                            Пользователь путешествует на автотранспорте
-                          </span>
+                        <div class="transport transport_active transport_gray" aria-label="Пользователь путешествует на автотраспорте">
                           <span class="transport__name" aria-hidden="true">Автотранспорт</span>
+                          <svg class="transport__icon" aria-hidden="true" focusable="false" width="24" height="20">
+                            <use xlink:href="img/sprite.svg#bus"></use>
+                          </svg>
                         </div>
                       </li>
                       <li class="transport-item">
-                        <div class="transport transport_bike transport_gray">
-                          <span class="transport__status">
-                            Пользователь не путешествует на велосипеде
-                          </span>
+                        <div class="transport transport_gray" aria-label="Пользователь не путешествует на велосипеде">
                           <span class="transport__name" aria-hidden="true">Велосипед</span>
+                          <svg class="transport__icon" aria-hidden="true" focusable="false" width="24" height="20">
+                            <use xlink:href="img/sprite.svg#bike"></use>
+                          </svg>
                         </div>
                       </li>
                       <li class="transport-item">
-                        <div class="transport transport_run transport_active transport_gray">
-                          <span class="transport__status">
-                            Пользователь путешествует пешком
-                          </span>
+                        <div class="transport transport_active transport_gray" aria-label="Пользователь путешествует пешком">
                           <span class="transport__name" aria-hidden="true">Пешком</span>
+                          <svg class="transport__icon" aria-hidden="true" focusable="false" width="24" height="20">
+                            <use xlink:href="img/sprite.svg#run"></use>
+                          </svg>
                         </div>
                       </li>
                     </ul>
                   </section>
                   <section class="level user-card__level">
-                    <h4 class="level__title">левел:</h4>
+                    <h4 class="level__title" aria-label="Уровень пользователя">левел:</h4>
                     <div class="level__container">
                       <div class="level__progress level__progress_80"></div>
                       <div class="level__text-container">
@@ -486,45 +484,45 @@
                   </section>
                 </div>
                 <div class="user-card__bottom">
-                  <section class="transports user-card__transports">
+                  <section class="transports  user-card__transports">
                     <h4 class="transports__title">транспорт:</h4>
                     <ul class="transports__transport-list">
                       <li class="transport-item">
-                        <div class="transport transport_plane transport_active transport_gray">
-                          <span class="transport__status">
-                            Пользователь путешествует на авиатранспорте
-                          </span>
-                          <span class="transport__name" aria-hidden="true">Авиаперелет</span>
+                        <div class="transport transport_active transport_gray" aria-label="Пользователь путешествует на авиатранспорте">
+                          <span class="transport__name" aria-hidden="true">Авиатранспорт</span>
+                          <svg class="transport__icon" aria-hidden="true" focusable="false" width="24" height="20">
+                            <use xlink:href="img/sprite.svg#plane"></use>
+                          </svg>
                         </div>
                       </li>
                       <li class="transport-item">
-                        <div class="transport transport_bus transport_gray">
-                          <span class="transport__status">
-                            Пользователь не путешествует на автотранспорте
-                          </span>
+                        <div class="transport transport_gray" aria-label="Пользователь не путешествует на автотраспорте">
                           <span class="transport__name" aria-hidden="true">Автотранспорт</span>
+                          <svg class="transport__icon" aria-hidden="true" focusable="false" width="24" height="20">
+                            <use xlink:href="img/sprite.svg#bus"></use>
+                          </svg>
                         </div>
                       </li>
                       <li class="transport-item">
-                        <div class="transport transport_bike transport_active transport_gray">
-                          <span class="transport__status">
-                            Пользователь путешествует на велосипеде
-                          </span>
+                        <div class="transport transport_active transport_gray" aria-label="Пользователь путешествует на велосипеде">
                           <span class="transport__name" aria-hidden="true">Велосипед</span>
+                          <svg class="transport__icon" aria-hidden="true" focusable="false" width="24" height="20">
+                            <use xlink:href="img/sprite.svg#bike"></use>
+                          </svg>
                         </div>
                       </li>
                       <li class="transport-item">
-                        <div class="transport transport_run transport_gray">
-                          <span class="transport__status">
-                            Пользователь не путешествует пешком
-                          </span>
+                        <div class="transport transport_gray" aria-label="Пользователь не путешествует пешком">
                           <span class="transport__name" aria-hidden="true">Пешком</span>
+                          <svg class="transport__icon" aria-hidden="true" focusable="false" width="24" height="20">
+                            <use xlink:href="img/sprite.svg#run"></use>
+                          </svg>
                         </div>
                       </li>
                     </ul>
                   </section>
                   <section class="level user-card__level">
-                    <h4 class="level__title">левел:</h4>
+                    <h4 class="level__title" aria-label="Уровень пользователя">левел:</h4>
                     <div class="level__container">
                       <div class="level__progress level__progress_25"></div>
                       <div class="level__text-container">
@@ -615,41 +613,41 @@
                     <h4 class="transports__title">транспорт:</h4>
                     <ul class="transports__transport-list">
                       <li class="transport-item">
-                        <div class="transport transport_plane transport_active transport_gray">
-                          <span class="transport__status">
-                            Пользователь путешествует на авиатранспорте
-                          </span>
-                          <span class="transport__name" aria-hidden="true">Авиаперелет</span>
+                        <div class="transport transport_active transport_gray" aria-label="Пользователь путешествует на авиатранспорте">
+                          <span class="transport__name" aria-hidden="true">Авиатранспорт</span>
+                          <svg class="transport__icon" aria-hidden="true" focusable="false" width="24" height="20">
+                            <use xlink:href="img/sprite.svg#plane"></use>
+                          </svg>
                         </div>
                       </li>
                       <li class="transport-item">
-                        <div class="transport transport_bus transport_active transport_gray">
-                          <span class="transport__status">
-                            Пользователь путешествует на автотранспорте
-                          </span>
+                        <div class="transport transport_active transport_gray" aria-label="Пользователь путешествует на автотраспорте">
                           <span class="transport__name" aria-hidden="true">Автотранспорт</span>
+                          <svg class="transport__icon" aria-hidden="true" focusable="false" width="24" height="20">
+                            <use xlink:href="img/sprite.svg#bus"></use>
+                          </svg>
                         </div>
                       </li>
                       <li class="transport-item">
-                        <div class="transport transport_bike transport_gray">
-                          <span class="transport__status">
-                            Пользователь не путешествует на велосипеде
-                          </span>
+                        <div class="transport transport_gray" aria-label="Пользователь не путешествует на велосипеде">
                           <span class="transport__name" aria-hidden="true">Велосипед</span>
+                          <svg class="transport__icon" aria-hidden="true" focusable="false" width="24" height="20">
+                            <use xlink:href="img/sprite.svg#bike"></use>
+                          </svg>
                         </div>
                       </li>
                       <li class="transport-item">
-                        <div class="transport transport_run transport_gray">
-                          <span class="transport__status">
-                            Пользователь не путешествует пешком
-                          </span>
+                        <div class="transport transport_gray" aria-label="Пользователь не путешествует пешком">
                           <span class="transport__name" aria-hidden="true">Пешком</span>
+                          <svg class="transport__icon" aria-hidden="true" focusable="false" width="24" height="20">
+                            <use xlink:href="img/sprite.svg#run"></use>
+                          </svg>
                         </div>
                       </li>
                     </ul>
                   </section>
                   <section class="level user-card__level">
-                    <h4 class="level__title">левел:</h4>
+                    <h4 class="level__title" aria-label="Уровень пользователя">левел:</h4>
                     <div class="level__container">
                       <div class="level__progress level__progress_50"></div>
                       <div class="level__text-container">
