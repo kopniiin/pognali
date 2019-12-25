@@ -274,7 +274,9 @@
   }
 }
 
-.header__index-link {
+.header__return-link {
+  position: relative;
+
   display: none;
 
   font-size: 20px;
@@ -304,4 +306,16 @@
   &:active {
     opacity: 0.3;
   }
+}
+
+.header__return-icon {
+  position: absolute;
+  top: 50%;
+  right: 0;
+
+  width: 32px;
+  height: 16px;
+
+  fill: currentColor;
+  transform: translateY(-70%);
 }
