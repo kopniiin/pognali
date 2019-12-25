@@ -375,14 +375,18 @@
 
       <h3>Неактивный лайк</h3>
 
-      <button class="like" type="button">
-        <span class="like__text">Лайк</span>
+      <button class="like" type="button" aria-label="Лайк">
+        <svg class="like__icon" aria-hidden="true" focusable="false" width="13" height="11">
+          <use xlink:href="img/sprite.svg#like"></use>
+        </svg>
       </button>
 
       <h3>Активный лайк</h3>
 
-      <button class="like like_active" type="button">
-        <span class="like__text">Лайк</span>
+      <button class="like like_active" type="button" aria-label="Лайк">
+        <svg class="like__icon" aria-hidden="true" focusable="false" width="13" height="11">
+          <use xlink:href="img/sprite.svg#like"></use>
+        </svg>
       </button>
 
       <h2>Счетчик лайков</h2>
@@ -807,8 +811,10 @@
           <div class="user-card__buttons">
             <a class="button user-card__button" href="">Позвать!</a>
             <div class="user-card__like-container">
-              <button class="like user-card__like" type="button">
-                <span class="like__text">Лайк</span>
+              <button class="like user-card__like" type="button" aria-label="Лайк">
+                <svg class="like__icon" aria-hidden="true" focusable="false" width="13" height="11">
+                  <use xlink:href="img/sprite.svg#like"></use>
+                </svg>
               </button>
               <div class="like-counter user-card__like-counter">
                 444 <span class="like-counter__text">лайков</span>
@@ -847,26 +853,26 @@
             <ul class="flags__flag-list">
               <li class="flags__flag-item">
                 <div class="flag">
-                  <div class="flag__image-container">
-                    <img class="flag__image" src="flag" alt="">
-                  </div>
-                  <span class="flag__name">Россия</span>
+                  <svg class="flag__image" role="img" aria-label="Флаг Чехии" focusable="false" width="26" height="18">
+                    <use xlink:href="img/sprite.svg#flag-czech"></use>
+                  </svg>
+                  <span class="flag__name">Чехия</span>
                 </div>
               </li>
               <li class="flags__flag-item">
                 <div class="flag">
-                  <div class="flag__image-container">
-                    <img class="flag__image" src="flag" alt="">
-                  </div>
-                  <span class="flag__name">Норвегия</span>
+                  <svg class="flag__image" role="img" aria-label="Флаг Чехии" focusable="false" width="26" height="18">
+                    <use xlink:href="img/sprite.svg#flag-czech"></use>
+                  </svg>
+                  <span class="flag__name">Чехия</span>
                 </div>
               </li>
               <li class="flags__flag-item">
                 <div class="flag">
-                  <div class="flag__image-container">
-                    <img class="flag__image" src="flag" alt="">
-                  </div>
-                  <span class="flag__name">Германия</span>
+                  <svg class="flag__image" role="img" aria-label="Флаг Чехии" focusable="false" width="26" height="18">
+                    <use xlink:href="img/sprite.svg#flag-czech"></use>
+                  </svg>
+                  <span class="flag__name">Чехия</span>
                 </div>
               </li>
             </ul>
