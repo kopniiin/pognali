@@ -1,6 +1,7 @@
 .button {
   box-sizing: border-box;
   display: block;
+  width: 100%;
   border: 3px solid transparent;
   border-radius: 26px;
   padding-top: 9px;
@@ -8,6 +9,7 @@
   padding-bottom: 5px;
   padding-left: 16px;
 
+  font-family: inherit;
   font-size: 17px;
   font-weight: 700;
   line-height: 20px;
