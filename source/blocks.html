@@ -759,6 +759,34 @@
         <input class="email-field__input" type="email" name="email" placeholder="E-mail" id="email-field">
       </div>
 
+      <h2>Поле плана путешествия</h2>
+
+      <h3>Обычное поле плана путешествия</h3>
+
+      <div class="plan-field">
+        <div class="flag flag_big plan-field__flag">
+          <svg class="flag__image" role="img" aria-label="Флаг Боснии и герцеговины" focusable="false" width="35" height="24">
+            <use xlink:href="img/sprite.svg#flag-bosnia"></use>
+          </svg>
+        </div>
+        <label class="plan-field__name" for="bosnia-plan-field">Босния и герцеговина</label>
+        <textarea class="plan-field__input" name="bosnia-plan" placeholder="План действий" id="bosnia-plan-field"></textarea>
+        <span class="plan-field__error-message">Это поле должно быть заполнено</span>
+      </div>
+
+      <h3>Поле плана путешествия с ошибкой</h3>
+
+      <div class="plan-field">
+        <div class="flag flag_big plan-field__flag">
+          <svg class="flag__image" role="img" aria-label="Флаг Чехии" focusable="false" width="35" height="24">
+            <use xlink:href="img/sprite.svg#flag-czech"></use>
+          </svg>
+        </div>
+        <label class="plan-field__name" for="czech-plan-field">Чехия</label>
+        <textarea class="plan-field__input plan-field__input_error" name="czech-plan" placeholder="План действий" id="czech-plan-field" required></textarea>
+        <span class="plan-field__error-message">Это поле должно быть заполнено</span>
+      </div>
+
       <h2>Кнопка регистрации</h2>
 
       <button class="registration-button" type="submit">
