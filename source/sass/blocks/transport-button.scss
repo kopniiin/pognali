@@ -14,51 +14,51 @@
   @include visually-hidden();
 
   &:focus {
-    + .transport-button__label {
+    + .transport-button__icon {
       box-shadow: 0 2px 10px rgba(#000000, 0.08);
     }
 
-    + .transport-button__label .transport-button__label-icon {
+    + .transport-button__icon .transport-button__icon-image {
       opacity: 0.3;
     }
   }
 
   &:active {
-    + .transport-button__label {
+    + .transport-button__icon {
       background-color: #e2e5f1;
       box-shadow: none;
     }
 
-    + .transport-button__label .transport-button__label-icon {
+    + .transport-button__icon .transport-button__icon-image {
       opacity: 0.1;
     }
   }
 
   &:checked {
-    + .transport-button__label .transport-button__label-icon {
+    + .transport-button__icon .transport-button__icon-image {
       fill: #1d2e5b;
       opacity: 1;
     }
 
-    + .transport-button__label:hover .transport-button__label-icon {
+    + .transport-button__icon:hover .transport-button__icon-image {
       opacity: 0.7;
     }
 
     &:focus {
-      + .transport-button__label .transport-button__label-icon {
+      + .transport-button__icon .transport-button__icon-image {
         opacity: 0.7;
       }
     }
 
     &:active {
-      + .transport-button__label .transport-button__label-icon {
+      + .transport-button__icon .transport-button__icon-image {
         opacity: 0.3;
       }
     }
   }
 }
 
-.transport-button__label {
+.transport-button__icon {
   @include circle(100%);
 
   position: relative;
@@ -71,17 +71,17 @@
   &:hover {
     box-shadow: 0 2px 10px rgba(#000000, 0.08);
 
-    .transport-button__label-icon {
+    .transport-button__icon-image {
       opacity: 0.3;
     }
   }
 }
 
-.transport-button__label-text {
+.transport-button__icon-text {
   @include visually-hidden();
 }
 
-.transport-button__label-icon {
+.transport-button__icon-image {
   position: absolute;
   top: 50%;
   left: 50%;
