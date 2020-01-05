@@ -1,0 +1,79 @@
+.registration-button {
+  position: relative;
+
+  box-sizing: border-box;
+  display: block;
+  width: 60px;
+  height: 62px;
+  border: none;
+  border-radius: 10px;
+  padding: 0;
+
+  background-color: #ffd74b;
+  outline: none;
+  cursor: pointer;
+
+  @media (min-width: $tablet-width) {
+    width: 82px;
+    height: 81px;
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+    padding-top: 30px;
+    padding-right: 88px;
+    padding-bottom: 27px;
+    padding-left: 36px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: auto;
+    height: auto;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+
+    font-family: inherit;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 24px;
+    color: #161c35;
+  }
+
+  &::before {
+    @include triangle-right(10px, 14px, #1d2e5b);
+
+    content: "";
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+
+    @media (min-width: $desktop-width) {
+      left: auto;
+      right: 37px;
+
+      transform: translateY(-50%);
+    }
+  }
+
+  &:hover,
+  &:focus {
+    background-color: #ffbd30;
+  }
+
+  &:active {
+    &::before {
+      opacity: 0.3;
+    }
+
+    .registration-button__text {
+      opacity: 0.3;
+    }
+  }
+}
+
+.registration-button__text {
+  @media (max-width: 1439px) {
+    @include visually-hidden();
+  }
+}
