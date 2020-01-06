@@ -2,12 +2,10 @@
   position: relative;
 
   box-sizing: border-box;
-  display: block;
 
   font-size: 20px;
   font-weight: 700;
   line-height: 20px;
-  text-decoration: none;
   color: #1d2e5b;
 
   @media (min-width: $tablet-width) {
@@ -33,26 +31,16 @@
     height: 6px;
 
     @media (min-width: $tablet-width) {
-      top: 10px;
+      top: 11px;
 
       width: 7px;
       height: 7px;
     }
 
     @media (min-width: $desktop-width) {
-      top: 11px;
       right: auto;
       left: -25px;
     }
-  }
-
-  &:hover,
-  &:focus {
-    opacity: 0.7;
-  }
-
-  &:active {
-    opacity: 0.3;
   }
 
   &_online {
@@ -82,35 +70,43 @@
     &::before {
       top: 50%;
       right: auto;
-      left: -22px;
+      left: -16px;
 
       transform: translateY(-50%);
 
       @media (min-width: $tablet-width) {
-        top: 50%;
-      }
-
-      @media (min-width: $desktop-width) {
-        top: 50%;
         left: -22px;
       }
     }
 
-    .user-name__text {
+    .user-name__heading {
       width: auto;
     }
   }
 }
 
-.user-name__text {
+.user-name__heading {
   margin: 0;
   width: 50%;
 
   font-size: inherit;
-  line-height: inherit;
 
   @media (min-width: $tablet-width) {
     width: auto;
+  }
+}
+
+.user-name__link {
+  text-decoration: none;
+  color: inherit;
+
+  &:hover,
+  &:focus {
+    opacity: 0.7;
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 }
 

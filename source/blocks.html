@@ -289,19 +289,23 @@
 
       <h2>Имя пользователя</h2>
 
-      <h3>Стандартное имя пользователя онлайн</h3>
+      <h3>Стандартное имя пользователя</h3>
 
-      <a class="user-name" href="">
-        <h3 class="user-name__text">Инна Осколкова</h3>
-        <span class="user-name__status">Онлайн</span>
-      </a>
+      <div class="user-name user-name_online">
+        <h3 class="user-name__heading">
+          <a class="user-name__link" href="">Таня Фирсова</a>
+        </h3>
+        <span class="user-name__status">Пользователь в сети</span>
+      </div>
 
       <h3>Маленькое имя пользователя</h3>
 
-      <a class="user-name user-name_small" href="">
-        <h3 class="user-name__text">Таня Фирсова</h3>
-        <span class="user-name__status">Онлайн</span>
-      </a>
+      <div class="user-name user-name_offline user-name_small">
+        <h3 class="user-name__heading">
+          <a class="user-name__link" href="">Таня Фирсова</a>
+        </h3>
+        <span class="user-name__status">Пользователь вне сети</span>
+      </div>
 
       <h2>Уровень</h2>
 
@@ -813,10 +817,12 @@
       <h2>Карточка предпросмотра пользователя</h2>
 
       <article class="user-preview">
-        <a class="user-name user-name_online user-name_small user-preview__name" href="">
-          <h3 class="user-name__text">Иван Копнин</h3>
-          <span class="user-name__status">Онлайн</span>
-        </a>
+        <div class="user-name user-name_offline user-name_small user-preview__name">
+          <h3 class="user-name__heading">
+            <a class="user-name__link" href="">Таня Фирсова</a>
+          </h3>
+          <span class="user-name__status">Пользователь вне сети</span>
+        </div>
         <div class="avatar avatar_big user-preview__avatar">
           <img class="avatar__image" src="avatar" alt="">
         </div>
@@ -932,10 +938,12 @@
 
       <article class="user-card">
         <div class="user-card__top">
-          <a class="user-name user-name_online user-card__name" href="">
-            <h3 class="user-name__text">Иван Копнин</h3>
-            <span class="user-name__status">Онлайн</span>
-          </a>
+          <div class="user-name user-name_online user-card__name">
+            <h3 class="user-name__heading">
+              <a class="user-name__link" href="">Таня Фирсова</a>
+            </h3>
+            <span class="user-name__status">Пользователь в сети</span>
+          </div>
           <div class="avatar user-card__avatar">
             <img class="avatar__image" src="avatar" alt="">
           </div>
