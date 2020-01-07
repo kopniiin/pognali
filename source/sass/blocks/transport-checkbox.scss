@@ -1,4 +1,4 @@
-.transport-button {
+.transport-checkbox {
   width: 32px;
   height: 32px;
 
@@ -10,55 +10,55 @@
   }
 }
 
-.transport-button__input {
+.transport-checkbox__input {
   @include visually-hidden();
 
   &:focus {
-    + .transport-button__icon {
+    + .transport-checkbox__icon {
       box-shadow: 0 2px 10px rgba(#000000, 0.08);
     }
 
-    + .transport-button__icon .transport-button__icon-image {
+    + .transport-checkbox__icon .transport-checkbox__icon-image {
       opacity: 0.3;
     }
   }
 
   &:active {
-    + .transport-button__icon {
+    + .transport-checkbox__icon {
       background-color: #e2e5f1;
       box-shadow: none;
     }
 
-    + .transport-button__icon .transport-button__icon-image {
+    + .transport-checkbox__icon .transport-checkbox__icon-image {
       opacity: 0.1;
     }
   }
 
   &:checked {
-    + .transport-button__icon .transport-button__icon-image {
+    + .transport-checkbox__icon .transport-checkbox__icon-image {
       fill: #1d2e5b;
       opacity: 1;
     }
 
-    + .transport-button__icon:hover .transport-button__icon-image {
+    + .transport-checkbox__icon:hover .transport-checkbox__icon-image {
       opacity: 0.7;
     }
 
     &:focus {
-      + .transport-button__icon .transport-button__icon-image {
+      + .transport-checkbox__icon .transport-checkbox__icon-image {
         opacity: 0.7;
       }
     }
 
     &:active {
-      + .transport-button__icon .transport-button__icon-image {
+      + .transport-checkbox__icon .transport-checkbox__icon-image {
         opacity: 0.3;
       }
     }
   }
 }
 
-.transport-button__icon {
+.transport-checkbox__icon {
   @include circle(100%);
 
   position: relative;
@@ -71,17 +71,17 @@
   &:hover {
     box-shadow: 0 2px 10px rgba(#000000, 0.08);
 
-    .transport-button__icon-image {
+    .transport-checkbox__icon-image {
       opacity: 0.3;
     }
   }
 }
 
-.transport-button__icon-text {
+.transport-checkbox__icon-text {
   @include visually-hidden();
 }
 
-.transport-button__icon-image {
+.transport-checkbox__icon-image {
   position: absolute;
   top: 50%;
   left: 50%;
