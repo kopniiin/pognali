@@ -1,5 +1,77 @@
 .checkbox {
   box-sizing: border-box;
+
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 15px;
+  color: #444444;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  &_big {
+    @media (min-width: $tablet-width) {
+      letter-spacing: 2.4px;
+      text-transform: uppercase;
+      color: #1d2e5b;
+    }
+
+    .checkbox__input {
+      &:focus {
+        + .checkbox__name {
+          opacity: 1;
+
+          &::before {
+            border-color: #959bb2;
+          }
+        }
+      }
+
+      &:active {
+        + .checkbox__name {
+          opacity: 1;
+
+          &::before {
+            border-color: #e2e5f1;
+
+            background-color: #e2e5f1;
+          }
+        }
+      }
+    }
+
+    .checkbox__name {
+      padding-left: 39px;
+
+      @media (min-width: $tablet-width) {
+        padding-left: 59px;
+      }
+
+      &::before {
+        box-sizing: border-box;
+        width: 26px;
+        height: 26px;
+        border: 1px solid #cbced9;
+
+        @media (min-width: $tablet-width) {
+          width: 36px;
+          height: 36px;
+
+          transform: translateY(-55%);
+        }
+      }
+
+      &:hover {
+        opacity: 1;
+
+        &::before {
+          border-color: #959bb2;
+        }
+      }
+    }
+  }
 }
 
 .checkbox__input {
@@ -29,18 +101,10 @@
 
   padding-left: 27px;
 
-  font-size: 15px;
-  font-weight: 400;
-  line-height: 15px;
-  color: #444444;
-
   cursor: pointer;
 
   @media (min-width: $tablet-width) {
     padding-left: 36px;
-
-    font-size: 20px;
-    line-height: 20px;
   }
 
   &::before {
