@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>Каталог попутчиков в сервисе Погнали</title>
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body class="page">
 
@@ -14,32 +14,33 @@
         <div class="navigation__container">
           <a class="logo navigation__logo" href="index.html">
             <picture>
+              <source type="image/webp" media="(min-width: 1440px)" srcset="img/logo-desktop-white@1x.webp 1x, img/logo-desktop-white@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/logo-tablet-white@1x.webp 1x, img/logo-tablet-white@2x.webp 2x">
+              <source type="image/webp" srcset="img/logo-mobile-white@1x.webp 1x, img/logo-mobile-white@2x.webp 2x">
               <source media="(min-width: 1440px)" srcset="img/logo-desktop-white@1x.png 1x, img/logo-desktop-white@2x.png 2x">
               <source media="(min-width: 768px)" srcset="img/logo-tablet-white@1x.png 1x, img/logo-tablet-white@2x.png 2x">
               <img class="logo__img" src="img/logo-mobile-white@1x.png" srcset="img/logo-mobile-white@2x.png 2x" alt="Логотип сервиса Погнали" width="100" height="19">
             </picture>
           </a>
-          <button class="navigation__control" type="button">
-            <span class="navigation__control-text">Навигационное меню</span>
-          </button>
+          <button class="navigation__control" type="button" aria-label="Навигационное меню"></button>
           <div class="site-navigation navigation__site-navigation">
             <ul class="site-navigation__list">
               <li class="site-navigation__item">
-                <a class="navigation-link" href="">
+                <a class="navigation-link" href="index.html" aria-label="О сервисе">
                   <span class="navigation-link__text">О сервисе</span>
-                  <span class="navigation-link__text" aria-hidden="true">О сервисе</span>
+                  <span class="navigation-link__text">О сервисе</span>
                 </a>
               </li>
               <li class="site-navigation__item">
-                <a class="navigation-link" href="form.html">
+                <a class="navigation-link" href="form.html" aria-label="Направления">
                   <span class="navigation-link__text">Направления</span>
-                  <span class="navigation-link__text" aria-hidden="true">Направления</span>
+                  <span class="navigation-link__text">Направления</span>
                 </a>
               </li>
               <li class="site-navigation__item">
-                <a class="navigation-link" href="catalog.html">
+                <a class="navigation-link" href="catalog.html" aria-label="Попутчики">
                   <span class="navigation-link__text">Попутчики</span>
-                  <span class="navigation-link__text" aria-hidden="true">Попутчики</span>
+                  <span class="navigation-link__text">Попутчики</span>
                 </a>
               </li>
             </ul>
@@ -49,13 +50,19 @@
             <div class="contacts navigation__contacts">
               <ul class="contacts__list">
                 <li class="contacts__item">
-                  <a class="contact-link contact-link_phone" href="tel:88005558628">
+                  <a class="contact-link" href="tel:88005558628" aria-label="Позвонить по номеру 8 800 555-86-28">
                     <span class="contact-link__text">8 800 555-86-28</span>
+                    <svg class="contact-link__icon" aria-hidden="true" focusable="false" width="18" height="22">
+                      <use xlink:href="img/sprite.svg#phone"></use>
+                    </svg>
                   </a>
                 </li>
                 <li class="contacts__item">
-                  <a class="contact-link contact-link_mail" href="mailto:mail@htmlacademy.ru">
+                  <a class="contact-link" href="mailto:mail@htmlacademy.ru" aria-label="Написать на электронную почту mail@htmlacademy.ru">
                     <span class="contact-link__text">mail@htmlacademy.ru</span>
+                    <svg class="contact-link__icon" aria-hidden="true" focusable="false" width="18" height="22">
+                      <use xlink:href="img/sprite.svg#mail"></use>
+                    </svg>
                   </a>
                 </li>
               </ul>
@@ -63,18 +70,24 @@
             <div class="socials navigation__socials">
               <ul class="socials__list">
                 <li class="socials__item">
-                  <a class="social-link social-link_facebook" href="">
-                    <span class="social-link__text">Фейсбук</span>
+                  <a class="social-link" href="" aria-label="Погнали в Фейсбук">
+                    <svg class="social-link__icon" aria-hidden="true" focusable="false" width="22" height="22">
+                      <use xlink:href="img/sprite.svg#facebook"></use>
+                    </svg>
                   </a>
                 </li>
                 <li class="socials__item">
-                  <a class="social-link social-link_vk" href="">
-                    <span class="social-link__text">Вконтакте</span>
+                  <a class="social-link" href="" aria-label="Погнали во ВКонтакте">
+                    <svg class="social-link__icon" aria-hidden="true" focusable="false" width="22" height="22">
+                      <use xlink:href="img/sprite.svg#vk"></use>
+                    </svg>
                   </a>
                 </li>
                 <li class="socials__item">
-                  <a class="social-link social-link_instagram" href="">
-                    <span class="social-link__text">Инстаграм</span>
+                  <a class="social-link" href="" aria-label="Погнали в Инстаграм">
+                    <svg class="social-link__icon" aria-hidden="true" focusable="false" width="22" height="22">
+                      <use xlink:href="img/sprite.svg#instagram"></use>
+                    </svg>
                   </a>
                 </li>
               </ul>
@@ -84,13 +97,17 @@
             <div class="contacts contacts_buttons">
               <ul class="contacts__list">
                 <li class="contacts__item">
-                  <a class="contact-button contact-button_phone contact-button_dark" href="tel:88005558628">
-                    <span class="contact-button__text">8 800 555-86-28</span>
+                  <a class="contact-button contact-button_dark" href="tel:88005558628" aria-label="Позвонить по номеру 8 800 555-86-28">
+                    <svg class="contact-button__icon" aria-hidden="true" focusable="false" width="18" height="18">
+                      <use xlink:href="img/sprite.svg#topmenu-phone"></use>
+                    </svg>
                   </a>
                 </li>
                 <li class="contacts__item">
-                  <a class="contact-button contact-button_mail" href="mailto:mail@htmlacademy.ru">
-                    <span class="contact-button__text">mail@htmlacademy.ru</span>
+                  <a class="contact-button" href="mailto:mail@htmlacademy.ru" aria-label="Написать на электронную почту mail@htmlacademy.ru">
+                    <svg class="contact-button__icon" aria-hidden="true" focusable="false" width="18" height="18">
+                      <use xlink:href="img/sprite.svg#topmenu-mail"></use>
+                    </svg>
                   </a>
                 </li>
               </ul>
@@ -100,7 +117,12 @@
       </nav>
       <div class="header__container">
         <h1 class="header__title">Попутчики</h1>
-        <a class="header__index-link" href="index.html">На главную</a>
+        <a class="header__return-link" href="index.html">
+          На главную
+          <svg class="header__return-icon" aria-hidden="true" focusable="false" width="32" height="16">
+            <use xlink:href="img/sprite.svg#return"></use>
+          </svg>
+        </a>
       </div>
     </header>
 
@@ -118,7 +140,10 @@
                   </a>
                   <div class="avatar user-card__avatar">
                     <picture>
-                      <source media="(min-width: 1440px)" srcset="img/firsova-desktop@1x.jpg 1x, img/firsova-destop@2x.jpg 2x">
+                      <source type="image/webp" media="(min-width: 1440px)" srcset="img/firsova-desktop@1x.webp 1x, img/firsova-desktop@2x.webp 2x">
+                      <source type="image/webp" media="(min-width: 768px)" srcset="img/firsova-tablet@1x.webp 1x, img/firsova-tablet@2x.webp 2x">
+                      <source type="image/webp" srcset="img/firsova-mobile@1x.webp 1x, img/firsova-mobile@2x.webp 2x">
+                      <source media="(min-width: 1440px)" srcset="img/firsova-desktop@1x.jpg 1x, img/firsova-desktop@2x.jpg 2x">
                       <source media="(min-width: 768px)" srcset="img/firsova-tablet@1x.jpg 1x, img/firsova-tablet@2x.jpg 2x">
                       <img class="avatar__image" src="img/firsova-mobile@1x.jpg" srcset="img/firsova-mobile@2x.jpg 2x" alt="" width="70" height="70">
                     </picture>
@@ -126,8 +151,10 @@
                   <div class="user-card__buttons">
                     <a class="button user-card__button" href="">Позвать!</a>
                     <div class="user-card__like-container">
-                      <button class="like like_active user-card__like" type="button">
-                        <span class="like__text">Лайк</span>
+                      <button class="like like_active user-card__like" type="button" aria-label="Лайк">
+                        <svg class="like__icon" aria-hidden="true" focusable="false" width="13" height="11">
+                          <use xlink:href="img/sprite.svg#like"></use>
+                        </svg>
                       </button>
                       <div class="like-counter user-card__like-counter">
                         1,5 <span aria-label="миллиона">М</span> <span class="like-counter__text">лайков</span>
@@ -176,25 +203,25 @@
                     <ul class="flags__flag-list">
                       <li class="flags__flag-item">
                         <div class="flag">
-                          <div class="flag__image-container">
-                            <img class="flag__image" src="flag" alt="">
-                          </div>
+                          <svg class="flag__image" role="img" aria-label="Флаг Шри-Ланки" focusable="false" width="26" height="18">
+                            <use xlink:href="img/sprite.svg#flag-sri-lanka"></use>
+                          </svg>
                           <span class="flag__name">Шри-Ланка</span>
                         </div>
                       </li>
                       <li class="flags__flag-item">
                         <div class="flag">
-                          <div class="flag__image-container">
-                            <img class="flag__image" src="flag" alt="">
-                          </div>
+                          <svg class="flag__image" role="img" aria-label="Флаг Тайланда" focusable="false" width="26" height="18">
+                            <use xlink:href="img/sprite.svg#flag-thailand"></use>
+                          </svg>
                           <span class="flag__name">Тайланд</span>
                         </div>
                       </li>
                       <li class="flags__flag-item">
                         <div class="flag">
-                          <div class="flag__image-container">
-                            <img class="flag__image" src="flag" alt="">
-                          </div>
+                          <svg class="flag__image" role="img" aria-label="Флаг Сейшелов" focusable="false" width="26" height="18">
+                            <use xlink:href="img/sprite.svg#flag-seychelles"></use>
+                          </svg>
                           <span class="flag__name">Сейшелы</span>
                         </div>
                       </li>
@@ -206,42 +233,42 @@
                     <h4 class="transports__title">транспорт:</h4>
                     <ul class="transports__transport-list">
                       <li class="transport-item">
-                        <div class="transport transport_plane transport_active transport_gray">
-                          <span class="transport__status">
-                            Пользователь путешествует на авиатранспорте
-                          </span>
-                          <span class="transport__name" aria-hidden="true">Авиаперелет</span>
+                        <div class="transport transport_active transport_gray" aria-label="Пользователь путешествует на авиатранспорте">
+                          <span class="transport__name" aria-hidden="true">Авиатранспорт</span>
+                          <svg class="transport__icon" aria-hidden="true" focusable="false" width="24" height="20">
+                            <use xlink:href="img/sprite.svg#plane"></use>
+                          </svg>
                         </div>
                       </li>
                       <li class="transport-item">
-                        <div class="transport transport_bus transport_gray">
-                          <span class="transport__status">
-                            Пользователь не путешествует на автотранспорте
-                          </span>
+                        <div class="transport transport_gray" aria-label="Пользователь не путешествует на автотраспорте">
                           <span class="transport__name" aria-hidden="true">Автотранспорт</span>
+                          <svg class="transport__icon" aria-hidden="true" focusable="false" width="24" height="20">
+                            <use xlink:href="img/sprite.svg#bus"></use>
+                          </svg>
                         </div>
                       </li>
                       <li class="transport-item">
-                        <div class="transport transport_bike transport_gray">
-                          <span class="transport__status">
-                            Пользователь не путешествует на велосипеде
-                          </span>
+                        <div class="transport transport_gray" aria-label="Пользователь не путешествует на велосипеде">
                           <span class="transport__name" aria-hidden="true">Велосипед</span>
+                          <svg class="transport__icon" aria-hidden="true" focusable="false" width="24" height="20">
+                            <use xlink:href="img/sprite.svg#bike"></use>
+                          </svg>
                         </div>
                       </li>
                       <li class="transport-item">
-                        <div class="transport transport_run transport_gray">
-                          <span class="transport__status">
-                            Пользователь не путешествует пешком
-                          </span>
+                        <div class="transport transport_gray" aria-label="Пользователь не путешествует пешком">
                           <span class="transport__name" aria-hidden="true">Пешком</span>
+                          <svg class="transport__icon" aria-hidden="true" focusable="false" width="24" height="20">
+                            <use xlink:href="img/sprite.svg#run"></use>
+                          </svg>
                         </div>
                       </li>
                     </ul>
                   </section>
                   <section class="level user-card__level">
-                    <h4 class="level__title">левел:</h4>
-                    <div class="level__container">
+                    <h4 class="level__title" aria-label="Путешественник 99 уровня">левел:</h4>
+                    <div class="level__container" aria-hidden="true">
                       <div class="level__progress level__progress_99"></div>
                       <div class="level__text-container">
                         <span class="level__number">99</span>
@@ -261,6 +288,9 @@
                   </a>
                   <div class="avatar user-card__avatar">
                     <picture>
+                      <source type="image/webp" media="(min-width: 1440px)" srcset="img/demin-desktop@1x.webp 1x, img/demin-desktop@2x.webp 2x">
+                      <source type="image/webp" media="(min-width: 768px)" srcset="img/demin-tablet@1x.webp 1x, img/demin-tablet@2x.webp 2x">
+                      <source type="image/webp" srcset="img/demin-mobile@1x.webp 1x, img/demin-mobile@2x.webp 2x">
                       <source media="(min-width: 1440px)" srcset="img/demin-desktop@1x.jpg 1x, img/demin-desktop@2x.jpg 2x">
                       <source media="(min-width: 768px)" srcset="img/demin-tablet@1x.jpg 1x, img/demin-tablet@2x.jpg 2x">
                       <img class="avatar__image" src="img/demin-mobile@1x.jpg" srcset="img/demin-mobile@2x.jpg 2x" alt="" width="70" height="70">
@@ -269,8 +299,10 @@
                   <div class="user-card__buttons">
                     <a class="button user-card__button" href="">Позвать!</a>
                     <div class="user-card__like-container">
-                      <button class="like user-card__like" type="button">
-                        <span class="like__text">Лайк</span>
+                      <button class="like user-card__like" type="button" aria-label="Лайк">
+                        <svg class="like__icon" aria-hidden="true" focusable="false" width="13" height="11">
+                          <use xlink:href="img/sprite.svg#like"></use>
+                        </svg>
                       </button>
                       <div class="like-counter user-card__like-counter">
                         150 <span class="like-counter__text">лайков</span>
@@ -314,17 +346,17 @@
                     <ul class="flags__flag-list">
                       <li class="flags__flag-item">
                         <div class="flag">
-                          <div class="flag__image-container">
-                            <img class="flag__image" src="flag" alt="">
-                          </div>
+                          <svg class="flag__image" role="img" aria-label="Флаг Бельгии" focusable="false" width="26" height="18">
+                            <use xlink:href="img/sprite.svg#flag-belgium"></use>
+                          </svg>
                           <span class="flag__name">Бельгия</span>
                         </div>
                       </li>
                       <li class="flags__flag-item">
                         <div class="flag">
-                          <div class="flag__image-container">
-                            <img class="flag__image" src="flag" alt="">
-                          </div>
+                          <svg class="flag__image" role="img" aria-label="Флаг Чехии" focusable="false" width="26" height="18">
+                            <use xlink:href="img/sprite.svg#flag-czech"></use>
+                          </svg>
                           <span class="flag__name">Чехия</span>
                         </div>
                       </li>
@@ -336,42 +368,42 @@
                     <h4 class="transports__title">транспорт:</h4>
                     <ul class="transports__transport-list">
                       <li class="transport-item">
-                        <div class="transport transport_plane transport_active transport_gray">
-                          <span class="transport__status">
-                            Пользователь путешествует на авиатранспорте
-                          </span>
-                          <span class="transport__name" aria-hidden="true">Авиаперелет</span>
+                        <div class="transport transport_active transport_gray" aria-label="Пользователь путешествует на авиатранспорте">
+                          <span class="transport__name" aria-hidden="true">Авиатранспорт</span>
+                          <svg class="transport__icon" aria-hidden="true" focusable="false" width="24" height="20">
+                            <use xlink:href="img/sprite.svg#plane"></use>
+                          </svg>
                         </div>
                       </li>
                       <li class="transport-item">
-                        <div class="transport transport_bus transport_active transport_gray">
-                          <span class="transport__status">
-                            Пользователь путешествует на автотранспорте
-                          </span>
+                        <div class="transport transport_active transport_gray" aria-label="Пользователь путешествует на автотраспорте">
                           <span class="transport__name" aria-hidden="true">Автотранспорт</span>
+                          <svg class="transport__icon" aria-hidden="true" focusable="false" width="24" height="20">
+                            <use xlink:href="img/sprite.svg#bus"></use>
+                          </svg>
                         </div>
                       </li>
                       <li class="transport-item">
-                        <div class="transport transport_bike transport_gray">
-                          <span class="transport__status">
-                            Пользователь не путешествует на велосипеде
-                          </span>
+                        <div class="transport transport_gray" aria-label="Пользователь не путешествует на велосипеде">
                           <span class="transport__name" aria-hidden="true">Велосипед</span>
+                          <svg class="transport__icon" aria-hidden="true" focusable="false" width="24" height="20">
+                            <use xlink:href="img/sprite.svg#bike"></use>
+                          </svg>
                         </div>
                       </li>
                       <li class="transport-item">
-                        <div class="transport transport_run transport_active transport_gray">
-                          <span class="transport__status">
-                            Пользователь путешествует пешком
-                          </span>
+                        <div class="transport transport_active transport_gray" aria-label="Пользователь путешествует пешком">
                           <span class="transport__name" aria-hidden="true">Пешком</span>
+                          <svg class="transport__icon" aria-hidden="true" focusable="false" width="24" height="20">
+                            <use xlink:href="img/sprite.svg#run"></use>
+                          </svg>
                         </div>
                       </li>
                     </ul>
                   </section>
                   <section class="level user-card__level">
-                    <h4 class="level__title">левел:</h4>
-                    <div class="level__container">
+                    <h4 class="level__title" aria-label="Путешественник 80 уровня">левел:</h4>
+                    <div class="level__container" aria-hidden="true">
                       <div class="level__progress level__progress_80"></div>
                       <div class="level__text-container">
                         <span class="level__number">80</span>
@@ -391,6 +423,9 @@
                   </a>
                   <div class="avatar user-card__avatar">
                     <picture>
+                      <source type="image/webp" media="(min-width: 1440px)" srcset="img/smolov-desktop@1x.webp 1x, img/smolov-desktop@2x.webp 2x">
+                      <source type="image/webp" media="(min-width: 768px)" srcset="img/smolov-tablet@1x.webp 1x, img/smolov-tablet@2x.webp 2x">
+                      <source type="image/webp" srcset="img/smolov-mobile@1x.webp 1x, img/smolov-mobile@2x.webp 2x">
                       <source media="(min-width: 1440px)" srcset="img/smolov-desktop@1x.jpg 1x, img/smolov-desktop@2x.jpg 2x">
                       <source media="(min-width: 768px)" srcset="img/smolov-tablet@1x.jpg 1x, img/smolov-tablet@2x.jpg 2x">
                       <img class="avatar__image" src="img/smolov-mobile@1x.jpg" srcset="img/smolov-mobile@2x.jpg 2x" alt="" width="70" height="70">
@@ -399,8 +434,10 @@
                   <div class="user-card__buttons">
                     <a class="button user-card__button" href="">Позвать!</a>
                     <div class="user-card__like-container">
-                      <button class="like user-card__like" type="button">
-                        <span class="like__text">Лайк</span>
+                      <button class="like user-card__like" type="button" aria-label="Лайк">
+                        <svg class="like__icon" aria-hidden="true" focusable="false" width="13" height="11">
+                          <use xlink:href="img/sprite.svg#like"></use>
+                        </svg>
                       </button>
                       <div class="like-counter user-card__like-counter">
                         1700 <span class="like-counter__text">лайков</span>
@@ -444,25 +481,25 @@
                     <ul class="flags__flag-list">
                       <li class="flags__flag-item">
                         <div class="flag">
-                          <div class="flag__image-container">
-                            <img class="flag__image" src="flag" alt="">
-                          </div>
+                          <svg class="flag__image" role="img" aria-label="Флаг США" focusable="false" width="26" height="18">
+                            <use xlink:href="img/sprite.svg#flag-usa"></use>
+                          </svg>
                           <span class="flag__name">США</span>
                         </div>
                       </li>
                       <li class="flags__flag-item">
                         <div class="flag">
-                          <div class="flag__image-container">
-                            <img class="flag__image" src="flag" alt="">
-                          </div>
-                          <span class="flag__name">Астралия</span>
+                          <svg class="flag__image" role="img" aria-label="Флаг Австралии" focusable="false" width="26" height="18">
+                            <use xlink:href="img/sprite.svg#flag-australia"></use>
+                          </svg>
+                          <span class="flag__name">Австралия</span>
                         </div>
                       </li>
                       <li class="flags__flag-item">
                         <div class="flag">
-                          <div class="flag__image-container">
-                            <img class="flag__image" src="flag" alt="">
-                          </div>
+                          <svg class="flag__image" role="img" aria-label="Флаг Доминиканы" focusable="false" width="26" height="18">
+                            <use xlink:href="img/sprite.svg#flag-dominica"></use>
+                          </svg>
                           <span class="flag__name">Доминикана</span>
                         </div>
                       </li>
@@ -470,46 +507,46 @@
                   </section>
                 </div>
                 <div class="user-card__bottom">
-                  <section class="transports user-card__transports">
+                  <section class="transports  user-card__transports">
                     <h4 class="transports__title">транспорт:</h4>
                     <ul class="transports__transport-list">
                       <li class="transport-item">
-                        <div class="transport transport_plane transport_active transport_gray">
-                          <span class="transport__status">
-                            Пользователь путешествует на авиатранспорте
-                          </span>
-                          <span class="transport__name" aria-hidden="true">Авиаперелет</span>
+                        <div class="transport transport_active transport_gray" aria-label="Пользователь путешествует на авиатранспорте">
+                          <span class="transport__name" aria-hidden="true">Авиатранспорт</span>
+                          <svg class="transport__icon" aria-hidden="true" focusable="false" width="24" height="20">
+                            <use xlink:href="img/sprite.svg#plane"></use>
+                          </svg>
                         </div>
                       </li>
                       <li class="transport-item">
-                        <div class="transport transport_bus transport_gray">
-                          <span class="transport__status">
-                            Пользователь не путешествует на автотранспорте
-                          </span>
+                        <div class="transport transport_gray" aria-label="Пользователь не путешествует на автотраспорте">
                           <span class="transport__name" aria-hidden="true">Автотранспорт</span>
+                          <svg class="transport__icon" aria-hidden="true" focusable="false" width="24" height="20">
+                            <use xlink:href="img/sprite.svg#bus"></use>
+                          </svg>
                         </div>
                       </li>
                       <li class="transport-item">
-                        <div class="transport transport_bike transport_active transport_gray">
-                          <span class="transport__status">
-                            Пользователь путешествует на велосипеде
-                          </span>
+                        <div class="transport transport_active transport_gray" aria-label="Пользователь путешествует на велосипеде">
                           <span class="transport__name" aria-hidden="true">Велосипед</span>
+                          <svg class="transport__icon" aria-hidden="true" focusable="false" width="24" height="20">
+                            <use xlink:href="img/sprite.svg#bike"></use>
+                          </svg>
                         </div>
                       </li>
                       <li class="transport-item">
-                        <div class="transport transport_run transport_gray">
-                          <span class="transport__status">
-                            Пользователь не путешествует пешком
-                          </span>
+                        <div class="transport transport_gray" aria-label="Пользователь не путешествует пешком">
                           <span class="transport__name" aria-hidden="true">Пешком</span>
+                          <svg class="transport__icon" aria-hidden="true" focusable="false" width="24" height="20">
+                            <use xlink:href="img/sprite.svg#run"></use>
+                          </svg>
                         </div>
                       </li>
                     </ul>
                   </section>
                   <section class="level user-card__level">
-                    <h4 class="level__title">левел:</h4>
-                    <div class="level__container">
+                    <h4 class="level__title" aria-label="Путешественник 25 уровня">левел:</h4>
+                    <div class="level__container" aria-hidden="true">
                       <div class="level__progress level__progress_25"></div>
                       <div class="level__text-container">
                         <span class="level__number">25</span>
@@ -529,6 +566,9 @@
                   </a>
                   <div class="avatar user-card__avatar">
                     <picture>
+                      <source type="image/webp" media="(min-width: 1440px)" srcset="img/rogovaya-desktop@1x.webp 1x, img/rogovaya-desktop@2x.webp 2x">
+                      <source type="image/webp" media="(min-width: 768px)" srcset="img/rogovaya-tablet@1x.webp 1x, img/rogovaya-tablet@2x.webp 2x">
+                      <source type="image/webp" srcset="img/rogovaya-mobile@1x.webp 1x, img/rogovaya-mobile@2x.webp 2x">
                       <source media="(min-width: 1440px)" srcset="img/rogovaya-desktop@1x.jpg 1x, img/rogovaya-desktop@2x.jpg 2x">
                       <source media="(min-width: 768px)" srcset="img/rogovaya-tablet@1x.jpg 1x, img/rogovaya-tablet@2x.jpg 2x">
                       <img class="avatar__image" src="img/rogovaya-mobile@1x.jpg" srcset="img/rogovaya-mobile@2x.jpg 2x" alt="" width="70" height="70">
@@ -537,8 +577,10 @@
                   <div class="user-card__buttons">
                     <a class="button user-card__button" href="">Позвать!</a>
                     <div class="user-card__like-container">
-                      <button class="like user-card__like" type="button">
-                        <span class="like__text">Лайк</span>
+                      <button class="like user-card__like" type="button" aria-label="Лайк">
+                        <svg class="like__icon" aria-hidden="true" focusable="false" width="13" height="11">
+                          <use xlink:href="img/sprite.svg#like"></use>
+                        </svg>
                       </button>
                       <div class="like-counter user-card__like-counter">
                         23 <span class="like-counter__text">лайка</span>
@@ -577,17 +619,17 @@
                     <ul class="flags__flag-list">
                       <li class="flags__flag-item">
                         <div class="flag">
-                          <div class="flag__image-container">
-                            <img class="flag__image" src="flag" alt="">
-                          </div>
+                          <svg class="flag__image" role="img" aria-label="Флаг Великобритании" focusable="false" width="26" height="18">
+                            <use xlink:href="img/sprite.svg#flag-united-kingdom"></use>
+                          </svg>
                           <span class="flag__name">Великобритания</span>
                         </div>
                       </li>
                       <li class="flags__flag-item">
                         <div class="flag">
-                          <div class="flag__image-container">
-                            <img class="flag__image" src="flag" alt="">
-                          </div>
+                          <svg class="flag__image" role="img" aria-label="Флаг Германии" focusable="false" width="26" height="18">
+                            <use xlink:href="img/sprite.svg#flag"></use>
+                          </svg>
                           <span class="flag__name">Германия</span>
                         </div>
                       </li>
@@ -599,42 +641,42 @@
                     <h4 class="transports__title">транспорт:</h4>
                     <ul class="transports__transport-list">
                       <li class="transport-item">
-                        <div class="transport transport_plane transport_active transport_gray">
-                          <span class="transport__status">
-                            Пользователь путешествует на авиатранспорте
-                          </span>
-                          <span class="transport__name" aria-hidden="true">Авиаперелет</span>
+                        <div class="transport transport_active transport_gray" aria-label="Пользователь путешествует на авиатранспорте">
+                          <span class="transport__name" aria-hidden="true">Авиатранспорт</span>
+                          <svg class="transport__icon" aria-hidden="true" focusable="false" width="24" height="20">
+                            <use xlink:href="img/sprite.svg#plane"></use>
+                          </svg>
                         </div>
                       </li>
                       <li class="transport-item">
-                        <div class="transport transport_bus transport_active transport_gray">
-                          <span class="transport__status">
-                            Пользователь путешествует на автотранспорте
-                          </span>
+                        <div class="transport transport_active transport_gray" aria-label="Пользователь путешествует на автотраспорте">
                           <span class="transport__name" aria-hidden="true">Автотранспорт</span>
+                          <svg class="transport__icon" aria-hidden="true" focusable="false" width="24" height="20">
+                            <use xlink:href="img/sprite.svg#bus"></use>
+                          </svg>
                         </div>
                       </li>
                       <li class="transport-item">
-                        <div class="transport transport_bike transport_gray">
-                          <span class="transport__status">
-                            Пользователь не путешествует на велосипеде
-                          </span>
+                        <div class="transport transport_gray" aria-label="Пользователь не путешествует на велосипеде">
                           <span class="transport__name" aria-hidden="true">Велосипед</span>
+                          <svg class="transport__icon" aria-hidden="true" focusable="false" width="24" height="20">
+                            <use xlink:href="img/sprite.svg#bike"></use>
+                          </svg>
                         </div>
                       </li>
                       <li class="transport-item">
-                        <div class="transport transport_run transport_gray">
-                          <span class="transport__status">
-                            Пользователь не путешествует пешком
-                          </span>
+                        <div class="transport transport_gray" aria-label="Пользователь не путешествует пешком">
                           <span class="transport__name" aria-hidden="true">Пешком</span>
+                          <svg class="transport__icon" aria-hidden="true" focusable="false" width="24" height="20">
+                            <use xlink:href="img/sprite.svg#run"></use>
+                          </svg>
                         </div>
                       </li>
                     </ul>
                   </section>
                   <section class="level user-card__level">
-                    <h4 class="level__title">левел:</h4>
-                    <div class="level__container">
+                    <h4 class="level__title" aria-label="Путешественник 50 уровня">левел:</h4>
+                    <div class="level__container" aria-hidden="true">
                       <div class="level__progress level__progress_50"></div>
                       <div class="level__text-container">
                         <span class="level__number">50</span>
@@ -691,6 +733,9 @@
       <div class="footer__container">
         <a class="logo logo_blue footer__logo" href="index.html">
           <picture>
+            <source type="image/webp" media="(min-width: 1440px)" srcset="img/logo-desktop-white@1x.webp 1x, img/logo-desktop-white@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)" srcset="img/logo-tablet-white@1x.webp 1x, img/logo-tablet-white@2x.webp 2x">
+            <source type="image/webp" srcset="img/logo-mobile-white@1x.webp 1x, img/logo-mobile-white@2x.webp 2x">
             <source media="(min-width: 1440px)" srcset="img/logo-desktop-white@1x.png 1x, img/logo-desktop-white@2x.png 2x">
             <source media="(min-width: 768px)" srcset="img/logo-tablet-white@1x.png 1x, img/logo-tablet-white@2x.png 2x">
             <img class="logo__img" src="img/logo-mobile-white@1x.png" srcset="img/logo-mobile-white@2x.png 2x" alt="Логотип сервиса Погнали" width="100" height="19">
@@ -700,29 +745,35 @@
           <div class="socials">
             <ul class="socials__list">
               <li class="socials__item">
-                <a class="social-link social-link_facebook" href="">
-                  <span class="social-link__text">Фейсбук</span>
+                <a class="social-link" href="" aria-label="Погнали в Фейсбук">
+                  <svg class="social-link__icon" aria-hidden="true" focusable="false" width="22" height="22">
+                    <use xlink:href="img/sprite.svg#facebook"></use>
+                  </svg>
                 </a>
               </li>
               <li class="socials__item">
-                <a class="social-link social-link_vk" href="">
-                  <span class="social-link__text">Вконтакте</span>
+                <a class="social-link" href="" aria-label="Погнали во ВКонтакте">
+                  <svg class="social-link__icon" aria-hidden="true" focusable="false" width="22" height="22">
+                    <use xlink:href="img/sprite.svg#vk"></use>
+                  </svg>
                 </a>
               </li>
               <li class="socials__item">
-                <a class="social-link social-link_instagram" href="">
-                  <span class="social-link__text">Инстаграм</span>
+                <a class="social-link" href="" aria-label="Погнали в Инстаграм">
+                  <svg class="social-link__icon" aria-hidden="true" focusable="false" width="22" height="22">
+                    <use xlink:href="img/sprite.svg#instagram"></use>
+                  </svg>
                 </a>
               </li>
             </ul>
           </div>
         </address>
         <address class="footer__developer-info">
-          <a class="developer-logo" href="">
+          <a class="developer-logo" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Сервис разработан в HTML Academy">
             Разработано
-            <span class="developer-logo__image-container">
-              <img class="developer-logo__image" src="img/htmlacademy.svg" alt="Логотип школы разработки интерфейсов HTML Academy" width="27" height="34">
-            </span>
+            <svg class="developer-logo__image" role="img" focusable="false" width="27" height="34">
+              <use xlink:href="img/sprite.svg#academy-logo"></use>
+            </svg>
           </a>
         </address>
       </div>

@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>Планирование путешествия в сервисе Погнали</title>
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body class="page">
 
@@ -14,32 +14,33 @@
         <div class="navigation__container">
           <a class="logo navigation__logo" href="index.html">
             <picture>
+              <source type="image/webp" media="(min-width: 1440px)" srcset="img/logo-desktop-white@1x.webp 1x, img/logo-desktop-white@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/logo-tablet-white@1x.webp 1x, img/logo-tablet-white@2x.webp 2x">
+              <source type="image/webp" srcset="img/logo-mobile-white@1x.webp 1x, img/logo-mobile-white@2x.webp 2x">
               <source media="(min-width: 1440px)" srcset="img/logo-desktop-white@1x.png 1x, img/logo-desktop-white@2x.png 2x">
               <source media="(min-width: 768px)" srcset="img/logo-tablet-white@1x.png 1x, img/logo-tablet-white@2x.png 2x">
               <img class="logo__img" src="img/logo-mobile-white@1x.png" srcset="img/logo-mobile-white@2x.png 2x" alt="Логотип сервиса Погнали" width="100" height="19">
             </picture>
           </a>
-          <button class="navigation__control" type="button">
-            <span class="navigation__control-text">Навигационное меню</span>
-          </button>
+          <button class="navigation__control" type="button" aria-label="Навигационное меню"></button>
           <div class="site-navigation navigation__site-navigation">
             <ul class="site-navigation__list">
               <li class="site-navigation__item">
-                <a class="navigation-link" href="">
+                <a class="navigation-link" href="index.html" aria-label="О сервисе">
                   <span class="navigation-link__text">О сервисе</span>
-                  <span class="navigation-link__text" aria-hidden="true">О сервисе</span>
+                  <span class="navigation-link__text">О сервисе</span>
                 </a>
               </li>
               <li class="site-navigation__item">
-                <a class="navigation-link" href="form.html">
+                <a class="navigation-link" href="form.html" aria-label="Направления">
                   <span class="navigation-link__text">Направления</span>
-                  <span class="navigation-link__text" aria-hidden="true">Направления</span>
+                  <span class="navigation-link__text">Направления</span>
                 </a>
               </li>
               <li class="site-navigation__item">
-                <a class="navigation-link" href="catalog.html">
+                <a class="navigation-link" href="catalog.html" aria-label="Попутчики">
                   <span class="navigation-link__text">Попутчики</span>
-                  <span class="navigation-link__text" aria-hidden="true">Попутчики</span>
+                  <span class="navigation-link__text">Попутчики</span>
                 </a>
               </li>
             </ul>
@@ -49,13 +50,19 @@
             <div class="contacts navigation__contacts">
               <ul class="contacts__list">
                 <li class="contacts__item">
-                  <a class="contact-link contact-link_phone" href="tel:88005558628">
+                  <a class="contact-link" href="tel:88005558628" aria-label="Позвонить по номеру 8 800 555-86-28">
                     <span class="contact-link__text">8 800 555-86-28</span>
+                    <svg class="contact-link__icon" aria-hidden="true" focusable="false" width="18" height="22">
+                      <use xlink:href="img/sprite.svg#phone"></use>
+                    </svg>
                   </a>
                 </li>
                 <li class="contacts__item">
-                  <a class="contact-link contact-link_mail" href="mailto:mail@htmlacademy.ru">
+                  <a class="contact-link" href="mailto:mail@htmlacademy.ru" aria-label="Написать на электронную почту mail@htmlacademy.ru">
                     <span class="contact-link__text">mail@htmlacademy.ru</span>
+                    <svg class="contact-link__icon" aria-hidden="true" focusable="false" width="18" height="22">
+                      <use xlink:href="img/sprite.svg#mail"></use>
+                    </svg>
                   </a>
                 </li>
               </ul>
@@ -63,18 +70,24 @@
             <div class="socials navigation__socials">
               <ul class="socials__list">
                 <li class="socials__item">
-                  <a class="social-link social-link_facebook" href="">
-                    <span class="social-link__text">Фейсбук</span>
+                  <a class="social-link" href="" aria-label="Погнали в Фейсбук">
+                    <svg class="social-link__icon" aria-hidden="true" focusable="false" width="22" height="22">
+                      <use xlink:href="img/sprite.svg#facebook"></use>
+                    </svg>
                   </a>
                 </li>
                 <li class="socials__item">
-                  <a class="social-link social-link_vk" href="">
-                    <span class="social-link__text">Вконтакте</span>
+                  <a class="social-link" href="" aria-label="Погнали во ВКонтакте">
+                    <svg class="social-link__icon" aria-hidden="true" focusable="false" width="22" height="22">
+                      <use xlink:href="img/sprite.svg#vk"></use>
+                    </svg>
                   </a>
                 </li>
                 <li class="socials__item">
-                  <a class="social-link social-link_instagram" href="">
-                    <span class="social-link__text">Инстаграм</span>
+                  <a class="social-link" href="" aria-label="Погнали в Инстаграм">
+                    <svg class="social-link__icon" aria-hidden="true" focusable="false" width="22" height="22">
+                      <use xlink:href="img/sprite.svg#instagram"></use>
+                    </svg>
                   </a>
                 </li>
               </ul>
@@ -84,13 +97,17 @@
             <div class="contacts contacts_buttons">
               <ul class="contacts__list">
                 <li class="contacts__item">
-                  <a class="contact-button contact-button_phone contact-button_dark" href="tel:88005558628">
-                    <span class="contact-button__text">8 800 555-86-28</span>
+                  <a class="contact-button contact-button_dark" href="tel:88005558628" aria-label="Позвонить по номеру 8 800 555-86-28">
+                    <svg class="contact-button__icon" aria-hidden="true" focusable="false" width="18" height="18">
+                      <use xlink:href="img/sprite.svg#topmenu-phone"></use>
+                    </svg>
                   </a>
                 </li>
                 <li class="contacts__item">
-                  <a class="contact-button contact-button_mail" href="mailto:mail@htmlacademy.ru">
-                    <span class="contact-button__text">mail@htmlacademy.ru</span>
+                  <a class="contact-button" href="mailto:mail@htmlacademy.ru" aria-label="Написать на электронную почту mail@htmlacademy.ru">
+                    <svg class="contact-button__icon" aria-hidden="true" focusable="false" width="18" height="18">
+                      <use xlink:href="img/sprite.svg#topmenu-mail"></use>
+                    </svg>
                   </a>
                 </li>
               </ul>
@@ -100,7 +117,12 @@
       </nav>
       <div class="header__container">
         <h1 class="header__title">Направления</h1>
-        <a class="header__index-link" href="index.html">На главную</a>
+        <a class="header__return-link" href="index.html">
+          На главную
+          <svg class="header__return-icon" aria-hidden="true" focusable="false" width="32" height="16">
+            <use xlink:href="img/sprite.svg#return"></use>
+          </svg>
+        </a>
       </div>
     </header>
 
@@ -108,6 +130,9 @@
       <div class="footer__container">
         <a class="logo logo_blue footer__logo" href="index.html">
           <picture>
+            <source type="image/webp" media="(min-width: 1440px)" srcset="img/logo-desktop-white@1x.webp 1x, img/logo-desktop-white@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)" srcset="img/logo-tablet-white@1x.webp 1x, img/logo-tablet-white@2x.webp 2x">
+            <source type="image/webp" srcset="img/logo-mobile-white@1x.webp 1x, img/logo-mobile-white@2x.webp 2x">
             <source media="(min-width: 1440px)" srcset="img/logo-desktop-white@1x.png 1x, img/logo-desktop-white@2x.png 2x">
             <source media="(min-width: 768px)" srcset="img/logo-tablet-white@1x.png 1x, img/logo-tablet-white@2x.png 2x">
             <img class="logo__img" src="img/logo-mobile-white@1x.png" srcset="img/logo-mobile-white@2x.png 2x" alt="Логотип сервиса Погнали" width="100" height="19">
@@ -117,29 +142,35 @@
           <div class="socials">
             <ul class="socials__list">
               <li class="socials__item">
-                <a class="social-link social-link_facebook" href="">
-                  <span class="social-link__text">Фейсбук</span>
+                <a class="social-link" href="" aria-label="Погнали в Фейсбук">
+                  <svg class="social-link__icon" aria-hidden="true" focusable="false" width="22" height="22">
+                    <use xlink:href="img/sprite.svg#facebook"></use>
+                  </svg>
                 </a>
               </li>
               <li class="socials__item">
-                <a class="social-link social-link_vk" href="">
-                  <span class="social-link__text">Вконтакте</span>
+                <a class="social-link" href="" aria-label="Погнали во ВКонтакте">
+                  <svg class="social-link__icon" aria-hidden="true" focusable="false" width="22" height="22">
+                    <use xlink:href="img/sprite.svg#vk"></use>
+                  </svg>
                 </a>
               </li>
               <li class="socials__item">
-                <a class="social-link social-link_instagram" href="">
-                  <span class="social-link__text">Инстаграм</span>
+                <a class="social-link" href="" aria-label="Погнали в Инстаграм">
+                  <svg class="social-link__icon" aria-hidden="true" focusable="false" width="22" height="22">
+                    <use xlink:href="img/sprite.svg#instagram"></use>
+                  </svg>
                 </a>
               </li>
             </ul>
           </div>
         </address>
         <address class="footer__developer-info">
-          <a class="developer-logo" href="">
+          <a class="developer-logo" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Сервис разработан в HTML Academy">
             Разработано
-            <span class="developer-logo__image-container">
-              <img class="developer-logo__image" src="img/htmlacademy.svg" alt="Логотип школы разработки интерфейсов HTML Academy" width="27" height="34">
-            </span>
+            <svg class="developer-logo__image" role="img" focusable="false" width="27" height="34">
+              <use xlink:href="img/sprite.svg#academy-logo"></use>
+            </svg>
           </a>
         </address>
       </div>

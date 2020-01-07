@@ -27,12 +27,10 @@
   }
 }
 
-.developer-logo__image-container {
+.developer-logo__image {
   flex-shrink: 0;
   width: 27px;
   height: 34px;
-}
 
-.developer-logo__image {
-  @include image-size();
+  fill: #192144;
 }

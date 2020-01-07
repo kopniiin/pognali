@@ -1,0 +1,160 @@
+.plan-card {
+  box-sizing: border-box;
+  border-radius: 10px;
+  padding-top: 24px;
+  padding-bottom: 24px;
+
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 14px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: #1d2e5b;
+
+  background-color: #ffffff;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 40px;
+    padding-bottom: 10px;
+
+    font-size: 20px;
+    line-height: 20px;
+    letter-spacing: 2px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 38px;
+    padding-bottom: 34px;
+  }
+}
+
+.plan-card__title {
+  margin-top: 0;
+  margin-bottom: 20px;
+  padding-right: 24px;
+  padding-left: 24px;
+
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 16px;
+  letter-spacing: normal;
+  text-transform: none;
+
+  @media (min-width: $tablet-width) {
+    position: relative;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 19px;
+    padding-right: 36px;
+    padding-bottom: 34px;
+    padding-left: 36px;
+
+    font-size: 24px;
+    line-height: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    justify-content: flex-start;
+    margin-bottom: 0;
+    width: 40%;
+    padding-right: 44px;
+    padding-bottom: 0;
+    padding-left: 44px;
+  }
+
+  &::before {
+    counter-increment: plan-counter;
+    content: counter(plan-counter) ". ";
+
+    @media (min-width: $tablet-width) {
+      flex-shrink: 0;
+      order: 1;
+
+      font-size: 20px;
+      font-weight: 500;
+      line-height: 20px;
+    }
+
+    @media (min-width: $desktop-width) {
+      order: 0;
+      margin-right: 36px;
+    }
+  }
+
+  &::after {
+    @media (min-width: $tablet-width) {
+      content: "";
+
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      left: 0;
+
+      height: 1px;
+
+      background-color: rgba(#cbced9, 0.3);
+    }
+
+    @media (min-width: $desktop-width) {
+      display: none;
+    }
+  }
+}
+
+.plan-card__container {
+  padding-right: 24px;
+  padding-left: 24px;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-right: 33px;
+    padding-left: 33px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 47.2%;
+    padding-right: 38px;
+    padding-left: 38px;
+  }
+}
+
+.plan-card__companion-counter {
+  margin-top: 0;
+  margin-bottom: 5px;
+}
+
+.plan-card__dates {
+  margin-top: 0;
+  margin-bottom: 24px;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 36px;
+    margin-bottom: 5px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 90px;
+  }
+}
+
+.plan-card__link {
+  text-decoration: none;
+  color: #000000;
+
+  opacity: 0.3;
+
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.1;
+  }
+}

@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>блоки</title>
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body class="page">
 
@@ -18,6 +18,9 @@
 
       <a class="logo" href="index.html">
         <picture>
+          <source type="image/webp" media="(min-width: 1440px)" srcset="img/logo-desktop-white@1x.webp 1x, img/logo-desktop-white@2x.webp 2x">
+          <source type="image/webp" media="(min-width: 768px)" srcset="img/logo-tablet-white@1x.webp 1x, img/logo-tablet-white@2x.webp 2x">
+          <source type="image/webp" srcset="img/logo-mobile-white@1x.webp 1x, img/logo-mobile-white@2x.webp 2x">
           <source media="(min-width: 1440px)" srcset="img/logo-desktop-white@1x.png 1x, img/logo-desktop-white@2x.png 2x">
           <source media="(min-width: 768px)" srcset="img/logo-tablet-white@1x.png 1x, img/logo-tablet-white@2x.png 2x">
           <img class="logo__img" src="img/logo-mobile-white@1x.png" srcset="img/logo-mobile-white@2x.png 2x" alt="Логотип сервиса Погнали" width="100" height="19">
@@ -28,26 +31,296 @@
 
       <a class="logo logo_blue" href="index.html">
         <picture>
+          <source type="image/webp" media="(min-width: 1440px)" srcset="img/logo-desktop-white@1x.webp 1x, img/logo-desktop-white@2x.webp 2x">
+          <source type="image/webp" media="(min-width: 768px)" srcset="img/logo-tablet-white@1x.webp 1x, img/logo-tablet-white@2x.webp 2x">
+          <source type="image/webp" srcset="img/logo-mobile-white@1x.webp 1x, img/logo-mobile-white@2x.webp 2x">
           <source media="(min-width: 1440px)" srcset="img/logo-desktop-white@1x.png 1x, img/logo-desktop-white@2x.png 2x">
           <source media="(min-width: 768px)" srcset="img/logo-tablet-white@1x.png 1x, img/logo-tablet-white@2x.png 2x">
           <img class="logo__img" src="img/logo-mobile-white@1x.png" srcset="img/logo-mobile-white@2x.png 2x" alt="Логотип сервиса Погнали" width="100" height="19">
         </picture>
       </a>
 
-      <h2>Логотип разработчика</h2>
+      <h2>Логотип академии</h2>
 
-      <a class="developer-logo" href="">
+      <a class="developer-logo" href="https://htmlacademy.ru/intensive/adaptive">
         Разработано
-        <span class="developer-logo__image-container">
-          <img class="developer-logo__image" src="img/htmlacademy.svg" alt="Логотип школы разработки интерфейсов HTML Academy" width="27" height="34">
-        </span>
+        <svg class="developer-logo__image" role="img" aria-label="Логотип HTML Academy" focusable="false" width="27" height="34">
+          <use xlink:href="img/sprite.svg#academy-logo"></use>
+        </svg>
       </a>
+
+      <h2>Поле ввода тегов</h2>
+
+      <div class="tag-field">
+        <label class="tag-field__label" for="tag-field">Тэги</label>
+        <textarea class="tag-field__input" name="tags" placeholder="Коротко о себе в виде 5-8 хештэгов" id="tag-field"></textarea>
+      </div>
+
+      <h2>Флаг</h2>
+
+      <h3>Стандартный флаг</h3>
+
+      <div class="flag">
+        <svg class="flag__image" role="img" aria-label="Флаг Чехии" focusable="false" width="26" height="18">
+          <use xlink:href="img/sprite.svg#flag-czech"></use>
+        </svg>
+        <span class="flag__name">Чехия</span>
+      </div>
+
+      <h3>Флаг с тултипом</h3>
+
+      <div class="flag flag_tooltip">
+        <svg class="flag__image" role="img" aria-label="Флаг Чехии" focusable="false" width="35" height="24">
+          <use xlink:href="img/sprite.svg#flag-czech"></use>
+        </svg>
+        <span class="flag__name" aria-hidden="true">Чехия</span>
+      </div>
+
+      <h3>Большой флаг</h3>
+
+      <div class="flag flag_big">
+        <svg class="flag__image" role="img" aria-label="Флаг Чехии" focusable="false" width="35" height="24">
+          <use xlink:href="img/sprite.svg#flag-czech"></use>
+        </svg>
+      </div>
+
+      <h2>Список флагов</h2>
+
+      <h3>Обычный список флагов</h3>
+
+      <section class="flags">
+        <h4 class="flags__title">хочет посетить:</h4>
+        <ul class="flags__flag-list">
+          <li class="flags__flag-item">
+            <div class="flag">
+              <svg class="flag__image" role="img" aria-label="Флаг Чехии" focusable="false" width="26" height="18">
+                <use xlink:href="img/sprite.svg#flag-czech"></use>
+              </svg>
+              <span class="flag__name">Чехия</span>
+            </div>
+          </li>
+          <li class="flags__flag-item">
+            <div class="flag">
+              <svg class="flag__image" role="img" aria-label="Флаг Чехии" focusable="false" width="26" height="18">
+                <use xlink:href="img/sprite.svg#flag-czech"></use>
+              </svg>
+              <span class="flag__name">Чехия</span>
+            </div>
+          </li>
+          <li class="flags__flag-item">
+            <div class="flag">
+              <svg class="flag__image" role="img" aria-label="Флаг Чехии" focusable="false" width="26" height="18">
+                <use xlink:href="img/sprite.svg#flag-czech"></use>
+              </svg>
+              <span class="flag__name">Чехия</span>
+            </div>
+          </li>
+        </ul>
+      </section>
+
+      <h3>Фиксированный список флагов</h3>
+
+      <section class="flags flags_fixed">
+        <h4 class="flags__title">хочет посетить:</h4>
+        <ul class="flags__flag-list">
+          <li class="flags__flag-item">
+            <div class="flag flag_tooltip">
+              <svg class="flag__image" role="img" aria-label="Флаг Чехии" focusable="false" width="35" height="24">
+                <use xlink:href="img/sprite.svg#flag-czech"></use>
+              </svg>
+              <span class="flag__name" aria-hidden="true">Чехия</span>
+            </div>
+          </li>
+          <li class="flags__flag-item">
+            <div class="flag flag_tooltip">
+              <svg class="flag__image" role="img" aria-label="Флаг Чехии" focusable="false" width="35" height="24">
+                <use xlink:href="img/sprite.svg#flag-czech"></use>
+              </svg>
+              <span class="flag__name" aria-hidden="true">Чехия</span>
+            </div>
+          </li>
+          <li class="flags__flag-item">
+            <div class="flag flag_tooltip">
+              <svg class="flag__image" role="img" aria-label="Флаг Чехии" focusable="false" width="35" height="24">
+                <use xlink:href="img/sprite.svg#flag-czech"></use>
+              </svg>
+              <span class="flag__name" aria-hidden="true">Чехия</span>
+            </div>
+          </li>
+        </ul>
+      </section>
+
+      <h2>Транспорт</h2>
+
+      <h3>Активный транспорт</h3>
+
+      <div class="transport transport_active" aria-label="Пользователь путешествует на автотраспорте">
+        <span class="transport__name" aria-hidden="true">Автотранспорт</span>
+        <svg class="transport__icon" aria-hidden="true" focusable="false" width="24" height="20">
+          <use xlink:href="img/sprite.svg#bus"></use>
+        </svg>
+      </div>
+
+      <h3>Неактивный транспорт</h3>
+
+      <div class="transport" aria-label="Пользователь не путешествует на авиатранспорте">
+        <span class="transport__name" aria-hidden="true">Авиатранспорт</span>
+        <svg class="transport__icon" aria-hidden="true" focusable="false" width="24" height="20">
+          <use xlink:href="img/sprite.svg#plane"></use>
+        </svg>
+      </div>
+
+      <h3>Неактивный транспорт с серым фоном</h3>
+
+      <div class="transport transport_gray" aria-label="Пользователь не путешествует на велосипеде">
+        <span class="transport__name" aria-hidden="true">Велосипед</span>
+        <svg class="transport__icon" aria-hidden="true" focusable="false" width="24" height="20">
+          <use xlink:href="img/sprite.svg#bike"></use>
+        </svg>
+      </div>
+
+      <h3>Активный транспорт с серым фоном</h3>
+
+      <div class="transport transport_active transport_gray" aria-label="Пользователь путешествует пешком">
+        <span class="transport__name" aria-hidden="true">Пешком</span>
+        <svg class="transport__icon" aria-hidden="true" focusable="false" width="24" height="20">
+          <use xlink:href="img/sprite.svg#run"></use>
+        </svg>
+      </div>
+
+      <h2>Список транспорта</h2>
+
+      <h3>Стандартный список транспорта</h3>
+
+      <section class="transports">
+        <h4 class="transports__title">транспорт:</h4>
+        <ul class="transports__transport-list">
+          <li class="transport-item">
+            <div class="transport transport_gray" aria-label="Пользователь не путешествует на авиатранспорте">
+              <span class="transport__name" aria-hidden="true">Авиатранспорт</span>
+              <svg class="transport__icon" aria-hidden="true" focusable="false" width="24" height="20">
+                <use xlink:href="img/sprite.svg#plane"></use>
+              </svg>
+            </div>
+          </li>
+          <li class="transport-item">
+            <div class="transport transport_active transport_gray" aria-label="Пользователь путешествует на автотраспорте">
+              <span class="transport__name" aria-hidden="true">Автотранспорт</span>
+              <svg class="transport__icon" aria-hidden="true" focusable="false" width="24" height="20">
+                <use xlink:href="img/sprite.svg#bus"></use>
+              </svg>
+            </div>
+          </li>
+          <li class="transport-item">
+            <div class="transport transport_gray" aria-label="Пользователь не путешествует на велосипеде">
+              <span class="transport__name" aria-hidden="true">Велосипед</span>
+              <svg class="transport__icon" aria-hidden="true" focusable="false" width="24" height="20">
+                <use xlink:href="img/sprite.svg#bike"></use>
+              </svg>
+            </div>
+          </li>
+          <li class="transport-item">
+            <div class="transport transport_active transport_gray" aria-label="Пользователь путешествует пешком">
+              <span class="transport__name" aria-hidden="true">Пешком</span>
+              <svg class="transport__icon" aria-hidden="true" focusable="false" width="24" height="20">
+                <use xlink:href="img/sprite.svg#run"></use>
+              </svg>
+            </div>
+          </li>
+        </ul>
+      </section>
+
+      <h3>Фиксированный список транспорта</h3>
+
+      <section class="transports transports_fixed">
+        <h4 class="transports__title">транспорт:</h4>
+        <ul class="transports__transport-list">
+          <li class="transport-item">
+            <div class="transport" aria-label="Пользователь не путешествует на авиатранспорте">
+              <span class="transport__name" aria-hidden="true">Авиатранспорт</span>
+              <svg class="transport__icon" aria-hidden="true" focusable="false" width="24" height="20">
+                <use xlink:href="img/sprite.svg#plane"></use>
+              </svg>
+            </div>
+          </li>
+          <li class="transport-item">
+            <div class="transport transport_active" aria-label="Пользователь путешествует на автотраспорте">
+              <span class="transport__name" aria-hidden="true">Автотранспорт</span>
+              <svg class="transport__icon" aria-hidden="true" focusable="false" width="24" height="20">
+                <use xlink:href="img/sprite.svg#bus"></use>
+              </svg>
+            </div>
+          </li>
+          <li class="transport-item">
+            <div class="transport" aria-label="Пользователь не путешествует на велосипеде">
+              <span class="transport__name" aria-hidden="true">Велосипед</span>
+              <svg class="transport__icon" aria-hidden="true" focusable="false" width="24" height="20">
+                <use xlink:href="img/sprite.svg#bike"></use>
+              </svg>
+            </div>
+          </li>
+          <li class="transport-item">
+            <div class="transport transport_active" aria-label="Пользователь путешествует пешком">
+              <span class="transport__name" aria-hidden="true">Пешком</span>
+              <svg class="transport__icon" aria-hidden="true" focusable="false" width="24" height="20">
+                <use xlink:href="img/sprite.svg#run"></use>
+              </svg>
+            </div>
+          </li>
+        </ul>
+      </section>
+
+      <h2>Кнопка</h2>
+
+      <h3>Стандартная кнопка</h3>
+
+      <button class="button">
+        <span class="button__text">Позвать!</span>
+      </button>
+
+      <h3>Прозрачная кнопка</h3>
+
+      <button class="button button_stroke">
+        <span class="button__text">Позвать!</span>
+      </button>
+
+      <h3>Большая кнопка</h3>
+
+      <button class="button button_big">
+        <span class="button__text">Позвать!</span>
+      </button>
+
+      <h3>Большая и прозрачная кнопка</h3>
+
+      <button class="button button_big button_stroke">
+        <span class="button__text">Позвать!</span>
+      </button>
+
+      <h2>Кнопка регистрации</h2>
+
+      <button class="registration-button" type="submit">
+        <span class="registration-button__text">Регистрация</span>
+      </button>
+
+      <h2>Кнопка выбора аватарки</h2>
+
+      <button class="avatar-button" type="button">Сменить фото</button>
+
+      <h2>Кнопка фильтрации пользователей</h2>
+
+      <button class="filter-button" type="submit">Показать</button>
+
+      <h2>Кнопка закрытия фильтрации стран</h2>
+
+      <button class="collapse-button" type="button">
+        <span class="collapse-button__text">Свернуть</span>
+      </button>
 
       <h2>Ссылка навигации по сайту</h2>
 
-      <a class="navigation-link" href="">
+      <a class="navigation-link" href="" aria-label="О сервисе">
         <span class="navigation-link__text">О сервисе</span>
-        <span class="navigation-link__text" aria-hidden="true">О сервисе</span>
+        <span class="navigation-link__text">О сервисе</span>
       </a>
 
       <h2>Навигация по сайту</h2>
@@ -55,70 +328,92 @@
       <div class="site-navigation">
         <ul class="site-navigation__list">
           <li class="site-navigation__item">
-            <a class="navigation-link" href="">
+            <a class="navigation-link" href="" aria-label="О сервисе">
               <span class="navigation-link__text">О сервисе</span>
-              <span class="navigation-link__text" aria-hidden="true">О сервисе</span>
+              <span class="navigation-link__text">О сервисе</span>
             </a>
           </li>
           <li class="site-navigation__item">
-            <a class="navigation-link" href="form.html">
+            <a class="navigation-link" href="form.html" aria-label="Направления">
               <span class="navigation-link__text">Направления</span>
-              <span class="navigation-link__text" aria-hidden="true">Направления</span>
+              <span class="navigation-link__text">Направления</span>
             </a>
           </li>
           <li class="site-navigation__item">
-            <a class="navigation-link" href="catalog.html">
+            <a class="navigation-link" href="catalog.html" aria-label="Попутчики">
               <span class="navigation-link__text">Попутчики</span>
-              <span class="navigation-link__text" aria-hidden="true">Попутчики</span>
+              <span class="navigation-link__text">Попутчики</span>
             </a>
           </li>
         </ul>
       </div>
 
+      <h2>Ссылка авторизации</h2>
+
+      <a class="authorization-link" href="">авторизуйтесь</a>
+
       <h2>Контактная ссылка</h2>
 
       <h3>Обычная контактная ссылка c телефоном</h3>
 
-      <a class="contact-link contact-link_phone" href="tel:88005558628">
+      <a class="contact-link" href="tel:88005558628" aria-label="Позвонить по номеру 8 800 555-86-28">
         <span class="contact-link__text">8 800 555-86-28</span>
+        <svg class="contact-link__icon" aria-hidden="true" focusable="false" width="18" height="22">
+          <use xlink:href="img/sprite.svg#phone"></use>
+        </svg>
       </a>
 
       <h3>Обычная контактная ссылка c почтой</h3>
 
-      <a class="contact-link contact-link_mail" href="mailto:mail@htmlacademy.ru">
+      <a class="contact-link" href="mailto:mail@htmlacademy.ru" aria-label="Написать на электронную почту mail@htmlacademy.ru">
         <span class="contact-link__text">mail@htmlacademy.ru</span>
+        <svg class="contact-link__icon" aria-hidden="true" focusable="false" width="18" height="22">
+          <use xlink:href="img/sprite.svg#mail"></use>
+        </svg>
       </a>
 
       <h3>Обычная контактная ссылка c локацией</h3>
 
-      <a class="contact-link contact-link_location" href="">
+      <a class="contact-link" href="" aria-label="Офис компании Погнали по адресу улица Большая Конюшенная, дом 19/8">
         <span class="contact-link__text">ул. Большая Конюшенная, 19/8</span>
+        <svg class="contact-link__icon" aria-hidden="true" focusable="false" width="18" height="22">
+          <use xlink:href="img/sprite.svg#location"></use>
+        </svg>
       </a>
 
       <h3>Контактная ссылка c желтым текстом</h3>
 
-      <a class="contact-link contact-link_phone contact-link_light" href="tel:88005558628">
-        <span class="contact-link__text">8 800 555-86-28</span>
+      <a class="contact-link contact-link_light" href="" aria-label="Офис компании Погнали по адресу улица Большая Конюшенная, дом 19/8">
+        <span class="contact-link__text">ул. Большая Конюшенная, 19/8</span>
+        <svg class="contact-link__icon" aria-hidden="true" focusable="false" width="18" height="22">
+          <use xlink:href="img/sprite.svg#location"></use>
+        </svg>
       </a>
 
       <h2>Контактная кнопка</h2>
 
       <h3>Контактная кнопка c почтой</h3>
 
-      <a class="contact-button contact-button_mail" href="mailto:mail@htmlacademy.ru">
-        <span class="contact-button__text">mail@htmlacademy.ru</span>
+      <a class="contact-button" href="mailto:mail@htmlacademy.ru" aria-label="Написать на электронную почту mail@htmlacademy.ru">
+        <svg class="contact-button__icon" aria-hidden="true" focusable="false" width="18" height="18">
+          <use xlink:href="img/sprite.svg#topmenu-mail"></use>
+        </svg>
       </a>
 
       <h3>Контактная кнопка c телефоном</h3>
 
-      <a class="contact-button contact-button_phone" href="tel:88005558628">
-        <span class="contact-button__text">8 800 555-86-28</span>
+      <a class="contact-button" href="tel:88005558628" aria-label="Позвонить по номеру 8 800 555-86-28">
+        <svg class="contact-button__icon" aria-hidden="true" focusable="false" width="18" height="18">
+          <use xlink:href="img/sprite.svg#topmenu-phone"></use>
+        </svg>
       </a>
 
       <h3>Контактная кнопка c темным фоном</h3>
 
-      <a class="contact-button contact-button_phone contact-button_dark" href="tel:88005558628">
-        <span class="contact-button__text">8 800 555-86-28</span>
+      <a class="contact-button contact-button_dark" href="tel:88005558628" aria-label="Позвонить по номеру 8 800 555-86-28">
+        <svg class="contact-button__icon" aria-hidden="true" focusable="false" width="18" height="18">
+          <use xlink:href="img/sprite.svg#topmenu-phone"></use>
+        </svg>
       </a>
 
       <h2>Список контактов</h2>
@@ -128,13 +423,19 @@
       <div class="contacts">
         <ul class="contacts__list">
           <li class="contacts__item">
-            <a class="contact-link contact-link_phone" href="tel:88005558628">
+            <a class="contact-link" href="tel:88005558628" aria-label="Позвонить по номеру 8 800 555-86-28">
               <span class="contact-link__text">8 800 555-86-28</span>
+              <svg class="contact-link__icon" aria-hidden="true" focusable="false" width="18" height="22">
+                <use xlink:href="img/sprite.svg#phone"></use>
+              </svg>
             </a>
           </li>
           <li class="contacts__item">
-            <a class="contact-link contact-link_mail" href="mailto:mail@htmlacademy.ru">
+            <a class="contact-link" href="mailto:mail@htmlacademy.ru" aria-label="Написать на электронную почту mail@htmlacademy.ru">
               <span class="contact-link__text">mail@htmlacademy.ru</span>
+              <svg class="contact-link__icon" aria-hidden="true" focusable="false" width="18" height="22">
+                <use xlink:href="img/sprite.svg#mail"></use>
+              </svg>
             </a>
           </li>
         </ul>
@@ -145,13 +446,17 @@
       <div class="contacts contacts_buttons">
         <ul class="contacts__list">
           <li class="contacts__item">
-            <a class="contact-button contact-button_phone contact-button_dark" href="tel:88005558628">
-              <span class="contact-button__text">8 800 555-86-28</span>
+            <a class="contact-button contact-button_dark" href="tel:88005558628" aria-label="Позвонить по номеру 8 800 555-86-28">
+              <svg class="contact-button__icon" aria-hidden="true" focusable="false" width="18" height="18">
+                <use xlink:href="img/sprite.svg#topmenu-phone"></use>
+              </svg>
             </a>
           </li>
           <li class="contacts__item">
-            <a class="contact-button contact-button_mail" href="mailto:mail@htmlacademy.ru">
-              <span class="contact-button__text">mail@htmlacademy.ru</span>
+            <a class="contact-button" href="mailto:mail@htmlacademy.ru" aria-label="Написать на электронную почту mail@htmlacademy.ru">
+              <svg class="contact-button__icon" aria-hidden="true" focusable="false" width="18" height="18">
+                <use xlink:href="img/sprite.svg#topmenu-mail"></use>
+              </svg>
             </a>
           </li>
         </ul>
@@ -161,20 +466,26 @@
 
       <h3>Социальная ссылка Вконтакте</h3>
 
-      <a class="social-link social-link_vk" href="">
-        <span class="social-link__text">Вконтакте</span>
+      <a class="social-link" href="" aria-label="Сервис Погнали во ВКонтакте">
+        <svg class="social-link__icon" aria-hidden="true" focusable="false" width="22" height="22">
+          <use xlink:href="img/sprite.svg#vk"></use>
+        </svg>
       </a>
 
       <h3>Социальная ссылка Инстаграм</h3>
 
-      <a class="social-link social-link_instagram" href="">
-        <span class="social-link__text">Инстаграм</span>
+      <a class="social-link" href="" aria-label="Сервис Погнали в Инстаграм">
+        <svg class="social-link__icon" aria-hidden="true" focusable="false" width="22" height="22">
+          <use xlink:href="img/sprite.svg#instagram"></use>
+        </svg>
       </a>
 
       <h3>Социальная ссылка Фейсбук</h3>
 
-      <a class="social-link social-link_facebook" href="">
-        <span class="social-link__text">Фейсбук</span>
+      <a class="social-link" href="" aria-label="Сервис Погнали в Фейсбук">
+        <svg class="social-link__icon" aria-hidden="true" focusable="false" width="22" height="22">
+          <use xlink:href="img/sprite.svg#facebook"></use>
+        </svg>
       </a>
 
       <h2>Список социальных ссылок</h2>
@@ -182,18 +493,24 @@
       <div class="socials">
         <ul class="socials__list">
           <li class="socials__item">
-            <a class="social-link social-link_facebook" href="">
-              <span class="social-link__text">Фейсбук</span>
+            <a class="social-link" href="" aria-label="Сервис Погнали в Фейсбук">
+              <svg class="social-link__icon" aria-hidden="true" focusable="false" width="22" height="22">
+                <use xlink:href="img/sprite.svg#facebook"></use>
+              </svg>
             </a>
           </li>
           <li class="socials__item">
-            <a class="social-link social-link_vk" href="">
-            <span class="social-link__text">Вконтакте</span>
+            <a class="social-link" href="" aria-label="Сервис Погнали во ВКонтакте">
+              <svg class="social-link__icon" aria-hidden="true" focusable="false" width="22" height="22">
+                <use xlink:href="img/sprite.svg#vk"></use>
+              </svg>
             </a>
           </li>
           <li class="socials__item">
-            <a class="social-link social-link_instagram" href="">
-              <span class="social-link__text">Инстаграм</span>
+            <a class="social-link" href="" aria-label="Сервис Погнали в Инстаграм">
+              <svg class="social-link__icon" aria-hidden="true" focusable="false" width="22" height="22">
+                <use xlink:href="img/sprite.svg#instagram"></use>
+              </svg>
             </a>
           </li>
         </ul>
@@ -203,25 +520,159 @@
 
       <a class="modal-button" href="">
         <span class="modal-button__text">Показать тарифы для бизнеса</span>
+        <svg class="modal-button__icon" aria-hidden="true" focusable="false" width="17" height="21">
+          <use xlink:href="img/sprite.svg#user"></use>
+        </svg>
       </a>
+
+      <h2>Лайк</h2>
+
+      <h3>Неактивный лайк</h3>
+
+      <button class="like" type="button" aria-label="Лайк">
+        <svg class="like__icon" aria-hidden="true" focusable="false" width="13" height="11">
+          <use xlink:href="img/sprite.svg#like"></use>
+        </svg>
+      </button>
+
+      <h3>Активный лайк</h3>
+
+      <button class="like like_active" type="button" aria-label="Лайк">
+        <svg class="like__icon" aria-hidden="true" focusable="false" width="13" height="11">
+          <use xlink:href="img/sprite.svg#like"></use>
+        </svg>
+      </button>
+
+      <h2>Счетчик лайков</h2>
+
+      <div class="like-counter">
+        10 <span class="like-counter__text">лайков</span>
+      </div>
+
+      <h2>Чекбокс</h2>
+
+      <h3>Обычный чекбокс</h3>
+
+      <div class="checkbox">
+        <input class="checkbox__input" type="checkbox" name="music" id="music-rock-field">
+        <label class="checkbox__name" for="music-rock-field">Тяжелый рок</label>
+      </div>
+
+      <h3>Большой чекбокс</h3>
+
+      <div class="checkbox checkbox_big">
+        <input class="checkbox__input" type="checkbox" name="children" id="children-field">
+        <label class="checkbox__name" for="children-field">Можно с детьми</label>
+      </div>
+
+      <h2>Чекбокс транспорта</h2>
+
+      <h3>Чекбокс транспорта - авиатранспорт</h3>
+
+      <div class="transport-checkbox">
+        <input class="transport-checkbox__input" type="checkbox" name="transport" id="transport-plane-field">
+        <label class="transport-checkbox__icon" for="transport-plane-field">
+          <span class="transport-checkbox__icon-text">Авиатранспорт</span>
+          <svg class="transport-checkbox__icon-image" aria-hidden="true" focusable="false" width="20" height="16">
+            <use xlink:href="img/sprite.svg#plane"></use>
+          </svg>
+        </label>
+      </div>
+
+      <h3>Чекбокс транспорта - автотранспорт</h3>
+
+      <div class="transport-checkbox">
+        <input class="transport-checkbox__input" type="checkbox" name="transport" id="transport-bus-field">
+        <label class="transport-checkbox__icon" for="transport-bus-field">
+          <span class="transport-checkbox__icon-text">Автотранспорт</span>
+          <svg class="transport-checkbox__icon-image" aria-hidden="true" focusable="false" width="20" height="16">
+            <use xlink:href="img/sprite.svg#bus"></use>
+          </svg>
+        </label>
+      </div>
+
+      <h3>Чекбокс транспорта - велосипед</h3>
+
+      <div class="transport-checkbox">
+        <input class="transport-checkbox__input" type="checkbox" name="transport" id="transport-bike-field">
+        <label class="transport-checkbox__icon" for="transport-bike-field">
+          <span class="transport-checkbox__icon-text">Велосипед</span>
+          <svg class="transport-checkbox__icon-image" aria-hidden="true" focusable="false" width="20" height="16">
+            <use xlink:href="img/sprite.svg#bike"></use>
+          </svg>
+        </label>
+      </div>
+
+      <h3>Чекбокс транспорта - пешком</h3>
+
+      <div class="transport-checkbox">
+        <input class="transport-checkbox__input" type="checkbox" name="transport" id="transport-run-field">
+        <label class="transport-checkbox__icon" for="transport-run-field">
+          <span class="transport-checkbox__icon-text">Пешком</span>
+          <svg class="transport-checkbox__icon-image" aria-hidden="true" focusable="false" width="20" height="16">
+            <use xlink:href="img/sprite.svg#run"></use>
+          </svg>
+        </label>
+      </div>
+
+      <h2>Поле электронной почты</h2>
+
+      <div class="email-field">
+        <label class="email-field__name" for="email-field">Электронная почта</label>
+        <input class="email-field__input" type="email" name="email" placeholder="E-mail" id="email-field">
+      </div>
+
+      <h2>Поле плана путешествия</h2>
+
+      <h3>Обычное поле плана путешествия</h3>
+
+      <div class="plan-field">
+        <div class="flag flag_big plan-field__flag">
+          <svg class="flag__image" role="img" aria-label="Флаг Боснии и герцеговины" focusable="false" width="35" height="24">
+            <use xlink:href="img/sprite.svg#flag-bosnia"></use>
+          </svg>
+        </div>
+        <label class="plan-field__name" for="bosnia-plan-field">Босния и герцеговина</label>
+        <textarea class="plan-field__input" name="bosnia-plan" placeholder="План действий" id="bosnia-plan-field"></textarea>
+        <span class="plan-field__error-message">Это поле должно быть заполнено</span>
+      </div>
+
+      <h3>Поле плана путешествия с ошибкой</h3>
+
+      <div class="plan-field">
+        <div class="flag flag_big plan-field__flag">
+          <svg class="flag__image" role="img" aria-label="Флаг Чехии" focusable="false" width="35" height="24">
+            <use xlink:href="img/sprite.svg#flag-czech"></use>
+          </svg>
+        </div>
+        <label class="plan-field__name" for="czech-plan-field">Чехия</label>
+        <textarea class="plan-field__input plan-field__input_error" name="czech-plan" placeholder="План действий" id="czech-plan-field" required></textarea>
+        <span class="plan-field__error-message">Это поле должно быть заполнено</span>
+      </div>
 
       <h2>Аватарка</h2>
 
       <h3>Стандартная аватарка</h3>
 
-      <div class="avatar">
+      <a class="avatar" href="">
         <picture>
+          <source type="image/webp" media="(min-width: 1440px)" srcset="img/demin-desktop@1x.webp 1x, img/demin-desktop@2x.webp 2x">
+          <source type="image/webp" media="(min-width: 768px)" srcset="img/demin-tablet@1x.webp 1x, img/demin-tablet@2x.webp 2x">
+          <source type="image/webp" srcset="img/demin-mobile@1x.webp 1x, img/demin-mobile@2x.webp 2x">
           <source media="(min-width: 1440px)" srcset="img/demin-desktop@1x.jpg 1x, img/demin-desktop@2x.jpg 2x">
           <source media="(min-width: 768px)" srcset="img/demin-tablet@1x.jpg 1x, img/demin-tablet@2x.jpg 2x">
           <img class="avatar__image" src="img/demin-mobile@1x.jpg" srcset="img/demin-mobile@2x.jpg 2x" alt="" width="70" height="70">
         </picture>
-      </div>
+      </a>
 
       <h3>Большая аватарка</h3>
 
-      <div class="avatar avatar_big">
-        <img class="avatar__image" src="img/demin-desktop@1x.jpg" srcset="img/demin-desktop@2x.jpg 2x" alt="" width="285" height="285">
-      </div>
+      <a class="avatar avatar_big" href="">
+        <picture>
+          <source type="image/webp" srcset="img/demin-desktop@1x.webp 1x, img/demin-desktop@2x.webp 2x">
+          <img class="avatar__image" src="img/demin-desktop@1x.jpg" srcset="img/demin-desktop@2x.jpg 2x" alt="" width="285" height="285">
+        </picture>
+      </a>
 
       <h3>Маленькая аватарка</h3>
 
@@ -234,27 +685,31 @@
 
       <h2>Имя пользователя</h2>
 
-      <h3>Стандартное имя пользователя онлайн</h3>
+      <h3>Стандартное имя пользователя</h3>
 
-      <a class="user-name" href="">
-        <h3 class="user-name__text">Инна Осколкова</h3>
-        <span class="user-name__status">Онлайн</span>
-      </a>
+      <div class="user-name user-name_online">
+        <h3 class="user-name__heading">
+          <a class="user-name__link" href="">Таня Фирсова</a>
+        </h3>
+        <span class="user-name__status">Пользователь в сети</span>
+      </div>
 
       <h3>Маленькое имя пользователя</h3>
 
-      <a class="user-name user-name_small" href="">
-        <h3 class="user-name__text">Таня Фирсова</h3>
-        <span class="user-name__status">Онлайн</span>
-      </a>
+      <div class="user-name user-name_offline user-name_small">
+        <h3 class="user-name__heading">
+          <a class="user-name__link" href="">Таня Фирсова</a>
+        </h3>
+        <span class="user-name__status">Пользователь вне сети</span>
+      </div>
 
       <h2>Уровень</h2>
 
       <h3>25 уровень</h3>
 
       <section class="level">
-        <h4 class="level__title">левел:</h4>
-        <div class="level__container">
+        <h4 class="level__title" aria-label="Путешественник 25 уровня">левел:</h4>
+        <div class="level__container" aria-hidden="true">
           <div class="level__progress level__progress_25"></div>
           <div class="level__text-container">
             <span class="level__number">25</span>
@@ -266,8 +721,8 @@
       <h3>50 уровень</h3>
 
       <section class="level">
-        <h4 class="level__title">левел:</h4>
-        <div class="level__container">
+        <h4 class="level__title" aria-label="Путешественник 50 уровня">левел:</h4>
+        <div class="level__container" aria-hidden="true">
           <div class="level__progress level__progress_50"></div>
           <div class="level__text-container">
             <span class="level__number">50</span>
@@ -279,8 +734,8 @@
       <h3>80 уровень</h3>
 
       <section class="level">
-        <h4 class="level__title">левел:</h4>
-        <div class="level__container">
+        <h4 class="level__title" aria-label="Путешественник 80 уровня">левел:</h4>
+        <div class="level__container" aria-hidden="true">
           <div class="level__progress level__progress_80"></div>
           <div class="level__text-container">
             <span class="level__number">80</span>
@@ -292,8 +747,8 @@
       <h3>99 уровень</h3>
 
       <section class="level">
-        <h4 class="level__title">левел:</h4>
-        <div class="level__container">
+        <h4 class="level__title" aria-label="Путешественник 99 уровня">левел:</h4>
+        <div class="level__container" aria-hidden="true">
           <div class="level__progress level__progress_99"></div>
           <div class="level__text-container">
             <span class="level__number">99</span>
@@ -305,11 +760,11 @@
       <h3>Фиксированный уровень</h3>
 
       <section class="level level_fixed">
-        <h4 class="level__title">левел:</h4>
-        <div class="level__container">
-          <div class="level__progress level__progress_80"></div>
+        <h4 class="level__title" aria-label="Путешественник 99 уровня">левел:</h4>
+        <div class="level__container" aria-hidden="true">
+          <div class="level__progress level__progress_99"></div>
           <div class="level__text-container">
-            <span class="level__number">80</span>
+            <span class="level__number">99</span>
             <span class="level__text">level</span>
           </div>
         </div>
@@ -318,35 +773,15 @@
       <h3>Большой уровень</h3>
 
       <section class="level level_big">
-        <h4 class="level__title">левел:</h4>
-        <div class="level__container">
-          <div class="level__progress level__progress_80"></div>
+        <h4 class="level__title" aria-label="Путешественник 99 уровня">левел:</h4>
+        <div class="level__container" aria-hidden="true">
+          <div class="level__progress level__progress_99"></div>
           <div class="level__text-container">
-            <span class="level__number">80</span>
+            <span class="level__number">99</span>
             <span class="level__text">level</span>
           </div>
         </div>
       </section>
-
-      <h2>Лайк</h2>
-
-      <h3>Неактивный лайк</h3>
-
-      <button class="like" type="button">
-        <span class="like__text">Лайк</span>
-      </button>
-
-      <h3>Активный лайк</h3>
-
-      <button class="like like_active" type="button">
-        <span class="like__text">Лайк</span>
-      </button>
-
-      <h2>Счетчик лайков</h2>
-
-      <div class="like-counter">
-        10 <span class="like-counter__text">лайков</span>
-      </div>
 
       <h2>Тэг</h2>
 
@@ -392,263 +827,24 @@
         </ul>
       </section>
 
-      <h2>Флаг</h2>
-
-      <h3>Стандартный флаг</h3>
-
-      <div class="flag">
-        <div class="flag__image-container">
-          <img class="flag__image" src="img/" alt="">
-        </div>
-        <span class="flag__name">Россия</span>
-      </div>
-
-      <h3>Флаг с тултипом</h3>
-
-      <div class="flag flag_tooltip">
-        <div class="flag__image-container">
-          <img class="flag__image" src="img/" alt="">
-        </div>
-        <span class="flag__name">Россия</span>
-      </div>
-
-      <h3>Большой флаг</h3>
-
-      <div class="flag flag_big">
-        <div class="flag__image-container">
-          <img class="flag__image" src="img/" alt="">
-        </div>
-        <span class="flag__name">Россия</span>
-      </div>
-
-      <h2>Список флагов</h2>
-
-      <h3>Обычный список флагов</h3>
-
-      <section class="flags">
-        <h4 class="flags__title">хочет посетить:</h4>
-        <ul class="flags__flag-list">
-          <li class="flags__flag-item">
-            <div class="flag">
-              <div class="flag__image-container">
-                <img class="flag__image" src="flag" alt="">
-              </div>
-              <span class="flag__name">Россия</span>
-            </div>
-          </li>
-          <li class="flags__flag-item">
-            <div class="flag">
-              <div class="flag__image-container">
-                <img class="flag__image" src="flag" alt="">
-              </div>
-              <span class="flag__name">Норвегия</span>
-            </div>
-          </li>
-          <li class="flags__flag-item">
-            <div class="flag">
-              <div class="flag__image-container">
-                <img class="flag__image" src="flag" alt="">
-              </div>
-              <span class="flag__name">Германия</span>
-            </div>
-          </li>
-        </ul>
-      </section>
-
-      <h3>Фиксированный список флагов</h3>
-
-      <section class="flags flags_fixed">
-        <h4 class="flags__title">хочет посетить:</h4>
-        <ul class="flags__flag-list">
-          <li class="flags__flag-item">
-            <div class="flag flag_tooltip">
-              <div class="flag__image-container">
-                <img class="flag__image" src="flag" alt="">
-              </div>
-              <span class="flag__name">Россия</span>
-            </div>
-          </li>
-          <li class="flags__flag-item">
-            <div class="flag flag_tooltip">
-              <div class="flag__image-container">
-                <img class="flag__image" src="flag" alt="">
-              </div>
-              <span class="flag__name">Норвегия</span>
-            </div>
-          </li>
-          <li class="flags__flag-item">
-            <div class="flag flag_tooltip">
-              <div class="flag__image-container">
-                <img class="flag__image" src="flag" alt="">
-              </div>
-              <span class="flag__name">Германия</span>
-            </div>
-          </li>
-        </ul>
-      </section>
-
-      <h2>Транспорт</h2>
-
-      <h3>Активный транспорт</h3>
-
-      <div class="transport transport_bus transport_active">
-        <span class="transport__status">
-          Пользователь путешествует на автотраспорте
-        </span>
-        <span class="transport__name" aria-hidden="true">Автотранспорт</span>
-      </div>
-
-      <h3>Неактивный транспорт</h3>
-
-      <div class="transport transport_plane">
-        <span class="transport__status">
-          Пользователь не путешествует на авиатранспорте
-        </span>
-        <span class="transport__name" aria-hidden="true">Авиатранспорт</span>
-      </div>
-
-      <h3>Неактивный транспорт с серым фоном</h3>
-
-      <div class="transport transport_gray transport_bike">
-        <span class="transport__status">
-          Этот пользователь не путешествует на велосипеде
-        </span>
-        <span class="transport__name" aria-hidden="true">Велосипед</span>
-      </div>
-
-      <h3>Активный транспорт с серым фоном</h3>
-
-      <div class="transport transport_gray transport_run transport_active">
-        <span class="transport__status">
-          Этот пользователь путешествует пешком
-        </span>
-        <span class="transport__name" aria-hidden="true">Пешком</span>
-      </div>
-
-      <h2>Список транспорта</h2>
-
-      <h3>Стандартный список транспорта</h3>
-
-      <section class="transports">
-        <h4 class="transports__title">транспорт:</h4>
-        <ul class="transports__transport-list">
-          <li class="transport-item">
-            <div class="transport transport_plane transport_active transport_gray">
-              <span class="transport__status">
-                Этот пользователь путешествует на авиатранспорте
-              </span>
-              <span class="transport__name" aria-hidden="true">Авиаперелет</span>
-            </div>
-          </li>
-          <li class="transport-item">
-            <div class="transport transport_bus transport_gray">
-              <span class="transport__status">
-                Пользователь не путешествует на автотранспорте
-              </span>
-              <span class="transport__name" aria-hidden="true">Автотранспорт</span>
-            </div>
-          </li>
-          <li class="transport-item">
-            <div class="transport transport_bike transport_gray">
-              <span class="transport__status">
-                Этот пользователь не путешествует на велосипеде
-              </span>
-              <span class="transport__name" aria-hidden="true">Велосипед</span>
-            </div>
-          </li>
-          <li class="transport-item">
-            <div class="transport transport_run transport_active transport_gray">
-              <span class="transport__status">
-                Этот пользователь путешествует пешком
-              </span>
-              <span class="transport__name" aria-hidden="true">Пешком</span>
-            </div>
-          </li>
-        </ul>
-      </section>
-
-      <h3>Фиксированный список транспорта</h3>
-
-      <section class="transports transports_fixed">
-        <h4 class="transports__title">транспорт:</h4>
-        <ul class="transports__transport-list">
-          <li class="transport-item">
-            <div class="transport transport_plane transport_active">
-              <span class="transport__status">
-                Этот пользователь путешествует на авиатранспорте
-              </span>
-              <span class="transport__name" aria-hidden="true">Авиаперелет</span>
-            </div>
-          </li>
-          <li class="transport-item">
-            <div class="transport transport_bus">
-              <span class="transport__status">
-                Пользователь не путешествует на автотранспорте
-              </span>
-              <span class="transport__name" aria-hidden="true">Автотранспорт</span>
-            </div>
-          </li>
-          <li class="transport-item">
-            <div class="transport transport_bike">
-              <span class="transport__status">
-                Этот пользователь не путешествует на велосипеде
-              </span>
-              <span class="transport__name" aria-hidden="true">Велосипед</span>
-            </div>
-          </li>
-          <li class="transport-item">
-            <div class="transport transport_run transport_active">
-              <span class="transport__status">
-                Этот пользователь путешествует пешком
-              </span>
-              <span class="transport__name" aria-hidden="true">Пешком</span>
-            </div>
-          </li>
-        </ul>
-      </section>
-
-      <h2>Кнопка</h2>
-
-      <h3>Стандартная кнопка</h3>
-
-      <a class="button" href="">
-        <span class="button__text">Позвать!</span>
-      </a>
-
-      <h3>Прозрачная кнопка</h3>
-
-      <a class="button button_stroke" href="">
-        <span class="button__text">Позвать!</span>
-      </a>
-
-      <h3>Большая кнопка</h3>
-
-      <a class="button button_big" href="">
-        <span class="button__text">Позвать!</span>
-      </a>
-
-      <h3>Большая и прозрачная кнопка</h3>
-
-      <a class="button button_big button_stroke" href="">
-        <span class="button__text">Позвать!</span>
-      </a>
-
       <h2>Карточка предпросмотра пользователя</h2>
 
       <article class="user-preview">
-        <a class="user-name user-name_online user-name_small user-preview__name" href="">
-          <h3 class="user-name__text">Иван Копнин</h3>
-          <span class="user-name__status">Онлайн</span>
-        </a>
+        <div class="user-name user-name_offline user-name_small user-preview__name">
+          <h3 class="user-name__heading">
+            <a class="user-name__link" href="">Таня Фирсова</a>
+          </h3>
+          <span class="user-name__status">Пользователь вне сети</span>
+        </div>
         <div class="avatar avatar_big user-preview__avatar">
           <img class="avatar__image" src="avatar" alt="">
         </div>
         <section class="level level_fixed user-preview__level">
-          <h4 class="level__title">левел:</h4>
-          <div class="level__container">
-            <div class="level__progress level__progress_80"></div>
+          <h4 class="level__title" aria-label="Путешественник 25 уровня">левел:</h4>
+          <div class="level__container" aria-hidden="true">
+            <div class="level__progress level__progress_25"></div>
             <div class="level__text-container">
-              <span class="level__number">80</span>
+              <span class="level__number">25</span>
               <span class="level__text">level</span>
             </div>
           </div>
@@ -658,26 +854,26 @@
           <ul class="flags__flag-list">
             <li class="flags__flag-item">
               <div class="flag flag_tooltip">
-                <div class="flag__image-container">
-                  <img class="flag__image" src="flag" alt="">
-                </div>
-                <span class="flag__name">Россия</span>
+                <svg class="flag__image" role="img" aria-label="Флаг Чехии" focusable="false" width="35" height="24">
+                  <use xlink:href="img/sprite.svg#flag-czech"></use>
+                </svg>
+                <span class="flag__name" aria-hidden="true">Чехия</span>
               </div>
             </li>
             <li class="flags__flag-item">
               <div class="flag flag_tooltip">
-                <div class="flag__image-container">
-                  <img class="flag__image" src="flag" alt="">
-                </div>
-                <span class="flag__name">Норвегия</span>
+                <svg class="flag__image" role="img" aria-label="Флаг Чехии" focusable="false" width="35" height="24">
+                  <use xlink:href="img/sprite.svg#flag-czech"></use>
+                </svg>
+                <span class="flag__name" aria-hidden="true">Чехия</span>
               </div>
             </li>
             <li class="flags__flag-item">
               <div class="flag flag_tooltip">
-                <div class="flag__image-container">
-                  <img class="flag__image" src="flag" alt="">
-                </div>
-                <span class="flag__name">Германия</span>
+                <svg class="flag__image" role="img" aria-label="Флаг Чехии" focusable="false" width="35" height="24">
+                  <use xlink:href="img/sprite.svg#flag-czech"></use>
+                </svg>
+                <span class="flag__name" aria-hidden="true">Чехия</span>
               </div>
             </li>
           </ul>
@@ -716,35 +912,35 @@
           <h4 class="transports__title">транспорт:</h4>
           <ul class="transports__transport-list">
             <li class="transport-item">
-              <div class="transport transport_plane transport_active">
-              <span class="transport__status">
-                Этот пользователь путешествует на авиатранспорте
-              </span>
-                <span class="transport__name" aria-hidden="true">Авиаперелет</span>
+              <div class="transport" aria-label="Пользователь не путешествует на авиатранспорте">
+                <span class="transport__name" aria-hidden="true">Авиатранспорт</span>
+                <svg class="transport__icon" aria-hidden="true" focusable="false" width="24" height="20">
+                  <use xlink:href="img/sprite.svg#plane"></use>
+                </svg>
               </div>
             </li>
             <li class="transport-item">
-              <div class="transport transport_bus">
-              <span class="transport__status">
-                Пользователь не путешествует на автотранспорте
-              </span>
+              <div class="transport transport_active" aria-label="Пользователь путешествует на автотраспорте">
                 <span class="transport__name" aria-hidden="true">Автотранспорт</span>
+                <svg class="transport__icon" aria-hidden="true" focusable="false" width="24" height="20">
+                  <use xlink:href="img/sprite.svg#bus"></use>
+                </svg>
               </div>
             </li>
             <li class="transport-item">
-              <div class="transport transport_bike">
-              <span class="transport__status">
-                Этот пользователь не путешествует на велосипеде
-              </span>
+              <div class="transport" aria-label="Пользователь не путешествует на велосипеде">
                 <span class="transport__name" aria-hidden="true">Велосипед</span>
+                <svg class="transport__icon" aria-hidden="true" focusable="false" width="24" height="20">
+                  <use xlink:href="img/sprite.svg#bike"></use>
+                </svg>
               </div>
             </li>
             <li class="transport-item">
-              <div class="transport transport_run transport_active">
-              <span class="transport__status">
-                Этот пользователь путешествует пешком
-              </span>
+              <div class="transport transport_active" aria-label="Пользователь путешествует пешком">
                 <span class="transport__name" aria-hidden="true">Пешком</span>
+                <svg class="transport__icon" aria-hidden="true" focusable="false" width="24" height="20">
+                  <use xlink:href="img/sprite.svg#run"></use>
+                </svg>
               </div>
             </li>
           </ul>
@@ -755,18 +951,22 @@
 
       <article class="user-card">
         <div class="user-card__top">
-          <a class="user-name user-name_online user-card__name" href="">
-            <h3 class="user-name__text">Иван Копнин</h3>
-            <span class="user-name__status">Онлайн</span>
-          </a>
+          <div class="user-name user-name_online user-card__name">
+            <h3 class="user-name__heading">
+              <a class="user-name__link" href="">Таня Фирсова</a>
+            </h3>
+            <span class="user-name__status">Пользователь в сети</span>
+          </div>
           <div class="avatar user-card__avatar">
             <img class="avatar__image" src="avatar" alt="">
           </div>
           <div class="user-card__buttons">
             <a class="button user-card__button" href="">Позвать!</a>
             <div class="user-card__like-container">
-              <button class="like user-card__like" type="button">
-                <span class="like__text">Лайк</span>
+              <button class="like user-card__like" type="button" aria-label="Лайк">
+                <svg class="like__icon" aria-hidden="true" focusable="false" width="13" height="11">
+                  <use xlink:href="img/sprite.svg#like"></use>
+                </svg>
               </button>
               <div class="like-counter user-card__like-counter">
                 444 <span class="like-counter__text">лайков</span>
@@ -805,26 +1005,26 @@
             <ul class="flags__flag-list">
               <li class="flags__flag-item">
                 <div class="flag">
-                  <div class="flag__image-container">
-                    <img class="flag__image" src="flag" alt="">
-                  </div>
-                  <span class="flag__name">Россия</span>
+                  <svg class="flag__image" role="img" aria-label="Флаг Чехии" focusable="false" width="26" height="18">
+                    <use xlink:href="img/sprite.svg#flag-czech"></use>
+                  </svg>
+                  <span class="flag__name">Чехия</span>
                 </div>
               </li>
               <li class="flags__flag-item">
                 <div class="flag">
-                  <div class="flag__image-container">
-                    <img class="flag__image" src="flag" alt="">
-                  </div>
-                  <span class="flag__name">Норвегия</span>
+                  <svg class="flag__image" role="img" aria-label="Флаг Чехии" focusable="false" width="26" height="18">
+                    <use xlink:href="img/sprite.svg#flag-czech"></use>
+                  </svg>
+                  <span class="flag__name">Чехия</span>
                 </div>
               </li>
               <li class="flags__flag-item">
                 <div class="flag">
-                  <div class="flag__image-container">
-                    <img class="flag__image" src="flag" alt="">
-                  </div>
-                  <span class="flag__name">Германия</span>
+                  <svg class="flag__image" role="img" aria-label="Флаг Чехии" focusable="false" width="26" height="18">
+                    <use xlink:href="img/sprite.svg#flag-czech"></use>
+                  </svg>
+                  <span class="flag__name">Чехия</span>
                 </div>
               </li>
             </ul>
@@ -835,45 +1035,45 @@
             <h4 class="transports__title">транспорт:</h4>
             <ul class="transports__transport-list">
               <li class="transport-item">
-                <div class="transport transport_plane transport_active transport_gray">
-              <span class="transport__status">
-                Этот пользователь путешествует на авиатранспорте
-              </span>
-                  <span class="transport__name" aria-hidden="true">Авиаперелет</span>
+                <div class="transport transport_gray" aria-label="Пользователь не путешествует на авиатранспорте">
+                  <span class="transport__name" aria-hidden="true">Авиатранспорт</span>
+                  <svg class="transport__icon" aria-hidden="true" focusable="false" width="24" height="20">
+                    <use xlink:href="img/sprite.svg#plane"></use>
+                  </svg>
                 </div>
               </li>
               <li class="transport-item">
-                <div class="transport transport_bus transport_gray">
-              <span class="transport__status">
-                Пользователь не путешествует на автотранспорте
-              </span>
+                <div class="transport transport_active transport_gray" aria-label="Пользователь путешествует на автотраспорте">
                   <span class="transport__name" aria-hidden="true">Автотранспорт</span>
+                  <svg class="transport__icon" aria-hidden="true" focusable="false" width="24" height="20">
+                    <use xlink:href="img/sprite.svg#bus"></use>
+                  </svg>
                 </div>
               </li>
               <li class="transport-item">
-                <div class="transport transport_bike transport_gray">
-              <span class="transport__status">
-                Этот пользователь не путешествует на велосипеде
-              </span>
+                <div class="transport transport_gray" aria-label="Пользователь не путешествует на велосипеде">
                   <span class="transport__name" aria-hidden="true">Велосипед</span>
+                  <svg class="transport__icon" aria-hidden="true" focusable="false" width="24" height="20">
+                    <use xlink:href="img/sprite.svg#bike"></use>
+                  </svg>
                 </div>
               </li>
               <li class="transport-item">
-                <div class="transport transport_run transport_active transport_gray">
-              <span class="transport__status">
-                Этот пользователь путешествует пешком
-              </span>
+                <div class="transport transport_active transport_gray" aria-label="Пользователь путешествует пешком">
                   <span class="transport__name" aria-hidden="true">Пешком</span>
+                  <svg class="transport__icon" aria-hidden="true" focusable="false" width="24" height="20">
+                    <use xlink:href="img/sprite.svg#run"></use>
+                  </svg>
                 </div>
               </li>
             </ul>
           </section>
           <section class="level user-card__level">
-            <h4 class="level__title">левел:</h4>
-            <div class="level__container">
-              <div class="level__progress level__progress_80"></div>
+            <h4 class="level__title" aria-label="Путешественник 25 уровня">левел:</h4>
+            <div class="level__container" aria-hidden="true">
+              <div class="level__progress level__progress_25"></div>
               <div class="level__text-container">
-                <span class="level__number">80</span>
+                <span class="level__number">25</span>
                 <span class="level__text">level</span>
               </div>
             </div>
@@ -895,15 +1095,30 @@
             <h3 class="direction-card__name-text">Тайланд</h3>
           </a>
           <div class="flag flag_big direction-card__flag">
-            <div class="flag__image-container">
-              <img class="flag__image" src="" alt="">
-            </div>
-            <span class="flag__name">Тайланд</span>
+            <svg class="flag__image" role="img" aria-label="Флаг Тайланда" focusable="false" width="35" height="24">
+              <use xlink:href="img/sprite.svg#flag-thailand"></use>
+            </svg>
           </div>
           <p class="direction-card__slogan">Джунгли зовут!</p>
           <p class="direction-card__user-counter">
-            18321 <span class="direction-card__counter-text">пользователь хочет посетить эту страну</span>
+            <svg class="direction-card__counter-icon" aria-hidden="true" focusable="false" width="11" height="11">
+              <use xlink:href="img/sprite.svg#user"></use>
+            </svg>
+            12518 <span class="direction-card__counter-text">пользователей хотят посетить эту страну</span>
           </p>
+        </div>
+      </article>
+
+      <h2>Карточка плана путешетсвия</h2>
+
+      <article class="plan-card">
+        <h3 class="plan-card__title">Франция, Италия</h3>
+        <div class="plan-card__container">
+          <p class="plan-card__companion-counter">3 попутчика</p>
+          <p class="plan-card__dates">
+            <time datetime="03-26">26 МАР</time> - <time datetime="03-29">29 МАР</time>
+          </p>
+          <a class="plan-card__link" href="">Изменить</a>
         </div>
       </article>
 
@@ -912,27 +1127,19 @@
       <div class="algorithm">
         <ol class="algorithm__list">
           <li class="algorithm__action">
-            <span class="algorithm__action-number">
-              <span class="algorithm__number-text">Шаг №</span> 1
-            </span>
+            <span class="algorithm__action-number" aria-label="Шаг №1">1</span>
             <p class="algorithm__action-text">Выберите направление</p>
           </li>
           <li class="algorithm__action">
-            <span class="algorithm__action-number">
-              <span class="algorithm__number-text">Шаг №</span> 2
-            </span>
+            <span class="algorithm__action-number" aria-label="Шаг №2">2</span>
             <p class="algorithm__action-text">Изучите идеи путешественников</p>
           </li>
           <li class="algorithm__action">
-            <span class="algorithm__action-number">
-              <span class="algorithm__number-text">Шаг №</span> 3
-            </span>
+            <span class="algorithm__action-number" aria-label="Шаг №3">3</span>
             <p class="algorithm__action-text">Находите тех, кто похож на вас</p>
           </li>
           <li class="algorithm__action">
-            <span class="algorithm__action-number">
-              <span class="algorithm__number-text">Шаг №</span> 4
-            </span>
+            <span class="algorithm__action-number" aria-label="Шаг №4">4</span>
             <p class="algorithm__action-text">Путешествуйте вместе!</p>
           </li>
         </ol>
@@ -943,27 +1150,21 @@
       <div class="services">
         <ol class="services__list">
           <li class="services__service">
-            <span class="services__number">
-              <span class="services__number-text">Услуга №</span> 1
-            </span>
+            <span class="services__number" aria-label="Услуга №1">1</span>
             <dl class="services__description">
               <dt class="services__name">Базовое размещение</dt>
               <dd class="services__price">Бесплатно</dd>
             </dl>
           </li>
           <li class="services__service">
-            <span class="services__number">
-              <span class="services__number-text">Услуга №</span> 2
-            </span>
+            <span class="services__number" aria-label="Услуга №2">2</span>
             <dl class="services__description">
               <dt class="services__name">Вывод на первых позициях</dt>
               <dd class="services__price">99 руб./мес</dd>
             </dl>
           </li>
           <li class="services__service">
-            <span class="services__number">
-              <span class="services__number-text">Услуга №</span> 3
-            </span>
+            <span class="services__number" aria-label="Услуга №3">3</span>
             <dl class="services__description">
               <dt class="services__name">Кастомный цвет карточки</dt>
               <dd class="services__price">59 руб./мес</dd>
