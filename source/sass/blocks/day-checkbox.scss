@@ -1,0 +1,154 @@
+.day-checkbox {
+  box-sizing: border-box;
+
+  &_new-month {
+    .day-checkbox__month {
+      @media (min-width: $desktop-width) {
+        position: static;
+
+        width: auto;
+        height: auto;
+        margin: 0;
+
+        white-space: normal;
+
+        clip-path: none;
+        clip: auto;
+        overflow: auto;
+      }
+    }
+  }
+}
+
+.day-checkbox__input {
+  @include visually-hidden();
+
+  &:disabled {
+    & + .day-checkbox__name {
+      color: rgba(#444444, 0.3);
+
+      background-color: transparent;
+    }
+  }
+
+  &:not(:disabled) {
+    + .day-checkbox__name:hover,
+    &:focus + .day-checkbox__name {
+      z-index: 1;
+
+      color: #ffffff;
+
+      &::before {
+        background-color: #ff5c23;
+      }
+
+      .day-checkbox__name-text {
+        background-color: #1d2e5b;
+      }
+    }
+  }
+
+  &:checked {
+    & + .day-checkbox__name {
+      color: #ffffff;
+
+      background-color: #101d41;
+    }
+  }
+}
+
+.day-checkbox__name {
+  position: relative;
+
+  display: block;
+  width: 30px;
+  height: 30px;
+
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  color: #444444;
+
+  background-color: #edeff6;
+
+  @media (min-width: $tablet-width) {
+    width: 74px;
+    height: 68px;
+
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 142px;
+
+    font-weight: 400;
+  }
+
+  &::before {
+    content: "";
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    width: calc(100% + 2px);
+    height: calc(100% + 2px);
+    border-radius: 2px;
+
+    transform: translate(-50%, -50%);
+
+    @media (min-width: $tablet-width) {
+      width: calc(100% + 4px);
+      height: calc(100% + 4px);
+    }
+
+    @media (min-width: $desktop-width) {
+      width: calc(100% + 6px);
+      height: calc(100% + 6px);
+    }
+  }
+}
+
+.day-checkbox__name-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: calc(100% - 2px);
+  height: calc(100% - 2px);
+
+  transform: translate(-50%, -50%);
+
+  @media (min-width: $tablet-width) {
+    width: calc(100% - 4px);
+    height: calc(100% - 4px);
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: calc(100% - 2px);
+    height: calc(100% - 2px);
+    padding-top: 12px;
+    padding-right: 14px;
+    padding-bottom: 9px;
+    padding-left: 14px;
+  }
+}
+
+.day-checkbox__month {
+  @include visually-hidden();
+}
+
+.day-checkbox__status {
+  @media (max-width: $desktop-width - 1px) {
+    @include visually-hidden();
+  }
+}
