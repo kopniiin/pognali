@@ -129,6 +129,35 @@
   }
 }
 
+@mixin title-above-border() {
+  position: absolute;
+  top: -7px;
+  left: 50%;
+
+  padding-right: 18px;
+  padding-left: 18px;
+
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #1d2e5b;
+
+  background-color: #edeff6;
+  transform: translateX(-50%);
+
+  @media (min-width: $tablet-width) {
+    top: auto;
+    bottom: -12px;
+
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 20px;
+
+    letter-spacing: 2px;
+  }
+}
+
 @mixin section-title() {
   margin: 0;
 

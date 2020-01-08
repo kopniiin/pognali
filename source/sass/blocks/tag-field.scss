@@ -5,32 +5,7 @@
 }
 
 .tag-field__label {
-  position: absolute;
-  top: -7px;
-  left: 50%;
-
-  padding-right: 18px;
-  padding-left: 18px;
-
-  font-size: 16px;
-  font-weight: 700;
-  line-height: 18px;
-  text-transform: uppercase;
-  color: #1d2e5b;
-
-  background-color: #edeff6;
-  transform: translateX(-50%);
-
-  @media (min-width: $tablet-width) {
-    top: auto;
-    bottom: -2px;
-
-    font-size: 20px;
-    font-weight: 500;
-    line-height: 20px;
-
-    letter-spacing: 2px;
-  }
+  @include title-above-border();
 
   @media (min-width: $desktop-width) {
     left: 21px;
@@ -40,6 +15,7 @@
 
 .tag-field__input {
   box-sizing: border-box;
+  display: block;
   width: 100%;
   border: 1px solid #cbced9;
   border-radius: 10px;

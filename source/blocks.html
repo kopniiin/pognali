@@ -608,11 +608,56 @@
         </label>
       </div>
 
-      <h2>Поле электронной почты</h2>
+      <h2>Поле выбора транспорта</h2>
 
-      <div class="email-field">
-        <label class="email-field__name" for="email-field">Электронная почта</label>
-        <input class="email-field__input" type="email" name="email" placeholder="E-mail" id="email-field">
+      <div class="transport-field" role="group" aria-labelledby="transport-field-label">
+        <span class="transport-field__name" id="transport-field-label">Транспорт</span>
+        <ul class="transport-field__list">
+          <li class="transport-field__item">
+            <div class="transport-checkbox">
+              <input class="transport-checkbox__input" type="checkbox" name="transport" id="transport-plane-field" checked>
+              <label class="transport-checkbox__icon" for="transport-plane-field">
+                <span class="transport-checkbox__icon-text">Авиатранспорт</span>
+                <svg class="transport-checkbox__icon-image" aria-hidden="true" focusable="false" width="20" height="16">
+                  <use xlink:href="img/sprite.svg#plane"></use>
+                </svg>
+              </label>
+            </div>
+          </li>
+          <li class="transport-field__item">
+            <div class="transport-checkbox">
+              <input class="transport-checkbox__input" type="checkbox" name="transport" id="transport-bus-field" checked>
+              <label class="transport-checkbox__icon" for="transport-bus-field">
+                <span class="transport-checkbox__icon-text">Автотранспорт</span>
+                <svg class="transport-checkbox__icon-image" aria-hidden="true" focusable="false" width="20" height="16">
+                  <use xlink:href="img/sprite.svg#bus"></use>
+                </svg>
+              </label>
+            </div>
+          </li>
+          <li class="transport-field__item">
+            <div class="transport-checkbox">
+              <input class="transport-checkbox__input" type="checkbox" name="transport" id="transport-bike-field">
+              <label class="transport-checkbox__icon" for="transport-bike-field">
+                <span class="transport-checkbox__icon-text">Велосипед</span>
+                <svg class="transport-checkbox__icon-image" aria-hidden="true" focusable="false" width="20" height="16">
+                  <use xlink:href="img/sprite.svg#bike"></use>
+                </svg>
+              </label>
+            </div>
+          </li>
+          <li class="transport-field__item">
+            <div class="transport-checkbox">
+              <input class="transport-checkbox__input" type="checkbox" name="transport" id="transport-run-field" checked>
+              <label class="transport-checkbox__icon" for="transport-run-field">
+                <span class="transport-checkbox__icon-text">Пешком</span>
+                <svg class="transport-checkbox__icon-image" aria-hidden="true" focusable="false" width="20" height="16">
+                  <use xlink:href="img/sprite.svg#run"></use>
+                </svg>
+              </label>
+            </div>
+          </li>
+        </ul>
       </div>
 
       <h2>Поле ввода тегов</h2>
@@ -620,6 +665,25 @@
       <div class="tag-field">
         <label class="tag-field__label" for="tag-field">Тэги</label>
         <textarea class="tag-field__input" name="tags" placeholder="Коротко о себе в виде 5-8 хештэгов" id="tag-field">#бургер #бар #футбол #концерт #крафт</textarea>
+      </div>
+
+      <h2>Поле выбора количества</h2>
+
+      <div class="quantity-field">
+        <label class="quantity-field__name" for="quantity-people-field">Ищу попутчиков:</label>
+        <span class="quantity-field__unit">чел.</span>
+        <div class="quantity-field__container">
+          <button class="quantity-field__control quantity-field__control_decrease" type="button" aria-label="Увеличить значение"></button>
+          <button class="quantity-field__control quantity-field__control_increase" type="button" aria-label="Уменьшить значение"></button>
+          <input class="quantity-field__input" type="number" name="quantity-people" value="2" id="quantity-people-field">
+        </div>
+      </div>
+
+      <h2>Поле электронной почты</h2>
+
+      <div class="email-field">
+        <label class="email-field__name" for="email-field">Электронная почта</label>
+        <input class="email-field__input" type="email" name="email" placeholder="E-mail" id="email-field">
       </div>
 
       <h2>Поле плана путешествия</h2>
