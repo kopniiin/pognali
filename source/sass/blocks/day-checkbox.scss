@@ -1,23 +1,5 @@
 .day-checkbox {
   box-sizing: border-box;
-
-  &_new-month {
-    .day-checkbox__month {
-      @media (min-width: $desktop-width) {
-        position: static;
-
-        width: auto;
-        height: auto;
-        margin: 0;
-
-        white-space: normal;
-
-        clip-path: none;
-        clip: auto;
-        overflow: auto;
-      }
-    }
-  }
 }
 
 .day-checkbox__input {
@@ -28,6 +10,7 @@
       color: rgba(#444444, 0.3);
 
       background-color: transparent;
+      cursor: auto;
     }
   }
 
@@ -42,7 +25,7 @@
         background-color: #ff5c23;
       }
 
-      .day-checkbox__name-text {
+      .day-checkbox__container {
         background-color: #1d2e5b;
       }
     }
@@ -70,6 +53,7 @@
   color: #444444;
 
   background-color: #edeff6;
+  cursor: pointer;
 
   @media (min-width: $tablet-width) {
     width: 74px;
@@ -111,7 +95,7 @@
   }
 }
 
-.day-checkbox__name-text {
+.day-checkbox__container {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -144,7 +128,9 @@
 }
 
 .day-checkbox__month {
-  @include visually-hidden();
+  @media (max-width: $desktop-width - 1px) {
+    @include visually-hidden();
+  }
 }
 
 .day-checkbox__status {
