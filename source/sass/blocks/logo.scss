@@ -15,28 +15,28 @@
   }
 
   &_blue {
-    background-image: url("../../img/logo-mobile-blue@1x.png");
+    background-image: url("../img/logo-mobile-blue@1x.png");
     background-repeat: no-repeat;
     background-position: center center;
     background-size: contain;
 
     @media (min-resolution: $retina-dppx) {
-      background-image: url("../../img/logo-mobile-blue@2x.png");
+      background-image: url("../img/logo-mobile-blue@2x.png");
     }
 
     @media (min-width: $tablet-width) {
-      background-image: url("../../img/logo-tablet-blue@1x.png");
+      background-image: url("../img/logo-tablet-blue@1x.png");
 
       @media (min-resolution: $retina-dppx) {
-        background-image: url("../../img/logo-tablet-blue@2x.png");
+        background-image: url("../img/logo-tablet-blue@2x.png");
       }
     }
 
     @media (min-width: $desktop-width) {
-      background-image: url("../../img/logo-desktop-blue@1x.png");
+      background-image: url("../img/logo-desktop-blue@1x.png");
 
       @media (min-resolution: $retina-dppx) {
-        background-image: url("../../img/logo-desktop-blue@2x.png");
+        background-image: url("../img/logo-desktop-blue@2x.png");
       }
     }
 
