@@ -1,0 +1,197 @@
+.quantity-field {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 16px;
+  letter-spacing: 1.4px;
+  text-transform: uppercase;
+  color: #1d2e5b;
+
+  @media (min-width: $tablet-width) {
+    border-top: 1px solid #d6d9e6;
+    padding-top: 24px;
+
+    font-size: 20px;
+    line-height: 20px;
+    letter-spacing: 1.8px;
+  }
+
+  @media (min-width: $desktop-width) {
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: nowrap;
+
+    border-top: none;
+    padding-top: 0;
+  }
+}
+
+.quantity-field__name {
+  margin-bottom: 8px;
+  max-width: 75%;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 22px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 20px;
+    margin-bottom: 0;
+    width: 200px;
+    min-width: auto;
+  }
+}
+
+.quantity-field__unit {
+  margin-bottom: 8px;
+  max-width: 25%;
+
+  opacity: 0.3;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 22px;
+  }
+
+  @media (min-width: $desktop-width) {
+    order: 1;
+    margin-bottom: 0;
+    width: 120px;
+    min-width: auto;
+
+    opacity: 1;
+  }
+}
+
+.quantity-field__container {
+  position: relative;
+
+  width: 100%;
+
+  @media (min-width: $desktop-width) {
+    margin-right: 36px;
+    width: 180px;
+  }
+}
+
+.quantity-field__input {
+  box-sizing: border-box;
+  display: block;
+  width: 100%;
+  border: 1px solid #cbced9;
+  border-radius: 4px;
+  padding-top: 15px;
+  padding-right: 40px;
+  padding-bottom: 10px;
+  padding-left: 40px;
+
+  font-family: inherit;
+  font-size: 15px;
+  font-weight: inherit;
+  line-height: 15px;
+  text-align: center;
+  color: inherit;
+
+  background-color: transparent;
+  appearance: none;
+  outline: none;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 24px;
+    padding-right: 64px;
+    padding-bottom: 22px;
+    padding-left: 64px;
+
+    font-size: inherit;
+    line-height: inherit;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-right: 60px;
+    padding-left: 60px;
+  }
+
+  &::-webkit-inner-spin-button,
+  &::-webkit-outer-spin-button {
+    appearance: none;
+    margin: 0;
+  }
+
+  &:hover {
+    border-color: #959bb2;
+  }
+
+  &:focus {
+    border-color: #161c35;
+  }
+}
+
+.quantity-field__control {
+  position: absolute;
+  top: 0;
+
+  width: 40px;
+  height: 100%;
+  border: none;
+  padding: 0;
+
+  background-color: transparent;
+  opacity: 0.2;
+  outline: none;
+  cursor: pointer;
+
+  @media (min-width: $tablet-width) {
+    width: 64px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 60px;
+  }
+
+  &::before,
+  &::after {
+    content: "";
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    width: 14px;
+    height: 2px;
+
+    background-color: #000000;
+    transform: translate(-50%, -50%);
+
+    @media (min-width: $tablet-width) {
+      width: 20px;
+    }
+  }
+
+  &:hover,
+  &:focus {
+    opacity: 0.4;
+  }
+
+  &:active {
+    opacity: 0.1;
+  }
+
+  &_decrease {
+    left: 0;
+
+    &::after {
+      display: none;
+    }
+  }
+
+  &_increase {
+    right: 0;
+
+    &::after {
+      transform: translate(-50%, -50%) rotate(90deg);
+    }
+  }
+}

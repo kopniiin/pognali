@@ -1,4 +1,5 @@
 @import "fonts";
+@import "normalize";
 @import "variables";
 @import "mixins";
 @import "blocks/page";
@@ -20,6 +21,8 @@
 @import "blocks/filter-button";
 @import "blocks/collapse-button";
 @import "blocks/checkbox";
+@import "blocks/day-checkbox";
+@import "blocks/calendar";
 @import "blocks/transport";
 @import "blocks/transports";
 @import "blocks/transport-checkbox";
@@ -30,6 +33,8 @@
 @import "blocks/tag";
 @import "blocks/tags";
 @import "blocks/tag-field";
+@import "blocks/transport-field";
+@import "blocks/quantity-field";
 @import "blocks/flag";
 @import "blocks/flags";
 @import "blocks/avatar";

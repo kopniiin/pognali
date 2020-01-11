@@ -1,0 +1,216 @@
+.calendar {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.calendar__month {
+  position: relative;
+
+  align-self: stretch;
+  margin-bottom: 22px;
+  border-top: 1px solid #cbced9;
+  border-bottom: 1px solid #cbced9;
+  padding-top: 12px;
+  padding-right: 40px;
+  padding-bottom: 10px;
+  padding-left: 40px;
+
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 20px;
+  text-align: center;
+  color: #1d2e5b;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 33px;
+    padding-top: 28px;
+    padding-right: 60px;
+    padding-bottom: 21px;
+    padding-left: 60px;
+
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 12px;
+  }
+}
+
+.calendar__month-control {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+
+  width: 40px;
+  border: none;
+  padding: 0;
+
+  background-color: transparent;
+  outline: none;
+  cursor: pointer;
+
+  @media (min-width: $tablet-width) {
+    width: 60px;
+  }
+
+  &:hover,
+  &:focus {
+    .calendar__control-icon {
+      opacity: 0.5;
+    }
+  }
+
+  &:active {
+    .calendar__control-icon {
+      opacity: 0.1;
+    }
+  }
+
+  &_previous {
+    left: 0;
+
+    .calendar__control-icon {
+      left: 0;
+    }
+  }
+
+  &_following {
+    right: 0;
+
+    .calendar__control-icon {
+      right: 0;
+    }
+  }
+}
+
+.calendar__control-icon {
+  position: absolute;
+  top: 50%;
+
+  width: 9px;
+  height: 18px;
+
+  fill: #231f20;
+  opacity: 0.3;
+  transform: translateY(-50%);
+
+  @media (min-width: $tablet-width) {
+    width: 19px;
+    height: 34px;
+  }
+}
+
+.calendar__days {
+  border-collapse: collapse;
+}
+
+.calendar__day-name {
+  padding: 0;
+  padding-bottom: 7px;
+
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  color: #444444;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 2px;
+
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-right: 16px;
+    padding-bottom: 13px;
+    padding-left: 16px;
+
+    text-align: left;
+  }
+
+  &:first-child {
+    &::before {
+      content: "П";
+
+      @media (min-width: $tablet-width) {
+        content: "Пн";
+      }
+    }
+  }
+
+  &:nth-child(2) {
+    &::before {
+      content: "В";
+
+      @media (min-width: $tablet-width) {
+        content: "Вт";
+      }
+    }
+  }
+
+  &:nth-child(3) {
+    &::before {
+      content: "С";
+
+      @media (min-width: $tablet-width) {
+        content: "Ср";
+      }
+    }
+  }
+
+  &:nth-child(4) {
+    &::before {
+      content: "Ч";
+
+      @media (min-width: $tablet-width) {
+        content: "Чт";
+      }
+    }
+  }
+
+  &:nth-child(5) {
+    &::before {
+      content: "П";
+
+      @media (min-width: $tablet-width) {
+        content: "Пт";
+      }
+    }
+  }
+
+  &:nth-child(6) {
+    color: #ff5c23;
+
+    &::before {
+      content: "С";
+
+      @media (min-width: $tablet-width) {
+        content: "Сб";
+      }
+    }
+  }
+
+  &:last-child {
+    color: #ff5c23;
+
+    &::before {
+      content: "В";
+
+      @media (min-width: $tablet-width) {
+        content: "Вс";
+      }
+    }
+  }
+}
+
+.calendar__name-text {
+  @include visually-hidden();
+}
+
+.calendar__day {
+  border: 1px solid #cbced9;
+  padding: 0;
+}
