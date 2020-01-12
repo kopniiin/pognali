@@ -1257,6 +1257,105 @@
         <span class="plan-field__error-message">Это поле должно быть заполнено</span>
       </div>
 
+      <h2>Фильтр с чекбоксами</h2>
+
+      <div class="checkbox-filter" role="group" aria-labelledby="checkbox-filter-label">
+        <span class="checkbox-filter__name" id="checkbox-filter-label">Музыка:</span>
+        <button class="checkbox-filter__control">Музыка</button>
+        <ul class="checkbox-filter__checkboxes">
+          <li class="checkbox-filter__checkbox">
+            <div class="checkbox">
+              <input class="checkbox__input" type="checkbox" name="music" id="music-rock-field">
+              <label class="checkbox__name" for="music-rock-field">Тяжелый рок</label>
+            </div>
+          </li>
+          <li class="checkbox-filter__checkbox">
+            <div class="checkbox">
+              <input class="checkbox__input" type="checkbox" name="music" id="music-rap-field">
+              <label class="checkbox__name" for="music-rap-field">Русский рэп</label>
+            </div>
+          </li>
+          <li class="checkbox-filter__checkbox">
+            <div class="checkbox">
+              <input class="checkbox__input" type="checkbox" name="music" id="music-eurodance-field">
+              <label class="checkbox__name" for="music-eurodance-field">Евроденс</label>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <h2>Фильтр транспорта</h2>
+
+      <div class="transport-filter" role="group" aria-labelledby="transport-filter-label">
+        <span class="transport-filter__name" id="transport-filter-label">Транспорт:</span>
+        <button class="transport-filter__control">Транспорт</button>
+        <ul class="transport-filter__checkboxes">
+          <li class="transport-filter__checkbox">
+            <div class="transport-checkbox">
+              <input class="transport-checkbox__input" type="checkbox" name="transport" id="transport-plane-field" checked>
+              <label class="transport-checkbox__icon" for="transport-plane-field">
+                <span class="transport-checkbox__icon-text">Авиатранспорт</span>
+                <svg class="transport-checkbox__icon-image" aria-hidden="true" focusable="false" width="20" height="16">
+                  <use xlink:href="img/sprite.svg#icon-plane"></use>
+                </svg>
+              </label>
+            </div>
+          </li>
+          <li class="transport-filter__checkbox">
+            <div class="transport-checkbox">
+              <input class="transport-checkbox__input" type="checkbox" name="transport" id="transport-bus-field" checked>
+              <label class="transport-checkbox__icon" for="transport-bus-field">
+                <span class="transport-checkbox__icon-text">Автотранспорт</span>
+                <svg class="transport-checkbox__icon-image" aria-hidden="true" focusable="false" width="20" height="16">
+                  <use xlink:href="img/sprite.svg#icon-bus"></use>
+                </svg>
+              </label>
+            </div>
+          </li>
+          <li class="transport-filter__checkbox">
+            <div class="transport-checkbox">
+              <input class="transport-checkbox__input" type="checkbox" name="transport" id="transport-bike-field">
+              <label class="transport-checkbox__icon" for="transport-bike-field">
+                <span class="transport-checkbox__icon-text">Велосипед</span>
+                <svg class="transport-checkbox__icon-image" aria-hidden="true" focusable="false" width="20" height="16">
+                  <use xlink:href="img/sprite.svg#icon-bike"></use>
+                </svg>
+              </label>
+            </div>
+          </li>
+          <li class="transport-filter__checkbox">
+            <div class="transport-checkbox">
+              <input class="transport-checkbox__input" type="checkbox" name="transport" id="transport-run-field" checked>
+              <label class="transport-checkbox__icon" for="transport-run-field">
+                <span class="transport-checkbox__icon-text">Пешком</span>
+                <svg class="transport-checkbox__icon-image" aria-hidden="true" focusable="false" width="20" height="16">
+                  <use xlink:href="img/sprite.svg#icon-run"></use>
+                </svg>
+              </label>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <h2>Фильтр уровня</h2>
+
+      <div class="level-filter" role="group" aria-labelledby="level-filter-label">
+        <span class="level-filter__name" id="level-filter-label">Левел:</span>
+        <button class="level-filter__control">Левел</button>
+        <div class="level-filter__container">
+          <div class="level-filter__inputs">
+            <label class="level-filter__input-name" for="min-level-field">Минимальный уровень</label>
+            <label class="level-filter__input-name" for="max-level-field">Максимальный уровень</label>
+            <input class="level-filter__input level-filter__input_min" type="number" min="0" max="100" value="30" id="min-level-field">
+            <input class="level-filter__input level-filter__input_max" type="number" min="0" max="100" value="100" id="max-level-field">
+          </div>
+          <div class="level-filter__level-controls">
+            <button class="level-filter__level-control level-filter__level-control_min" type="button" aria-label="Уменьшить уровень"></button>
+            <button class="level-filter__level-control level-filter__level-control_max" type="button" aria-label="Увеличить уровень"></button>
+          </div>
+        </div>
+      </div>
+
       <h2>Аватарка</h2>
 
       <h3>Стандартная аватарка</h3>

@@ -1,0 +1,111 @@
+.user-filter {
+  box-sizing: border-box;
+  border-radius: 20px;
+  padding-top: 26px;
+  padding-right: 25px;
+  padding-bottom: 20px;
+  padding-left: 25px;
+
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 22px;
+  color: #1d2e5b;
+
+  background-color: #ffd74b;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 36px;
+    padding-right: 0;
+    padding-bottom: 37px;
+    padding-left: 33px;
+
+    font-size: 30px;
+    line-height: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 285px;
+    padding: 47px;
+  }
+}
+
+.user-filter__title {
+  @include visually-hidden();
+}
+
+.user-filter__text {
+  margin-top: 0;
+  margin-bottom: 22px;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 33px;
+    margin-bottom: 37px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 0;
+    margin-bottom: 22px;
+  }
+}
+
+.user-filter__form {
+  display: flex;
+  flex-direction: column;
+
+  &::before,
+  &::after {
+    @media (min-width: $tablet-width) {
+      content: "";
+
+      display: block;
+      width: calc(100% - 33px);
+      border-bottom: 1px solid #f3c72b;
+    }
+
+    @media (min-width: $desktop-width) {
+      display: none;
+    }
+  }
+
+  &::before {
+    margin-bottom: 24px;
+  }
+
+  &::after {
+    margin-bottom: 36px;
+  }
+}
+
+.user-filter__transport-filter {
+  @media (min-width: $tablet-width) {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+}
+
+.user-filter__level-filter {
+  margin-bottom: 16px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 32px;
+  }
+}
+
+.user-filter__submit-button {
+  width: 100%;
+
+  @media (min-width: $tablet-width) {
+    order: 1;
+    margin-right: 33px;
+    width: calc(100% - 33px);
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 100%;
+  }
+}
