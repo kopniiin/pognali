@@ -113,7 +113,9 @@
   }
 }
 
-.directions-info__directions {
+.directions-info__cards {
+  @include list-reset();
+
   @media (min-width: $tablet-width) {
     position: relative;
     z-index: 1;
@@ -148,5 +150,13 @@
       top: -74px;
       left: -70px;
     }
+  }
+}
+
+.directions-info__card {
+  margin-bottom: 10px;
+
+  &:last-child {
+    margin-bottom: 0;
   }
 }

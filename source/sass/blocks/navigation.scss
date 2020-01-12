@@ -294,7 +294,9 @@
   font-style: normal;
 }
 
-.navigation__contacts {
+.navigation__contact-links {
+  @include list-reset();
+
   margin-bottom: 30px;
 
   @media (min-width: $tablet-width) {
@@ -321,4 +323,15 @@
     margin-left: auto;
     max-width: 20%;
   }
+}
+
+.navigation__contact-buttons {
+  @include list-reset();
+
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.navigation__contact-button {
+  flex-shrink: 0;
 }

@@ -83,6 +83,14 @@
 .contact-link__text {
   margin-top: 1px;
   margin-left: 16px;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 30px;
+  }
 }
 
 .contact-link__icon {

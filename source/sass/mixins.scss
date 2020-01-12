@@ -14,6 +14,20 @@
   overflow: hidden;
 }
 
+@mixin visually-shown {
+  position: static;
+
+  width: auto;
+  height: auto;
+  margin: 0;
+
+  white-space: normal;
+
+  clip-path: none;
+  clip: auto;
+  overflow: auto;
+}
+
 @mixin list-reset() {
   margin: 0;
   padding: 0;
@@ -234,99 +248,5 @@
     height: 80px;
 
     background-color: $color;
-  }
-}
-
-@mixin filter-name() {
-  @include visually-hidden();
-
-  @media (min-width: $tablet-width) {
-    position: static;
-
-    flex-shrink: 0;
-    margin: 0;
-    margin-right: 7px;
-    width: 120px;
-    height: auto;
-
-    font-size: 20px;
-    font-weight: 500;
-    line-height: 30px;
-    text-transform: uppercase;
-    white-space: normal;
-    color: #1d2e5b;
-
-    clip-path: none;
-    clip: auto;
-    overflow: auto;
-  }
-
-  @media (min-width: $desktop-width) {
-    @include visually-hidden();
-  }
-}
-
-@mixin filter-control() {
-  position: relative;
-
-  box-sizing: border-box;
-  display: block;
-  width: 100%;
-  border: none;
-  border-top: 1px solid #f3c72b;
-  padding-top: 12px;
-  padding-right: 10px;
-  padding-bottom: 9px;
-  padding-left: 0;
-
-  font-size: 16px;
-  font-weight: 700;
-  line-height: 18px;
-  text-transform: uppercase;
-  text-align: left;
-  color: #1d2e5b;
-
-  background-color: transparent;
-  outline: none;
-  cursor: pointer;
-
-  @media (min-width: $tablet-width) {
-    display: none;
-  }
-
-  @media (min-width: $desktop-width) {
-    display: block;
-    border-top: none;
-    padding-top: 8px;
-    padding-bottom: 4px;
-
-    font-size: 20px;
-    font-weight: 500;
-    line-height: 30px;
-  }
-
-  &::after {
-    @include triangle-bottom(8px, 4px, #192144);
-
-    content: "";
-
-    position: absolute;
-    top: 50%;
-    right: 0;
-
-    transform: translateY(-50%);
-
-    @media (min-width: $desktop-width) {
-      @include triangle-bottom(10px, 5px, #192144);
-    }
-  }
-
-  &:hover,
-  &:focus {
-    opacity: 0.6;
-  }
-
-  &:active {
-    opacity: 0.3;
   }
 }

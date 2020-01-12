@@ -173,6 +173,17 @@
   }
 }
 
+.header__contacts {
+  @include list-reset();
+
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.header__contact {
+  flex-shrink: 0;
+}
+
 .header__button {
   flex-grow: 1;
 }

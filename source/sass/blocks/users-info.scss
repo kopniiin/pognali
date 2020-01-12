@@ -162,8 +162,18 @@
   }
 }
 
-.users-info__previews {
+.users-info__cards {
+  @include list-reset();
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
   @media (min-width: $tablet-width) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: stretch;
     margin-right: 35px;
     margin-left: 35px;
   }
@@ -173,5 +183,21 @@
     margin-right: 0;
     margin-left: 0;
     width: 47.7%;
+  }
+}
+
+.user-info__card {
+  margin-bottom: 10px;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 10px;
+    }
   }
 }

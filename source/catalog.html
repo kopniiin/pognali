@@ -46,26 +46,24 @@
           </div>
           <a class="button navigation__button" href="">Авторизация</a>
           <address class="navigation__contacts-info">
-            <div class="contacts navigation__contacts">
-              <ul class="contacts__list">
-                <li class="contacts__item">
-                  <a class="contact-link" href="tel:88005558628" aria-label="Позвонить по номеру 8 800 555-86-28">
-                    <span class="contact-link__text">8 800 555-86-28</span>
-                    <svg class="contact-link__icon" aria-hidden="true" focusable="false" width="18" height="22">
-                      <use xlink:href="img/sprite.svg#icon-phone"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li class="contacts__item">
-                  <a class="contact-link" href="mailto:mail@htmlacademy.ru" aria-label="Написать на электронную почту mail@htmlacademy.ru">
-                    <span class="contact-link__text">mail@htmlacademy.ru</span>
-                    <svg class="contact-link__icon" aria-hidden="true" focusable="false" width="18" height="22">
-                      <use xlink:href="img/sprite.svg#icon-mail"></use>
-                    </svg>
-                  </a>
-                </li>
-              </ul>
-            </div>
+            <ul class="navigation__contact-links">
+              <li class="navigation__contact-link">
+                <a class="contact-link" href="tel:88005558628" aria-label="Позвонить по номеру 8 800 555-86-28">
+                  <span class="contact-link__text">8 800 555-86-28</span>
+                  <svg class="contact-link__icon" aria-hidden="true" focusable="false" width="18" height="22">
+                    <use xlink:href="img/sprite.svg#icon-phone"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="navigation__contact-link">
+                <a class="contact-link" href="mailto:mail@htmlacademy.ru" aria-label="Написать на электронную почту mail@htmlacademy.ru">
+                  <span class="contact-link__text">mail@htmlacademy.ru</span>
+                  <svg class="contact-link__icon" aria-hidden="true" focusable="false" width="18" height="22">
+                    <use xlink:href="img/sprite.svg#icon-mail"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
             <div class="socials navigation__socials">
               <ul class="socials__list">
                 <li class="socials__item">
@@ -93,24 +91,22 @@
             </div>
           </address>
           <address class="navigation__additional-contacts">
-            <div class="contacts contacts_buttons">
-              <ul class="contacts__list">
-                <li class="contacts__item">
-                  <a class="contact-button contact-button_dark" href="tel:88005558628" aria-label="Позвонить по номеру 8 800 555-86-28">
-                    <svg class="contact-button__icon" aria-hidden="true" focusable="false" width="18" height="18">
-                      <use xlink:href="img/sprite.svg#icon-topmenu-phone"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li class="contacts__item">
-                  <a class="contact-button" href="mailto:mail@htmlacademy.ru" aria-label="Написать на электронную почту mail@htmlacademy.ru">
-                    <svg class="contact-button__icon" aria-hidden="true" focusable="false" width="18" height="18">
-                      <use xlink:href="img/sprite.svg#icon-topmenu-mail"></use>
-                    </svg>
-                  </a>
-                </li>
-              </ul>
-            </div>
+            <ul class="navigation__contact-buttons">
+              <li class="navigation__contact-button">
+                <a class="contact-button contact-button_dark" href="tel:88005558628" aria-label="Позвонить по номеру 8 800 555-86-28">
+                  <svg class="contact-button__icon" aria-hidden="true" focusable="false" width="18" height="18">
+                    <use xlink:href="img/sprite.svg#icon-topmenu-phone"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="navigation__contact-button">
+                <a class="contact-button" href="mailto:mail@htmlacademy.ru" aria-label="Написать на электронную почту mail@htmlacademy.ru">
+                  <svg class="contact-button__icon" aria-hidden="true" focusable="false" width="18" height="18">
+                    <use xlink:href="img/sprite.svg#icon-topmenu-mail"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
           </address>
         </div>
       </nav>
@@ -131,47 +127,23 @@
           <h2 class="user-filter__title">Фильтрация пользователей</h2>
           <p class="user-filter__text">Подберите идеального попутчика</p>
           <form class="user-filter__form" action="https://echo.htmlacademy.ru" method="get">
-            <div class="checkbox-filter" role="group" aria-labelledby="hobby-filter-name">
-              <span class="checkbox-filter__name" id="hobby-filter-name">Хобби:</span>
-              <button class="checkbox-filter__control" type="button">Хобби</button>
-              <ul class="checkbox-filter__checkboxes">
-                <li class="checkbox-filter__checkbox">
-                  <div class="checkbox">
-                    <input class="checkbox__input" type="checkbox" name="hobby-gym" id="hobby-gym-field">
-                    <label class="checkbox__name" for="hobby-gym-field">Спортзал</label>
-                  </div>
-                </li>
-                <li class="checkbox-filter__checkbox">
-                  <div class="checkbox">
-                    <input class="checkbox__input" type="checkbox" name="hobby-hookah" id="hobby-hookah-field">
-                    <label class="checkbox__name" for="hobby-hookah-field">Кальян</label>
-                  </div>
-                </li>
-                <li class="checkbox-filter__checkbox">
-                  <div class="checkbox">
-                    <input class="checkbox__input" type="checkbox" name="hobby-sleep" id="hobby-sleep-field">
-                    <label class="checkbox__name" for="hobby-sleep-field">Диван</label>
-                  </div>
-                </li>
-              </ul>
-            </div>
-            <div class="checkbox-filter checkbox-filter_open" role="group" aria-labelledby="music-filter-name">
-              <span class="checkbox-filter__name" id="music-filter-name">Музыка:</span>
-              <button class="checkbox-filter__control" type="button">Музыка</button>
-              <ul class="checkbox-filter__checkboxes">
-                <li class="checkbox-filter__checkbox">
+            <div class="filter" role="group" aria-labelledby="music-filter-name">
+              <span class="filter__name" id="music-filter-name">Музыка:</span>
+              <button class="filter__control" type="button">Музыка</button>
+              <ul class="filter__checkboxes">
+                <li class="filter__checkbox">
                   <div class="checkbox">
                     <input class="checkbox__input" type="checkbox" name="music-rock" id="music-rock-field">
                     <label class="checkbox__name" for="music-rock-field">Тяжелый рок</label>
                   </div>
                 </li>
-                <li class="checkbox-filter__checkbox">
+                <li class="filter__checkbox">
                   <div class="checkbox">
                     <input class="checkbox__input" type="checkbox" name="music-rap" id="music-rap-field">
                     <label class="checkbox__name" for="music-rap-field">Русский рэп</label>
                   </div>
                 </li>
-                <li class="checkbox-filter__checkbox">
+                <li class="filter__checkbox">
                   <div class="checkbox">
                     <input class="checkbox__input" type="checkbox" name="music-eurodance" id="music-eurodance-field">
                     <label class="checkbox__name" for="music-eurodance-field">Евроденс</label>
@@ -179,37 +151,61 @@
                 </li>
               </ul>
             </div>
-            <div class="checkbox-filter" role="group" aria-labelledby="food-filter-name">
-              <span class="checkbox-filter__name" id="food-filter-name">Еда:</span>
-              <button class="checkbox-filter__control" type="button">Еда</button>
-              <ul class="checkbox-filter__checkboxes">
-                <li class="checkbox-filter__checkbox">
+            <div class="filter filter_open" role="group" aria-labelledby="music-filter-name">
+              <span class="filter__name" id="music-filter-name">Музыка:</span>
+              <button class="filter__control" type="button">Музыка</button>
+              <ul class="filter__checkboxes">
+                <li class="filter__checkbox">
                   <div class="checkbox">
-                    <input class="checkbox__input" type="checkbox" name="food-meat" id="food-meat-field">
-                    <label class="checkbox__name" for="food-meat-field">Мясоед</label>
+                    <input class="checkbox__input" type="checkbox" name="music-rock" id="music-rock-field">
+                    <label class="checkbox__name" for="music-rock-field">Тяжелый рок</label>
                   </div>
                 </li>
-                <li class="checkbox-filter__checkbox">
+                <li class="filter__checkbox">
                   <div class="checkbox">
-                    <input class="checkbox__input" type="checkbox" name="food-health" id="food-health-field">
-                    <label class="checkbox__name" for="food-health-field">Сидит на ПП</label>
+                    <input class="checkbox__input" type="checkbox" name="music-rap" id="music-rap-field">
+                    <label class="checkbox__name" for="music-rap-field">Русский рэп</label>
                   </div>
                 </li>
-                <li class="checkbox-filter__checkbox">
+                <li class="filter__checkbox">
                   <div class="checkbox">
-                    <input class="checkbox__input" type="checkbox" name="food-vegan" id="food-vegan-field">
-                    <label class="checkbox__name" for="food-vegan-field">Веган-сыроед</label>
+                    <input class="checkbox__input" type="checkbox" name="music-eurodance" id="music-eurodance-field">
+                    <label class="checkbox__name" for="music-eurodance-field">Евроденс</label>
                   </div>
                 </li>
               </ul>
             </div>
-            <div class="transport-filter transport-filter_open user-filter__transport-filter" role="group" aria-labelledby="transport-filter-name">
-              <span class="transport-filter__name" id="transport-filter-name">Транспорт:</span>
-              <button class="transport-filter__control" type="button">Транспорт</button>
-              <ul class="transport-filter__checkboxes">
-                <li class="transport-filter__checkbox">
+            <div class="filter" role="group" aria-labelledby="music-filter-name">
+              <span class="filter__name" id="music-filter-name">Музыка:</span>
+              <button class="filter__control" type="button">Музыка</button>
+              <ul class="filter__checkboxes">
+                <li class="filter__checkbox">
+                  <div class="checkbox">
+                    <input class="checkbox__input" type="checkbox" name="music-rock" id="music-rock-field">
+                    <label class="checkbox__name" for="music-rock-field">Тяжелый рок</label>
+                  </div>
+                </li>
+                <li class="filter__checkbox">
+                  <div class="checkbox">
+                    <input class="checkbox__input" type="checkbox" name="music-rap" id="music-rap-field">
+                    <label class="checkbox__name" for="music-rap-field">Русский рэп</label>
+                  </div>
+                </li>
+                <li class="filter__checkbox">
+                  <div class="checkbox">
+                    <input class="checkbox__input" type="checkbox" name="music-eurodance" id="music-eurodance-field">
+                    <label class="checkbox__name" for="music-eurodance-field">Евроденс</label>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="filter filter_open user-filter__transport-filter" role="group" aria-labelledby="transport-filter-name">
+              <span class="filter__name" id="transport-filter-name">Транспорт:</span>
+              <button class="filter__control" type="button">Транспорт</button>
+              <ul class="filter__transports">
+                <li class="filter__transport">
                   <div class="transport-checkbox">
-                    <input class="transport-checkbox__input" type="checkbox" name="transport-plane" id="transport-plane-field" checked>
+                    <input class="transport-checkbox__input" type="checkbox" name="transport" id="transport-plane-field" checked>
                     <label class="transport-checkbox__icon" for="transport-plane-field">
                       <span class="transport-checkbox__icon-text">Авиатранспорт</span>
                       <svg class="transport-checkbox__icon-image" aria-hidden="true" focusable="false" width="20" height="16">
@@ -218,9 +214,9 @@
                     </label>
                   </div>
                 </li>
-                <li class="transport-filter__checkbox">
+                <li class="filter__transport">
                   <div class="transport-checkbox">
-                    <input class="transport-checkbox__input" type="checkbox" name="transport-bus" id="transport-bus-field" checked>
+                    <input class="transport-checkbox__input" type="checkbox" name="transport" id="transport-bus-field" checked>
                     <label class="transport-checkbox__icon" for="transport-bus-field">
                       <span class="transport-checkbox__icon-text">Автотранспорт</span>
                       <svg class="transport-checkbox__icon-image" aria-hidden="true" focusable="false" width="20" height="16">
@@ -229,9 +225,9 @@
                     </label>
                   </div>
                 </li>
-                <li class="transport-filter__checkbox">
+                <li class="filter__transport">
                   <div class="transport-checkbox">
-                    <input class="transport-checkbox__input" type="checkbox" name="transport-bike" id="transport-bike-field">
+                    <input class="transport-checkbox__input" type="checkbox" name="transport" id="transport-bike-field">
                     <label class="transport-checkbox__icon" for="transport-bike-field">
                       <span class="transport-checkbox__icon-text">Велосипед</span>
                       <svg class="transport-checkbox__icon-image" aria-hidden="true" focusable="false" width="20" height="16">
@@ -240,9 +236,9 @@
                     </label>
                   </div>
                 </li>
-                <li class="transport-filter__checkbox">
+                <li class="filter__transport">
                   <div class="transport-checkbox">
-                    <input class="transport-checkbox__input" type="checkbox" name="transport-run" id="transport-run-field" checked>
+                    <input class="transport-checkbox__input" type="checkbox" name="transport" id="transport-run-field" checked>
                     <label class="transport-checkbox__icon" for="transport-run-field">
                       <span class="transport-checkbox__icon-text">Пешком</span>
                       <svg class="transport-checkbox__icon-image" aria-hidden="true" focusable="false" width="20" height="16">
@@ -253,23 +249,25 @@
                 </li>
               </ul>
             </div>
-            <div class="level-filter level-filter_open user-filter__level-filter" role="group" aria-labelledby="level-filter-name">
-              <span class="level-filter__name" id="level-filter-name">Левел:</span>
-              <button class="level-filter__control" type="button">Левел</button>
-              <div class="level-filter__container">
-                <div class="level-filter__inputs">
-                  <label class="level-filter__input-name" for="min-level-field">Минимальный уровень</label>
-                  <label class="level-filter__input-name" for="max-level-field">Максимальный уровень</label>
-                  <input class="level-filter__input level-filter__input_min" type="number" name="min-level" min="0" max="100" value="30" id="min-level-field">
-                  <input class="level-filter__input level-filter__input_max" type="number" name="max-level" min="0" max="100" value="100" id="max-level-field">
-                </div>
-                <div class="level-filter__level-controls">
-                  <button class="level-filter__level-control level-filter__level-control_min" type="button" aria-label="Уменьшить уровень"></button>
-                  <button class="level-filter__level-control level-filter__level-control_max" type="button" aria-label="Увеличить уровень"></button>
+            <div class="filter filter_open user-filter__level-filter" role="group" aria-labelledby="level-filter-name">
+              <span class="filter__name" id="level-filter-name">Левел:</span>
+              <button class="filter__control" type="button">Левел</button>
+              <div class="filter__range-field">
+                <div class="range-field">
+                  <div class="range-field__inputs">
+                    <label class="range-field__input-name" for="min-level-field">Минимальный уровень</label>
+                    <label class="range-field__input-name" for="max-level-field">Максимальный уровень</label>
+                    <input class="range-field__input range-field__input_min" type="number" value="30" id="min-level-field">
+                    <input class="range-field__input range-field__input_max" type="number" value="100" id="max-level-field">
+                  </div>
+                  <div class="range-field__controls">
+                    <button class="range-field__control range-field__control_min" type="button" aria-label="Уменьшить уровень"></button>
+                    <button class="range-field__control range-field__control_max" type="button" aria-label="Увеличить уровень"></button>
+                  </div>
                 </div>
               </div>
             </div>
-            <button class="filter-button user-filter__submit-button" type="submit">Показать</button>
+            <button class="user-filter__submit-button" type="submit">Показать</button>
           </form>
         </section>
 

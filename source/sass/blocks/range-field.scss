@@ -1,4 +1,4 @@
-.level-filter {
+.range-field {
   box-sizing: border-box;
 
   @media (min-width: $tablet-width) {
@@ -9,50 +9,9 @@
   @media (min-width: $desktop-width) {
     display: block;
   }
-
-  &_open {
-    .checkbox-filter__control::after {
-      transform: translateY(-50%) rotate(180deg);
-    }
-
-    .level-filter__container {
-      display: block;
-
-      @media (min-width: $tablet-width) and (max-width: $desktop-width - 1px) {
-        display: flex;
-      }
-    }
-  }
 }
 
-.level-filter__name {
-  @include filter-name();
-}
-
-.level-filter__control {
-  @include filter-control();
-}
-
-.level-filter__container {
-  display: none;
-  padding-top: 1px;
-  padding-bottom: 10px;
-
-  @media (min-width: $tablet-width) {
-    display: flex;
-    align-items: center;
-    padding-top: 0;
-    padding-bottom: 4px;
-  }
-
-  @media (min-width: $desktop-width) {
-    display: none;
-    padding-top: 9px;
-    padding-bottom: 10px;
-  }
-}
-
-.level-filter__inputs {
+.range-field__inputs {
   position: relative;
 
   display: flex;
@@ -96,11 +55,11 @@
   }
 }
 
-.level-filter__input-name {
+.range-field__input-name {
   @include visually-hidden();
 }
 
-.level-filter__input {
+.range-field__input {
   position: relative;
 
   box-sizing: border-box;
@@ -164,7 +123,7 @@
   }
 }
 
-.level-filter__level-controls {
+.range-field__controls {
   position: relative;
 
   height: 2px;
@@ -196,7 +155,7 @@
   }
 }
 
-.level-filter__level-control {
+.range-field__control {
   @include circle(10px);
 
   position: absolute;
