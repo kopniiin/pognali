@@ -15,14 +15,39 @@
     font-size: 28px;
     line-height: 33px;
   }
+
+  &_no-scroll {
+    position: fixed;
+
+    @media (min-width: $desktop-width) {
+      position: static;
+    }
+  }
 }
 
 .page__header {
-  z-index: 2;
+  z-index: 3;
 }
 
 .page__title {
   @include visually-hidden();
+}
+
+.page__location-info {
+  margin-bottom: -28px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: -48px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: -60px;
+  }
+}
+
+.page__footer {
+  position: relative;
+  z-index: 1;
 }
 
 .page__blocks {

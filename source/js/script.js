@@ -10,6 +10,8 @@ if (navigation) {
   navigationControl.addEventListener("click", function() {
     navigation.classList.toggle("navigation_open");
 
+    document.body.classList.toggle("page_no-scroll");
+
     if (!navigation.classList.contains("navigation_scroll")) {
       navigationLogo.classList.toggle("logo_blue");
     }
@@ -27,7 +29,9 @@ if (navigation) {
     } else if ( window.pageYOffset < 100 && navigation.classList.contains("navigation_scroll")) {
       navigation.classList.remove("navigation_scroll");
 
-      navigationLogo.classList.remove("logo_blue");
+      if (!navigation.classList.contains("navigation_open")) {
+        navigationLogo.classList.remove("logo_blue");
+      }
 
       for (var link of navigationLinks) {
         link.classList.remove("navigation-link_dark");
