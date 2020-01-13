@@ -25,7 +25,7 @@
 
   clip-path: none;
   clip: auto;
-  overflow: auto;
+  overflow: visible;
 }
 
 @mixin list-reset() {

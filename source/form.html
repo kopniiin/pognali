@@ -9,7 +9,7 @@
   <body class="page">
 
     <header class="header header_inner page__header">
-      <nav class="navigation navigation_inner navigation_no-js">
+      <nav class="navigation navigation_no-js navigation_inner header__navigation">
         <div class="navigation__container">
           <a class="logo navigation__logo" href="index.html">
             <picture>
@@ -25,7 +25,7 @@
           <div class="site-navigation navigation__site-navigation">
             <ul class="site-navigation__list">
               <li class="site-navigation__item">
-                <a class="navigation-link" href="index.html" aria-label="О сервисе">
+                <a class="navigation-link" aria-label="О сервисе">
                   <span class="navigation-link__text">О сервисе</span>
                   <span class="navigation-link__text">О сервисе</span>
                 </a>
@@ -45,25 +45,27 @@
             </ul>
           </div>
           <a class="button navigation__button" href="">Авторизация</a>
-          <address class="navigation__contacts-info">
-            <ul class="navigation__contact-links">
-              <li class="navigation__contact-link">
-                <a class="contact-link" href="tel:88005558628" aria-label="Позвонить по номеру 8 800 555-86-28">
-                  <span class="contact-link__text">8 800 555-86-28</span>
-                  <svg class="contact-link__icon" aria-hidden="true" focusable="false" width="18" height="22">
-                    <use xlink:href="img/sprite.svg#icon-phone"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="navigation__contact-link">
-                <a class="contact-link" href="mailto:mail@htmlacademy.ru" aria-label="Написать на электронную почту mail@htmlacademy.ru">
-                  <span class="contact-link__text">mail@htmlacademy.ru</span>
-                  <svg class="contact-link__icon" aria-hidden="true" focusable="false" width="18" height="22">
-                    <use xlink:href="img/sprite.svg#icon-mail"></use>
-                  </svg>
-                </a>
-              </li>
-            </ul>
+          <address class="navigation__contacts">
+            <div class="contacts navigation__contact-links">
+              <ul class="contacts__list">
+                <li class="contacts__item">
+                  <a class="contact-link" href="tel:88005558628" aria-label="Позвонить по номеру 8 800 555-86-28">
+                    <span class="contact-link__text">8 800 555-86-28</span>
+                    <svg class="contact-link__icon" aria-hidden="true" focusable="false" width="18" height="22">
+                      <use xlink:href="img/sprite.svg#icon-phone"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="contacts__item">
+                  <a class="contact-link" href="mailto:mail@htmlacademy.ru" aria-label="Написать на электронную почту mail@htmlacademy.ru">
+                    <span class="contact-link__text">mail@htmlacademy.ru</span>
+                    <svg class="contact-link__icon" aria-hidden="true" focusable="false" width="18" height="22">
+                      <use xlink:href="img/sprite.svg#icon-mail"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
             <div class="socials navigation__socials">
               <ul class="socials__list">
                 <li class="socials__item">
@@ -91,22 +93,24 @@
             </div>
           </address>
           <address class="navigation__additional-contacts">
-            <ul class="navigation__contact-buttons">
-              <li class="navigation__contact-button">
-                <a class="contact-button contact-button_dark" href="tel:88005558628" aria-label="Позвонить по номеру 8 800 555-86-28">
-                  <svg class="contact-button__icon" aria-hidden="true" focusable="false" width="18" height="18">
-                    <use xlink:href="img/sprite.svg#icon-topmenu-phone"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="navigation__contact-button">
-                <a class="contact-button" href="mailto:mail@htmlacademy.ru" aria-label="Написать на электронную почту mail@htmlacademy.ru">
-                  <svg class="contact-button__icon" aria-hidden="true" focusable="false" width="18" height="18">
-                    <use xlink:href="img/sprite.svg#icon-topmenu-mail"></use>
-                  </svg>
-                </a>
-              </li>
-            </ul>
+            <div class="contacts contacts_buttons">
+              <ul class="contacts__list">
+                <li class="contacts__item">
+                  <a class="contact-button contact-button_dark" href="tel:88005558628" aria-label="Позвонить по номеру 8 800 555-86-28">
+                    <svg class="contact-button__icon" aria-hidden="true" focusable="false" width="18" height="18">
+                      <use xlink:href="img/sprite.svg#icon-topmenu-phone"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="contacts__item">
+                  <a class="contact-button" href="mailto:mail@htmlacademy.ru" aria-label="Написать на электронную почту mail@htmlacademy.ru">
+                    <svg class="contact-button__icon" aria-hidden="true" focusable="false" width="18" height="18">
+                      <use xlink:href="img/sprite.svg#icon-topmenu-mail"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
           </address>
         </div>
       </nav>

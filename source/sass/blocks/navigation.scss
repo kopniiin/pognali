@@ -20,17 +20,19 @@
       z-index: 1;
 
       width: 100%;
-      min-height: 100vh;
+      height: 100vh;
 
       background-color: #ffffff;
+      overflow: auto;
 
       @media (min-width: $desktop-width) {
         position: static;
 
         width: auto;
-        min-height: auto;
+        height: auto;
 
         background-color: transparent;
+        overflow: visible;
       }
     }
 
@@ -71,7 +73,7 @@
       display: block;
     }
 
-    .navigation__contacts-info {
+    .navigation__contacts {
       display: flex;
 
       @media (min-width: $desktop-width) {
@@ -113,7 +115,7 @@
       display: block;
     }
 
-    .navigation__contacts-info {
+    .navigation__contacts {
       display: flex;
 
       @media (min-width: $desktop-width) {
@@ -123,6 +125,23 @@
 
     .navigation__button {
       display: block;
+    }
+  }
+
+  &_scroll {
+    .navigation__container {
+      background-color: #ffffff;
+
+      &::before {
+        background-color: #192144;
+      }
+    }
+
+    .navigation__control {
+      &::before,
+      &::after {
+        background-color: #cccccc;
+      }
     }
   }
 
@@ -199,7 +218,6 @@
   top: 11px;
   right: 12px;
 
-  box-sizing: border-box;
   width: 50px;
   height: 50px;
   border: none;
@@ -207,6 +225,7 @@
 
   background-color: transparent;
   outline: none;
+  cursor: pointer;
 
   @media (min-width: $tablet-width) {
     top: 40px;
@@ -255,7 +274,7 @@
 
   @media (min-width: $desktop-width) {
     display: block;
-    margin-top: 13px;
+    margin-top: 18px;
     margin-right: 20px;
     margin-bottom: 0;
     margin-left: 0;
@@ -287,7 +306,7 @@
   }
 }
 
-.navigation__contacts-info {
+.navigation__contacts {
   display: none;
   flex-direction: column;
 
@@ -295,8 +314,6 @@
 }
 
 .navigation__contact-links {
-  @include list-reset();
-
   margin-bottom: 30px;
 
   @media (min-width: $tablet-width) {
@@ -323,15 +340,4 @@
     margin-left: auto;
     max-width: 20%;
   }
-}
-
-.navigation__contact-buttons {
-  @include list-reset();
-
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.navigation__contact-button {
-  flex-shrink: 0;
 }

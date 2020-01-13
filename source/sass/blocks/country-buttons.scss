@@ -1,0 +1,11 @@
+.country-buttons {
+  box-sizing: border-box;
+}
+
+.country-buttons__list {
+  @include list-reset();
+}
+
+.country-buttons__item {
+  display: flex;
+}

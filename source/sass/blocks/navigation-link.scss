@@ -1,6 +1,6 @@
 .navigation-link {
   box-sizing: border-box;
-  display: block;
+  display: inline-block;
 
   font-size: 30px;
   font-weight: 500;
@@ -31,8 +31,10 @@
 
     @media (min-width: $desktop-width) {
       opacity: 1;
+    }
 
-      .navigation-link__text {
+    .navigation-link__text {
+      @media (min-width: $desktop-width) {
         transform: translateY(-40px);
       }
     }
@@ -40,6 +42,29 @@
 
   &:active {
     opacity: 0.3;
+  }
+
+  &_dark {
+    @media (min-width: $desktop-width) {
+      color: #192144;
+    }
+
+    &:hover,
+    &:focus {
+      @media (min-width: $desktop-width) {
+        opacity: 0.7;
+      }
+
+      .navigation-link__text {
+        @media (min-width: $desktop-width) {
+          transform: none;
+        }
+      }
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
   }
 }
 
