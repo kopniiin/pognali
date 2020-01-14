@@ -109,18 +109,19 @@
 }
 
 .header__navigation {
-  position: fixed;
+  position: absolute;
   top: 0;
-  right: 0;
   left: 0;
-
   z-index: 1;
+
+  width: 100%;
 
   @media (min-width: $desktop-width) {
     top: 28px;
   }
 
   &.navigation_scroll {
+    position: fixed;
     top: 0;
   }
 }
