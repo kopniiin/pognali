@@ -1,12 +1,12 @@
-.email-field {
+.text-field {
   box-sizing: border-box;
 }
 
-.email-field__name {
+.text-field__name {
   @include visually-hidden();
 }
 
-.email-field__input {
+.text-field__input {
   box-sizing: border-box;
   width: 100%;
   border: none;

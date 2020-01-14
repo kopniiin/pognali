@@ -1,0 +1,79 @@
+.letter-button {
+  position: relative;
+
+  box-sizing: border-box;
+  display: block;
+  width: 100%;
+
+  border: 1px solid #cbced9;
+  padding: 11px;
+
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 18px;
+  color: #1d2e5b;
+
+  background-color: #ffffff;
+  outline: none;
+  cursor: pointer;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 26px;
+    padding-bottom: 22px;
+
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    border-radius: 4px;
+  }
+
+  &:hover,
+  &:focus {
+    z-index: 1;
+
+    border: 1px solid #959bb2;
+  }
+
+  &:active {
+    z-index: 1;
+
+    border-color: #1d2e5b;
+
+    color: #ffffff;
+
+    background-color: #1d2e5b;
+  }
+
+  &_big-text {
+    @media (min-width: $tablet-width) {
+      border: none;
+      padding: 0;
+
+      font-size: 60px;
+      font-weight: 700;
+      line-height: 60px;
+
+      color: #192144;
+
+      background-color: transparent;
+      opacity: 0.2;
+
+      &:hover,
+      &:focus {
+        border: none;
+
+        opacity: 0.6;
+      }
+
+      &:active {
+        color: #192144;
+
+        background-color: transparent;
+        opacity: 1;
+      }
+    }
+  }
+}

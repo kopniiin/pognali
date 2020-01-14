@@ -32,6 +32,33 @@
       height: calc(100% + 100px);
     }
   }
+
+  &_small {
+    padding-right: 0;
+
+    @media (min-width: $tablet-width) {
+      font-size: 22px;
+      line-height: 18px;
+    }
+
+    &::before {
+      display: none;
+    }
+
+    .services__description {
+      width: 100%;
+
+      @media (min-width: $tablet-width) {
+        padding-bottom: 20px;
+      }
+    }
+
+    .services__price {
+      @media (min-width: $tablet-width) {
+        width: 32%;
+      }
+    }
+  }
 }
 
 .services__list {

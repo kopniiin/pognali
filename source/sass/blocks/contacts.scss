@@ -4,15 +4,16 @@
   &_buttons {
     .contacts__list {
       display: flex;
+      flex-direction: row;
       flex-wrap: wrap;
-    }
-
-    .contacts__item {
-      flex-shrink: 0;
     }
   }
 }
 
 .contacts__list {
   @include list-reset();
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }

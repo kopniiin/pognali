@@ -14,6 +14,20 @@
   overflow: hidden;
 }
 
+@mixin visually-shown {
+  position: static;
+
+  width: auto;
+  height: auto;
+  margin: 0;
+
+  white-space: normal;
+
+  clip-path: none;
+  clip: auto;
+  overflow: visible;
+}
+
 @mixin list-reset() {
   margin: 0;
   padding: 0;
@@ -32,6 +46,15 @@
   border-top: none;
   border-right: ($width / 2) solid transparent;
   border-bottom: $height solid $color;
+  border-left: ($width / 2) solid transparent;
+}
+
+@mixin triangle-bottom($width, $height, $color) {
+  width: 0;
+  height: 0;
+  border-bottom: none;
+  border-right: ($width / 2) solid transparent;
+  border-top: $height solid $color;
   border-left: ($width / 2) solid transparent;
 }
 
