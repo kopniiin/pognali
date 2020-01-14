@@ -2,6 +2,43 @@
   box-sizing: border-box;
 }
 
+.catalog__country-filter {
+  margin-bottom: 25px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 47px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 76px;
+  }
+}
+
 .catalog__container {
   @include container();
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+}
+
+.catalog__user-filter {
+  margin-bottom: 29px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 39px;
+  }
+
+  @media (min-width: $desktop-width) {
+    order: 1;
+    width: 285px;
+  }
+}
+
+.catalog__users {
+  @media (min-width: $desktop-width) {
+    width: 950px;
+  }
 }

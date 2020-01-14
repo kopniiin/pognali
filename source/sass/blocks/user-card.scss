@@ -20,7 +20,6 @@
     padding-top: 45px;
     padding-bottom: 46px;
     padding-left: 285px;
-    width: 950px;
     min-height: 285px;
   }
 
@@ -125,12 +124,12 @@
 }
 
 .user-card__tags {
-  width: 70%;
+  width: 80%;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 45px;
     margin-left: 3px;
-    width: 58%;
+    width: 72%;
   }
 
   @media (min-width: $desktop-width) {
@@ -140,7 +139,7 @@
 }
 
 .user-card__middle {
-  margin-bottom: 17px;
+  margin-bottom: 12px;
 
   @media (min-width: $tablet-width) {
     flex-grow: 1;

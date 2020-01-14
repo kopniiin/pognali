@@ -76,3 +76,21 @@ function handleFilter(filter, filterControl) {
     filter.classList.toggle("filter_open");
   });
 }
+
+var countryFilter = document.querySelector(".country-filter");
+
+if (countryFilter) {
+  var countryOpenControl = countryFilter.querySelector(".country-filter__control_open");
+  var countryCloseControl = countryFilter.querySelector(".country-filter__control_close");
+  var countryCloseButton = countryFilter.querySelector(".country-filter__collapse-button");
+
+  countryOpenControl.addEventListener("click", function() {
+    countryFilter.classList.toggle("country-filter_open");
+  });
+  countryCloseControl.addEventListener("click", function() {
+    countryFilter.classList.toggle("country-filter_open");
+  });
+  countryCloseButton.addEventListener("click", function() {
+    countryFilter.classList.toggle("country-filter_open");
+  });
+}

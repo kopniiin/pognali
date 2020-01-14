@@ -12,6 +12,7 @@
   font-size: 14px;
   font-weight: 500;
   line-height: 18px;
+  text-decoration: none;
   color: #1d2e5b;
 
   background-color: #ffffff;
@@ -73,6 +74,37 @@
 
         background-color: transparent;
         opacity: 1;
+      }
+    }
+  }
+
+  &_active {
+    z-index: 1;
+
+    border-color: #1d2e5b;
+
+    color: #ffffff;
+
+    background-color: #1d2e5b;
+    cursor: auto;
+
+    &:hover,
+    &:focus {
+      border-color: #1d2e5b;
+    }
+
+    &.letter-button_big-text {
+      @media (min-width: $tablet-width) {
+        border: none;
+
+        color: #192144;
+        background-color: transparent;
+        opacity: 1;
+
+        &:hover,
+        &:focus {
+          opacity: 1;
+        }
       }
     }
   }

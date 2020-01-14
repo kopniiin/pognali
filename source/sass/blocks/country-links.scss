@@ -1,0 +1,27 @@
+.country-links {
+  box-sizing: border-box;
+}
+
+.country-links__letter {
+  @include visually-hidden();
+
+  @media (min-width: $desktop-width) {
+    @include visually-shown();
+
+    display: block;
+    margin-bottom: 30px;
+
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 60px;
+    color: #192144;
+  }
+}
+
+.country-links__list {
+  @include list-reset();
+}
+
+.country-links__item {
+  display: flex;
+}
