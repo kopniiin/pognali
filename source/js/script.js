@@ -40,10 +40,10 @@ if (navigation) {
   });
 }
 
-var modalButton = document.querySelector(".modal-button");
+var modal = document.querySelector(".modal");
 
-if (modalButton) {
-  var modal = document.querySelector(".modal");
+if (modal) {
+  var modalButton = document.querySelector(".modal-button");
   var modalCloseButton = modal.querySelector(".modal__close-button");
 
   modalButton.addEventListener("click", function(evt) {
