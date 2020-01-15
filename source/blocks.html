@@ -1259,64 +1259,66 @@
         </table>
       </div>
 
-      <h2>Поле выбора транспорта</h2>
+      <h2>Форма выбора транспорта</h2>
 
-      <div class="transport-field" role="group" aria-labelledby="transport-field-label">
-        <span class="transport-field__name" id="transport-field-label">Транспорт</span>
-        <ul class="transport-field__list">
-          <li class="transport-field__item">
-            <div class="transport-checkbox">
-              <input class="transport-checkbox__input" type="checkbox" name="transport" id="transport-plane-field" checked>
-              <label class="transport-checkbox__icon" for="transport-plane-field">
-                <span class="transport-checkbox__icon-text">Авиатранспорт</span>
-                <svg class="transport-checkbox__icon-image" aria-hidden="true" focusable="false" width="20" height="16">
-                  <use xlink:href="img/sprite.svg#icon-plane"></use>
-                </svg>
-              </label>
-            </div>
-          </li>
-          <li class="transport-field__item">
-            <div class="transport-checkbox">
-              <input class="transport-checkbox__input" type="checkbox" name="transport" id="transport-bus-field" checked>
-              <label class="transport-checkbox__icon" for="transport-bus-field">
-                <span class="transport-checkbox__icon-text">Автотранспорт</span>
-                <svg class="transport-checkbox__icon-image" aria-hidden="true" focusable="false" width="20" height="16">
-                  <use xlink:href="img/sprite.svg#icon-bus"></use>
-                </svg>
-              </label>
-            </div>
-          </li>
-          <li class="transport-field__item">
-            <div class="transport-checkbox">
-              <input class="transport-checkbox__input" type="checkbox" name="transport" id="transport-bike-field">
-              <label class="transport-checkbox__icon" for="transport-bike-field">
-                <span class="transport-checkbox__icon-text">Велосипед</span>
-                <svg class="transport-checkbox__icon-image" aria-hidden="true" focusable="false" width="20" height="16">
-                  <use xlink:href="img/sprite.svg#icon-bike"></use>
-                </svg>
-              </label>
-            </div>
-          </li>
-          <li class="transport-field__item">
-            <div class="transport-checkbox">
-              <input class="transport-checkbox__input" type="checkbox" name="transport" id="transport-run-field" checked>
-              <label class="transport-checkbox__icon" for="transport-run-field">
-                <span class="transport-checkbox__icon-text">Пешком</span>
-                <svg class="transport-checkbox__icon-image" aria-hidden="true" focusable="false" width="20" height="16">
-                  <use xlink:href="img/sprite.svg#icon-run"></use>
-                </svg>
-              </label>
-            </div>
-          </li>
-        </ul>
-      </div>
+      <form class="transport-form" action="">
+        <div class="transport-form" role="group" aria-labelledby="transport-form-name">
+          <span class="transport-form__name" id="transport-form-name">Транспорт</span>
+          <ul class="transport-form__list">
+            <li class="transport-form__item">
+              <div class="transport-checkbox">
+                <input class="transport-checkbox__input" type="checkbox" name="transport" id="transport-plane-field" checked>
+                <label class="transport-checkbox__icon" for="transport-plane-field">
+                  <span class="transport-checkbox__icon-text">Авиатранспорт</span>
+                  <svg class="transport-checkbox__icon-image" aria-hidden="true" focusable="false" width="20" height="16">
+                    <use xlink:href="img/sprite.svg#icon-plane"></use>
+                  </svg>
+                </label>
+              </div>
+            </li>
+            <li class="transport-form__item">
+              <div class="transport-checkbox">
+                <input class="transport-checkbox__input" type="checkbox" name="transport" id="transport-bus-field" checked>
+                <label class="transport-checkbox__icon" for="transport-bus-field">
+                  <span class="transport-checkbox__icon-text">Автотранспорт</span>
+                  <svg class="transport-checkbox__icon-image" aria-hidden="true" focusable="false" width="20" height="16">
+                    <use xlink:href="img/sprite.svg#icon-bus"></use>
+                  </svg>
+                </label>
+              </div>
+            </li>
+            <li class="transport-form__item">
+              <div class="transport-checkbox">
+                <input class="transport-checkbox__input" type="checkbox" name="transport" id="transport-bike-field">
+                <label class="transport-checkbox__icon" for="transport-bike-field">
+                  <span class="transport-checkbox__icon-text">Велосипед</span>
+                  <svg class="transport-checkbox__icon-image" aria-hidden="true" focusable="false" width="20" height="16">
+                    <use xlink:href="img/sprite.svg#icon-bike"></use>
+                  </svg>
+                </label>
+              </div>
+            </li>
+            <li class="transport-form__item">
+              <div class="transport-checkbox">
+                <input class="transport-checkbox__input" type="checkbox" name="transport" id="transport-run-field" checked>
+                <label class="transport-checkbox__icon" for="transport-run-field">
+                  <span class="transport-checkbox__icon-text">Пешком</span>
+                  <svg class="transport-checkbox__icon-image" aria-hidden="true" focusable="false" width="20" height="16">
+                    <use xlink:href="img/sprite.svg#icon-run"></use>
+                  </svg>
+                </label>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </form>
 
-      <h2>Поле ввода тегов</h2>
+      <h2>Форма ввода тегов</h2>
 
-      <div class="tag-field">
-        <label class="tag-field__label" for="tag-field">Тэги</label>
-        <textarea class="tag-field__input" name="tags" placeholder="Коротко о себе в виде 5-8 хештэгов" id="tag-field">#бургер #бар #футбол #концерт #крафт</textarea>
-      </div>
+      <form class="tag-form">
+        <label class="tag-form__label" for="tag-field">Тэги</label>
+        <textarea class="tag-form__input" name="tags" placeholder="Коротко о себе в виде 5-8 хештэгов" id="tag-field">#бургер #бар #футбол #концерт #крафт</textarea>
+      </form>
 
       <h2>Поле выбора количества</h2>
 
@@ -1333,132 +1335,6 @@
       <h2>Поле выбора страны</h2>
 
       <h3>Выбор новой страны</h3>
-
-      <div class="country-select country-select_select">
-        <button class="country-select__select-button" type="button">
-          Выберите страну
-          <svg class="country-select__select-icon" aria-hidden="true" focusable="false" width="12" height="7">
-            <use xlink:href="img/sprite.svg#icon-arrow-bottom"></use>
-          </svg>
-        </button>
-        <div class="country-select__options">
-          <div class="country-select__options-name">
-            Выберите страну
-            <button class="country-select__close-button" type="button" aria-label="Закрыть выбор стран"></button>
-          </div>
-          <div class="alphabet country-select__alphabet">
-            <ul class="alphabet__list">
-              <li class="alphabet__item">
-                <button class="letter-button" type="button" aria-label="Страны на букву А">А</button>
-              </li>
-              <li class="alphabet__item">
-                <button class="letter-button" type="button" aria-label="Страны на букву Б">Б</button>
-              </li>
-              <li class="alphabet__item">
-                <button class="letter-button" type="button" aria-label="Страны на букву В">В</button>
-              </li>
-              <li class="alphabet__item">
-                <button class="letter-button" type="button" aria-label="Страны на букву Г">Г</button>
-              </li>
-              <li class="alphabet__item">
-                <button class="letter-button" type="button" aria-label="Страны на букву Д">Д</button>
-              </li>
-              <li class="alphabet__item">
-                <button class="letter-button" type="button" aria-label="Страны на букву Е">Е</button>
-              </li>
-              <li class="alphabet__item">
-                <button class="letter-button" type="button" aria-label="Страны на букву З">З</button>
-              </li>
-              <li class="alphabet__item">
-                <button class="letter-button" type="button" aria-label="Страны на букву И">И</button>
-              </li>
-              <li class="alphabet__item">
-                <button class="letter-button" type="button" aria-label="Страны на букву К">К</button>
-              </li>
-              <li class="alphabet__item">
-                <button class="letter-button" type="button" aria-label="Страны на букву Л">Л</button>
-              </li>
-              <li class="alphabet__item">
-                <button class="letter-button" type="button" aria-label="Страны на букву М">М</button>
-              </li>
-              <li class="alphabet__item">
-                <button class="letter-button" type="button" aria-label="Страны на букву Н">Н</button>
-              </li>
-              <li class="alphabet__item">
-                <button class="letter-button" type="button" aria-label="Страны на букву О">О</button>
-              </li>
-              <li class="alphabet__item">
-                <button class="letter-button" type="button" aria-label="Страны на букву П">П</button>
-              </li>
-              <li class="alphabet__item">
-                <button class="letter-button" type="button" aria-label="Страны на букву Р">Р</button>
-              </li>
-              <li class="alphabet__item">
-                <button class="letter-button" type="button" aria-label="Страны на букву С">С</button>
-              </li>
-              <li class="alphabet__item">
-                <button class="letter-button" type="button" aria-label="Страны на букву Т">Т</button>
-              </li>
-              <li class="alphabet__item">
-                <button class="letter-button" type="button" aria-label="Страны на букву У">У</button>
-              </li>
-              <li class="alphabet__item">
-                <button class="letter-button" type="button" aria-label="Страны на букву Ф">Ф</button>
-              </li>
-              <li class="alphabet__item">
-                <button class="letter-button" type="button" aria-label="Страны на букву Х">Х</button>
-              </li>
-              <li class="alphabet__item">
-                <button class="letter-button" type="button" aria-label="Страны на букву Ч">Ч</button>
-              </li>
-              <li class="alphabet__item">
-                <button class="letter-button" type="button" aria-label="Страны на букву Ш">Ш</button>
-              </li>
-              <li class="alphabet__item">
-                <button class="letter-button" type="button" aria-label="Страны на букву Э">Э</button>
-              </li>
-              <li class="alphabet__item">
-                <button class="letter-button" type="button" aria-label="Страны на букву Ю">Ю</button>
-              </li>
-              <li class="alphabet__item">
-                <button class="letter-button" type="button" aria-label="Страны на букву Я">Я</button>
-              </li>
-            </ul>
-          </div>
-          <div class="country-links country-select__country-links">
-            <ul class="country-links__list">
-              <li class="country-links__item">
-                <button class="country-link" type="button">Афганистан</button>
-              </li>
-              <li class="country-links__item">
-                <button class="country-link" type="button">Албания</button>
-              </li>
-              <li class="country-links__item">
-                <button class="country-link" type="button">Алжир</button>
-              </li>
-              <li class="country-links__item">
-                <button class="country-link" type="button">Андорра</button>
-              </li>
-              <li class="country-links__item">
-                <button class="country-link" type="button">Аргентина</button>
-              </li>
-              <li class="country-links__item">
-                <button class="country-link" type="button">Армения</button>
-              </li>
-              <li class="country-links__item">
-                <button class="country-link" type="button">Австралия</button>
-              </li>
-              <li class="country-links__item">
-                <button class="country-link" type="button">Австрия</button>
-              </li>
-              <li class="country-links__item">
-                <button class="country-link" type="button">Азербайджан</button>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <button class="country-select__delete-button" type="button" aria-label="Удалить страну"></button>
-      </div>
 
       <h3>Добавление новой страны</h3>
 
