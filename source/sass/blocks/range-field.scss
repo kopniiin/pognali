@@ -35,7 +35,7 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    z-index: 2;
+    z-index: 1;
 
     width: 20px;
 
@@ -60,8 +60,6 @@
 }
 
 .range-field__input {
-  position: relative;
-
   box-sizing: border-box;
   display: block;
   flex-grow: 1;
@@ -99,13 +97,13 @@
   }
 
   &:hover {
-    z-index: 1;
+    position: relative;
 
     border-color: #959bb2;
   }
 
   &:focus {
-    z-index: 1;
+    position: relative;
 
     border-color: #161c35;
   }

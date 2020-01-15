@@ -26,8 +26,8 @@
 @import "blocks/transports";
 @import "blocks/transport-checkbox";
 @import "blocks/country-select";
-@import "blocks/country-button";
-@import "blocks/country-buttons";
+@import "blocks/country-link";
+@import "blocks/country-links";
 @import "blocks/letter-button";
 @import "blocks/alphabet";
 @import "blocks/filter";
@@ -53,6 +53,7 @@
 @import "blocks/users";
 @import "blocks/plan-card";
 @import "blocks/map";
+@import "blocks/country-filter";
 @import "blocks/catalog";
 @import "blocks/pagination";
 @import "blocks/services";

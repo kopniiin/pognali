@@ -1,4 +1,4 @@
-.country-button {
+.country-link {
   box-sizing: border-box;
   display: block;
   border: none;
@@ -8,6 +8,8 @@
   font-size: 16px;
   font-weight: 400;
   line-height: 22px;
+  text-decoration: none;
+  text-transform: none;
   color: #444444;
 
   background-color: transparent;
