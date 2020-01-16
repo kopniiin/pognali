@@ -107,3 +107,11 @@
     transform: translateY(-50%) rotate(90deg);
   }
 }
+
+.users__pagination {
+  align-self: center;
+
+  @media (min-width: $tablet-width) {
+    align-self: stretch;
+  }
+}

@@ -23,8 +23,8 @@ if (navigation) {
 
       navigationLogo.classList.add("logo_blue");
 
-      for (var link of navigationLinks) {
-        link.classList.add("navigation-link_dark");
+      for (var i = 0; i < navigationLinks.length; i++) {
+        navigationLinks[i].classList.add("navigation-link_dark");
       }
     } else if ( window.pageYOffset < 800 && navigation.classList.contains("navigation_scroll")) {
       navigation.classList.remove("navigation_scroll");
@@ -33,8 +33,8 @@ if (navigation) {
         navigationLogo.classList.remove("logo_blue");
       }
 
-      for (var link of navigationLinks) {
-        link.classList.remove("navigation-link_dark");
+      for (var i = 0; i < navigationLinks.length; i++) {
+        navigationLinks[i].classList.remove("navigation-link_dark");
       }
     }
   });
@@ -59,9 +59,10 @@ if (modal) {
 var userFilter = document.querySelector(".user-filter");
 if (userFilter) {
   var filters = document.querySelectorAll(".filter");
-  for (var filter of filters) {
-    filter.classList.remove("filter_open");
+  for (var i = 0; i < filters.length; i++) {
+    var filter = filters[i];
     var filterControl = filter.querySelector(".filter__control");
+    filter.classList.remove("filter_open");
     handleFilter(filter, filterControl);
   }
 

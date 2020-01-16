@@ -32,6 +32,8 @@
       @media (min-width: $desktop-width) {
         position: static;
 
+        width: 1440px;
+
         background-color: #edeff6;
       }
     }
@@ -99,7 +101,6 @@
 
   @media (min-width: $tablet-width) {
     display: flex;
-    justify-content: space-between;
     align-items: flex-start;
     flex-wrap: wrap;
     border-bottom-right-radius: 60px;
@@ -114,6 +115,26 @@
     justify-content: flex-start;
     padding-right: 60px;
     padding-left: 60px;
+
+    background-color: transparent;
+  }
+
+  &::before {
+    @media (min-width: $desktop-width) {
+      content: "";
+
+      position: absolute;
+      top: 0;
+      left: 50%;
+
+      width: 100vw;
+      height: 100%;
+      border-bottom-right-radius: 60px;
+      border-bottom-left-radius: 60px;
+
+      background-color: #e2e5f2;
+      transform: translateX(-50%);
+    }
   }
 }
 
@@ -137,6 +158,8 @@
 
   @media (min-width: $desktop-width) {
     @include visually-shown();
+
+    position: relative;
 
     margin-right: 8px;
     margin-left: 20px;
@@ -276,14 +299,13 @@
   @media (min-width: $tablet-width) {
     display: flex;
     flex-wrap: wrap;
-    margin-right: 0;
+    margin-right: auto;
     margin-bottom: 0;
     margin-left: 0;
     max-width: 60%;
   }
 
   @media (min-width: $desktop-width) {
-    margin-right: auto;
     max-width: 40%;
   }
 }
@@ -335,6 +357,8 @@
   }
 
   @media (min-width: $desktop-width) {
+    position: relative;
+
     margin-right: 35px;
     margin-left: 35px;
     width: 100%;
@@ -404,4 +428,8 @@
 .country-filter__collapse-button {
   display: none;
   width: 100%;
+
+  @media (min-width: $desktop-width) {
+    position: relative;
+  }
 }

@@ -5,6 +5,10 @@
 .catalog__country-filter {
   margin-bottom: 25px;
 
+  &.country-filter_open {
+    margin-bottom: 0;
+  }
+
   @media (min-width: $tablet-width) {
     margin-bottom: 47px;
   }

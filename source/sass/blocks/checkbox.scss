@@ -91,7 +91,7 @@
 
   &:checked {
     + .checkbox__name::before {
-      background-image: url("../../img/icon-tick.svg");
+      background-image: url("../img/icon-tick.svg");
     }
   }
 }
