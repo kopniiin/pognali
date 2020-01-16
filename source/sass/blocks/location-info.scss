@@ -2,6 +2,24 @@
   @include section-tail(#ffd74b);
 
   position: relative;
+
+  &::after {
+    @media (min-width: $desktop-width) {
+      content: "";
+
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 1;
+
+      width: 100%;
+      height: calc(100% - 455px);
+      border-bottom-right-radius: 60px;
+      border-bottom-left-radius: 60px;
+
+      background-color: #ffd74b;
+    }
+  }
 }
 
 .location-info__container {
@@ -35,23 +53,6 @@
     padding-left: 283px;
 
     background-color: transparent;
-  }
-
-  &::before {
-    @media (min-width: $desktop-width) {
-      content: "";
-
-      position: absolute;
-      top: 0;
-      left: 50%;
-      width: 100vw;
-      height: 100%;
-      border-bottom-right-radius: 60px;
-      border-bottom-left-radius: 60px;
-
-      background-color: #ffd74b;
-      transform: translateX(-50%);
-    }
   }
 }
 
