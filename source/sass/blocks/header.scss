@@ -71,6 +71,10 @@
       padding-top: 94px;
       padding-bottom: 9px;
 
+      &::before {
+        display: none;
+      }
+
       @media (min-width: $tablet-width) {
         flex-direction: row;
         justify-content: space-between;
