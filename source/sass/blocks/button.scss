@@ -40,6 +40,44 @@
     }
   }
 
+  &_medium {
+    @media (min-width: $tablet-width) {
+      position: relative;
+
+      border-radius: 20px;
+      padding-top: 26px;
+      padding-bottom: 23px;
+      padding-left: 30px;
+
+      font-size: 24px;
+      line-height: 26px;
+      text-align: left;
+      text-transform: none;
+    }
+
+    &::before {
+      @media (min-width: $tablet-width) {
+        @include triangle-right(10px, 14px, #1d2e5b);
+
+        content: "";
+
+        position: absolute;
+        top: 50%;
+        right: 33px;
+
+        transform: translateY(-50%);
+      }
+    }
+
+    &:active {
+      @media (min-width: $tablet-width) {
+        &::before {
+          opacity: 0.3;
+        }
+      }
+    }
+  }
+
   &_big {
     position: relative;
 

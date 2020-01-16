@@ -1,10 +1,10 @@
-.tag-field {
+.tag-form {
   position: relative;
 
   box-sizing: border-box;
 }
 
-.tag-field__label {
+.tag-form__label {
   @include title-above-border();
 
   @media (min-width: $desktop-width) {
@@ -13,7 +13,7 @@
   }
 }
 
-.tag-field__input {
+.tag-form__input {
   box-sizing: border-box;
   display: block;
   width: 100%;

@@ -1,0 +1,86 @@
+.plan-settings {
+  position: relative;
+
+  box-sizing: border-box;
+  border-top-right-radius: 30px;
+  border-top-left-radius: 30px;
+
+  background-color: #dfe3f0;
+
+  &::before {
+    content: "";
+
+    position: absolute;
+    top: 100%;
+    left: 0;
+
+    width: 100%;
+    height: 70px;
+
+    background-color: #dfe3f0;
+  }
+
+  @media (min-width: $desktop-width) {
+    border-top-right-radius: 60px;
+    border-top-left-radius: 60px;
+  }
+}
+
+.plan-settings__container {
+  @include container();
+
+  padding-top: 29px;
+  padding-bottom: 29px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 50px;
+    padding-right: 75px;
+    padding-bottom: 74px;
+    padding-left: 75px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-right: 60px;
+    padding-bottom: 62px;
+    padding-left: 124px;
+  }
+}
+
+.plan-settings__title {
+  margin-top: 0;
+  margin-bottom: 29px;
+
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 24px;
+  color: #1d2e5b;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 41px;
+
+    font-size: 36px;
+    line-height: 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 7px;
+  }
+}
+
+.plan-settings__plans {
+  @include list-reset();
+
+  counter-reset: plan-counter;
+}
+
+.plan-settings__plan {
+  margin-bottom: 10px;
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 15px;
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}

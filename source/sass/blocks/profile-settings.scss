@@ -1,0 +1,121 @@
+.profile-settings {
+  box-sizing: border-box;
+}
+
+.profile-settings__container {
+  @include container();
+
+  position: relative;
+
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding-top: 23px;
+  padding-bottom: 32px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 64px;
+    padding-right: 75px;
+    padding-bottom: 60px;
+    padding-left: 75px;
+  }
+
+  @media (min-width: $desktop-width) {
+    z-index: 3;
+
+    flex-wrap: nowrap;
+    padding-top: 73px;
+    padding-right: 60px;
+    padding-bottom: 65px;
+    padding-left: 124px;
+  }
+}
+
+.profile-settings__title {
+  @include visually-hidden();
+}
+
+.profile-settings__level {
+  margin-bottom: 19px;
+  margin-left: 18px;
+
+  @media (min-width: $tablet-width) {
+    order: -1;
+    margin-bottom: 52px;
+    margin-left: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    top: -148px;
+    right: 390px;
+
+    order: 0;
+    margin-bottom: 0;
+  }
+}
+
+.profile-settings__avatar {
+  margin-right: 18px;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    right: 155px;
+    bottom: 100%;
+  }
+}
+
+.profile-settings__avatar-button {
+  margin-bottom: 32px;
+  width: 100%;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 52px;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    top: 0;
+    right: 155px;
+    margin-bottom: 0;
+    width: 190px;
+  }
+}
+
+.profile-settings__tag-form {
+  margin-bottom: 24px;
+  width: 100%;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: auto;
+    width: 58%;
+  }
+}
+
+.profile-settings__transport-form {
+  width: 100%;
+
+  @media (min-width: $tablet-width) {
+    flex-grow: 1;
+    order: -1;
+    margin-right: 60px;
+    margin-left: 60px;
+    width: auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-grow: 0;
+    order: 0;
+    margin-right: 0;
+    margin-left: 0;
+    width: 30.6%;
+  }
+}

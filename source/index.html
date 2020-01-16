@@ -4,6 +4,10 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>HTML Academy: Погнали</title>
+    <link rel="preload" href="fonts/bloggersans-light.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/bloggersans.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/bloggersans-medium.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/bloggersans-bold.woff2" as="font" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.min.css">
     <script>
       document.createElement( "picture" );
@@ -145,7 +149,7 @@
         </div>
         <blockquote class="header__review">
           <p class="header__review-text">«Лучшее приложение, что я видел в жизни!»</p>
-          <cite class="header__review-author">Мурат Эльтазинглавный редактор газеты «гаджетлайф»</cite>
+          <cite class="header__review-author">Мурат Эльтазин главный редактор газеты «гаджетлайф»</cite>
         </blockquote>
         <div class="algorithm header__algorithm">
           <ol class="algorithm__list">
@@ -316,7 +320,7 @@
                 <a class="avatar avatar_big user-preview__avatar" href="">
                   <picture>
                     <source type="image/webp" srcset="img/firsova-desktop@1x.webp 1x, img/firsova-desktop@2x.webp 2x">
-                    <img class="avatar__image" src="img/firsova-desktop@1x.jpg" srcset="img/firsova-desktop@2x.jpg 2x" alt="" width="285" height="285">
+                    <img class="avatar__image" src="img/firsova-desktop@1x.jpg" srcset="img/firsova-desktop@2x.jpg 2x" alt="Девушка в разноцветном купальнике плавает в прозрачной воде" width="285" height="285">
                   </picture>
                 </a>
                 <section class="level level_fixed user-preview__level">
@@ -443,7 +447,7 @@
                 <a class="avatar avatar_big user-preview__avatar" href="">
                   <picture>
                     <source type="image/webp" srcset="img/demin-desktop@1x.webp 1x, img/demin-desktop@2x.webp 2x">
-                    <img class="avatar__image" src="img/demin-desktop@1x.jpg" srcset="img/demin-desktop@2x.jpg 2x" alt="" width="285" height="285">
+                    <img class="avatar__image" src="img/demin-desktop@1x.jpg" srcset="img/demin-desktop@2x.jpg 2x" alt="Бородатый парень в черной одежде" width="285" height="285">
                   </picture>
                 </a>
                 <section class="level level_fixed user-preview__level">
@@ -578,7 +582,7 @@
               </li>
             </ol>
           </div>
-          <a class="modal-button profile-info__button" href="">
+          <a class="modal-button profile-info__button" href="tariffs.html">
             <span class="modal-button__text">Показать тарифы для бизнеса</span>
             <svg class="modal-button__icon" aria-hidden="true" focusable="false" width="17" height="21">
               <use xlink:href="img/sprite.svg#icon-user"></use>
@@ -625,7 +629,7 @@
           <h2 class="registration-info__title">Заинтересовались?</h2>
           <p class="registration-info__text">
             Зарегистрируйтесь, это быстро и бесплатно!
-            Уже зарегистрированы? Тогда скорее <a class="registration-info__link" href="">авторизуйтесь</a>.
+            Уже зарегистрированы? Тогда скорее <a class="registration-info__link" href="authorization.html">авторизуйтесь</a>.
           </p>
           <div class="registration registration-info__form">
             <form class="registration__form" action="https://echo.htmlacademy.ru" method="post">
@@ -669,7 +673,7 @@
               <use xlink:href="img/sprite.svg#icon-location"></use>
             </svg>
           </a>
-          <a class="button button_big button_stroke location-info__button" href="">Проложить маршрут</a>
+          <a class="button button_big button_stroke location-info__button" href="https://yandex.ru/maps/2/saint-petersburg/?ll=30.327711%2C59.936526&mode=routes&rtext=59.935223%2C30.325136~59.938631%2C30.323055&rtt=auto&ruri=~ymapsbm1%3A%2F%2Fgeo%3Fll%3D30.323%252C59.939%26spn%3D0.001%252C0.001%26text%3D%25D0%25A0%25D0%25BE%25D1%2581%25D1%2581%25D0%25B8%25D1%258F%252C%2520%25D0%25A1%25D0%25B0%25D0%25BD%25D0%25BA%25D1%2582-%25D0%259F%25D0%25B5%25D1%2582%25D0%25B5%25D1%2580%25D0%25B1%25D1%2583%25D1%2580%25D0%25B3%252C%2520%25D0%2591%25D0%25BE%25D0%25BB%25D1%258C%25D1%2588%25D0%25B0%25D1%258F%2520%25D0%259A%25D0%25BE%25D0%25BD%25D1%258E%25D1%2588%25D0%25B5%25D0%25BD%25D0%25BD%25D0%25B0%25D1%258F%2520%25D1%2583%25D0%25BB%25D0%25B8%25D1%2586%25D0%25B0%252C%252019%252F8&z=15">Проложить маршрут</a>
         </div>
         <div class="map location-info__map">
           <iframe class="map__iframe" src="https://yandex.ru/map-widget/v1/-/CBFXQGSKCD" width="560" height="400"></iframe>

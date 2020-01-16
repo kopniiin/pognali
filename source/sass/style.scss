@@ -38,8 +38,8 @@
 @import "blocks/user-name";
 @import "blocks/tag";
 @import "blocks/tags";
-@import "blocks/tag-field";
-@import "blocks/transport-field";
+@import "blocks/tag-form";
+@import "blocks/transport-form";
 @import "blocks/quantity-field";
 @import "blocks/range-field";
 @import "blocks/flag";
@@ -66,3 +66,6 @@
 @import "blocks/registration-info";
 @import "blocks/location-info";
 @import "blocks/footer";
+@import "blocks/profile-settings";
+@import "blocks/plan-settings";
+@import "blocks/plan-constructor";

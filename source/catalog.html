@@ -4,6 +4,10 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>Каталог попутчиков в сервисе Погнали</title>
+    <link rel="preload" href="fonts/bloggersans-light.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/bloggersans.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/bloggersans-medium.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/bloggersans-bold.woff2" as="font" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.min.css">
     <script>
       document.createElement( "picture" );
@@ -43,7 +47,7 @@
                 </a>
               </li>
               <li class="site-navigation__item">
-                <a class="navigation-link" href="catalog.html" aria-label="Попутчики">
+                <a class="navigation-link" aria-label="Попутчики">
                   <span class="navigation-link__text">Попутчики</span>
                   <span class="navigation-link__text">Попутчики</span>
                 </a>
@@ -132,6 +136,7 @@
     </header>
 
     <main class="catalog">
+      <h1 class="catalog__title">Каталог пользователей</h1>
 
       <section class="country-filter catalog__country-filter">
         <div class="country-filter__container">
@@ -244,10 +249,10 @@
                   <span class="country-links__letter">A</span>
                   <ul class="country-links__list">
                     <li class="country-links__item">
-                      <a class="country-link" href="">Австралия</a>
+                      <a class="country-link" href="аustralia.html">Австралия</a>
                     </li>
                     <li class="country-links__item">
-                      <a class="country-link" href="">Австрия</a>
+                      <a class="country-link" href="europe/austria.html">Австрия</a>
                     </li>
                     <li class="country-links__item">
                       <a class="country-link" href="">Азербайджан</a>
@@ -920,13 +925,13 @@
           <h2 class="user-filter__title">Фильтр пользователей</h2>
           <p class="user-filter__text">Подберите идеального попутчика</p>
           <form class="user-filter__form" action="https://echo.htmlacademy.ru" method="get">
-            <div class="filter" role="group" aria-labelledby="hobby-filter-name">
+            <div class="filter filter_open" role="group" aria-labelledby="hobby-filter-name">
               <span class="filter__name" id="hobby-filter-name">Хобби:</span>
               <button class="filter__control" type="button">Хобби</button>
               <ul class="filter__checkboxes">
                 <li class="filter__checkbox">
                   <div class="checkbox">
-                    <input class="checkbox__input" type="checkbox" name="hobby-gym" id="hobby-gym-field">
+                    <input class="checkbox__input" type="checkbox" name="hobby-gym" id="hobby-gym-field" checked>
                     <label class="checkbox__name" for="hobby-gym-field">Спортзал</label>
                   </div>
                 </li>
@@ -950,7 +955,7 @@
               <ul class="filter__checkboxes">
                 <li class="filter__checkbox">
                   <div class="checkbox">
-                    <input class="checkbox__input" type="checkbox" name="music-rock" id="music-rock-field">
+                    <input class="checkbox__input" type="checkbox" name="music-rock" id="music-rock-field" checked>
                     <label class="checkbox__name" for="music-rock-field">Тяжелый рок</label>
                   </div>
                 </li>
@@ -968,13 +973,13 @@
                 </li>
               </ul>
             </div>
-            <div class="filter" role="group" aria-labelledby="food-filter-name">
+            <div class="filter filter_open" role="group" aria-labelledby="food-filter-name">
               <span class="filter__name" id="food-filter-name">Еда:</span>
               <button class="filter__control" type="button">Еда</button>
               <ul class="filter__checkboxes">
                 <li class="filter__checkbox">
                   <div class="checkbox">
-                    <input class="checkbox__input" type="checkbox" name="food-meat" id="food-meat-field">
+                    <input class="checkbox__input" type="checkbox" name="food-meat" id="food-meat-field" checked>
                     <label class="checkbox__name" for="food-meat-field">Мясоед</label>
                   </div>
                 </li>
@@ -1076,16 +1081,16 @@
                     </h3>
                     <span class="user-name__status">Пользователь вне сети</span>
                   </div>
-                  <div class="avatar user-card__avatar">
+                  <a class="avatar user-card__avatar" href="">
                     <picture>
                       <source type="image/webp" media="(min-width: 1440px)" srcset="img/firsova-desktop@1x.webp 1x, img/firsova-desktop@2x.webp 2x">
                       <source type="image/webp" media="(min-width: 768px)" srcset="img/firsova-tablet@1x.webp 1x, img/firsova-tablet@2x.webp 2x">
                       <source type="image/webp" srcset="img/firsova-mobile@1x.webp 1x, img/firsova-mobile@2x.webp 2x">
                       <source media="(min-width: 1440px)" srcset="img/firsova-desktop@1x.jpg 1x, img/firsova-desktop@2x.jpg 2x">
                       <source media="(min-width: 768px)" srcset="img/firsova-tablet@1x.jpg 1x, img/firsova-tablet@2x.jpg 2x">
-                      <img class="avatar__image" src="img/firsova-mobile@1x.jpg" srcset="img/firsova-mobile@2x.jpg 2x" alt="" width="70" height="70">
+                      <img class="avatar__image" src="img/firsova-mobile@1x.jpg" srcset="img/firsova-mobile@2x.jpg 2x" alt="Девушка в разноцветном купальнике плавает в прозрачной воде" width="70" height="70">
                     </picture>
-                  </div>
+                  </a>
                   <div class="user-card__buttons">
                     <a class="button user-card__button" href="">Позвать!</a>
                     <div class="user-card__like-container">
@@ -1226,16 +1231,16 @@
                     </h3>
                     <span class="user-name__status">Пользователь в сети</span>
                   </div>
-                  <div class="avatar user-card__avatar">
+                  <a class="avatar user-card__avatar" href="">
                     <picture>
                       <source type="image/webp" media="(min-width: 1440px)" srcset="img/demin-desktop@1x.webp 1x, img/demin-desktop@2x.webp 2x">
                       <source type="image/webp" media="(min-width: 768px)" srcset="img/demin-tablet@1x.webp 1x, img/demin-tablet@2x.webp 2x">
                       <source type="image/webp" srcset="img/demin-mobile@1x.webp 1x, img/demin-mobile@2x.webp 2x">
                       <source media="(min-width: 1440px)" srcset="img/demin-desktop@1x.jpg 1x, img/demin-desktop@2x.jpg 2x">
                       <source media="(min-width: 768px)" srcset="img/demin-tablet@1x.jpg 1x, img/demin-tablet@2x.jpg 2x">
-                      <img class="avatar__image" src="img/demin-mobile@1x.jpg" srcset="img/demin-mobile@2x.jpg 2x" alt="" width="70" height="70">
+                      <img class="avatar__image" src="img/demin-mobile@1x.jpg" srcset="img/demin-mobile@2x.jpg 2x" alt="Бородатый парень в черной одежде" width="70" height="70">
                     </picture>
-                  </div>
+                  </a>
                   <div class="user-card__buttons">
                     <a class="button user-card__button" href="">Позвать!</a>
                     <div class="user-card__like-container">
@@ -1363,16 +1368,16 @@
                     </h3>
                     <span class="user-name__status">Пользователь вне сети</span>
                   </div>
-                  <div class="avatar user-card__avatar">
+                  <a class="avatar user-card__avatar" href="">
                     <picture>
                       <source type="image/webp" media="(min-width: 1440px)" srcset="img/smolov-desktop@1x.webp 1x, img/smolov-desktop@2x.webp 2x">
                       <source type="image/webp" media="(min-width: 768px)" srcset="img/smolov-tablet@1x.webp 1x, img/smolov-tablet@2x.webp 2x">
                       <source type="image/webp" srcset="img/smolov-mobile@1x.webp 1x, img/smolov-mobile@2x.webp 2x">
                       <source media="(min-width: 1440px)" srcset="img/smolov-desktop@1x.jpg 1x, img/smolov-desktop@2x.jpg 2x">
                       <source media="(min-width: 768px)" srcset="img/smolov-tablet@1x.jpg 1x, img/smolov-tablet@2x.jpg 2x">
-                      <img class="avatar__image" src="img/smolov-mobile@1x.jpg" srcset="img/smolov-mobile@2x.jpg 2x" alt="" width="70" height="70">
+                      <img class="avatar__image" src="img/smolov-mobile@1x.jpg" srcset="img/smolov-mobile@2x.jpg 2x" alt="Парень с татуировками сидит на машине" width="70" height="70">
                     </picture>
-                  </div>
+                  </a>
                   <div class="user-card__buttons">
                     <a class="button user-card__button" href="">Позвать!</a>
                     <div class="user-card__like-container">
@@ -1508,16 +1513,16 @@
                     </h3>
                     <span class="user-name__status">Пользователь в сети</span>
                   </div>
-                  <div class="avatar user-card__avatar">
+                  <a class="avatar user-card__avatar" href="">
                     <picture>
                       <source type="image/webp" media="(min-width: 1440px)" srcset="img/rogovaya-desktop@1x.webp 1x, img/rogovaya-desktop@2x.webp 2x">
                       <source type="image/webp" media="(min-width: 768px)" srcset="img/rogovaya-tablet@1x.webp 1x, img/rogovaya-tablet@2x.webp 2x">
                       <source type="image/webp" srcset="img/rogovaya-mobile@1x.webp 1x, img/rogovaya-mobile@2x.webp 2x">
                       <source media="(min-width: 1440px)" srcset="img/rogovaya-desktop@1x.jpg 1x, img/rogovaya-desktop@2x.jpg 2x">
                       <source media="(min-width: 768px)" srcset="img/rogovaya-tablet@1x.jpg 1x, img/rogovaya-tablet@2x.jpg 2x">
-                      <img class="avatar__image" src="img/rogovaya-mobile@1x.jpg" srcset="img/rogovaya-mobile@2x.jpg 2x" alt="" width="70" height="70">
+                      <img class="avatar__image" src="img/rogovaya-mobile@1x.jpg" srcset="img/rogovaya-mobile@2x.jpg 2x" alt="Девушка в деловом синем костюме" width="70" height="70">
                     </picture>
-                  </div>
+                  </a>
                   <div class="user-card__buttons">
                     <a class="button user-card__button" href="">Позвать!</a>
                     <div class="user-card__like-container">
@@ -1572,7 +1577,7 @@
                       <li class="flags__flag-item">
                         <div class="flag">
                           <svg class="flag__image" role="img" aria-label="Флаг Германии" focusable="false" width="26" height="18">
-                            <use xlink:href="img/sprite.svg#flag-czech"></use>
+                            <use xlink:href="img/sprite.svg#flag-belgium"></use>
                           </svg>
                           <span class="flag__name">Германия</span>
                         </div>

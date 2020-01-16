@@ -62,6 +62,7 @@
   margin-right: 34px;
   margin-bottom: 10px;
   margin-left: 34px;
+  width: calc(100% - 68px);
 
   @media (min-width: $tablet-width) {
     margin-bottom: 18px;

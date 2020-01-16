@@ -2,6 +2,24 @@
   @include section-tail(#ffd74b);
 
   position: relative;
+
+  &::after {
+    @media (min-width: $desktop-width) {
+      content: "";
+
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 1;
+
+      width: 100%;
+      height: calc(100% - 455px);
+      border-bottom-right-radius: 60px;
+      border-bottom-left-radius: 60px;
+
+      background-color: #ffd74b;
+    }
+  }
 }
 
 .location-info__container {
@@ -33,6 +51,8 @@
     padding-right: 134px;
     padding-bottom: 54px;
     padding-left: 283px;
+
+    background-color: transparent;
   }
 }
 
@@ -51,6 +71,7 @@
   }
 
   @media (min-width: $desktop-width) {
+    margin-right: auto;
     align-self: center;
     margin-bottom: 0;
     max-width: 60%;

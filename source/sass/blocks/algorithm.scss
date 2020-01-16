@@ -26,7 +26,6 @@
 
   box-sizing: border-box;
   display: flex;
-  justify-content: space-between;
   border-top-right-radius: 10px;
   border-top-left-radius: 10px;
   padding-top: 22px;
@@ -38,7 +37,6 @@
 
   @media (min-width: $tablet-width) {
     flex-direction: column;
-    justify-content: flex-start;
     width: 50%;
     border-top-right-radius: 0;
     border-bottom-left-radius: 20px;
@@ -175,9 +173,11 @@
 
 .algorithm__action-text {
   margin: 0;
+  margin-right: auto;
   width: 64%;
 
   @media (min-width: $tablet-width) {
+    margin-right: 0;
     margin-bottom: 9px;
   }
 
