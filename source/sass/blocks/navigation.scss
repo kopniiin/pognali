@@ -88,6 +88,8 @@
 
   &_no-js {
     .navigation__container {
+      position: static;
+
       background-color: #ffffff;
 
       @media (min-width: $desktop-width) {
